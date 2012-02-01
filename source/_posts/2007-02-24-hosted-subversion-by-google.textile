@@ -1,0 +1,15 @@
+---
+layout: post
+title: "Hosted Subversion by Google"
+date: 2007-02-24 22:05
+comments: false
+---
+
+I was chatting with "Jason":http://jasona.net/ about where to quickly host an open source project that offers "Subversion":http://subversion.tigris.org/ for source control.  A quick "Google":http://google.com search leads you to...well..."Google Code":http://code.google.com/. I have seen a couple projects hosted on Google Code, but never dug into it. The ability to quickly and easily create a new project and use Subversion is pretty killer in my book....not to mention no long approval process (or the common Microsoft bias you see on other Open Source sites).  I have quite a few small projects started locally, if "Jason's experiment":http://code.google.com/p/dotnetopenid/ with it goes well, I will start using it quite a bit. Speaking of Subversion and Jason:
+
+* Be sure to check out Jason's project. He has been feverishly working on an "OpenId":http://openid.net/ library (a port of an existing project). OpenId has been in the news quite a bit and looks like it is going to be used everywhere in the coming months...maybe even "Community Server":http://communityserver.org. :)
+* We ("Telligent":http://telligent.com) made the switch to Subversion and it has been excellent. Vault served us well (and I still very highly recommend for small teams...especially over Source Safe), but as we continued to grow, it just wasn't working out for us.
+* I wonder if I can convince "Rob Conery":http://www.wekeroad.com/blogs/ to switch to Google. I love his "SubSonic":http://www.codeplex.com/actionpack project but got tired of fighting with Team System to make checkins and get updates.
+* Google's "Developer Knowledge Base on Subversion":http://code.google.com/support/bin/topic.py?topic=10386
+
+If you have used Google Code, especially to host a project, please drop me a line below.

@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Google App Engine - Cron"
+date: 2009-04-09 11:05
+comments: false
+---
+
+Lost in yesterday's announcement about "Google App Engine's support for Java":http://googleappengine.blogspot.com/2009/04/seriously-this-time-new-language-on-app.html was a new feature, "Cron":http://code.google.com/appengine/docs/python/config/cron.html.
+
+bq. "_schedule tasks like report generation or DB clean-up at an interval of your choosing._"
+
+Not a ton of details, but this enables some much richer functionality on what is arguably the simplest platform for building cloud applications.
+
+Sticking with the drop dead simple approach to cloud applications, Cron tasks are really nothing more than a very simple way of scheduling the execution of a url within you site. There are no interfaces to implement, nothing additional to install or deploy.
+
+bq. The App Engine Cron Service allows you to configure regularly scheduled tasks that operate at defined times or regular intervals. These tasks are commonly known as cron jobs. These cron jobs are automatically triggered by the App Engine Cron Service. For instance, you might use this to send out a report email on a daily basis, to update some cached data every 10 minutes, or to update some summary information once an hour.
+
+A cron job will invoke a URL at a given time of day. A URL invoked by cron is subject to the same limits and quotas as a normal HTTP request, including the request time limit.
+
+This of course isn't ideal for every type of task, but plays very well with the type of solutions you would expect to be built on GAE.

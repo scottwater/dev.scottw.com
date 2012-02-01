@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Azure Needs A Real RoadMap"
+date: 2009-02-12 13:04
+comments: false
+---
+
+I love the premise behind "Azure":http://www.microsoft.com/azure/default.mspx. I love that I can leverage the platform I know the best. I love the services (.NET Services) Microsoft is building along side the hosting and data infrastructure. And while I understand that Microsoft has not even given them a beta stamp, I am very concerned that there has been so little messaging on the roadmap and delivery schedule since the first announcement at the PDC.
+
+I know first hand that publishing a roadmap leads to additional speculation and headaches. I understand that it removes some flexibility and that some customers will take too literally.
+
+However, Azure is a platform with quite a bit of lock in. The lock in, in general doesn't bother me. What bothers me is if I were to start building something today, I don't have a good sense of when I could ever bring it to production. For business looking to bring products to market built on the cloud infrastructure, this is always going to be a tough sell, but even more so with today's economic climate.
+
+"Mix09":http://2009.visitmix.com/ is right around the corner, so I am hoping Microsoft makes some big announcements. If not, I might need to refocus where I spend my time.

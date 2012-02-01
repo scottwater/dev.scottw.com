@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Mongomatic"
+date: 2010-10-12 13:58
+comments: false
+---
+
+I finally got a chance to try "Mongomatic":http://mongomatic.com/ on a flight to Dallas. Overall, I am quite impressed. 
+
+MongoDB out of the box has a very simple API for inserting, updating, querying, and modifying data. It is very lightweight and in most cases, extremely readable. 
+
+Mongomatic is an extremely lightweight addition to the standard Ruby driver and provides quite a few syntactical niceties which make working with MongoDB even nicer (callbacks, validation, and great modifier support to name a few).
+
+bq. The primary design goals of Mongomatic are simplicity and adherence to MongoDB conventions. Mongomatic is not an ActiveRecord clone and has been designed to fit nicely with the document-oriented nature of MongoDB.
+
+I am definitely still a fan of MongoMapper and Mongoid as well, but the budding minimalist in me is absolutely in love with the with the barebones approach. 

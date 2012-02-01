@@ -1,0 +1,42 @@
+---
+layout: post
+title: "iPhone vs. BlackBerry"
+date: 2007-10-05 13:26
+comments: false
+---
+
+OK, so lets first set the record, I have been a very loyal and happy BlackBerry user for about three years. My current BlackBerry device is the "8700c":http://www.discoverblackberry.com/devices/device-detail.jsp?navId=H0,C63,P65. In addition, I was already a customer of AT&T/Cingular.
+
+Like most people, when I first saw the "iPhone demos":http://www.apple.com/iphone/gettingstarted/guidedtour.html I was floored and said to myself, "I gotta have one". However, as the weeks passed, I started to think about what I really used my BlackBerry for, email. I did very little talking on it and did virtually no web browsing except to check on flights while traveling. Actually, next to email, my #2 usage was to play Texas Holdem (btw, I did win World Series on it). Although it looked like a killer device, I made up my mind it wasn't me yet.
+
+A couple of months passed and during that time I came to the conclusion that I was spending way too much time in email. I decide that while I still wanted access to email on my mobile device, the near instant email connection provided by the BlackBerry was no longer necessary. For a little while I thought about waiting for V2, but then Apple decided to drop the price by $200. Life is short, it was time to make a move.
+
+It has been a couple of weeks now with the iPhone and I have to say I am very happy with the iPhone.
+
+Here is a quick run down:
+
+* As I mentioned before, I used my BlackBerry primarily for email. When it comes to managing email (getting, sending, etc) the BlackBerry is head and shoulders above the iPhone. If email is your primary task and you want an office on the go, even though the iPhone is all shiny and pretty, stick with the BlackBerry.
+* Although I had heard reports about Exchange not being supported directly on the iPhone, it is (as long as IMAP is enabled) and works reasonably well. You do not have the same level of instant email gratification as you do with the BlackBerry, but for me that is now OK. Having my email on the go and the ability to resolve the occasional crisis is more than enough to suit my current needs.
+* Email folders - with the iPhone you do not get nearly the same control as the BlackBerry when it comes to picking and choosing which folders to sync.
+* I had major Internet/email slow-downs with post GMail and Exchange enabled at the same time. I am still not sure if this is due to a really large "GMail":http://gmail.com account, Pop3 usage or using dual email, but my opinion of the iPhone doubled as soon as I disabled Gmail as a native email account.
+* Last bit on email...I promise, reading email is much better on the iPhone than BlackBerry. I miss the spinner wheel, but a large bright screen with instant resizing was something I did not expect to enjoy as much.
+* Typing on the device is much better than I thought it would be as well. The QWERTY keyboard on the BlackBerry is still awesome and requires less focal attention to type, but I can now type as fast as or better on the iPhone after just a couple of weeks.
+* Those who know me well (or just read this post) are fully aware of how bad my grammar and spelling can be, especially in quick emails. While it is not perfect the intelli-typing (not sure of the real feature name) was something I was not expecting and now that I think about it, I do not get why BlackBerry doesn't have the same thing.
+* Wifi access is pretty killer. The iPhone and my home wireless do not get along perfectly (I sometimes get better results on Edge), but when I have gone to other places to use the Wifi is has been very snappy.
+* Web browsing is insanely better. There seems to be some annoying hiccups on links that open in a new window (or maybe this is just a "Hahlo":http://hahlo.com issue), but it is generally pretty killer.
+* I do not know of any mobile device which comes close to the battery life of the BlackBerry, but for my average usage I am getting a little more than a day which is acceptable (no video during this time).
+* Having to sync the calendar with my iPhone is annoying, but I knew this going in.
+* The iPhone calendar's "List View" is a great way of seeing what is planned for the day (or a couple of days) in a small view. Again, BlackBerry needs to add this one.
+* SMS - I do not text often, but it nice to have it in a separate screen. The conversation view I am sure is a welcomed addition to those who text often.
+* Alarms - I love the alarm feature on the iPhone. The ability to create multiple alarms and enable/disable them is a great touch. Since this feature is tied to the clock it would have been killer if they let you tie an alarm to a different time zone which would have stopped me from always needing to the the math when I travel, but maybe that will show up in v.Next.
+* Stopwatch/Timer - not sure they are useful, but it is a cute feature. :)
+* Security lock - I really like being able to set the security lock to different intervals. Since I have my company email on it, I keep it behind a password, but not having to type it in every single time I lock the device is a nice touch.
+* Visual VoiceMail - why did it take so long for someone to implement this. The ability to jump from message to message is near priceless.
+* Phone - overall the phone experience is quite nice and much better than the BlackBerry. Quick access to favorites, recent calls, and contacts all filtering nicely is very welcomed.
+* Games - gah, I agree with "Mark Pilgrim":http://diveintomark.org/archives/2007/10/04/if-wishes-were-iphones, I knew what I was getting into when it comes to adding software, but I do miss Texas Holdem.
+* Pocket - For better or worse, I usually put my device in my font pocket. Even though the iPhone is a bit longer, it fits much better.
+* YouTube - when you are stuck somewhere, this is a nice diversion. For me, it works much better (even over Edge) than I thought it would.
+
+And of course there is the whole it is an IPod with killer photo support along with easy access to stocks, weather (multiple cities, again a very nice touch), maps (GPS would have been good, I think some Blackberries do support this), and a decent camera are all very nice improvements.
+
+I am not sure if you would call this a review or a lovefest. I know the iPhone doesn't scream "I am productive workaholic":http://daringfireball.net/linked/2007/september#wed-12-doofus like the Blackberry, but life is short. The iPhone will certainly let you stay connected to office and will certainly be a much more useful tool for the rest of your life.

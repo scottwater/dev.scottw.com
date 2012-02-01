@@ -1,0 +1,30 @@
+---
+layout: post
+title: "ZSH and Rake Parameters"
+date: 2011-04-02 02:05
+comments: false
+---
+
+I wanted to pass a parameter into a rake task which uses a format like this:
+
+<pre><code class="bash">
+task :name, :first do  |t, args|
+  puts "Hello #{args[:first]}"
+end
+</code></pre>
+
+To execute the task:
+
+<pre><code class="bash">
+rake name[Scott]
+</code></pre>
+
+However, I kept getting an error that ZSH could not find the command. It turns out, I was tripping over ZSH’s globbing feature.
+
+Thankfully, adding a simple alias resolved the issue for me:
+
+<pre><code class="bash">
+alias rake='noglob rake'
+</code></pre>
+
+I probably wasted an hour trying to figure out why ZSH didn’t like my rake task. Hopefully this post saves you from doing the same.

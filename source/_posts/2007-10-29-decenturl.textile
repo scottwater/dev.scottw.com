@@ -1,0 +1,18 @@
+---
+layout: post
+title: "DecentURL"
+date: 2007-10-29 14:28
+comments: false
+---
+
+I always go back and forth on wether using something like "TinyUrl":http://tinyurl.com is worth the effort. For a vast majority of people, a short url is doesn't matter as long as they can click on it. However, as I spend more using a mobile device with a small screen screen, I am starting to see more benefit in shortening the url because it takes up less space.
+
+However, there is one major drawback to TinyUrl, you really have no idea where you will end up after you click the link. In addition, browsing the web is getting better on mobile devices, but it is still much more of a challenge (speed, usability, and time) Enter, "DecentURL":http://decenturl.com/.
+
+bq. ...DecentURL can make URLs short too, but its primary goal is to make them decent. Teach 'em some manners.
+
+bq. DecentURL can also grab a title automatically. Just leave the "decent title" blank, and it'll get one from the &lt;title&gt; of the page you're linking to.  And unlike TinyURL, decent URLs let you see where you're going. For instance, links to YouTube become "http://decenturl.com/youtube/decent-title":http://decenturl.com/youtube/decent-title. This means people can't send you to nasty places without you knowing it.
+
+!http://scottwstatic.appspot.com/images/wlw/DecentURL_9379/image_3.png!
+
+You end up with a url that is much longer than something like TinyUrl, but for sites like Amazon.com who generate nasty long urls (seriously, why are they still doing this?) or for when you want to give a little more description to what you are linking too. This still isn't full proof since you could easily spoof the title, but it is still a nice step in the right direction. All we need now is an easy to use FireFox extension.

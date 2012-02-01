@@ -1,0 +1,136 @@
+---
+layout: post
+title: "Setting Up Velocity (Distributed Cache)"
+date: 2008-06-04 13:59
+comments: false
+---
+
+As I previously wrote, "Velocity is Microsoft's entry into Distributed Caching":http://scottw.com/code/velocity/. It is currently in its first public CTP, so there are certainly going to be some rough spots. The documentation is pretty good, but setting it up and using it the first time required some trial and error. Here is a quick overview on getting it Velocity setup and and using the API.
+
+First, grab the "CTP bits":http://www.microsoft.com/downloads/details.aspx?FamilyId=B24C3708-EEFF-4055-A867-19B5851E7CD2&amp;displaylang=en and run the MSI.
+
+As part of the install process, it is going to ask you to create a cache host configuration. I just created a folder called cache and named it Sample:
+
+!http://scottwstatic.appspot.com/images/wlw/SettingUpVelocityDistributedCache_7024/captured_Image.png_3.png!
+
+Next, execute the Velocity administration tool (should be a short-cut on your desktop). This is a command line tool. Type "start cluster" to get things going.
+
+!http://scottwstatic.appspot.com/images/wlw/SettingUpVelocityDistributedCache_7024/d2192ed2-8977-416c-a748-deafb6611487.png!
+
+Next, create a new VS.NET 2008 project and add references to following .dlls from the Program Files\Microsoft Distributed Cache folder: CacheBaseLibrary.dll, ClientLibrary.dll, FabricCommon.dll, CASBase.dll, and CASClient.dll.
+
+You will also need to add an app.config (or web.config) file to your project with the following (you can get this from the docs as well). You will also need to update the name attribute under dacheClient/hosts/host to include your machine name. The setup summary documentation was not clear about this.
+
+<pre><code class="xml">
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <configSections>
+        <section name="dcacheClient"
+                 type="System.Configuration.IgnoreSectionHandler"
+                 allowLocation="true" allowDefinition="Everywhere"/>
+        <section name="fabric"
+      type="System.Fabric.Common.ConfigFile, FabricCommon"
+      allowLocation="true" allowDefinition="Everywhere"/>
+    </configSections>
+    <dcacheClient deployment="simple" localCache="false">
+        <hosts>
+            <!--List of hosts -->
+            <host name="YOUR_MACHINE_NAME_HERE"
+                  cachePort="22233"
+                  cacheHostName="DistributedCacheService" />
+        </hosts>
+    </dcacheClient>
+    <fabric>
+        <section name="logging" path="">
+            <collection name="sinks" collectionType="list">
+                <customType
+                  className="System.Fabric.Common.EventLogger,FabricCommon"
+                  sinkName="System.Fabric.Common.ConsoleSink,FabricCommon"
+                  sinkParam="" defaultLevel="-1"/>
+                <customType
+                  className="System.Fabric.Common.EventLogger,FabricCommon" 
+                  sinkName="System.Fabric.Common.FileEventSink,FabricCommon"
+                  sinkParam="CacheClientLog" defaultLevel="1"/>
+                <customType
+                  className="System.Fabric.Common.EventLogger,FabricCommon"
+                  sinkName="System.Data.Caching.ETWSink, CacheBaseLibrary"
+                  sinkParam="" defaultLevel="-1" />
+            </collection>
+        </section>
+    </fabric>
+ 
+</configuration>
+</code></pre>
+
+
+Now, we are just about ready to finally write some code. But before we proceed, there is one more thing we need to look up, the name of the cache. This is the part the tripped me up the most.
+
+The basic example in the documentation looks like this:
+
+<pre><code class="csharp">
+using System.Data.Caching;
+ 
+CacheFactory CacheCluster1 = new CacheFactory();
+Cache Cache1 = CacheCluster1.GetCache("Cache1");
+Cache1.Add("cachedStringKey1","This string will be stored in cache");
+</code></pre>
+
+
+I had wrongfully assumed the cacheCluster1.GetCache("Cache1") call was referencing the name attribute we set above. This was concerning for a couple of reasons:
+
+
+# It did not work. :)
+# I didn't like the idea of having to reference a specific machine.
+
+The good news is #2 is not the case and reading through some of the documentation helped clear this up. The parameter that passed in GetCache is the name of the cache we are requesting. This is necessary since each host can support multiple caches.
+
+It turns out the default cache name is "default" (go figure). To find this value you need to go back to admin command line tool and enter "list cache"
+
+!http://scottwstatic.appspot.com/images/wlw/SettingUpVelocityDistributedCache_7024/cef7e6cf-5b3b-4d61-bbfc-c0c13597b1b1.png!
+
+It also turns out, there is a static helper method which will supply the default cache name for you, so out of the box you can just ignore it (same goes for Region).
+
+All the objects we need to access are in the System.Data.Caching namespace.
+
+Here is the quick sample code:
+
+<pre><code class="csharp">
+using System;
+using System.Data.Caching;
+ 
+namespace CacheDemo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var cf = new CacheFactory();
+            var cache = cf.GetCache(Cache.DefaultCache);
+            
+            var s = cache["sample"] as Sample;
+            Console.WriteLine(s == null);
+ 
+            s = new Sample() {Test = "Hello World"};
+            cache.Put("sample", s);
+ 
+            s = cache["sample"] as Sample;
+            Console.WriteLine(s == null);
+ 
+            Console.WriteLine(s != null ? s.Test : "I am null"); 
+            Console.ReadLine();
+        }
+    }
+ 
+    [Serializable]
+    public class Sample
+    {
+        public string Test { get; set; }
+    }
+}
+</code></pre>
+
+In the code above, we create a new instance of the CacheFactory and then get a reference to the default cache. From there, it should look very similar to using the HttpCache with one exception, cache.Put. Similar to "Memecached":http://www.danga.com/memcached/, Velocity supports the concept of Add's and Put's. The biggest difference between the two is Add will throw an exception if the given key already exists. If you use Put and the key does not exist, the object will be added. On the other hand, if the key already exists, Put will replace the object with he newer one.
+
+There is a lot more to Velocity than what I covered above. Just browsing the API there appears to be options for locking and versioning objects as well. As I previously mentioned, I am "on the fence":http://scottw.com/code/velocity/ if this is a good thing, especially for the types of sites and applications I tend to build. But if you need this kind of object management, Velocity might fit the bill for you.
+
+Feel free to leave a comment if I missed a step or you need more clarification.

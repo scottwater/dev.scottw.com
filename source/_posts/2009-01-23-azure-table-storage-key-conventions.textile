@@ -1,0 +1,46 @@
+---
+layout: post
+title: "Azure Table Storage Key Conventions"
+date: 2009-01-23 20:28
+comments: false
+---
+
+This one could be a simple misunderstanding on my part, but it tripped me up for a couple of hours this week, so I thought I would write it up and possibly save some others time and pain.
+
+When using local storage, you cannot generate your Azure tables at runtime. Instead you must use the command line tool DevTableGen or select "Create Test Storage Tables" while right clicking on your cloud configuration project (note: this option simply executes the command line tool for you).
+
+This is simple enough. Where I ran into problems was correctly indicating to DevTableGen which objects in my model where in fact tables. According to the documentation:
+
+bq.    To generate a database table for use with development storage, construct a class that models the desired schema. The DevTableGen tool reflects over the given set of assemblies for properties of type IQueryable&lt;C&gt; on classes derived from the DataServiceContext class, where C is the class that models your table schema. The class C (or a base class of C) must specify the [DataServiceKey("PartitionKey", "RowKey")] attribute. The DevTableGen tool creates a table with a schema corresponding to the properties defined for class C.
+
+Where I ran into a problem and I suspect others may get tripped up is in the DataServiceKey attribute definition. When you add the attribute to your class, it allows you to specify an array of names. I was mistakenly assuming that the key could be made of up any two columns I specified, so I had an object which looked (roughly) like this:
+
+<pre><code class="csharp">
+[DataServiceKey("UserName", "DemoId")]
+public class AzureDemoObject
+{
+    public string UserName { get; set; }
+    public string DemoId { get; set; }
+ 
+    //other properties
+}
+</code></pre>
+
+
+However, through a bit of trial and error, I have (for better or worse) learned that not only does the DataAServiceKey need to contain two property names, they actually have to be "PartitionKey and RowKey":http://www.25hoursaday.com/weblog/2009/01/07/SomeThoughtsOnChoosingPartitionKeysInWindowsAzuresTableStorage.aspx.
+
+<pre><code class="csharp">
+[DataServiceKey("PartitionKey", "RowKey")]
+public class AzureDemoObject
+{
+    public string PartitionKey { get; set; }
+    public string RowKey { get; set; }
+ 
+    //other properties
+}
+</code></pre>
+
+
+On one hand, this seems a bit messy to me, but with the help of an extension method or two, more meaningful names can be used instead of PartitionKey and RowKey. In addition, I do have to love the convention over configuration.
+
+Finally, to make this even easier, there is a simple object called TableStorageEntity in the StorageClient API you can derive your entities from.

@@ -1,0 +1,31 @@
+---
+layout: post
+title: "New To Me - Haml Tips"
+date: 2010-10-08 17:03
+comments: false
+---
+
+I have been trying to get into the habit of writing down a quick note when I learn (or figure out) something new in software.
+
+Not sure if it will stick, but I figure once I get a couple similar notes, I will put them in a blog post. So without further ado, here are a couple of Haml things which are at least _new to me_. 
+
+1. Using "~ instead of =":http://haml-lang.com/docs/yardoc/file.HAML_REFERENCE.html#tilde. Haml goes to rather great lengths to ensure the markup generated is pristine. In my blog re-build, I was running into some weird formatting issues related to displaying source code within PRE and CODE tags. Switching to ~ tells Haml to stop worrying about tracking/managing whitespace (indentation) and simply render the content. 
+
+<pre><code>
+%section.content
+  ~@post.body
+</code></pre>  
+
+This is particularly helpful in regards to outputting readable source code in HTML.
+
+2. HTML5 and XML - The most recent versions of Haml have excellent support for generating Html5 markup. To keep things simple in my blog, I am generating my Atom feed via a Haml template. Html5, unlike XHTML does not require all tags to have a corresponding closing tag. This potentially leads to invalid XML to be generated. Haml actually has a built feature '/' which you can append to any tag to force it to be closed. However, since Html5 does not require this, Haml ignores the option[1]. To work around this, I simply I simply changed the format for the atom feed to XHTML. 
+
+<pre><code class="ruby">set :haml, {:format => :xhtml}</code></pre>
+
+3. Filters - I was aware of Haml's support for wrapping JavaScript using the following syntax. 
+
+<pre><code>:javascript</code></pre>
+
+Using this, simply outputs the content below it in proper JavaScript tags. What I did not know (or understand) is all the other available "filters":http://haml-lang.com/docs/yardoc/file.HAML_REFERENCE.html#filters. You can use the same approach to inline things like textile, markdown, and even plain text. This makes it much simpler to inline other forms of content directly into your views without the need to translate it to Haml.
+
+fn1. I am mixed on whether this is good or bad, but assuming it is consistent, I certainly can live with it.

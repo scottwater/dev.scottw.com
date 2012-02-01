@@ -1,0 +1,10 @@
+---
+layout: post
+title: "Free Graffiti Themes"
+date: 2008-08-11 19:34
+comments: false
+---
+
+"Dana Coffey":http://crazeegeekchick.com/ has been posting some nice looking "free Graffiti CMS blog themes":http://crazeegeekchick.com/graffiti-cms/free-themes/.
+
+bq. I've converted a few free Wordpress themes for use in Graffiti CMS.  I'm offering them here for download.  Note, that I left the original designer's credit in the footer of each.  Please leave those credits in tact if you use the themes.  I'd love it if you'd place a link back to my site as well in the footer, but I won't yell if you choose not to do so.

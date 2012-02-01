@@ -1,0 +1,24 @@
+---
+layout: post
+title: "My MBP &ndash; Bye Bye Luster"
+date: 2008-08-27 14:44
+comments: false
+---
+
+I have been using "my MBP":http://scottw.com/technology/greener-grass/ for work and play for about 9 months. While it is still a technical work of art, the luster is starting to where off.
+
+While I still love my Mac for consumer (web, photos, videos) tasks and highly enjoy many available applications ("EverNote":http://evernote.com/, "Skitch":http://skitch.com, "1Password":http://1passwd.com/, "Textmate":http://macromates.com/, "Fusion":http://www.vmware.com/products/fusion/) everyday the urge to go back to a PC increases (especially considering Dell's recent releases [1]).
+
+This is not a definitive list, but here are some of my biggest gripes:
+
+* *Office* - Mac Office, especially Entourage, is a joke. In all fairness, I am not sure you can blame Apple for this one. However, since there are no viable alternatives it is what it is. I don't think there is much incentive for Apple and Microsoft to solve this problem, but if you need to work with Exchange and have spent years working in Office for Windows you will find yourself very frustrated.
+* *Size* - 5 pounds for a 15.4 inch laptop is great, but I would really prefer something with the MBP power in a 12 to 14 inch case (in other words, no the Air will not fit the bill).
+* *Battery* - I am lucky to get 3 hours on OS X and when I boot into Vista I don't think I am getting an hour. Again, not sure if the latter is an Apple or Microsoft issue, but it is still annoying. Dell just recently announced Latitudes (with extension) can get 19 hours. Even if it only gets 10, can you imagine taking your laptop home for the night or on an overnight business trip without needing a power cord?
+* *Display* - For a visual company, 1440 x 900 is silly. I bought an Inspiron seven years ago which had a resolution of 1600x1200. I know I can use an external display, but lets get with the time.
+* *Effort* - this is the hardest one to explain and measure, but in a nutshell, I simply find myself working harder through out the day to do things that would be easier on a PC. Again, probably not Apple's fault, but it does start to where on you after a while.
+
+h3. What's Next?
+
+Although the battery is dreadful, "Vista x64 SP1 has been very solid to use":http://scottw.com/software/mbp-64bit-vista/ via "Boot Camp":http://www.apple.com/macosx/features/bootcamp.html. As I mentioned before, I still love the consumer side of things, so I won't be abandoning OS X anytime soon, but I do see myself picking up a Latitude for business use in future and acquiring a MacBook or iMac for non-work tasks.
+
+fn1. Disclaimer: Dell is a client of "Telligent":http://telligent.com.

@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Are Trackbacks (still) Worth It?"
+date: 2007-11-24 22:22
+comments: false
+---
+
+"Blog Herald":http://www.blogherald.com has an interesting post, ""Have Trackbacks Become Too Spammy To Be Worthwhile?":http://www.blogherald.com/2007/11/24/have-trackbacks-become-too-spammy-to-be-worthwhile/"
+
+bq. You may have also discovered a surge in trackback spam recently as autoblogging software is being used by more and more spammers to reach out and cull RSS feeds.  This phenomenon has led to many disabling trackbacks, or raising the "blacklist" level so high that you might never see some trackbacks again.
+
+I am personally on the fence on this one. Trackbacks have a ton of potential to connect content, users, and blogs but over the last 12 months or so I find them becoming much less useful and the valid trackback to spam ratio has been increasing at a very fast rate.
+
+Initially, we were not going to support trackbacks in Graffiti because of decreased usefulness. However, since they are such a popular feature, we have put them on the beta 2 feature list. (note: They will be implemented as a plugin, so they can be easily disabled or enabled.)
+
+I am starting to wonder if we should just scrap the idea. What do you think? Are trackbacks still worth the effort?

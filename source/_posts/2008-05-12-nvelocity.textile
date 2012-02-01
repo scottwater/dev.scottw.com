@@ -1,0 +1,57 @@
+---
+layout: post
+title: "Simplifying ASP.Net - NVelocity"
+date: 2008-05-12 20:53
+comments: false
+---
+
+"NVelocity":http://www.castleproject.org/others/nvelocity/index.html[1] is a .NET port of the "Velocity":http://velocity.apache.org/engine/releases/velocity-1.5/index.html open source template engine. I have used NVelocity quite a few times over the last couple of years.
+
+* "CSBTL":http://scottw.com/blog/pages/csbtl/ - this project never went public, but basically it removed the need to understand web forums and complicated server controls for building Community Server blog themes.
+* "Graffiti":http://graffiticms.com/ - Graffiti supports a very simple theming model which enables building new themes with no knowledge of web forms and/or ASP.Net
+
+While you have more options using aspx pages, I generally prefer the simplicity of doing web pages via NVelocity. There are no complicated server controls, complete control over the markup, simple extensibility, and no need to jump between contexts when iterating over a list.
+
+With this in mind, I was very happy to find the NVelocityViewFactory as part of the "MvcContrib project":http://www.codeplex.com/MVCContrib. With just a couple configuration steps, I was able to use NVelocity views for my ASP.Net MVC projects. Sweetness!
+
+For example, "Phil Haack":http://haacked.com/, has a post which discusses options to doing a "simple repeater":http://haacked.com/archive/2008/05/03/code-based-repeater-for-asp.net-mvc.aspx. This could be greatly simplified with NVelocity (see below). No code needs to be written, no context switching for properties, etc.
+
+<pre><code class="html">
+<table>
+#foreach($hobby in $hobbies)
+  <tr class="#if($velocityCount % 2 == 0)row #else alt-row #end">
+    <td>$hobby.Title</td>
+  </tr>
+#end
+</table>
+</code></pre>
+
+
+In addition, using _"fancy loops":http://www.castleproject.org/others/nvelocity/improvements.html#fancyloops_ we could easily add content to be shown if it is empty and better structure our markup.
+
+<pre><code class="html">
+#foreach($hobby in $hobbies)
+#beforeall
+    <table>
+#before
+    <tr class=
+#even
+    "row">
+#odd 
+    "alt-row">
+#each  
+  <td>$hobby.Title</td>
+ 
+#after
+    </tr>
+#afterall
+    </table>
+#nodata
+    <h3>Sorry, no hobbies</h3>
+#end
+</code></pre>
+
+
+The above example takes it to the extreme (all parts are optional), but should give you an indication of power available to you, again, all without requiring you to write a single line of code.
+
+fn1. _As mentioned on the Castle site, the original NVelocity project seems to be dead. I have been using the updated version of Castle and recommend you use this version as well._

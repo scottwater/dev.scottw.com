@@ -1,0 +1,24 @@
+---
+layout: post
+title: "Laws Of Simplicity"
+date: 2007-05-25 17:40
+comments: false
+---
+
+I just finished John Maeda's "Laws of Simplicity":http://lawsofsimplicity.com/. It was an excellent read.
+
+Similar to many of the other books I like, it is much more thought provoking that a how to guide. One of benefits to book is it provides you with a vocabulary in which to speak about simplicity via "the 10 laws":http://lawsofsimplicity.com/category/laws?order=ASC.
+
+Too often software development it is a blanket statement for not including features; which is a shame. Heidi Adkisson brings up an excellent point that "people buy features":http://www.iathink.com/2006/12/features_sell_p.html not simplicity. That of course does not mean simplicity is not important.
+
+Users want to feel empowered by software. They want something they can own, they want "to love it":http://headrush.typepad.com/creating_passionate_users/2006/11/two_simple_word.html. Including the features users want and still keeping it simple is harder than it sounds, especially if you are trying to do this for an existing application.
+
+I now try to keep the following questions in mind anytime I begin to write some code or review a new (or existing) feature:
+
+* Will all users need this feature? If not, can it be hidden by default and easily surfaced when needed?
+* Are there smarter choices you can make for your users?
+* Can you make it easier to use this functionality out of the box?
+* Can you remove the need for a manual?
+* Are there steps you push users through where they almost never make the selection?
+
+Simplicity is a process. It is something which should be discussed during all phases of your development process.

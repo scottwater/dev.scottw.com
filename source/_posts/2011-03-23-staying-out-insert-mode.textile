@@ -1,0 +1,11 @@
+---
+layout: post
+title: "Staying Out of Insert Mode"
+date: 2011-03-23 02:35
+comments: false
+title_url: http://cloudhead.io/2010/04/24/staying-the-hell-out-of-insert-mode/
+---
+
+bq. Insert mode is vi’s weakest mode. In this mode, it’s no better than any other editor, and you may as well be using any other editor. Vi’s true power lies in its ‘Normal mode’. Yes, inserting text is not normal in vi-land. The more time you spend in Normal mode, the more super-powers you will have.
+
+I am getting better daily at avoiding insert mode. The area I struggle most is with simple spacing, especially line breaks. 

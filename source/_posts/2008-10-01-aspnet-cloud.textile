@@ -1,0 +1,20 @@
+---
+layout: post
+title: "ASP.Net via Amazon in the Cloud"
+date: 2008-10-01 15:23
+comments: false
+---
+
+I have been investing some options for leveraging "ASP.Net in the cloud":http://www.microsoftstartupzone.com/blogs/the_next_big_thing/archive/2008/09/29/microsoft-pdc-windows-7-cloud-computing-live-mesh-and-more.aspx.
+
+Today I received an email from Amazon that made me do a double take:
+
+bq. Dear Amazon Web Services Developer,
+
+bq. We are excited to let you know that Amazon Elastic Compute Cloud (Amazon EC2) will offer you the ability to run Microsoft Windows Server or Microsoft SQL Server starting later this Fall. Today, you can choose from a variety of Unix-based operating systems, and soon you will be able to configure your instances to run the Windows Server operating system. In addition, you will be able to use SQL Server as another option within Amazon EC2 for running relational databases.
+
+bq. Amazon EC2 running Windows Server or SQL Server provides an ideal environment for deploying ASP.NET web sites, high performance computing clusters, media transcoding solutions, and many other Windows-based applications. By choosing Amazon EC2 as the deployment environment for your Windows-based applications, you will be able to take advantage of Amazons proven scalability and reliability, as well as the cost-effective, pay-as-you-go pricing model offered by Amazon Web Services.
+
+bq. Our goal is to support any and all of the programming models, operating systems and database servers that you need for building applications on our cloud computing platform. The ability to run a Windows environment within Amazon EC2 has been one of our most requested features, and we are excited to be able to provide this capability. We are currently operating a private beta of Amazon EC2 running Windows Server and SQL Server. Please go to "aws.amazon.com/windows":http://www.amazon.com/gp/r.html?R=2TUBHRLI6A119&amp;C=2DPDW4ZRMX2V4&amp;H=DJLnAdq7xcXvKAQlLmd8IC1LPf4A&amp;T=C&amp;U=http%3A%2F%2Faws.amazon.com%2Fwindows if you are interested in being notified later this Fall when the offering is released broadly.
+
+Things in the ASP.Net cloud world just got a whole lot more interesting. I am really looking forward to seeing what options will be available from Microsoft and Amazon over the next couple of months.

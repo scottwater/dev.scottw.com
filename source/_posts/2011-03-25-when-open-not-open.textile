@@ -1,0 +1,17 @@
+---
+layout: post
+title: "When Open is not Open"
+date: 2011-03-25 13:45
+comments: false
+title_url: http://www.theregister.co.uk/2011/03/24/google_will_not_open_source_android_honeycomb_on_release_of_first_devices/
+---
+
+Sadly, I kind of thought of Android's openness as its only unique and interesting feature. 
+
+bq. Android 3.0, Honeycomb, was designed from the ground up for devices with larger screen sizes and improves on Android favorites such as widgets, multi-tasking, browsing, notifications and customization," a company spokesman told us. "While we’re excited to offer these new features to Android tablets, we have more work to do before we can deliver them to other device types including phones. Until then, we’ve decided not to release Honeycomb to open source.
+
+Even better, one of the driving reasons to not release the source is they made too many compromises in the code. 
+
+bq. We didn't want to think about what it would take for the same software to run on phones. It would have required a lot of additional resources and extended our schedule beyond what we thought was reasonable. So we took a shortcut.
+
+Those "short cuts" never end well. 

@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Competing with Wordpress"
+date: 2007-12-27 20:54
+comments: false
+---
+
+"Jason Burns":http://www.philoking.com/jason-burns/"wrote an interesting post,  "_What does Wordpress have in common with Microsoft Windows? Marketshare_":http://www.philoking.com/2007/12/27/what-does-wordpress-have-in-common-with-microsoft-windows-marketshare/
+
+bq. If you equate Wordpress to Windows, Users to Blogs and Themes to Software...you have exactly why Windows maintains it's strangle hold on the marketplace. You also have the same reason I wouldn't consider switching to another platform, let alone a new one.
+
+I do not disagree with Jason's statement. Anytime you have a clear market leader, it is a huge uphill battle. However, there are a couple of things to keep in mind:
+
+# Software, more than ever, is not a zero-sum game. There is room for other other players, even in a dominant market. Skimming through Jason's blog, I see quite a few posts about Apple/Mac. There are million of happy Apple customers (I am on "one of them":http://scottw.com/technology/greener-grass/) even though Microsoft is the dominant player.
+# Only geeks care about PHP vs. .NET. They of course have the power to influence friends/family, but if you ask the average user which them prefer, they will shrug their shoulders and go with what's easier. I have never had to install Wordpress myself, but I do not believe you will find an easier web application to install. BTW, we will have "Mono":http://www.mono-project.com/Main_Page, so you could potentially run Graffiti on something other than Windows.
+# We are not trying to create YABP (yet another blogging platform). You can certainly use "Graffiti":http://graffiticms.com/ to create a great blog, but our focus is on enabling easy content management and doing all the important things like SEO for you right of of the box. It was likely one of our ads which caught Jason's attention, but blogging is just a small piece of what you can with Graffiti and that will be even more apparent in V2.
+
+Again, to be clear, Jason's points about the magnitude of taking on something like Wordpress are spot on. I am very biased, so you can take it with grain of salt, but I would not call it game over yet.

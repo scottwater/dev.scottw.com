@@ -1,0 +1,11 @@
+---
+layout: post
+title: "Blasphemy & Revelation"
+date: 2011-03-31 14:14
+comments: false
+title_url: http://mixergy.com/david-heinemeier-hansson-37signals-intervie/
+---
+
+A really great Mixergy interview with David Heinemeier Hansson. 
+
+It is rather long (60 minutes), but well worth the time. 

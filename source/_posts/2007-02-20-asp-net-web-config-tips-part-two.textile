@@ -1,0 +1,103 @@
+---
+layout: post
+title: "ASP.Net Quick Tips - Web.config"
+date: 2007-02-20 13:06
+comments: false
+---
+
+The first round of "ASP.Net Quick Tips":http://scottw.com/archive/quick-tips-for-asp-net-part-one/ was very successful. I have about 30 or so tips jotted down, but I am always looking for more. I am leaning towards doing them by theme/topic with state management/cache, data access, web controls, accessibility/standards, and tips from around the web are in the queue. But as the title suggests, today is all about the web.config.
+
+Tip: *(#debug)Set debug = "false" before you go to production. *
+
+This really is not a tip, it is a must. NEVER go to production with debug purposely set to true.
+
+&lt;compilation defaultLanguage="c#" *debug="false"* /&gt;
+
+"As ScottGu points out":http://weblogs.asp.net/scottgu/archive/2006/04/11/Don_1920_t-run-production-ASP.NET-Applications-with-debug_3D001D20_true_1D20_-enabled.aspx (click through for a lot information on the topic)
+
+
+# The compilation of ASP.NET pages takes longer (since some batch optimizations are disabled) 
+# Code can execute slower (since some additional debug paths are enabled) 
+# Much more memory is used within the application at runtime 
+# Scripts and images downloaded from the WebResources.axd handler are not cached
+
+Tip: *(#mediumtrust)If you do not control your production environment, set your trust level to medium.*
+
+&lt;trust level = "Medium" /&gt;
+
+More and more ISP's and server administrators are setting the ASP.Net trust level to medium. There are quite a few things you cannot do in ASP.Net while using _Medium Trust_. In most cases, you can work around this, but it is better to know while you are writing the code than when a customer sends you an error message that simply states their was a security exception. (In addition, the term security exception generally freaks them out).
+
+One of the hardest tasks we ever had to complete on "Community Server":http://communityserver.org was to get it to function properly under Medium trust after we had written a substantial amount of code. Our checked in web.config now has the trust level set to medium which makes these issues very apparent as soon as they are created.
+
+_Note: By far, the most frequent case of medium trust issues is external HttpRequests. Under medium trust it is not possible to make an external HttpRequest without changes to your local policy or "via a proxy":http://weblogs.asp.net/hosterposter/archive/2006/03/22/440886.aspx. For Community Server, we recommend you use a proxy which is supported out of the box. Because of these extra configurations steps, out of the box, the Community Server web.config does not force medium trust._
+
+Tip: *(#session)Disable session state when not in use.*
+
+&lt;sessionState mode="Off" /&gt;
+
+I will not get into the virtues/issues with session, but needless to say, most applications can be written to not use it (we make no use of session in "Community Server":http://communityserver.org). If you are not using it, turn it off. The overhead is minor, but it is something that happens on every request.
+
+Tip: *(#viewstate-disable)Disable ViewState*
+
+&lt;pages enableViewState="false" /&gt;
+
+The usage of view state is way overrated. You almost never need it and even in times when you think you need it, you really do not need it. Viewstate is a wonderful concept but it also leads it self to huge unnecessary page requests. The common way it is abused is on databound controls (Repeater, DataList, DataView, and DataGrid). These controls are loaded on the initial page load. Something on the page requires a postback (either the databound control) or another form item. Instead of rebinding the controls, data stored in the ViewState is used.
+
+When possible:
+
+* If the data is useful to more than one user, consider using the Cache API. This will save you multiple trips to the database and not force a heavy payload on the users
+* If the data is not used by more than one user and does not require significant data processing, consider simply re-fetching the data from the database.
+
+If you later find you simply cannot proceed without view state enabled, you can do so on a page by page basis:
+
+&lt;%@ Page Language="C#" EnableViewState="True" %&gt;
+
+Or is can be done per control:
+
+&lt;asp:DataView enableViewState = "true" ...
+
+Finally, keep in mind that controls like the TextBox do *NOT* need view state enabled to maintain their state.
+
+Tip: *(#servercontrols)Declare your Custom Server Controls*
+
+Declaring your custom server controls in the web.config allows you to skip the step of adding a _Register_ directive at the top of any page which uses the controls. In addition, it adds a bit of consistency since the _TagPrefix_ is always the same.
+
+!http://scottwstatic.appspot.com/images/wlw/ASP.NetQuickTipsWeb.config_6CE7/servercontrols_thumb.png!:http://scottw.com/images/wlw/ASP.NetQuickTipsWeb.config_6CE7/servercontrols%5B2%5D.png 
+
+You can also do this for server controls defined in a web project, but you will need to explicitly set a namespace.
+
+_Note: Hat tip to _"_Lance Hunt_":http://weblogs.asp.net/lhunt_ who reminded me to use this tip._
+
+Tip: *(#usercontrols)Declare your User Controls*
+
+This tip is very similar to the custom server controls except for a slightly different syntax.
+
+!http://scottwstatic.appspot.com/images/wlw/ASP.NetQuickTipsWeb.config_6CE7/usercontrols_thumb.png!
+
+Tip: *(#configSource)Know when to use configSource attribute*
+
+The configSource attribute lets you move entire sections of your web.config to another file.
+
+&lt;connectionStrings configSource="connectionStrings.config" /&gt;
+
+There are two main reasons for using this feature:
+
+
+# It lets you isolate locally changeable sections which can make source code management easier. As an example, most of the core Community Sever development team works remotely. We do not use a shared database so everyone's local database configuration/connectionstring is a little different. We chose to move our connectionstrings to a separate file which makes it very easy to skip during a checkin/merge.
+# It just makes the web.config easier to read. It is very easy (especially with the new membership features) for your web.config to be quite long. As wonderful as XML is as a feature, it is still a PITA to read. Using configSource allows you to break it up into many smaller more readable chunks.
+
+_Note: In my experience, ASP.Net generally does not reload the external configuration sections when they are modified. You will usually need to "touch" the web.config to see your changes propagated. _
+
+Tip: *(#ashx)Use ASHX files for HttpHandlers*
+
+Instead of configuring a path and type in the HttpHandlers section, simply add an ASHX file and use it instead. ASHX files have existed since ASP.Net 1.0, but were rarely used since inline intellisence was not available until Visual Studio 2005.
+
+There are still times when you need to use the web.config method (a single handler for multiple paths, a different handler by verb, etc), but in most cases such as serving RSS or handling images you can very easily use the ASHX file.
+
+In addition, you do not have to put the code inline. You can still place your handler code in a compiled assembly and then use ASHX file to wire it up. This makes it much easier to move a file around, use a rewriting engine like "UrlRewriter.Net":http://urlrewriter.net/, or even an "Isapi Filter":http://scottw.com/tags#isapi-filters/ since your web.config does not have to be changed when path is updated. We use this approach quite a bit in Community Server.
+
+&lt;%@ WebHandler Language="C#" Class="CommunityServer.Blogs.Components.WeblogRssHandler" %&gt;
+
+*Note*: If you are still use sure about HttpHandlers see these posts by _"Brad Wilson":http://www.dotnetdevs.com/articles/IntroToHandlers.aspx_ and _"Karl Seguin":http://codebetter.com/blogs/karlseguin/archive/2006/05/24/145397.aspx_.
+
+If you have any additional web.config tips, please add a comment below. Also feel free to ping me at "scottwater@gmail.com":mailto:scottwater@gmail.com with any other tips you would like to see included in the next addition.

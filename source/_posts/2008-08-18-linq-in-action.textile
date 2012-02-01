@@ -1,0 +1,12 @@
+---
+layout: post
+title: "LINQ in Action"
+date: 2008-08-18 15:53
+comments: false
+---
+
+I read (and thoroughly enjoyed) "LINQ in Action":http://www.amazon.com/LINQ-Action-Fabrice-Marguerie/dp/1933988169 a couple of months ago and find myself constantly referring back to it.
+
+Most people seem to immediately assume that LINQ is just LINQ to SQL, which means they either immediately love it or hate it. This is a shame because LINQ is so much more and regardless of your thoughts on LINQ to SQL, LINQ is a tool that once understood will change how you write code (in a very good way).
+
+If you have not had a chance to really experiment with LINQ yet, I highly recommend checking out LINQ in Action ("Official book site":http://linqinaction.net/).

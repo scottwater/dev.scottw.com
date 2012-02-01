@@ -1,0 +1,27 @@
+---
+layout: post
+title: "What is OpenCraftBeer?"
+date: 2011-01-03 15:20
+comments: false
+---
+
+A couple of weeks ago, I started a new **open blog** called "OpenCraftBeer":http://opencraftbeer.com. 
+
+What I mean by open is that anyone can contribute to it. Think of it as a craft beer wiki that is tightly moderated to prevent spam. 
+
+Most user submissions will be simple beer reviews, but any kind of content which craft beer drinkers would find helpful is welcomed. 
+
+So if you like great beer (and really, who doesn't?), please check out one or more of the following links: 
+
+* "OpenCraftBeer":http://opencraftbeer.com
+* "OpenCraftBeer RSS Feed":http://feeds.opencraftbeer.com/opencraftbeer
+* "OpenCraftBeer on Twitter":http://twitter.com/opencraftbeer
+* "OpenCraftBeer on Facebook":http://j.mp/FBOCB
+
+Finally, if you have anything to contribute, just send an email to review@opencraftbeer.com.
+
+**UPDATE**
+
+The review@opencraftbeer.com address should contain the exact content you wish to publish (all content is reviewed first).
+
+If you have any comments or questions about the site, please email me directly at scottwater@gmail.com.

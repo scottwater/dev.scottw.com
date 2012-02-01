@@ -1,0 +1,25 @@
+---
+layout: post
+title: "Now Running on Ruby 1.9.2 and More!"
+date: 2011-03-07 13:58
+comments: false
+---
+
+I completed upgrading this site to Ruby 1.9.2. A couple of interesting things to mention and share. 
+
+* While I was at it, I upgraded to "Sinatra 1.2":http://www.sinatrarb.com/2011/03/03/sinatra-1.2.0.html. Sinatra just keeps getting better. The latest release adds some really interesting features. In particular there is now support for the Slim view engine and the option to mix and match view and layout rendering engines.
+* Migrated from "Haml":http://haml-lang.com/ to "Slim":http://slim-lang.com/. Slim is more light weight and minimalistic than Haml (as well as performs better in benchmark testing). For this site and many other happy Haml sites migrating won't get you much. However, I am considering using Slim for my next project it was good dry run. See some Slim tips and gotchas below. 
+* I recommended not using $: << '.' in my post on "moving to 1.9.2":http://scottw.com/ruby-1-9-2-load. Unfortunately, I had to enable it when I pushed my site to heroku because it was not resolving the local paths correctly. I am going to reach out to heroku and see if I can better understand what is happening here. 
+
+If you are interested, you can "grab all the source":https://github.com/scottwater/ameba over on the githubs. 
+
+h3. Slim gotchas, thoughts, and tips. 
+
+* While it is supposed to be more forgiving on inconsistent indentation, I kept tripping over it. I am hoping this was related to autoconverting from Haml to Slim. If not, I don't know if I will stick with slim (this was never a problems for me with Haml).
+* Once I got moving Slim really flows. It probably helps that I was already comfortable with Haml, but it just "feels" good to use. 
+* In particular, attributes feel much clearer and simpler. 
+* While I love erroring on the side of security and safety, I think Slim takes escaping too far. You even have to tell it to not escape all the output in your child views. 
+* Speaking of escaping, the github page mentioned being able to disable inline escaping on ruby interpretations using \#{code_here}. However, it now appears you now need to use the following format #{{code_here}}
+* There were a couple of places where I could not get inline code to work properly in my view (especially on attriubtes). However, in just about every case these should have been helper methods anyway. Constraints are good. :)
+* I am still using a regular view engine for my atom feed. This is probably the wrong approach, but it works and keeps things relatively simple. I kept running into an issue setting the directive as XML in my view until I told Slim to render XHMTL instead of HTML (set :slim, {:format => :xhtml}). I had to do something similar with Haml, so at least it is consistent. 
+* I did zero perf testing, so please don't ask. 

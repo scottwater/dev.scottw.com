@@ -1,0 +1,23 @@
+---
+layout: post
+title: "Dropbox"
+date: 2008-07-18 13:54
+comments: false
+---
+
+!http://scottwstatic.appspot.com/images/wlw/Dropbox_8B6B/dropbox_b42f2bf2-3b8a-4515-bbc9-e7d041cf7b39.png(dropbox)!:https://www.getdropbox.com/
+
+"Dropbox":https://www.getdropbox.com/ is a super simple way to share files across multiple computers (PC or Mac) as well as with friends and family.
+
+It does a couple of things I really like:
+
+# It is accessible both on your "desktop and the web":http://scottw.com/software/cloudtop/
+# Has a built in photo gallery tool which makes sharing a bunch of pictures as easy as dragging and dropping them to a folder.
+# Supports easily sending links of files
+# It is beyond easy to use
+
+Some people don't like the idea that doesn't auto-sync directories, but I find that type of synchronization to the be job of another tool.
+
+Dropbox is still in a private beta, but does offer 2 gigs of storage for free.
+
+I have 5 more invites I can hand out for the service. If you are interested, please leave a comment with the name of the last non-Fiction book you read and would recommend to others. I will send the invite to the email you leave with the comment.

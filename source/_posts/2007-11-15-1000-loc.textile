@@ -1,0 +1,18 @@
+---
+layout: post
+title: "1000 Lines Of Code"
+date: 2007-11-15 02:57
+comments: false
+---
+
+I have a new theory on development, if you cannot build an interesting working version of an application in less than 1000 lines of code, you are likely over complicating things.
+
+What has now become "Graffiti":http://graffiticms.com is actually attempt number three at building CMS type application that was both functional and interesting. The first two attempts were not bad. The code was good and and the ideas/concepts had merit, but in the end we scrapped them because they just did not feel right. We knew this was a market we wanted to be in, we just did not have the right idea yet.
+
+I was in Zurich, Switzerland in June visiting family I started jotting down some ideas about what I thought I would like to see in a CMS and challenged myself do something interesting with idea in less than 1000 lines of code. The number 1000 is arbitrary, but it kept me super focused on the goal and it is something I will very likely continue to use in the future.
+
+This might seem limiting. But with the number of open source libraries and code floating around you can usually find reusable pieces that will at least get you up and running quickly. Graffiti itself leverages "NVelocity":http://www.castleproject.org/others/nvelocity/improvements.html, "Lucene.Net":http://incubator.apache.org/lucene.net/, "RssToolKit":http://www.codeplex.com/ASPNETRSSToolkit, and "Prototype":http://prototypejs.org/. There were others we used, like "SubSonic":http://subsonicproject.com/ [1] and "Script.aculo.us":http://script.aculo.us/ which we used to get us up and running, but later replaced with something that fit the project's goals better.
+
+Graffiti has since surpassed the 1000 lines of code mark and there have been contributions from many other people, but I think the spirit of focusing only on what is absolutely vital still lives on.
+
+fn1. I still *love* SubSonic. Without a doubt, SubSonic was extremely instrumental with getting the initial version up and running. The reason we removed it was our desire to support an xcopy database in addition to SQL Server and it just proved to be easier to write our own custom generator than to make this happen under our timeline.

@@ -1,0 +1,34 @@
+---
+layout: post
+title: "Unfuddle == BaseCamp For Developers"
+date: 2007-10-23 19:48
+comments: false
+---
+
+As part of our "mini phone-meme":http://scottw.com/life/what-s-on-my-phone/, "Kevin Fricovsky":http://scribesonic.com/Blog/ posted "a note about Unfuddle":http://scribesonic.com/Blog/Archive/2007/10/15/What's-not-on-my-Phone.aspx
+
+bq.  Unfuddle is great web app for project management. Think BaseCamp but for developers. It has everything from source control (SVN) to time tracking, milestones, tickets, uploading files, calendars, etc. Everything you need to run a successful development project. Hmm...you may be able to get this on your iPhone actually ;)
+
+We have been using "BaseCamp":http://basecamphq.com/ to manage "Graffiti":http://graffiticms.com/ and a couple of other projects. While it has worked really well, when it came down to assigning and managing tasks, BaseCamp's to-do feature felt a little light when the team expanded to more than just me.
+
+Yesterday "Jason":http://jasona.net signed us up for a commercial account. I do not see us making much use of the integrated version control (although SVN does rock!), but so far the rest of the tool has been really helpful.
+
+!http://scottwstatic.appspot.com/images/wlw/UnfuddleBaseCampForDevelopers_DE34/tickets.big_3.jpg(tickets)!
+
+The things I like best so far:
+
+* The "ticket workflow":http://unfuddle.com/page/tour_tickets, especially allowing users to "accept" a ticket. I plan on using this for the full product life cycle which not includes the initial development and bug fixes, but also includes working with the create and marketing teams. Anyone who ships software for a living knows coding is only half the project. Having everyone under one "roof" with accepted schedules/timelines will be a create benefit.
+* Ticket fields. Not to beat on BaseCamp which has been rock solid for me, but the ability to set extra properties on the to-do items, include more detailed descriptions, etc is a very big deal for a software project.
+* Reports - being able to look at the project from multiple custom views is awesome. I can easily see what is critical, who has most on their plate than everyone else, etc. The fact you can customize and save these reports rocks.
+* "Permissions":http://unfuddle.com/page/tour_people - I am on the fence if this is good or bad, but the for now I really like the fine level of control you get when adding new users. Personally I would love to ability to create some general roles which a user could be long to instead of setting options on each individual feature, but as long as my team is less than 10 or so, this will work.
+
+Things which could be better:
+
+* Again, comparing this to BaseCamp, I miss the WhiteBoards. I am pretty sure I am the only one who used them, but I found them a really great way to share a simple spec, publish draft documentation, etc. Since we are building a new CMS tool and have some additional big things to do in this space all is not lost.
+* Ajax. I have no problem with the technology, but it seems to be a little abused on Unfuddle. Every once in a while things slow up a bit and I have had at least one form which did not properly update. If you do not have the proper hardware on the backend, I would rather do a traditional postback and keep things simple.
+* API - there is no API yet, but it looks like one is "on the way":http://unfuddle.com/community/forums/1/topics/49.
+* Simplicity - We really do need the extra fields/etc on tickets, but I do miss the simplicity of just adding a line in BaseCamp.
+
+Overall, I am pretty happy with the move. We have not canceled BaseCamp yet, but if in a month or so if things stay as they are now, I could see us making a complete move and using just Unfuddle.
+
+Finally, for the record, it does work pretty well on the iPhone, although the experience could be better optimized. :)

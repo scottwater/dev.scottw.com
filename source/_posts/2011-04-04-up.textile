@@ -1,0 +1,10 @@
+---
+layout: post
+title: "Was It Up?"
+date: 2011-04-04 20:27
+comments: false
+---
+
+"Was It Up?":http://wasitup.com is a great free (and simple) service for monitoring your site's uptime. I honestly do not understand why there is currently no fee associated with the site. 
+
+If you want quickly and easily know when your site is down, give it a shot.

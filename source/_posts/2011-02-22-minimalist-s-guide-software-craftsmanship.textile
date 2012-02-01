@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Minimalist's Guide To Software Craftsmanship"
+date: 2011-02-22 17:01
+comments: false
+---
+
+So well written, this needed much more than a simple retweet on "Twitter":http://twitter.com/scottw
+
+"A minimalist's guide to software craftsmanship":http://blog.majesticseacreature.com/a-minimalists-guide-to-software-craftsmanship
+
+bq. Remember that anything worth doing is worth doing well.
+
+See the "blog post":http://blog.majesticseacreature.com/a-minimalists-guide-to-software-craftsmanship for more details. 

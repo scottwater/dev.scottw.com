@@ -1,0 +1,50 @@
+---
+layout: post
+title: "Dynamics and MongoDB Revisited"
+date: 2010-04-22 14:03
+comments: false
+---
+
+A couple of months ago I wrote about wiring up "C# 4.0 dynamics with MongoDB":http://scottw.com/code/mongodb-dynamics. At the time, I opened up the "MongoDB-CSharp":http://github.com/samus/mongodb-csharp library and modified a bit of the code.
+
+For obvious reasons this was not a good long term solution. In what appeared to be moment of clarity a couple of days ago, I decided to try to use extension methods and add dynamics on top of MongoDB-CSharp. 
+
+To the credit of the MongoDB-CSharp team, getting the basic functionality up and running was very simple. However, in the end it turns out that two compiler hacks (extension methods and dynamics) do not make a right. :)
+
+Once in place, the code to use it looks something like this: 
+
+<pre><code class="csharp">
+using (var m = new Mongo())
+{
+    var db = m["mongocsharp"];
+    
+    //ext method to get our "special" collection
+    var col = db.GetDynoCollection("sample"); 
+    m.Connect();
+
+    //dynamic object to store our data
+    dynamic newDoc = new DynoDocument();
+    newDoc.title = "Dyno Collections";
+    newDoc.slug = "dyno";
+
+    col.Insert(newDoc);
+
+    dynamic query = new DynoDocument(); 
+    query.slug = "dyno"
+    dynamic result = col.FindOne(query);
+    Console.WriteLine(result.title);
+
+    m.Disconnect();
+}
+</code></pre>
+
+While it works, it still feels too awkward to be useful IMO. Normally, this I would just delete something like this, but I am trying to let less code die on my machine, so I published it all as a GitHub gist: "DynoMongo":http://gist.github.com/374418.
+
+After working on this, I have come to the following conclusions:
+
+# MongoDB-CSharp provides adequate flexibility on a schema if I need it in .NET. Mix in Automapper and a helper or two you are all set.
+# "Norm":http://github.com/atheken/NoRM provides more structure if that is a requirementl
+# Dynamics are really just a parlor trick. If I want the flexibility of a dynamic language, using C# is a mistake. 
+# I should probably try to do something similar in IronRuby, but with all the excellent MongoDB Ruby libraries out there, I am not sure it is even worth the thought.
+
+Anyway, if someone feels this is interesting or useful, feel free to grab the gist, "DynoMongo":http://gist.github.com/374418, and run with it.

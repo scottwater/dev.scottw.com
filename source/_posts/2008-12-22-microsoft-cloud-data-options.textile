@@ -1,0 +1,38 @@
+---
+layout: post
+title: "Microsoft Cloud Data Options"
+date: 2008-12-22 12:49
+comments: false
+---
+
+I mentioned previously that there is a lot to the "Microsoft cloud story":http://scottw.com/software/cloud-options/, in particular, around data.
+
+Hopefully, this helps clear some things up.
+
+h3. Core Options
+
+Data storage is provided by two distinct services, "SQL Data Services":http://www.microsoft.com/azure/sql.mspx and "Azure Storage":http://www.microsoft.com/azure/windowsazure.mspx.
+
+h4. SQL Data Services (SDS)
+
+SDS provides a cloud scalable set of web-based services enabling you to store store structured, semi-structured, and unstructured data. With each passing release of SDS you can expect more (where applicable) feature parity with SQL Server proper. Today it provides basic query and crud functions and will hopefully add query aggregates (count, sum, etc) in a release soon.
+
+h4. Azure Storage
+
+Azure storage comes in three flavors; Tables, Blobs, and Queues.
+
+Tables is designed to support a near infinite number of rows. However, unlike SDS they will only provide a very limited API for querying. All records in a table must use a 2 "column" composite key consisting of a _partition key_ and a _row key_. Choosing the proper key extremely important with tables. Azure will store items with the same partition key (close) together. In addition, it will seek to optimize access to hot data by the partition key. Anytime you execute a query without a partition key, a full table scan will be required.
+
+Blobs provide as the name implies, storage for files.
+
+Queues, again as the name implies queues are well...queues. Messages in a queue need to be 8kb or less and (at least during the CTP) any message which exists in the queue for more than 2 weeks will be automatically deleted. The Queue API will ensure that a single message is returned to a single caller for a designated amount of time. If the message is not deleted with in a designated amount of time the message will be re-queued.
+
+h3. What, when, where, why?
+
+* Both options provide blob storage. However, the SDS blob functionality is very simple. Files can be a max of 100mb. On the Azure side of things, files can theoretically be of any size. However, anything over 4mb must be inserted in blocks using the blocklist API. I would expect to see a lot more innovations/options on the Azure side of things.
+
+* If you need to query your data, use multiple sorts, and/or joins, SDS is what you are looking for.
+* If you need to have related objects exist in a list that you may or may not use and in memory ordering/filtering is a viable option, Azure table storage is for you.
+* While these are separate services, I fully expect most applications will leverage both of them (as well as .NET Services).
+* Neither Azure tables or SDS provide query aggregates at the moment (count, sum, etc). These are on the roadmap for SDS and I would expect you will not see them anytime soon in Azure.
+* Queues are built on tables. Not sure why that is helpful, but I found it interesting.

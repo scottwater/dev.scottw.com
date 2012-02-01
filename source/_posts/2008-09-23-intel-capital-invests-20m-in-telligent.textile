@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Intel Capital invests $20M in Telligent"
+date: 2008-09-23 14:11
+comments: false
+---
+
+!http://scottwstatic.appspot.com/images/wlw/IntelCapitalinvests20MinTelligent_552/intel_eefcf2d2-07d5-4789-9372-4aceeb3fd121.png!
+
+Today is the "official announcement":http://telligent.com/news-and-events/news/intel-capital-to-acquire-20-million-stake-in-telligent/ of a very big next step in the life of "Telligent":http://telligent.com.
+
+bq. "Intel Capital":http://www.intel.com/capital/, Intel's global investment organization, today announced an agreement to acquire a $20 million stake in Telligent Systems, makers of social computing solutions and business intelligence tools. Based in Dallas, Telligent will utilize the funds to expand its sales teams and territories, including growth in international markets, as well as increase its marketing and advertising initiatives and product development plans.
+
+I have personally gone back and forth over the last four years on the topic of investment funding. I was never a big fan of taking money simply with the idea of building something big and hoping to make money on small margins. However, as "Rob mentioned":http://grokable.com/telligent/intel-capital-invests-20m-in-telligent/, our market is growing and getting more competitive daily. We have a pretty clear understanding of where we want to go and how we would like to get there. It is time to go all in and play the hand we were dealt (or in our case built).
+
+The market news over the last couple weeks and the still lingering remnants of the .Com bust are hard to overlook, but I am personally really proud of what we built and I am really looking forward to the bigger ride over the next couple of years.

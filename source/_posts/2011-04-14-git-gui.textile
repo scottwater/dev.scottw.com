@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Git GUI"
+date: 2011-04-14 14:38
+comments: false
+---
+
+I still prefer the command line for everyday git tasks. 
+
+However, there are now some really good GUI clients available (for OS X) which I believe make it easier to visualize and understand history of a project and it's changes. 
+
+The ones I have used and like the most: 
+
+* "Tower":http://www.git-tower.com/ Stunningly beautiful and a real joy to use. Costs $59 which feels a bit steep until you really start using it. If you want something polished, this is a great choice (I love the commit details with diffs).
+* "GitBox":http://www.gitboxapp.com/. It costs $39 but can be used for free for up to 3 projects. It works really well, but lacks of Tower polish.
+* "Gitx":http://gitx.frim.nl. Free as in beer and does a great job with the core basics. 
+
+If I make a purchase, it will be for Tower. At this point, I am likely going to hold off since I don't think I will use it enough. 

@@ -1,0 +1,25 @@
+---
+layout: post
+title: "Demo Code Tools"
+date: 2008-04-25 12:55
+comments: false
+---
+
+Did you ever just want to test a quick piece of code? Prove an idea? Or even just wanted to see the name of a property to answer an email/forum/support request? Here are a couple of *free tools* which can make it very easy and convenient.
+
+I have been a long time fan of "Jeff Key's":http://weblogs.asp.net/jkey/default.aspx "Snippet Compiler":http://www.sliver.com/dotnet/SnippetCompiler/. I guess I missed the announcement, but it looks like there was a nice update in December.
+
+!http://scottwstatic.appspot.com/images/wlw/DemoCode_14B05/SnippetCompiler_3.png(SnippetCompiler)!
+
+If you have never used Snippet Compiler, in a nutshell, it gives you the ability to execute and test code without the need to create a dummy VS.Net project. In provides templates, intellisence, managed references, and a near instant start up. As the site says, "_Snippet Compiler compiles snippets_.".
+
+What actually made me thing to check on an update to Snippet Compiler is another similar tool called "LinqPad":http://www.linqpad.net/ (by "Joseph Albahari":http://www.albahari.com/).
+
+!http://scottwstatic.appspot.com/images/wlw/DemoCode_14B05/LinqPad_3.png!
+
+LinqPad has quite a bit of functionality, but as the name implies what it really specializes in is quickly writing Linq queries.
+
+bq.  Tired of querying in antiquated SQL?
+Well, you don't have to!  LINQPad lets you interactively query SQL databases in a modern query language: LINQ.  Kiss goodbye to SQL Management Studio!
+
+Added Bonus: If you want to take your testing code in Snippet Compiler to a new level "Travis Illg":http://www.paraesthesia.com has published a template that will enable you to write your "test code using NUnit":http://www.paraesthesia.com/archive/2008/02/21/template-for-quick-typemock-testing.aspx.

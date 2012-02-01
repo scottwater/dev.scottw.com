@@ -1,0 +1,21 @@
+---
+layout: post
+title: "MSDN DevCon &ndash; NYC"
+date: 2009-01-14 12:34
+comments: false
+---
+
+Continuing on this "years speaking circuit":http://scottw.com/tags#speaking I will be giving a talk next Tuesday at the "NYC edition":http://www.msdndevcon.com/Pages/start.aspx of the "MSDN DevCon":http://www.msdndevcon.com/Pages/start.aspx.
+
+The session I am giving, "_Developing Applications Using Microsoft SQL Data Services_" which focus on leveraging data services both remotely and with SDS.
+
+bq. In the near future, applications will be developed using a combination of custom application code and online building block services, including data-centric services. In this session we discuss advancements in the Microsoft development platform and online service interfaces to enable seamless interaction with data services both on-premises (e.g., ADO.NET Data Services Framework over on-premises SQL Server) and in the cloud (e.g., SQL Server Data Services). Learn how you can leverage existing know-how related to LINQ (Language Integrated Query), data access APIs, data-binding, and more when building applications using online data.
+
+The event is being held at:
+
+Marriott Marquis
+1535 Broadway
+New York, NY 10036
+(212) 398-1900
+
+You can register "here":https://www.blueroosteronline.com/register/New for $99.

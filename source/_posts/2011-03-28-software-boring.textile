@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Software is Boring"
+date: 2011-03-28 12:20
+comments: false
+title_url: http://www.kalzumeus.com/2011/03/26/software-for-underserved-markets/
+---
+
+A really interesting (short) talk by "Patrick McKenzie":http://www.kalzumeus.com/, _"Marketing to minorities":http://www.kalzumeus.com/2011/03/26/software-for-underserved-markets/_
+
+Two things that really jumped out at me:
+
+# Benefits instead of Features (software is boring)
+# You should be in the emotion business

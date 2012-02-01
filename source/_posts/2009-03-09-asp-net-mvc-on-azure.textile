@@ -1,0 +1,12 @@
+---
+layout: post
+title: "ASP.Net MVC on Azure"
+date: 2009-03-09 14:51
+comments: false
+---
+
+"Jim Nakashima":http://blogs.msdn.com/jnak/ has updated his "ASP.Net MVC Projects running on Windows Azure":http://blogs.msdn.com/jnak/archive/2008/10/28/asp-net-mvc-projects-running-on-windows-azure.aspx post to support "ASP.Net MVC RC 2":http://www.microsoft.com/downloads/details.aspx?FamilyID=ee4b2e97-8a72-449a-82d2-2f720d421031&amp;displaylang=en.
+
+One thing different in version two of this post is instead of just including the sample solution, he has walked through the necessary steps so that you can do this on your own.
+
+Hopefully, this becomes an out of the box project template in the near future. IMO, the type of developers and projects which will be the first to move to the cloud are likely the same group who will be interested first in using MVC.

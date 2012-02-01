@@ -1,0 +1,25 @@
+---
+layout: post
+title: "Velocity - Microsoft Distributed Cache"
+date: 2008-06-04 12:48
+comments: false
+---
+
+A couple of days ago, I was chatting with "David, I have not blogged since 2004, Penton":http://sqladvice.com/blogs/dpenton/default.aspx about the lack of a built in distributed caching solution for .NET. There are a couple of really good third party tools available (more posts coming soon) but since caching adds such a huge boost in performance (if used correctly) it is really struck me as odd that the folks in Redmond had not yet addressed this issue on their own (I do not need a Microsoft certified solution to every problem, but since that is their style, it seemed to odd to be missing one here).
+
+However, while I was catching up on what had been announced at Tech-Ed I came across a "mention of Velocity":http://www.microsoft.com/downloads/details.aspx?FamilyId=B24C3708-EEFF-4055-A867-19B5851E7CD2&amp;displaylang=en.
+
+bq. "Velocity" is a distributed in-memory application cache platform for developing scalable, available, and high-performance applications. Using "Velocity," applications can store any serializable CLR object without concern for where the object gets stored because data is cached across multiple computers. "Velocity allows copies of data to be stored across the cache cluster, protecting data against failures. It can be configured to run as a service accessed over the network or can be run embedded with the distributed application. "Velocity" includes an ASP.NET session provider object enabling storage of ASP.NET session objects in the distributed cache without having to write to databases, which increases the performance and scalability of ASP.NET applications.   As I mentioned before, there are a couple pre-existing tools:
+
+* "Memcached":http://www.danga.com/memcached/ - The granddaddy of them all. Simple, used everywhere (I mean, EVERYWHERE), and free.
+* "ScaleOut":http://www.scaleoutsoftware.com/ - Robust, fault tolerant distributed caching
+* "NCache":http://www.alachisoft.com/ncache/ - similar to ScaleOut but with a very annoying developer licensing model
+* "SharedCache":http://www.sharedcache.com/cms/homepage.aspx - Open source managed code distributed caching
+
+There is an interesting distinction between these tools. One on hand you have Memcached which treats the cache as something you should never rely on. It is there to help but you should always assume it is going to fail on you and even more importantly (to Memcached) you should accept that as a fact. If you read the "Memcached FAQ":http://www.socialtext.net/memcached/index.cgi?faq you can almost here the author laughing when talking about fault tolerance. On the other side of the fence you have features like replication and high availability. It is just a CPT, but it looks like Velocity wants to be in the latter group.
+
+I am still on the fence about which type of solution is most ideal. At first, I was in favor of the "high availability" group, but as I read up more on memcached their simplicity really started to grow on me. As with most other things, it will probably vary according to your applications needs.
+
+I am planning on posting some sample code and patterns we are thinking about soon. So far, in light testing, I like Velocity and I will certainly write about it some more.
+
+Anyone else in the .NET world using distributed caching? What is your tool of choice? Any tools I am missing?

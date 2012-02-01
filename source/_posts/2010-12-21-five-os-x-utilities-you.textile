@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Five OS X Utilities You Need Today"
+date: 2010-12-21 16:44
+comments: false
+---
+
+I use all five of these utilities daily and they all have had a major impact on my personal productivity. 
+
+1. **"Total Finder":http://totalfinder.binaryage.com/** - a utility that makes finder much easier to use. It's killer feature is a tab UI. You no longer need to sift through a group of windows to find the one you need. It's next big feature is a side by side view which makes moving files a much simpler endeavor. 
+
+2. **"SizeUp":http://www.irradiatedsoftware.com/sizeup/** - a utility for moving (and sometimes resizing) your open windows. It will dock your windows a predefined locations and will even swap monitors if you are using more than one. 
+
+3. **"Cinch":http://www.irradiatedsoftware.com/cinch/** - does some of what SizeUp offers but it is mouse driven. You want to force Safari to go full screen, just drag it to the top of the screen. 
+
+4. **"Alfred App":http://www.alfredapp.com/** - my preferred app launch (also free). I had been a long time Quick Silver user but I find Alfred to be much more polished and easier to use.
+
+5. **"Glims":http://machangout.com/** - it provides a slue of features to Safari, but my single biggest usage is to make "DuckDuckGo":http://duckduckgo.com/ my default search engine.

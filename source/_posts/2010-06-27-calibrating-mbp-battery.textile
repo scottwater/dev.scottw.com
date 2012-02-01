@@ -1,0 +1,25 @@
+---
+layout: post
+title: "Calibrating a MBP Battery"
+date: 2010-06-27 20:27
+comments: false
+---
+
+I recently noticed the battery on my 12+ month old MBP was only lasting about 2 hours. 
+
+A single charge on this model is supposed to last about 7 hours. I expected some decline after a year, but a drop off to 2 hours seemed off. In addition, unlike previous battery declines/issues the time seemed accurate. In other words, it was not reporting more time and then quickly draining. 
+
+A quick look around Google led me to the following Apple support document "Calibrating your computer's battery for best performance":http://support.apple.com/kb/HT1490
+
+Quick Steps: 
+
+# Completely charge your battery (and keep it charged for 2 hours).
+# Unplug the power adapter and allow the battery to completely drain. You can use your computer during this time. 
+# Allow it to sit powerless for at least 5 hours.
+# Recharge the battery.
+
+I was skeptical, but after completing these steps, my full charge estimate went from about 2 hours to almost 5 hours.
+
+Tip: Here is a great tool for MacBook users to monitor their battery's health - "Battery Health Monitor":http://www.sonoragraphics.com/batteryhealth.html.
+
+**Update**: It is now appears to be estimating the battery time at about 4 hours instead of 5. Not horrible, but not as good as I originally was seeing. I will report back of the decline continues.

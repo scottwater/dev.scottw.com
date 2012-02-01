@@ -1,0 +1,16 @@
+---
+layout: post
+title: "The Search"
+date: 2006-02-01 20:50
+comments: false
+---
+
+"John Battelle's":http://battellemedia.com/, "_The Search_":http://bit.ly/accdQg is an excellent overview of how "Google":http://google.com came to be.
+
+Battelle describes how the search engine market came to be, common pitfalls which tripped up most other competitors, and ultimately how Google was not only able to define a viable and profitable marketplace, but they were able to it "their way".
+
+IMO, the most interesting part is that pay per click advertising was not an early goal for Google. They new early on they needed a business model, but did not settle on what everyone else was doing, even though at the time it was very successful for most other competitors. I kind of view the story behind Google as the modern day _"Little engine who could"_. They had a vision for proving "pure search" results and stuck with it until "AdWorks/AdSense":http://www.google.com/ads/" ideas presented themselves. A very risky proposition, but one that seems to working out very nicely for them now.
+
+Some other interesting topics Battelle talked about in the book played out in the last couple weeks as well; China & censorship, News went 1.0, and the governments request for data.
+
+This was a very good read and I highly recommend picking yourself up a copy!

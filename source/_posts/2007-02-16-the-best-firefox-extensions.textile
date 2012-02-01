@@ -1,0 +1,31 @@
+---
+layout: post
+title: "The Best FireFox Extensions"
+date: 2007-02-16 18:19
+comments: false
+---
+
+I have always been back and forth between FireFox and IE. At first I really liked the changes in IE7, but after a couple of weeks the new UI was not sitting right with me. Once FireFox 2.0 came out I was hooked and have not looked back.
+
+To me, the most compelling argument for FireFox are the extensions. I use so many of them daily I feel lost anytime I have to do something in IE without them. IE can add new features, but without this kind of flexibility, I do not see myself ever going back.
+
+I have never written any extensions for FireFox, but with the sheer number of them and the number of things you can change/enhance it looks like it is not too hard. I know there are some extensions to IE, but no where near the same as FireFox. I wonder if it is harder, less flexible, or something else?
+
+Anyway, on to the reason for the post, my favorite FireFox extensions.
+
+* "Adsense Notifier":https://addons.mozilla.org/firefox/500/ - There isn't a lot of money displayed in it, but for some reason, I love watching this thing update every 20 minutes
+* "Blog This":http://gallery.live.com/liveItemDetail.aspx?li=8eb2551a-49c1-45f9-b291-9b75241793a6&amp;l=8 - While IE7 may not be my cup of tea, I love Windows Live Writer and this extensions makes it super easy to share links/etc.
+* "Download Statusbar":http://downloadstatusbar.mozdev.org/ - a great way to manage downloads without popping up another window
+* "Firebug":https://addons.mozilla.org/firefox/1843/ - an unbelievably powerful extension for web developers. Wow!
+* "FireFTP":http://fireftp.mozdev.org/ - A great FTP client directly from within the browser.
+* "Greasemonkey":http://greasemonkey.mozdev.org/ - I have never really gotten into writing my own user-scripts, but it is great to use ones written by other people.
+* "IE Tab":https://addons.mozilla.org/firefox/1419/ - for those times you need it to render in IE.
+* "Password Scrambler":http://onepassword.com - for obvious reasons, this is the first extnention I install after any rebuild or new machine.
+* "StumbleUpon":http://www.stumbleupon.com/ - a great way to find new stuff
+* "Tiny Menu":https://addons.mozilla.org/firefox/1455/ - the menu still exists, but now only takes up a tiny bit of space
+* "SearchStatus":https://addons.mozilla.org/firefox/321/ - displays google rank and alexa stats
+* "Web Developer":https://addons.mozilla.org/firefox/60/ - of course. :)
+
+I think I have another 10 or so installed, but the ones above are the most important.
+
+I probably found more than half of the extensions I use via "LifeHacker":http://tags.lifehacker.com/software/firefox/.

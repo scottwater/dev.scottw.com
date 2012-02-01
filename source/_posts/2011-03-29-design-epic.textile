@@ -1,0 +1,13 @@
+---
+layout: post
+title: "Design is Epic"
+date: 2011-03-29 10:30
+comments: false
+title_url: http://techcrunch.com/2011/03/24/jack-dorsey-golden-gate-bridge/
+---
+
+via Jack Dorsey:
+
+bq. Design is not just visual, design is efficiency. Design is making something simple. Design is epic. Design is making it easy for a user to get from point A to point B.
+
+bq. Engineering is design. Every engineer in this room, every operator in this room, every customer service agent in this room, is a designer. Because you’re designing constantly the interaction that you have with your tools or with your users or with your customers, and you’re trying to bring efficiency and take all the thinking out of that process.

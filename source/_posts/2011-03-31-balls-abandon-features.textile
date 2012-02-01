@@ -1,0 +1,18 @@
+---
+layout: post
+title: "The Balls to Abandon Features"
+date: 2011-03-31 14:27
+comments: false
+---
+
+I was practically crying tears of joy while reading, "Product design at GitHub":http://warpspire.com/posts/product-design/
+
+bq. You can’t run a product and pretend that every one of your ideas is perfect. You’re going to have bad ideas, ideas that don’t fit, and features that become abandoned. Don’t be afraid to abandon ideas. The amount of time you spend on something is meaningless. You’re not losing anything by throwing work away — you’re choosing not to make your product worse.
+
+Shipping bad features is so much worse than not shipping at all. More times than not, this is what drives the "unnecessary feature disease":http://scottw.com/when-options-kill.
+
+bq. Shipping features because you spent time or money on them is a coward’s excuse. It takes balls to abandon features — grow some.
+
+For most product companies, the only thing harder than not shipping a finished feature is removing already shipped features. In most cases, once a feature ships it's fate is sealed. 
+
+Again, I beg you, be selfish and keep your features to yourself. 

@@ -1,0 +1,40 @@
+---
+layout: post
+title: "HTML5 Book Reviews"
+date: 2010-09-20 18:24
+comments: false
+---
+
+By chance, I ended up with copies of three "HTML5":http://en.wikipedia.org/wiki/HTML5 books. HTML5 was something I had heard quite a bit about, but had not actually dug into very deeply. 
+
+I decided to take a little time off from my regular hacking and dig through these books. The following is a quick review of each of each book. 
+
+Before we get into these books I wanted to quickly address the whole "...it won't be a final spec blah blah until 2022...":http://wiki.whatwg.org/wiki/FAQ#When_will_HTML5_be_finished.3F. While technically true, if you develop web apps for a living and you do not start to really grok what HTML5 means in the very near future you will be left behind. There are many parts of HTML5 which are highly usable today and this trend will continue at an increasingly fast rate. 
+
+The books: 
+
+h3. "HTML5 and CSS3: Develop with Tomorrow's Standards Today":http://www.pragprog.com/titles/bhh5/html5-and-css3
+
+While not completely finished, this book was my favorite. Brian P. Hogan did an excellent job of explain what is new with HTML5, why it matters, and more importantly, how you can leverage it in older browsers as well. 
+
+I also liked that this book was a bit more of a developers perspective than the other two. 
+
+h3. "HTML5 Up and Running":http://oreilly.com/catalog/9780596806033/
+
+In a nutshell, this is very through book. Mark Pilgrim goes through each and every piece with great detail and precision. 
+
+My favorite part of this book was the introduction and description of how we got to where we are today in regards to HTML and HTML5. To really understand HTML5 I think it is very important to know how we got here and where things are trying to go. 
+
+What is also interesting about this book is that it is also "freely available to read online":http://diveintohtml5.org. I still cannot read something of this length in a browser, so I was really thankful that I an ePub[1] version to read on my iPad.
+
+After reading this book, you will clearly walk away with a very clear understanding of what HTML5 brings to the table, why it is important, and how you can use it. In addition, because it lives on the web, it should make an excellent reference for many years to come. 
+
+h3. "HTML5 for Web Designers":http://books.alistapart.com/products/html5-for-web-designers
+
+I am mixed on this one. On one hand it does everything it is supposed to do. It introduces HTML5 from a high level with a focus on web designers (in an absolutely beautiful format).
+
+However, there is so much more to HTML5 than just the markup. I really feel that folks who read this book will not get the full picture on what is falls under the HTML5 umbrella. 
+
+If you want to get a sense of what is going on in HTML5 in a single flight, this is the book for you. If you want to dig a little deeper (especially on the JavaScript side of things) I would recommend you check out one of the other two books mention above. 
+
+fn1. "O'reilly":http://oreilly.com/ provided me a copy of the ePub book for free. So please keep that in mind when you read the reviews.

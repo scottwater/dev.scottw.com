@@ -1,0 +1,12 @@
+---
+layout: post
+title: "jQuery Fundamentals"
+date: 2011-04-11 14:30
+comments: false
+---
+
+"jQuery Fundamentals":http://jqfundamentals.com/book/index.html
+
+bq. The purpose of this book is to provide an overview of the jQuery JavaScript library; when you're done with the book, you should be able to complete basic tasks using jQuery, and have a solid basis from which to continue your learning. This book was designed as material to be used in a classroom setting, but you may find it useful for individual study.
+
+ In addition, even if you could care less about jQuery, chapter 2's discussion of scope and closures is a great read.

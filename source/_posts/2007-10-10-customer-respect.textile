@@ -1,0 +1,19 @@
+---
+layout: post
+title: "Customer Respect"
+date: 2007-10-10 15:14
+comments: false
+---
+
+For some strange reason, I cannot access port 80 at home. Upon calling Comcast, I am given the following information:
+
+# Unplug your cable modem, shut down your computer, and wait two minutes. This usually fixes the issue...seriously?
+# We are experiencing higher call volume than normal. Please check out Comast.Net for your support issues.
+
+#1 If so, then why not fix the problem on your side or write some kind of software your users can use to fix the problem. It is kind of like telling the doctor, "it hurts when I do this" and the doctor responds, "don't do that".
+
+#2 You are experiencing a higher than average number of support calls about internet access....and you really think redirecting folks to a browser is going to fix the problem?
+
+I get things break, but come on, try for a second to respect and proactively your customers. Why not add a message like, "We are getting a ton of calls, chances are if you are having problems using your service, you are not alone. Press 1 to be notified (via phone) when this issue has been resolved. If there are no known issues, we will put you back in the support queue and help you resolve the problem".
+
+Or how about letting me receive an SMS message/email letting me know there is a problem in my area? This of course means notifying me of issues I may not be experiencing, but it would certainly make me feel better about your service.

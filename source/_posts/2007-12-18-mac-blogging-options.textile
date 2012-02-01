@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Blogging on a Mac"
+date: 2007-12-18 14:00
+comments: false
+---
+
+I am a still very happy Mac user and as I mentioned before, I have been very impressed at the "Mac software choices":http://scottw.com/technology/greener-grass/. So far, the only real weak part for me has been blogging.
+
+There still is nothing like "Windows Live Writer":http://scottw.com/software/windows-live-writer/ available for the Mac. The two top tools are "MarsEdit":http://www.red-sweater.com/marsedit/ and "ecto":http://infinite-sushi.com/software/ecto/. Neither supports WYSIWYG or make it easy to configure extended MetaBlog properties without implementing the full MoveableType or Wordpress extensions. I did look into implementing the full API, but I cannot see why you want to require three separate calls just to publish a post (one to submit, one with the category information, and another to publish)
+
+Since I can use Live Writer via Fusion, it is not a total loss, but I would rather not have to load a virtual machine to simply blog.
+
+For now, when I want to blog (like now) from OS X, I am going to use "TextMate":http://macromates.com/. It does not have WYSIWYG support, but it is very easy to use and supports the extensions I want to use; not to mention all the baked in TextMate goodness.

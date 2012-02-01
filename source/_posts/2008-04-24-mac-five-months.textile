@@ -1,0 +1,22 @@
+---
+layout: post
+title: "Life on a Mac - Five Months Later"
+date: 2008-04-24 15:16
+comments: false
+---
+
+It's been about five months since I "switched to using a MacBook Pro":http://scottw.com/technology/greener-grass/ as my primary machine. So far everything has been going way better than I expected with two notable exceptions.
+
+*Email/Calendar* - On their own, Mail.app, iCal, and Address Book are really nice and simple applications. However, if you factor in the need to work with Exchange it can be a real mess. I had to do some hacky things like use "Plaxo":http://www.plaxo.com/ and keep Outlook open on another machine to keep things in sync and even then there was too many outliers to justify the complexity. I finally broke down and ordered Mac Office the other day so hopefully that will enable me to keep all of these things in sync with less complexity.
+
+The reason this is troubling for me is productivity. Previously I did email and daily development tasks on separate machines. This made it very easy to ignore Outlook. When I started using the Mac having Mail.app and VS.Net in separate windows/spaces made it much easier to ignore. Now they are merged together and I have a harder time ignoring email (I am weak, I know).
+
+*Blogging* - "blogging on the Mac is still very weak":http://scottw.com/software/mac-blogging-options/. Mars edit is OK, but has no WYSIWGY editing experience and offers no ability to configure which features your site supports. The feedback from their supports has been to implement the Moveable Type version of the MetaBlog API, but that is a complete mess and a copout. (note: This is another area where WLW shines. Blog tools can expose which methods/options they support and WLW will auto-configure itself.) When I do blog on the Mac, I use a combination of "TextMate":http://macromates.com/ and "Textexapnder":http://smileonmymac.com/textexpander/. This requires I write all of my own HTML, but a combination of TextMate short cuts and Textexpander make this almost completely painless. In addition, using a simple template I can tell TextMate exactly which MetaBlog features I need. Nice!
+
+Here is my previous list of "software I use on the Mac":http://scottw.com/software/mac-software/.
+
+Other applications I have used regularly:
+
+* "Evernote":http://evernote.com/ - I actually use both the Mac and PC version at the same time to keep some simple notes/etc in sync. I just started to get into this one, but so far I really like it.
+* "Skitch":http://skitch.com/ - OMG, *I love this tool*. It is free in beta, but as soon as I can send them some cash they will have my credit card number. I have a full post on this in queue, so all I will say is that they ("plasq":http://plasq.com/) made taking screen shots fun.
+* "Cyberduck":http://cyberduck.ch/ - I have not yet broken down and bought Transmit. As much as I like it, these days I do not FTP enough to justify a spending money on FTP.

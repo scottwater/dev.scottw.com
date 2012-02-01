@@ -1,0 +1,20 @@
+---
+layout: post
+title: "RVM Global"
+date: 2010-10-11 14:05
+comments: false
+---
+
+I am a big fan of "RVM":http://rvm.beginrescueend.com/. If you mix this properly with a ".rvmrc":http://rvm.beginrescueend.com/workflow/rvmrc/ file and something like "Bundler":http://gembundler.com/, you can grab a library or project and likely have it up and running locally in a matter of seconds. 
+
+One obvious piece of RVM that I had been missing was global gemsets. "Global gemsets":http://rvm.beginrescueend.com/gemsets/global/:
+
+bq. Gems that are installed to the per-interpreter @global gemset are available to all other gemsets for that interpreter.
+
+bq. This is a good way to allow all of your projects to share the same installed gem for a specific ruby interpreter installation.
+
+You can chalk this up as one of those how in the hell did I use this thing before I had this knowledge. :)
+
+Actually, what I was doing was crowding my Gemfile with unnecessary libraries like awsome_print and racksh to make it simple to recreate an environment. However,  now with global gemsets, things are much simipler (and cleaner). 
+
+Also, be sure to check out "Gemset Initialization in Ruby Installs":http://rvm.beginrescueend.com/gemsets/initial/ which looks like it allows you to specify gems to be installed in each new ruby instance.

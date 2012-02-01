@@ -1,0 +1,20 @@
+---
+layout: post
+title: "If You Cannot Use It, Is Having the Source Code a Good Thing?"
+date: 2007-10-04 13:43
+comments: false
+---
+
+I have to "agree with Frans Bouma":http://weblogs.asp.net/fbouma/archive/2007/10/04/don-t-look-at-the-sourcecode-of-net-licensed-under-the-reference-license.aspx on the topic of Microsoft releasing the "source code to the .NET Framework":http://weblogs.asp.net/scottgu/archive/2007/10/03/releasing-the-source-code-for-the-net-framework-libraries.aspx assemblies.
+
+bq.  Yes, I'm negative about this move. The main reason is that doesn't solve real problems at all. Take for example the case where you detect a bug in the BCL. You plow through the source-you-can't-touch and you'll discover the place where the bug originates and see how to fix it. You can't do a thing about it. You can't fix it yourself because you can't rebuild it. You can only report it back to MS and wait for a fix.
+
+I do not think the intent is as "evil as the Steven J. Vaughan-Nichols of eWeek":http://www.eweek.com/article2/0,1895,2191754,00.asp would lead you to believe.
+
+Here is my guess to how things went down:
+
+# "ScottGu":http://weblogs.asp.net/scottgu/ and team make the bold move to ship the source code to .NET. The source has never really been that hidden and honestly, what are you really going to do with it once you get it.
+# Microsoft lawyers get freaked out. They are not yet capable of rationalizing the fact the source is already available.
+# The compromise is the "Microsoft Reference License":http://www.microsoft.com/resources/sharedsource/licensingbasics/referencelicense.mspx.
+
+In the end, I suspect the intent of developer division as Microsoft is correct, however the politics/restrictions make this a solution to a problem which does really exist yet. Personally, I am not sure I would want a world of customized versions of the .NET framework. In addition, knowing there is a bug with an easy fix which I was not allowed to fix would probably just drive me nuts.

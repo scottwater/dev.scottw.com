@@ -1,0 +1,52 @@
+---
+layout: post
+title: "CodeMash 2011 Wrap-Up"
+date: 2011-01-21 16:42
+comments: false
+---
+
+Similar to "last year":http://scottw.com/code/codemash-2010, "CodeMash":http://codemash.org 2011 was a blast. 
+
+The thing I am going to remember the most was  "Scott Chacon's":http://scottchacon.com/ keynote on "Developer Driven Development":https://github.com/schacon/ddd. The general premise: there is no reason why *professional* developer shops cannot operate like *open source projects*. 
+
+Quick definitions: 
+
+* Professional: centralized teams, scrum/waterfall, feature lists, meetings, planning, meetings about planning, and planning meetings about meeting to plan, driven by incentives (pay, bonus, promotion, fear).
+
+* Open Source Projects: decentralized, only interesting things get worked on, driven by passion and pride.
+
+While Scott's views and recommendations are certainly on the edge, almost all teams and businesses would better off if they took a couple of steps towards that edge. 
+
+Two conclusions from Scott's keynote: 
+
+# If a business cannot trust their developers to make the right decisions, it is time to get new developers. 
+# If you (as a developer) work for a place that does not trust you to do the right things, it is time to go work somewhere  else. 
+
+In addition, I 100% agree with Scott's assertion that beer makes just about every part of software development better. :)
+
+Here are my other key take-aways from CodeMash 2011:  
+
+1. Last year I left CodeMash determined to finally learn Ruby. This year, it is to actually learn VIM. Too much speed and simplicity wasted everyday. 2011 will be the year of VI/VIM for me.
+
+2. Windows vs Unix for development - "Gary Bernhardt":http://blog.extracheese.org/ had a great quote:
+
+bq. "Windows is a giant platform on which you build applications for users. That is what it does.[...] Unix is a substrate upon which you program. That's what the Unix operating system is for--it's for programming."
+
+I never really thought about it like that, but it makes perfect sense. All the "windowing" in Windows may be good for regular users, but it is just in the way for development. 
+
+3. CodeMash is much more enjoyable when you stay at Kalahari. Last year I made the mistake of staying offsite. Glad I did not repeat that again this year. 
+
+4. Wifi was definitely not as reliable or as fast at home, but apart from from a hardware issue for the morning pre-compiler it was extremely usable and likely the best of any conference I have ever attended.
+
+5. Not as much NoSQL love as last year. Not sure if that was part of the track submissions, picks, or not. Also, only mention of Node.JS was a single open spaces talk. I suspect both of these will be quite the opposite next year. 
+
+6. Sandusky is still the only place I know of that has zero 3g coverage. For a tourist area, you would think they could get a tower or two.
+
+
+7. Overall, I still love the keynotes during meals approach taken by CodeMash. It is a highly efficient use of time. The CodeMash organizers are talking about changing this a bit next year, but I hope they keep it or do something more community driven during meals. 
+
+8. Microsoft's  WebMatrix Launch - I am a little biased here against WebMatrix, but this event felt too fake for me and really stood out. 
+
+*UPDATED:* The Webmatrix event was not a keynote. However, I would have rather had a keynote type of event instead. 
+
+Again, overall the event was near perfect. I am already looking forward to CodeMash 2012.

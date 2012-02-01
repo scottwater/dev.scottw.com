@@ -1,0 +1,12 @@
+---
+layout: post
+title: "People under time pressure don't think faster"
+date: 2005-09-19 23:23
+comments: false
+---
+
+I am not 100% sure where/why I bought the "Slack":http://www.amazon.com/exec/obidos/redirect?path=ASIN/0767907698&amp;link_code=as2&amp;camp=1789&amp;tag=tripleasp-20&amp;creative=9325, but a quick "Google":http://google.com search reveals a quick review by "Chris Kinsman":http://www.vergentsoftware.com/blogs/ckinsman/PermaLink.aspx?guid=7700c12e-4a62-481f-bbfd-c7ff10c82eb0, so my money says I added to my shopping cart after seeing his review.
+
+Chris's overall summary is right on. The book starts off great, but Tom Demarco's "implementation" was a little dry. This seems to be a common pattern for books like this, they present a great argument, tips/suggestions on what to look for, how to identify the problem, but coming up with a clear answer is usually what separates a good read from a great one.
+
+It's not a long book and if you have a jammed back schedule, it will likely open your eyes. As the title suggests, my favorite line in the book is a quote from Tim Lister, _"People under time pressure don't think faster"_.

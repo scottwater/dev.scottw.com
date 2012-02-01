@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Terminal Visor"
+date: 2011-04-05 19:30
+comments: false
+---
+
+bq. a system-wide terminal on a hot-key
+
+"Visor":http://visor.binaryage.com/ is a great way to put terminal always a quick short-cut away. 
+
+*UPDATE* I have uninstalled visor. It is a great tool, but at least once a day I end up doing something which causes it to crash.

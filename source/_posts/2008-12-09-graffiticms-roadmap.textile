@@ -1,0 +1,18 @@
+---
+layout: post
+title: "GraffitiCMS RoadMap"
+date: 2008-12-09 13:03
+comments: false
+---
+
+!http://scottwstatic.appspot.com/images/wlw/GraffitiCMSRoadMap_7F3F/graffiti-logo-270907_3_064a3319-6555-46ce-816e-c8ce6cb034d0.png!
+
+We finally got an updated version of the "Graffiti roadmap up on the site":http://graffiticms.com/blog/graffiti-roadmap-now-available/. There are some very noticeable updates and reprioritization. We ("Telligent":http://telligent.com) have some lofty goals with "Graffiti":http://graffiticms.com, but we came to the conclusion that we need to focus some more time on the basics before we start muddying the waters with features such as forums.
+
+For those of you following Graffiti, you are well aware that we had not done a great job on getting updates out the door. Being (previously) a bootstrapped company[1] you have to make tough choices about where you position resources. We knew we wanted to do much more with Graffiti, but until recently the picture was not nearly as clear. Since resources where tight, we decided to focus our attention in some other areas like "Community Server":http://communityserver.com, "Evolution":http://communityserver.com/products/evolution/, and "Harvest":http://communityserver.com/products/harvest/ where what needed to be done was crystal clear.
+
+There are obviously (and rightfully) some users who are very frustrated with the situation. The first thing we are going to do is give every 1.x license holder a free upgrade to 2.0 when it is released in 2009. The next thing (and really only thing that matters) is we will just have to show you.
+
+We are well aware we are not the only game in town, but I love where we are going with this and for those of you who choose stick with us, I am sure you will love it as well.
+
+fn1. In today's economy, even when you are founded or earning billions you need to think like a bootstrapped company.

@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Sparking Azure"
+date: 2009-04-25 02:38
+comments: false
+---
+
+You know what they say, it only takes a spark. :)
+
+As I mentioned before, I have "fallen in love":http://scottw.com/code/spark/ with the "Spark ViewEngine":http://sparkviewengine.com/. It is a very nice mix of power and simplicity. I also been spending a lot more time on cloud related initiatives, so I was bummed to learn Spark could not be used on "Azure":http://www.microsoft.com/azure/default.mspx (compute) since it requires full trust (and Azure initially had a no concept of trust levels, it only had one limited trust level).
+
+Fortunately for me (and hopefully you) one of the many Azure "Mix":http://visitmix.com/ announcements was support for Full Trust. What this means is that you can now easily use Spark on Azure. All you need to do complete the following two steps.
+
+1. *Enable Full Trust*. Unlike traditional ASP.Net sites, full trust is not enabled in the web.config and it is not the default setting. As "pointed on on the WindowsAzure blog":http://blogs.msdn.com/windowsazure/archive/2009/03/18/hosting-roles-under-net-full-trust.aspx, all you have to do is set the enableNativeCodeExecution attribute to true in your service definition file (for the web role).
+
+2. *Mark your view as content*. This unfortunately needs to happen for every view you add to your project. I am hoping there is a way to automate this or do pre-build. However, until I figure that out, it needs to be done manually otherwise the view will never be found. ("hat tip":http://www.shanmcarthur.net/cloud-services/azure-tips/including-files-with-non-standard-extensions-in-azure-deployment)
+
+I have only done a minor bit of testing, but so far, it all seems to be working. If you find any issues, please drop me a comment.

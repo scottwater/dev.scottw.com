@@ -1,0 +1,26 @@
+---
+layout: post
+title: "Great Pandora Applications"
+date: 2008-08-15 13:38
+comments: false
+---
+
+Recently I started to use/listen to "Pandora":http://www.pandora.com/ quite a bit. Initially, I had just listened via a browser, but over the last couple of weeks I have come across a couple tools that enhance the Pandora experience without a browser.
+
+First, if you are not "familiar with Pandora":http://pandora.com/corporate/.
+
+bq. With Pandora you can explore this vast trove of music to your heart's content. Just drop the name of one of your favorite songs or artists into Pandora and let the Genome Project go. It will quickly scan its entire world of analyzed music, almost a century of popular recordings - new and old, well known and completely obscure - to find songs with interesting musical similarities to your choice. Then sit back and enjoy as it creates a listening experience full of current and soon-to-be favorite songs for you.
+
+h3. Tools
+
+"OpenPandora":http://openpandora.googlepages.com/ - This is a very nice (free) application which sits in your windows task bar. It has a slew of nice additional features such as Windows Messenger integration.
+
+"PandoraJam":http://bitcartel.com/pandorajam/ - A commercial (cheap $15) application for OS X. Notable features in streaming to Airport Express, growl integration, a recording option (doubt this is legal :), and some Mac style.
+
+!http://scottwstatic.appspot.com/images/wlw/GreatPandoraApplications_87A0/pandora_3.png(pandorajam)!
+
+"iPhone":http://phobos.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=284035177&amp;mt=8 - The Pandora iPhone application gives iTunes remote a serious run for most useful iPhone application to date. It is very simple, but does the job surprising well over 3g.
+
+!http://www.pandora.com/images/iphone/iphone-now-playing.jpg!
+
+If you have any other suggestions, be sure to leave them in the comments.

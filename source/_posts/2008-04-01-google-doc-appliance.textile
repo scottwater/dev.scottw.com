@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Google Doc's Appliance"
+date: 2008-04-01 12:20
+comments: false
+---
+
+I have been using "Google Docs":http://docs.google.com quite a bit in recent weeks to share spreadsheet "maps" (features, resources, roadmaps) used in our ("Telligent":http://Telligent.com) product planning. This morning I read Google "was finally going to add":http://googledocs.blogspot.com/2008/03/bringing-cloud-with-you.html "Gears":http://gears.google.com support.
+
+bq. With Google Docs offline (powered by Google Gears), I can take my little piece of the cloud with me wherever I go. Once enabled, I have a local version of my document list and editors, along with my documents.
+
+I am still a little shocked that Google Mail does not offer gears support (Hey Google, while you are at it, please work with Apple to add push support with iPhone 2.0 as well), but I have to imagine this is something that will be fixed very soon. However, even with offline support, I still think many businesses will have a hard time trusting Google with all of their data which brings me to the purpose of this post.
+
+This is purely speculation, but I am betting we will see a Google Doc appliance in 2008. This would be a similar to Google's current "search appliance":http://www.google.com/enterprise/gsa/. IT departments will be able to purchase a machine from Google, drop it behind their fire wall and run all of the various Google applications securely on their own networks. Heck, mix it in with Google search appliance and you could have a killer 1-2 punch. I guess you could call it software as a service...in a box. :)

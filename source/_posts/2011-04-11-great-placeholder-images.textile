@@ -1,0 +1,8 @@
+---
+layout: post
+title: "Great Placeholder Images"
+date: 2011-04-11 13:03
+comments: false
+---
+
+Ever need place holder images that look great and provide some additional context (categories/etc)? Checkout "lorempixum":http://lorempixum.com/.

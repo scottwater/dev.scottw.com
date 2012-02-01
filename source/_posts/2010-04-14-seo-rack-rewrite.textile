@@ -1,0 +1,47 @@
+---
+layout: post
+title: "SEO with Rack-Rewrite"
+date: 2010-04-14 17:43
+comments: false
+---
+
+I am still very much in the camp of "write good":http://scottw.com/best-seo-advice (and consistent) content first and let SEO handle itself. However, that does not mean you should not keep an eye out for fundamental problems which can cause bad search engine results. 
+
+One of these problems I believe every developer of public web sites needs to be mindful of is duplicate content. Duplicate content causes quite a few problems:
+
+* You may appear to be a spammer in the "eyes" of a search engine
+* Links may appear to be directed at two or more urls
+* Your content may have to compete with itself
+
+I have long been a fan of "ISAPI_Rewrite":http://scottw.com/tags#sapi-rewrite for IIS to help manage and control some of these problems (which is in turn heavily influenced by mod_rewrite). However, since I have moved this site to Heroku, I needed to find another solution. 
+
+Thankfully, due to the awesomeness of "Rack":http://rack.rubyforge.org/ and middleware, I found a component called "Rack-Rewrite":http://github.com/jtrupiano/rack-rewrite and I was able to leverage it with just a couple of minutes effort.
+
+bq. A web server agnostic rack middleware for defining and applying rewrite rules. In many cases you can get away with Rack::Rewrite instead of writing Apache mod_rewrite rules.
+
+I am already using a customized Rack application, "Rack-Jekyll":http://github.com/bry4n/rack-jekyll, to power this site, so plugging in Rack-Rewrite was just as simple as adding a couple of lines to my rackup file.
+
+Here are the full contents of my config.ru
+
+<pre><code class="ruby">
+require "rack/jekyll"
+require "rack-rewrite"
+
+ENV['RACK_ENV'] ||= 'development'
+ENV['SITE_URL'] ||= 'scottw.com'
+
+use Rack::Rewrite do
+
+    r301 %r{.*}, "http://#{ENV['SITE_URL']}$&", :if => Proc.new {|rack_env|
+        ENV['RACK_ENV'] == 'production' && rack_env['SERVER_NAME'] != ENV['SITE_URL']
+      }    
+
+    r301 %r{^(.+)/$}, '$1'
+  end
+
+run Rack::Jekyll.new
+</code></pre>
+
+The two rules I am running on this site ensure that only scottw.com (no www.) is used and that no links end in a "/". The first is particularly important since Heroku issues you a custom url as well.
+
+What is really interesting about Rack-Rewrite is the ability to execute code as part of your rewrites. This enables a lot of flexibility (such as ignoring some rewrites when running in development mode).

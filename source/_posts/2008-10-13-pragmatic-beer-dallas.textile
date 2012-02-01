@@ -1,0 +1,24 @@
+---
+layout: post
+title: "Pragmatic Beer - Dallas"
+date: 2008-10-13 18:45
+comments: false
+---
+
+The "Pragmatic Beer":http://scottw.com/code/pragmatic-beer/ event we had last week in New Brunswick was a lot of fun. I am going to be in Dallas for "in.Telligent":http://in.telligent.com next week, so I figured it would be a good time to take the show on the road.
+
+When: Wednesday October 22nd at 6:30 PM (CST).
+Where: "The Flying Saucer":http://www.beerknurd.com/stores/addison, 
+14999 Montfort Drive, 
+Addison, Texas 75254
+
+!http://scottwstatic.appspot.com/images/wlw/PragmaticBeerDallas_CF7C/image_thumb.png!
+
+Why?
+
+* You like to write great software, not just great .NET software.
+* You like to talk about how to write great software.
+* You like others who like talking about great software.
+* You like beer that does not rhyme with liller mite. 
+
+Please leave a comment below if you can attend.

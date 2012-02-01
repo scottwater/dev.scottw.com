@@ -1,0 +1,13 @@
+---
+layout: post
+title: "Polyglot Persistence"
+date: 2011-03-28 13:27
+comments: false
+title_url: http://nosql.mypopescu.com/post/4081343323/why-do-we-need-so-many-different-databases
+---
+
+bq. ...if all these models would exist in the same tool that will be a mammoth. It will be a tool good for everything, best at none...
+
+While it can be confusing to get started, I really like the current NoSQL world. Most all of the tools are extremely focused on a particular type problem and if you have that problem you will now likely have a solution.
+
+I really hope we do not see a trend where tools merge and you end up with just a couple big players who do just about everything "NoSQL" since that would defeat the entire point: "NoSQL is About Choice":http://blog.couchbase.com/nosql-is-about

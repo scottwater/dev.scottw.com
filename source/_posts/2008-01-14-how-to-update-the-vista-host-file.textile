@@ -1,0 +1,41 @@
+---
+layout: post
+title: "Modifying Your Vista Hosts File in Just Six Steps"
+date: 2008-01-14 16:15
+comments: false
+---
+
+I guess some bad things can happen if a hosts file is changed without the user's knoweledge. However, the number of steps required to do this on Windows Vista is a little over the top and cost me some valuable time this morning.
+
+Before we go through the Vista steps, lets take a look at how you did this in previous versions of Windows and OS X.
+
+*Windows XP and Windows 2003*
+
+# Navigate to Windows > System32 > Drivers > etc
+# Open the file (with no extension) hosts
+# Make your changes and save the file.
+
+*OS X*
+
+# Navigate to /etc
+# Open hosts (no extension) in your favorite editor (TextMate for me)
+# Make your changes and save the file.
+# OS X will then ask you for an administrator password before saving the file
+
+*Widows Vista*
+
+# Navigate to Windows > System32 > Drivers > etc
+# Make a copy of this file and paste it some where else since you are no longer allowed to directly edit the file (I am guessing you could do a save as in step 3 as well)
+# Open the file, make your changes, and save the file.
+# Make a copy of your updated file and paste it over the original which brings up the new Vista copy dialog
+!http://scottwstatic.appspot.com/images/2008-01-14_vista_hosts_1.png(Vista Copy and Paste dialog)!
+# Next, you are warned that you need to be an administrator to make this change.
+!http://scottwstatic.appspot.com/images/2008-01-14_vista_hosts_2.png(Vista administrator confirmation dialog)!
+# Finally, you get to the UAC screen which again requires the same confirmation as the previous step.
+!http://scottwstatic.appspot.com/images/2008-01-14_vista_hosts_3.png(Vista UAC dialog)!
+
+There are three steps in Windows XP and Window 2003 and a fourth in OS X. In an effort to add the fourth (security) step to Vista, they have added an additional 3 steps (4 if you count the fact you may need to restart your browser to see the changes).
+
+We are not talking about a lot of extra work here, but IMO, this is complication for complication sake. Why not just show the UAC message when I try to save the file? Why show a dialog before UAC which essentially tells me the warns me about same thing UAC is warning me about?
+
+I spent way too much time trying to get this to work early this morning, so hopefully this little rant helps someone else out in the future and is a reminder to everyone who designs software to remember even if they are simple steps, less is always better.

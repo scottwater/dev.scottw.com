@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Announcing KickoffLabs"
+date: 2011-03-22 15:35
+comments: false
+---
+
+"KickoffLabs":http://kickofflabs.com is a simple tool with the goal of making it drop dead easy for anyone to launch and validate an idea. So whether you are building the next Google or want to open your own french bistro, KickoffLabs is a tool you will find extremely useful.
+
+I am building KickoffLabs with "Josh Ledgard":http://evolvingwe.com. We are still pre-V1, but the pace is starting to pick up and I expect to have a launch of some sort in next month or so. 
+
+If you want to learn more and keep up with what we are doing, please sign up on KickoffLabs.com. In addition, you can also keep up with us via both "twitter":http://twitter.com/kickofflabs and our "blog":http://blog.kickofflabs.com. 

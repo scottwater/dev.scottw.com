@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Jing"
+date: 2007-10-09 23:54
+comments: false
+---
+
+!http://scottwstatic.appspot.com/images/wlw/Jing_1180A/jing_thumb.png(Jing)!
+
+Here is another one of those great ""easy things":http://scottw.com/tags#easy-things" I love so much.
+
+I am a huge fan of all things "TechSmith":http://www.techsmith.com/, their tools just rock. I have been using their latest tool "Jing":http://www.jingproject.com/ for a couple of months now, primarily as a quick and easy to share videos of new functionality or to gather feedback on "Graffiti":http://graffiticms.com/.
+
+bq.  The concept of Jing is the always-ready program that instantly captures and shares images and video...from your computer to anywhere.
+
+I still use TechSmith's "SnagIt":http://www.techsmith.com/screen-capture.asp quite a bit, but with each passing day I am finding myself using Jing more and more. TechSmith is saying this project will turn into something else, so I am very curious to see how this turns out. I am currently in love with this service, so hopefully it is around to stay in some manor.
+
+According to the Jing blog, a significant update is "scheduled for tomorrow":http://blog.jingproject.com/2007/10/jing_update_coming_wednesday_o.html. For a quick overview, see the "demo video":http://blog.jingproject.com/assets-jing/gettingstarted/index.html?keepThis=true&amp;TB_iframe=true&amp;height=385&amp;width=505.

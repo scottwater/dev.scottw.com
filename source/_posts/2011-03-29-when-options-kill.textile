@@ -1,0 +1,23 @@
+---
+layout: post
+title: "When Options Kill"
+date: 2011-03-29 13:16
+comments: false
+---
+
+Unnecessary options kill usability and cost you money.
+
+On Sunday, I wanted to look up the hours of my local Goodyear. However, since the closest Goodyear is slightly more than 10 miles away it required me to search a second time. 
+
+!https://img.skitch.com/20110329-e84bu5xd9aubk3qmsfth1b7whq.png!:http://www1.goodyearautoservice.com/custserv/locate_store.cmd
+
+There is absolutely no reason for this.
+
+* A second search gives me an opportunity to just walk away.
+* Is there really a difference between 10 and 11 miles?
+* Why not just display the locations sorted by the closest? 
+* Do users really need the millage? Has this ever saved a sale? 
+
+Just because you have the information and can present a choice doesn't mean your users need it. 
+
+Be selfish, *keep the options to yourself*.

@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Readability First"
+date: 2009-03-12 15:12
+comments: false
+---
+
+I was browsing through some recent posts by "Scott Allen":http://odetocode.com/Blogs/scott/default.aspx, when I came across this "great quote":http://odetocode.com/Blogs/scott/archive/2009/02/11/12522.aspx:
+
+bq.    _...until it's certain that we have a performance problem, it's better to optimize for readability_
+
+Very well said.

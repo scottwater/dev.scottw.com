@@ -1,0 +1,30 @@
+---
+layout: post
+title: "Community Server 2008 Beta 1"
+date: 2008-02-06 02:18
+comments: false
+---
+
+I am very excited to announce the immediate availability of Community Server 2008 beta 1. The big goal in this release was to improve interactions among community members (Groups, Messages, and Friends). In addition we wanted to enhance on areas such media support and extend our extensibility story (Widgets and Web Services).
+
+!http://scottwstatic.appspot.com/images/2008-02-05_header_cs_2008.png(Header cs 2008)!
+
+Below is a brief list of what you'll find in this Beta:
+
+* *_Groups._* We've added support for private and public groups that support their own membership, blog, forum, gallery, and pages. You can now easily create mini-communities for friends or for your team.
+* *_Web Services APIs._* Community Server 2008 includes a complete Web Services layer for working with Community Server. This makes it even easier to share data from within Community Server with other applications or tools. The Web Services implementation is a RESTful implementation and we also include a client library to include within applications that need to talk to Community Server.
+* *_Friends._* We've completely overhauled the friends functionality to make it easier to both manage and add friends. You'll find the friends behavior much more like FaceBook's friend functionality.
+* *_Media Gallery._* We've merged the Photo/File Galleries into a single Media Gallery application. The Media Gallery includes viewers for rendering images, audio, video making it even easier to share content in your community.
+* *_Message Streams._* New to Community Server is a message stream application that enables multi-user conversations (formerly private messages), social streams (similar to FaceBook), profile comments, and more.
+* *_Enterprise File Storage._* We've completely overhauled file storage so all files are in a Centralized File Store (includes both a File System and Amazon S3 provider).
+* *_Widgets._* Community Server now support shareable widgets in all sidebars.
+* *_Simplified Permissions._* We've tried to simplify the rich permissions functionality that Community Server has always been known for. All the previous permissions capabilities still exist, but we've added some tools to make it even easier to manage and apply permissions.
+* *_User Experience._* We've started to introduce some new user experiences in both the Control Panel and other aspects of the site. When Community Server 2008 ships you'll find a much friendly and beautiful experience for both running and managing your community.
+
+Many, many additional new features, performance improvements, and bug fixes.
+
+The entire Community Server team work extremely hard on keeping the quality bar high and really pushing on the limits of the product. I am very proud of what they accomplished and with a little feedback from our users, I expect the final release will be even better.
+
+* *Web Installer:* "http://get.communityserver.org/download/cs2008b1web":http://get.communityserver.org/download/cs2008b1web
+* *Windows Installer:* "http://get.communityserver.org/download/cs2008b1msi":http://get.communityserver.org/download/cs2008b1msi
+* *Upgrade Tool:* "http://get.communityserver.org/download/cs2008b1up":http://get.communityserver.org/download/cs2008b1up

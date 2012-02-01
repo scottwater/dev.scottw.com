@@ -1,0 +1,10 @@
+---
+layout: post
+title: "Gemnotifier"
+date: 2011-05-17 11:15
+comments: false
+---
+
+If you are tired of tracking down updates to gems you depend on, check out "Gemnotifier":http://gemnotifier.org/.
+
+You tell it the gems you care about and it will email you once a day if any of them change.  

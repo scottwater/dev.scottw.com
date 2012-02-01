@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Subversion on CodePlex"
+date: 2008-10-14 16:00
+comments: false
+---
+
+My number reason for not using "CodePlex":http://codeplex.com regularly is the choice of source control. I had heard of the "SvnBridge":http://www.codeplex.com/SvnBridge a while ago, but had not had a chance to check out.
+
+Tonight I wanted to grab some source from a couple CodePlex projects ("StoreFront":http://www.codeplex.com/mvcsamples and "MVC":http://www.codeplex.com/aspnet/Wiki/View.aspx?title=MVC&amp;referringTitle=Home) and came across a really helpful post by "Steven Harman":http://stevenharman.net/ which shows how to use a "CodePlex hosted version of SvnBridge":http://stevenharman.net/blog/archive/2008/09/09/subversion-support-on-codeplex.aspx using the following URL Pattern.
+
+bq. https://your-project-here.svn.codeplex.com/svn
+
+As Steven points out, if SVN is what you are after, I would still recommend Google code for new projects, but this will certainly make it easier for me to keep up to date on some of my favorite projects.

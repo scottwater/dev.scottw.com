@@ -1,0 +1,23 @@
+---
+layout: post
+title: "SDS &ndash; Take 2"
+date: 2009-03-12 18:03
+comments: false
+---
+
+It looks like the SDS team has decided to "refocus there short term goals":http://blogs.msdn.com/ssds/archive/2009/03/10/9469228.aspx away from a RESTful schemaless entity based approach and towards a more relational database with baked in cloud scale.
+
+bq. _"...the universal feedback we received from our TAP partners and other early adopters was the need for a relational database delivered as a service. This was extremely valuable feedback and drove us to more aggressively investigate ways in which we could deliver these features. As a result of that work and based on the progress we've since made in the product team, we are announcing that SDS will deliver full relational database capabilities as a service."_
+
+Some folks like "Mike Amdendson are less thrilled":http://www.amundsen.com/blog/archives/974 with this decision and change. Personally, I am OK with it and I think it could be a smart move on Microsoft's part. Here is my reasoning:
+
+# Truly using cloud storage means an application rewrite for most existing applications. This is mitigated by loose coupling, separation of concerns, and the like, but the reality is very few applications will easily port to cloud storage. Rewriting applications is very risky and rarely produces the desired results.
+# There are already others offering the RESTful schemaless approach such as Amazon's SimpleDB and local options such as CouchDB (which I guess could be hosted on EC2). I doubt this was part of their reasoning, but I personally love to see companies solve problems in different ways instead of simply providing their own. (See Microsoft Velocity as another excellent example).
+# Better transition. This plays into #1 as well. One of things I have mentioned over and over when speaking about Azure is while you do get to leverage your existing skill set (ASP.Net/C#/etc) how you use them is very different. Even if schemaless data stores are the future, short term there are a lot of applications and organizations which could benefit from an easy way to cloud scale a relational database today.
+# Azure table storage could be adjusted/upgraded to support some of the previous SDS feature set. I know they ultimately had two very different goals, but if Microsoft could add some secondary indexes and sorting capabilities I could see it solving 80% of the what SDS does today.
+
+The SDS blog post goes on to state,
+
+bq. _"Developers will be able to very easily provision themselves a logical server and database and begin developing against it immediately using the existing tools and technologies that they are accustomed to. We are providing an experience where a developer can take an existing application and just change the connection string to point it to the cloud and have it just work."_
+
+This is a very ambitious goal which is further complicated by their desire to bring it to market in 2009. Again, even if it is just a short term fix, I am looking forward to it.

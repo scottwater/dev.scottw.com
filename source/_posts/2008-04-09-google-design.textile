@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Google Design"
+date: 2008-04-09 11:53
+comments: false
+---
+
+I was just reading over some of the documentation on "Google App Engine":http://scottw.com/software/gae/ when something very obvious finally set in.
+
+When it comes to design & branding I am not sure if any company is nearly as consistent as Google. Every page/app/service is a white background, a couple shades of blue, and a bunch of well placed small images. If you take each page on it's own it is downright boring. However, if you sum up the volume of everything Google it is beautiful in it's simplicity.
+
+There are few companies compared as much as Google and Microsoft, so why should this post be any different? Browse around "Microsoft.com":http://www.microsoft.com and you see many varying styles depending on  product and markets. Google always seems to get the benefit of doubt, especially when compared to Microsoft, but I personally just find the _boringness_ of Google to be a much better experience.
+
+What do you think? Is Google Beautiful? Boring?

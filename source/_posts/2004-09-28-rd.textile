@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Regional Director"
+date: 2004-09-28 23:54
+comments: false
+---
+
+As "Don":http://donxml.com "pointed out":http://donxml.com/allthingstechie/archive/2004/09/28/1370.aspx, I was recently appointed the "Microsoft Regional Director":http://www.microsoftregionaldirectors.com for New Jersey.
+
+bq. Regional Directors aren't Microsoft employees -- they're independent developers, architects, trainers, and other professionals who provide a vital link between Microsoft and the developer community. These technical experts can give you the insight and informed perspective you need to start developing.NET-connected software today -- whether you need help learning about the .NET Framework, training developers, or implementing all aspects of a solution. Contact a Microsoft-endorsed Regional Director to kick off your project today.
+
+As you will see "here":http://www.microsoftregionaldirectors.com/Public/rdFind.aspx, it is a great group of individuals to be affiliated with and I am really excited to be part of it.
+
+"Jonathan Goodyear":http://aspsoft.blogs.com/jon/, "Doug Seven":http://dotnetjunkies.com/WebLog/DougSeven, and "Drew Robbins":http://geekswithblogs.net/drewby/ were also added as well in their respective regions.

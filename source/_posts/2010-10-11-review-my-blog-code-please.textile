@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Review My Blog's Ruby Code Please"
+date: 2010-10-11 20:51
+comments: false
+---
+
+It was time to do something new with this blog again. This time, I decided to write the blog from scratch in Ruby. 
+
+If you are interested, you can find the code in my "Ameba":http://github.com/scottwater/ameba repository over on "github":http://github.com/scottwater/. 
+
+Even though it is quite small in size, it is by far the biggest piece of Ruby code I have written by myself to date. If you have any expertise with Ruby, I would absolutely *LOVE* to get some comments on the code. Things like: 
+
+* Does it look like standard ruby?
+* Can you tell it was written by someone who has worked with .NET for nearly 10 years?
+* Anything look really dumb? 
+
+It should be fairly easy to get up and running (especially if you have MongoDB running locally and use RVM). 
+
+If you do have a minute and have any comments for me, please hit me up at "scottwater@gmail.com":mailto:scottwater@gmail.com or even "@scottw":http://twitter.com/scottw.

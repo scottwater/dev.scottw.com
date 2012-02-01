@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Apology-Based Computing"
+date: 2008-11-13 14:42
+comments: false
+---
+
+!http://scottwstatic.appspot.com/images/wlw/ApologyBasedComputing_968E/image_3.png!
+
+I was watching Max Feingold's "PDC":https://sessions.microsoftpdc.com/public/timeline.aspx talk, "_Designing Your Application to Scale_":http://channel9.msdn.com/pdc2008/BB54/ and one particular quote really stuck out to me.
+
+bq. "At global scale, getting the truth is really really expensive".
+
+What he is referring to by "_truth_" is knowing exact details such as exactly how many "widgets" you have in your inventory. While there are obviously times you do need to know this, most of the time it is not necessary and you can potentially gain a lot of scale, if you can design your application to handle the times when it may be wrong.
+
+The more I dig into "Azure":http://www.microsoft.com/azure/default.mspx (and related platforms) the more apparent it is to me that the hardest part of leveraging them is going to be changing patterns you are comfortable with. In many cases, the code it takes to run on these platforms is disgustingly simple. The hard part is moving past the things you are used to doing today.

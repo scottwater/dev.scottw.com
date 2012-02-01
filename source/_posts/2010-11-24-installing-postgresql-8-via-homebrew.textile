@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Installing PostgreSQL 8 via HomeBrew"
+date: 2010-11-24 15:13
+comments: false
+---
+
+The PostgreSQL formula for "homebrew":https://github.com/mxcl/homebrew has already been updated to version 9.
+
+Thankfully, with a little help "from google":https://github.com/mxcl/homebrew/issues/issue/2802, I found "Adam Vandenberg's":https://github.com/adamv 8.4 formula.
+
+<pre><code class="bash">
+brew update
+brew install
+http://github.com/adamv/homebrew/raw/versions/Library/Formula/postgresql8.rb
+</code></pre>

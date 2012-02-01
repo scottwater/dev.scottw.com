@@ -1,0 +1,24 @@
+---
+layout: post
+title: "Four Great Free Services You Are Likely Not Using"
+date: 2009-04-16 02:21
+comments: false
+---
+
+I am constantly amazed at the number of awesome services which are available (at least in some capacity) for free. Some like Twitter get tons of press. Others, provide a quality service to a loyal set of users but largely remain out of the spotlight.
+
+Here are four services which you might not have heard of, but I highly recommend you look into.
+
+1. "Instapaper":http://instapaper.com/ - So much to read, so little time. Instapaper provides a very simple unobtrusive way to save a link to be read later. Simply click a bookmarklet and it is done. No confirmation. When you are ready to read the items just navigate back to Instapaper.com. There is also an iPhone app which lets you read your links on the go.
+
+There are other similar services, but none are as drop dead simple as Instapaper.
+
+2. "Tumblr":http://tumblr.com - No other way to put, just really simple hosted blogging. There have been times in the past where I was ready to stop hosting my own blog and Tumblr is definitely where I would go. So many bloggers get caught up on all the other meta-features and forget it is just about the content. With Tumblr, all you really have is the content. Similar to Instapaper, an iPhone app makes it even better on the go ("My Tumblr Site":http://scottw.me/).
+
+3. "Wufoo":http://wufoo.com - Wufoo servers one basic purpose, make it easy to build clean HTML forms. Really easy to use and very helpful for everything from contact forms to mini surveys.
+
+4. "Disqus":http://disqus.com - I debated putting this one on the list since it is gaining popularity, but I am still shocked when I visit an independent blog not using it. Comments are the lifeblood of a blog and Disqus simply makes them better via great spam prevention, bi-directional email, and even support for Facebook Connect.
+
+h3. Your Turn
+
+_So, what services am I missing? Which would you add to the list?_

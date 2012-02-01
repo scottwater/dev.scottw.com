@@ -1,0 +1,10 @@
+---
+layout: post
+title: "Vim Fugitive Screen Cast"
+date: 2011-04-26 15:00
+comments: false
+---
+
+I did not really see benefit of "Vim Fugitive":https://github.com/tpope/vim-fugitive until after I watched this excellent screen cast, "Fugitive.vim - a complement to command line git":http://vimcasts.org/episodes/fugitive-vim---a-complement-to-command-line-git/. 
+
+If you use vim and git, you *need* fugitive.

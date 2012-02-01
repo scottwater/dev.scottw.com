@@ -1,0 +1,30 @@
+---
+layout: post
+title: "Search Providers with Chrome"
+date: 2009-01-15 09:51
+comments: false
+---
+
+I am a big fan of "Google's Chrome":http://www.google.com/chrome/ and I am finding more people with similar thoughts daily. At the NYC code camp, someone mentioned that the only thing holding Chrome back for him was the lack of search providers. My first thought was you use something other than Google to search? However, after a quick chat it sunk in and I realized that I frequently use many other providers.
+
+While Chrome does not provide you a separate textbox and dropdown for providers, it still has excellent support.
+
+First, what do you have to do to add a new provider? For many sites just visit it and do a quick search. As you will see in a second, Chrome will add providers it finds after you use them.
+
+Next, go "wrench" > Options > Select "Manage" next to default Search.
+
+!http://scottwstatic.appspot.com/images/wlw/SearchProviderswithChrome_5234/image_3.png(Google Chrome Options)!
+
+On the Manage screen you will see the search providers Chrome understands and a Keyword associated to them. The keyword defaults to the domain name, but can easy be changed to enable quicker searches.
+
+!http://scottwstatic.appspot.com/images/wlw/SearchProviderswithChrome_5234/image_9.png(Search Engines)!
+
+Here is the edit screen.
+
+!http://scottwstatic.appspot.com/images/wlw/SearchProviderswithChrome_5234/image_8.png(Edit Search Engine)!
+
+What does this all mean? It means than on this computer, if I enter "st" + space in the menu bar, I can easily execute a search against twitter. Throw in a quick cntrl+L to get to the menu bar and my hands never leave the keyboard.
+
+!http://scottwstatic.appspot.com/images/wlw/SearchProviderswithChrome_5234/image_82265801-5b5c-4b67-95cd-6d91f4a39772.png!
+
+Also note, if for whatever reason, Chrome does not discover your provider/site, you can also manually enter one and assign your own keyword shortcut. Nice!

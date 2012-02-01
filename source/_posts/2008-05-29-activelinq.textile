@@ -1,0 +1,87 @@
+---
+layout: post
+title: "ActiveLinq"
+date: 2008-05-29 14:20
+comments: false
+---
+
+I have been "evaluating Linq to SQL and Castle ActiveRecord":http://scottw.com/code/developer-choice/ for a small project I am working on. In end I decided to go with ActiveRecord. As part of my experiment, I did a quick prototype of an ActiveRecord *_like_* pattern using Linq to SQL.
+
+I have zero plans to continue to working on and I cannot stress ActiveRecord *_like_* enough. In all honesty, this is an insult to ActiveRecord, but life is too short and there is no reason for this code to die on my hard drive if someone else might find it useful.
+
+h3. What does it do?
+
+What it does today is enable very simple querying without the need write more than a line of code. There are some parts like using lambas for the where filter that I really like, but there are others like the order by which feel hacky.
+
+h3. How to use it?
+
+# Add the code files in the download to your project
+# Take a Linq to SQL class and derive from from ActiveLinq
+# Register the connectionstring for each type (preferably in App_Start)
+
+h3. Example:
+
+<pre><code class="csharp">
+[Table(Name = "wc_Users")]
+public class User : ActiveLinq<User>
+{
+   //Columns
+}
+</code></pre>
+
+Then you can use it like this:
+
+<pre><code class="csharp">
+[TestFixture]
+public class LinqRunner
+{
+    [TestFixtureSetUp]
+    public void Init()
+    {
+        ActiveLinqStarter.RegisterTypesByConnectionstring("...", typeof(User));
+    }
+ 
+    [Test]
+    public void FindFirstUserMatchingCondition()
+    {
+        User u = User.FindFirst(ux => ux.IsEnabled && !ux.IsAdmin,  User.OrderByAsc(x => x.Email));
+        Assert.IsNotNull(u,"user could not be found");
+    }
+ 
+    [Test]
+    public void FindASingleUserRecord()
+    {
+        User u = User.FindOne(ux => ux.Username == "scottw"); 
+        Assert.IsNotNull(u,"user could not be found");
+ 
+        u = User.FindOne(ux => ux.Username == "DOES NOT EXIST");
+        Assert.IsNull(u, "A user was found when it should not have been");
+    }
+ 
+    [Test]
+    [ExpectedException(typeof(ArgumentException))]
+    public void FindASingleUserRecordException()
+    {
+       User.FindOne(ux => ux.IsEnabled); //Should return 16 enabled users
+    }
+ 
+    [Test]
+    public void FindAllUserRecords()
+    {
+        var users = User.FindAll(null, null); 
+        Assert.IsTrue(users.Count == 17, "Could not find all 17 users");
+    }
+ 
+    [Test]
+    public void FindAllUserRecordsWithOffset()
+    {
+        var users = User.FindAll(5,20, null, null);
+        Assert.IsTrue(users.Count == 12, "Offset failed, should be 12 uses");
+ 
+        users = User.FindAll(0, 20, ux => ux.IsEnabled);
+        Assert.IsTrue(users.Count == 16, "Could not find all 16 enabled users");
+    }
+}
+</code></pre>
+
+"Download ActiveLinq":http://scottw.com/files/downloads/activelinq.rar.

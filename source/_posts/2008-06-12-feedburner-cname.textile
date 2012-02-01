@@ -1,0 +1,28 @@
+---
+layout: post
+title: " Are You a FeedBurner Fool?"
+date: 2008-06-12 13:13
+comments: false
+---
+
+There are few things more important to a blog than it's RSS feed. However, there are way too many good blogs out there who are playing the equivalent of blogging Russian Rullet with their  blog's feed for no good reason.
+
+In case you have been living under a blogging rock, "FeedBurner":http://feedburner.com is a company (recently acquired by Google) who provides the following services free over charge to bloggers:
+
+# Publicize your content and make it easy for people to subscribe.
+# Optimize distribution so that your content is properly formatted for all of the major directories and can be consumed by subscribers wherever they are.
+# Analyze your traffic to learn how many subscribers you have, where they're coming from and what they like best.
+# Make Moneyitize by participating in the FeedBurner Ad Network. Why not reward yourself for your effort?
+
+While not listed above, another service provided by FeedBurner is the hosting of your feed. Since RSS probably accounts for 70% or more of the average blog's traffic, this is a very valuable proposition. However, it comes with a very substantial risk; you are completely giving up control of subscribers to FeedBurner. If anything bad where to ever happen to FeedBurner, you could potentially lose all of your blog's subscribers. Or put another way, imagine a blog like "TechCrunch":http://techcrunch.com having nearly 800K subscribers today and zero tomorrow. I wonder what that would do to revenues and valuations?
+
+FeedBurner does a redirect feature, but it doesn't provide very much functionality. In addition, this feature is only usable if FeedBurner is still around. I know Google acquired them and this does decrease some of the risk (and scares the hell out of others), but there are no guarantees.
+
+What makes this whole thing even crazier is there is a very easy way to continue using FeedBurner and additionally protect protect your feed: "MyBrand":http://www.feedburner.com/fb/a/publishers/mybrand. MyBrand is a FeedBurner service which among other things allows you to specify your own url for FeedBurner to use via a "DNS CNAME record":http://www.webopedia.com/TERM/C/CNAME.htm.
+
+bq.  	...a record in a DNS database that indicates the true, or canonical, host name of a computer that its aliases are associated with. A computer hosting a Web site must have an IP address in order to be connected to the World Wide Web. The DNS resolves the computer's domain name to its IP address, but sometimes more than one domain name resolves to the same IP address, and this is where the CNAME is useful.
+MyBrand used to be a commercial service and even though it used to only cost a couple dollars a month to use, I think this is why most blogs are not using. With the Google acquisition it is now completely free and very easy to setup. FeedBurner tracks statistics based on your feed name and not the Url, so there is absolutely *nothing to lose*. Once setup, if for any reason you need to take back control of your feed, you can change it from a CName to a regular DNS entry.
+
+Finally, while the MyBrand link above points out you will need to setup a CNAME record, this is a very easy thing to do if you manage your own DNS and I have yet to come across a reputable ISP who would not set one up for you if you do not manage your own DNS.
+
+If you currently use FeedBurner, you owe it to yourself to make this change ASAP. Everyday you wait you run the risk of losing more subscribers.

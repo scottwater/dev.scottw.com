@@ -1,0 +1,39 @@
+---
+layout: post
+title: "Pandora One &ndash; Simple Done Right"
+date: 2009-05-28 12:49
+comments: false
+---
+
+Last night I asked on Twitter "if anyone had signed up":http://twitter.com/scottw/status/1939612283 for "Pandora One":http://www.pandora.com/pandora_one and thought it was worth the $36/yr price.
+
+"Omar Shahine quickly responded":http://twitter.com/OmarShahine/status/1942832774 that he felt it was and also said, "I consider it a donation for such an an awesome service". He is absolutely correct. Even if Pandora One sucked, making a donation to such a useful service is definitely worth it. So this morning I went ahead and signed up and I have to say it is an absolutely fabulous experience on a couple fronts.
+
+First, before we even get to the application, check out the sign up process and form (assumes you already have an account).
+
+!http://scottwstatic.appspot.com/images/wlw/PandoraOneSimpleDoneRight_7C27/pandoraone_b80f7628-906e-40ed-84ff-4f8260c47c54.png(pandoraone sign up form)!
+
+It really doesn't get much more simple than this. No request for information they don't need. An easy option to opt out of auto renewing. A thing of beauty if you ask me (although for the record, I would have loved to use PayPal or Amex, but maybe that is just me).
+
+Next, the client. It serves a very simple task, show what is playing and it does it very well.
+
+!http://scottwstatic.appspot.com/images/wlw/PandoraOneSimpleDoneRight_7C27/image_cfcd6dd6-1217-4ef2-96a6-4b752c2aef58.png(Pandora One Client)!
+
+There is even some nice Growl like popups when the song changes.
+
+!http://scottwstatic.appspot.com/images/wlw/PandoraOneSimpleDoneRight_7C27/image_9da52f03-fc77-4071-a594-afba0b3aac10.png(pandora one growl)!
+
+Finally, there are a bunch of options at your disposal for configuring the player, experience, and ratings.
+
+!http://scottwstatic.appspot.com/images/wlw/PandoraOneSimpleDoneRight_7C27/image_30a18a9c-a90b-4f2a-841a-006ad72eee6d.png(pandora one right click)!
+
+!http://scottwstatic.appspot.com/images/wlw/PandoraOneSimpleDoneRight_7C27/image_b01837fb-054a-4339-b4f2-b4480755db08.png(pandora one preferences)!
+
+Overall, this is a killer experience and I highly recommend checking it out if you are even an occasional Pandora user.
+
+Having said that, here are a couple things I think could make this better:
+
+# Gifts - At $36 this would make an awesome gift for people. I would recommend they make it very easy to give this away very easily.
+# At least on Windows (have not tried the Mac yet) I cannot get the player window to completely disappear.
+
+...thought there would be more. This is really good. Stop reading this and go buy it.

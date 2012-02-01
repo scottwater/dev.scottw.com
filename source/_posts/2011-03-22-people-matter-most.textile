@@ -1,0 +1,10 @@
+---
+layout: post
+title: "People Matter Most"
+date: 2011-03-22 13:32
+comments: false
+---
+
+"Dropbox and why you should invest in people":http://cdixon.posterous.com/dropbox-and-why-you-should-invest-in-people
+
+bq. Dropbox is one reason I now have a strict rule to only invest in teams. There are other examples of companies I missed and other examples of the converse - companies where I invested in mediocre people chasing a great idea and the company failed - but Dropbox is emblematic to me as to why you should always invest in people over ideas.

@@ -1,0 +1,15 @@
+---
+layout: post
+title: "Amazon SQS Features Access Policy"
+date: 2009-04-09 10:52
+comments: false
+---
+
+The pace of change is really picking up in the cloud space. Today, Amazon "announced a very significant update":http://aws.typepad.com/aws/2009/04/powerful-new-sqs-features.html to their "Simple Queue System":http://aws.amazon.com/sqs.
+
+bq. AWS is also introducing additional permission features that control access to Amazon SQS and to each of its fundamental actions on a very fine-grained basis. You can exercise this control at two levels:
+
+# At the higher level you can use the new AddPermission and RemovePermission functions to set and remove particular access rights for each queue. Access rights, including the ability to send, receive, or delete messages, change message visibility, or to retrieve queue attributes, can be granted to any AWS user via their AWS account number.
+# At the lower level you can use our new Access Policy Language. This expressive language makes its debut as part of this SQS release; over time, we plan to employ this Access Policy Language with our other services. The Access Policy Language enables the creation of complex rules to enable access to queues based on identity (AWS account number), source IP address, date, time, and more.
+
+In a nutshell, it should now be possible to create queues which allow others in a secure way to read and write from them. This has a lot of potential for application integration scenarios.

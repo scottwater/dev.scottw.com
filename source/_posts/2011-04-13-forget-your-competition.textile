@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Forget Your Competition"
+date: 2011-04-13 14:00
+comments: false
+---
+
+This is almost "tattoo worthy":http://thesherpaproject.com/2011/01/06/focusing-on-competition-is-a-waste-of-time/
+
+bq. “Focusing on competition is a waste of time.”
+
+Countless hours are wasted daily talking and thinking about what your competitors are doing at the expensive of focusing on what your customers actually need and want from your software.
+
+Even better: 
+
+bq. Simply stated, my preference is to spend my time trying to build great software.

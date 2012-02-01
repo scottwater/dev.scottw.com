@@ -1,0 +1,16 @@
+---
+layout: post
+title: "The Three S's"
+date: 2007-10-10 13:30
+comments: false
+---
+
+Brian Clark over on "CopyBlogger":http://www.copyblogger.com/ (great blog btw) has a very interesting post, "_"Here's How to Stop Worrying About Google Once and for All":http://www.copyblogger.com/is-google-evil/_".
+
+bq.  Believe it or not, my strategy since the beginning of Copyblogger has been to pretty much forget search engines exist. Don't get me wrong... I'm not doing anything to annoy them, and I certainly don't turn away visitors from search engines. I just don't depend on them for traffic.
+
+Brian sums things up with his three S's, "*Subscribers, Social Medial, and Selling*". I can break it down into one, "*Make Meaning*" [1].  If the goal of building a site (blog) is to simply bring in AdSense traffic you will always be at the "mercy of Google":http://britishinside.com/archive/2007/10/08/Is-it-still-duplicate-content-with-_2200_noindex_22003F00_.aspx and will generally not enjoy the process.
+
+fn1. Make Meaning was taken from a "Guy Kawasaki":http://blog.guykawasaki.com/ talk on the ""Art of the Start":http://blog.guykawasaki.com/2006/06/the_art_of_the_.html". He is talking about start-ups, but I think the same rule can be applied to just about anything money related.
+
+<embed id="VideoPlayback" style="width: 400px; height: 326px" align="middle" src="http://video.google.com/googleplayer.swf?docId=-3755718939216161559" type="application/x-shockwave-flash" flashvars="playerMode=embedded" salign="TL" scale="noScale" bgcolor="#ffffff" quality="best" allowscriptaccess="sameDomain"> </embed>

@@ -1,0 +1,29 @@
+---
+layout: post
+title: "CarrierWave and Ruby 1.9.2 and Other Tips"
+date: 2011-03-31 14:12
+comments: false
+---
+
+I spent some time yesterday with the excellent "CarrierWave":https://github.com/jnicklas/carrierwave gem. 
+
+bq. This gem provides a simple and extremely flexible way to upload files from Ruby applications. It works well with Rack based web applications, such as Ruby on Rails.
+
+Everything was going great until I wired up "RMagick":https://github.com/rmagick/rmagick to enforce some constraints on the image size. Once RMagick was running, anytime I uploaded an image Ruby would segfault and kill the webrick process. 
+
+I thought there might be an issue with my ImageMagick install, so I opened up the rails console and manually invoked the uploader and it worked as expected. I little searching around lead me to this "post on StackOverflow":http://stackoverflow.com/questions/2838307/why-is-this-rmagick-call-generating-a-segmentation-fault. 
+
+Assuming you are using Homebrew, you can resolve this issue with: 
+
+<pre><code class="bash">
+brew remove imagemagick
+rm -rf `brew --cache imagemagick`
+brew install -f imagemagick --disable-openmp
+</code></pre>
+
+A couple interesting tips and suggestions on CarrierWave:
+
+* Check out the "RailsCast on CarrierWave":http://railscasts.com/episodes/253-carrierwave-file-uploads screencast. It is a great quick overview and provides enough info to get you up and running in a couple of minutes. 
+* To remove an attachment, just include a checkbox with :remove_attribute_name in your form. 
+* Don't forget to add things like :remove_attribute_name and :attribute_name_cache to your attr_accessible. I lost about 30 minutes debugging because I forgot to make this change. 
+

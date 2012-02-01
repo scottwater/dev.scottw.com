@@ -1,0 +1,10 @@
+---
+layout: post
+title: "Do One Thing Well"
+date: 2011-01-27 03:58
+comments: false
+---
+
+bq. If you're starting a new company, the best thing you can do is keep your feature set small and focused. Do one thing as best as you possibly can. Your users will beg and beg for more functionality. They will tell you their problems and ask you to fix it. My philosophy is that they're right if their feature request is right only if it works for 80% of your customers. Until you have a lot of resources, stay focused on your core competency.
+
+"Why is Dropbox more popular than other tools with similar functionality?":http://www.quora.com/Dropbox/Why-is-Dropbox-more-popular-than-other-tools-with-similar-functionality/answer/Isaac-Hall?srid=hvc via Isaac Hall, co-founder of Syncplicity

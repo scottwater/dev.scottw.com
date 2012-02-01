@@ -1,0 +1,26 @@
+---
+layout: post
+title: "Fun with ISAPI Filters"
+date: 2008-04-28 11:52
+comments: false
+---
+
+I am a big fan of ISAPI filters and "ISAPI_Rewrite":http://www.isapirewrite.com/ in particular. If you are not familiar with ISAPI filters and ISAPI_Rewrite, in a nutshell:
+
+bq. ISAPI_Rewrite is a powerful URL manipulation engine based on regular expressions. It acts mostly like Apache's mod_Rewrite, but is designed specifically for Microsoft's Internet Information Server (IIS).
+
+For $99 a server, you cannot go wrong (although there is a nice "free open source version as well":http://cheeso.members.winisp.net/IIRF.aspx.)
+
+There are many SEO and redirect usages of the product. One of my favorites is cleaning up and simplifying urls to make them more readable and emailable.
+
+<pre><code class="xml">
+RewriteRule /search/([a-zA-Z0-9\-\._:]*?)/ /search/?q=$1 [I,L]
+RewriteRule /search/([a-zA-Z0-9\-\._:]*?)/\?p=(\d+) /search/?q=$1&p=$2 [I,L]
+</code></pre>
+
+Using the example code above, I can now build and share search links in my blog (using Graffiti) like this: "http://scottw.com/search/graffiti/":http://scottw.com/search/graffiti/ (instead of http://scottw.com/search/?q=graffiti). I won't go into all of the ins and outs of ISAPI_Rewrite, but basically:
+
+* Declare a new rule
+* Provide a regex pattern
+* Provide a url to direct the request to (in this case the Graffiti search url)
+* (optional) Add parameters/settings

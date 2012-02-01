@@ -1,0 +1,69 @@
+---
+layout: post
+title: "Quick Tips For ASP.Net - Part One"
+date: 2007-02-15 15:23
+comments: false
+---
+
+Just about everyone has been to a session on ASP.Net best practices, read a book or 10 on the subject, and possibly even a couple of blog posts or MSDN articles.  This post is NOT one of them. It is simply a quick list of tips and suggestions for making your ASP.Net application a little better.
+
+I jotted down the tips below over the course of the morning. It is by no means exhaustive and I hope to publish another set of tips or two shortly. If you have any other suggestions/tips, please list them below. If you are not the kind of person who likes to comment on a blog, please drop me a line at "scottwater@gmail.com":mailto:scottwater@gmail.com. I will either add them below or create another post and list them. I am also working on a set of caching tips, so if you have any of them, there will be a specific post related to caching.
+
+Tip: *(#dropdown)Do not use the AutoPostBack attribute on the DropDownList control to simply redirect to another page.*
+
+There are probably cases when this might make sense, but for the most part it is overkill. Using the autopostback for a redirect requires extra roundtrip to the server. First the autopostback returns to the server and processes everything up to the event handling the postback. Next a Response.Redirect is issued which goes back to the client requesting the client use another page. So you end up with two separate requests + processing just to get a user to another page.
+
+Using the onchange event of the select element, we can do this all on the client. In the sample below, I am simply redirecting to the current page with an updated querystring element. Your logic will vary, but in the case below, I am avoiding the zero index.
+
+<pre><code class="html">
+<asp:DropDownList runat="Server" ID = "dropdown" onchange = "if(this.selectedIndex &gt; 0) { window.location = window.location.pathname + '?t=' + this[this.selectedIndex].value;}" />;
+</code></pre>
+
+
+Tip: *(#nolabel)Never use the ASP.Net Label control.*
+
+Ever is a strong word, but except for some quick and dirty style hacks you should never ever use this control. Any text is rendered inside a span control which is usually unnecessary and complicates any CSS styling you may be trying to use. In most cases, you can replace the Label with a Literal and achieve the same results.
+
+Tip: *(#repeater)Use the ASP.Net Repeater instead of DataList, DataGrid, and DataView controls*
+
+The Repeater is the single most powerful control shipped in ASP.NET. It is versatile and lightweight. There are times (especially prototyping) when the other databound controls make sense to use, but they generate a lot of extra markup and generally complicate the page with all of their events and styling. Using the Repeater, you may write a little more code up front, but you will be rewarded in the long run.
+
+Tip: *(#cachetime)Understand how to effectively use caching.*
+
+By now, most ASP.NET developers know about the Cache. Most examples show the virtue of caching for hours at a time. Very little data that is worth the effort to display on a web page requires caching for this long. The main reasons for caching are performance related. Memory in ASP.NET is still a very limited resource. Do not waste it by caching anything more than a couple of minutes unless it is very expensive to regenerate.
+
+Tip: *(#memory)Always set a memory threshold for your AppPool.*
+
+A related tip would be to first understand the total memory available on your box: how many sites are there, is SQL running locally? Is there anything else on this box which will consistently use Memory?
+
+In most cases, you should never set the available memory for an AppPool above 800mb's unless you can also set the 3/gb switch (then you can use about 1200mb).  Allowing memory to go unchecked or set about 800mb can bring even a moderately sized site to it's knees once too much memory is used.
+
+Tip: *(#appoffline)Use AppOffline.htm for updates*
+
+If you are making any changes to files in your bin directory, always use the AppOffline.htm file. It is very likely that while you uploading (or copy & pasting) your updates, users will see an error message. It is much better to show them one that you purposely created and can explain the situation vs. the built in ASP.NET error pages (or even your own customError page).  In addition, this will help prevent the locking .dll issue that is not supposed to exist anyway.
+
+Tip: *(#pagevalid)Always check Page.IsValid in your button's EventHandler.*
+
+Just because you are using ASP.Net validation controls, do not assume the page could not be submitted with invalid data.
+
+Also, just because you hide a control, do not assume buttons/textboxes/etc on it are not submit-able. It is perfectly fine to hide a control that a user should not access, but with very little code (or using a third party tool) users can easily make an HttpPost with any data they choose.
+
+Tip: *(#permaredirect)When redirects are permanent, use a 301 status code.*
+
+This use to be a little more manual, but with ASP.NET 2.0, it is even easier:
+
+<pre><code class="csharp">
+Response.RedirectLocation = "http://site.com/newlink.aspx";
+Response.End();
+</code></pre>
+
+Tip: *(#toabsolute)To create fully qualified URLs, use the new VirtualPath class.*
+
+<pre><code class="csharp">
+string relativePath = "~/somefolder/test/123.aspx"
+Uri newUri = new Uri(Request.Url, VirtualPathUtility.ToAbsolute(relativePath));
+</code></pre>
+
+Again, please add any other suggestions below. I am looking forward to reading them.   
+
+*Update*: It looks like "there is a case for using the Label control":http://haacked.com/archive/2007/02/15/ASP.NET_Tip_-_Use_The_Label_Control_Correctly.aspx as an html label element (for accessibility). I was unaware of this functionality and will call it out better in another tip installment. Thanks "Phil":http://haacked.com and "Dusty":http://dustyd.net/!

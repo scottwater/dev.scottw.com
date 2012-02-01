@@ -1,0 +1,94 @@
+---
+layout: post
+title: "MvcContrib NVelocity Extension"
+date: 2008-05-13 14:07
+comments: false
+---
+
+One of the major selling points of "ASP.Net MVC":http://www.asp.net/mvc is its extensibility options. Almost every piece of it can updated or swapped out. I have been hacking on the bits quite a bit over the last couple of weeks and have been using the "MvcContrib":http://codeplex.com/MVCContrib to augment some of the built in ASP.Net functionality.
+
+The main piece of MvcContrib I have been using is it's NVelocity view engine. As I previously mentioned, I personally find "NVelocity much easier to work with":http://scottw.com/code/nvelocity/ than standard aspx pages.
+
+One of the features I had previously leveraged in NVelocity was the concept of a Toolbox. A toolbox, as the name implies is a collection of objects you can build to make building views easier and a little more "DRY":http://en.wikipedia.org/wiki/Don't_repeat_yourself. Previously I have done this via a configuration file, attributes ("Graffiti":http://graffiticms.com/ "Chalk Extensions":http://dev.graffiticms.com/developer/chalk-extensions/writing-your-own-chalk-extension/), or by simply adding items to the NVelocity context.
+
+Adding support to access the NVelocity context would have been pretty easy, but it would have worked against one of the tenants of MVC, separation of concerns. I could have also just sub-classed the base controller and added my tools to ViewData dictionary, but again I would abusing the separation of concerns by introducing a dependency between my views and controllers.
+
+So now I needed to find a (simple) way to add my toolbox items without building a dependency between my controllers and views. I had already been using "Castle Windsor":http://www.castleproject.org/container/index.html to manage other dependencies in my project, so with a little trial and error (and some documentation reading) I was able to add optional support for injecting one or more IToolbox instances directly into my view factory which in turn, exposes them to my views.
+
+Unfortunately, I could not figure out a clean was to extend the NVelocityViewFactory, so I took the easy way out and just copied and pasted the code into my own project. [Note: If others find this helpful, I will see if I can get it committed to the main project].
+
+Once I copied NVelocityViewFactory.cs, the changes I needed to make were very trivial.
+
+First, I created an interface called IToolbox with a single property to implement, Key. Key is used to expose the IToolbox object to the NVelocity view (ie, $key.ToolboxPropertyOrMethod).
+
+<pre><code class="csharp">
+public interface IToolbox
+{
+    string Key { get; }
+}
+</code></pre>
+
+
+Example:
+
+<pre><code class="csharp">
+public class MathTool : IToolbox
+{
+    public string Key { get { return "math"; } }
+ 
+    public int Add(int x, int y)
+    {
+        return x + y;
+    }
+ 
+    public int Subtract(int x, int y)
+    {
+        return x - y;
+    }
+}
+</code></pre>
+
+
+Next, I added a new constructor to the NVelocityViewFactory class which accepted an array of IToolbox as well as one which accepted an array of IToolbox and the standard IDictionary which was already in place.
+
+Finally, I updated a copy of the NVelocityView class to work with and properly pass along the array of IToolbox.
+
+You can "download the code":http://scottw.com/files/downloads/nvelocity_mvc.rar and add it to your project. To use it, simply wire up the NVelocityViewFactory via Windsor and then configure it to pass along your own IToolbox items as an array.
+
+<pre><code class="xml">
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <components>
+ 
+        <component id="ViewFactory"
+            service="System.Web.Mvc.IViewEngine, System.Web.MVC"
+            type="WaterCooler.Web.MVC.NVelocityViewFactory, WaterCooler.Web">
+ 
+            <parameters>
+                <tools>
+                    <array>
+                        <item>${ToolBox.DateTool}</item>
+                        <item>${ToolBox.MathTool}</item>
+                    </array>
+                </tools>
+            </parameters>
+ 
+        </component>
+ 
+        <component id="ToolBox.DateTool"
+            service ="WaterCooler.Web.MVC.IToolbox, WaterCooler.Web"
+            type="WaterCooler.Web.MVC.DateTool, WaterCooler.Web"
+        />
+ 
+        <component id="ToolBox.MathTool"
+            service ="WaterCooler.Web.MVC.IToolbox, WaterCooler.Web"
+            type="WaterCooler.Web.MVC.MathTool, WaterCooler.Web"
+        />
+        
+    </components>
+</configuration>
+</code></pre>
+
+And that should be it. Now as you create a new IToolbox, you can quickly and easily inject them to your views.
+
+"Download":http://scottw.com/files/downloads/nvelocity_mvc.rar.

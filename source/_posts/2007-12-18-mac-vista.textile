@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Apple Convinced Me To Install Vista"
+date: 2007-12-18 14:34
+comments: false
+---
+
+I saw the new Mac vs. PC guy ad "misprint":http://www.apple.com/getamac/ which stated the fastest Vista laptop tested this year was the MacBook Pro, so I had to give it a shot.
+
+bq. The fastest Windows Vista notebook we've tested this year (through 10/25/07) is a Mac. Try that again: The fastest Windows Vista notebook we've tested this year -- or for that matter, ever -- is a Mac. Not a Dell, not a Toshiba, not even an Alienware. ["PC World":http://www.pcworld.com/article/id,136649-page,3-c,notebooks/article.html]
+
+I first did the test as a virtual machine, but the graphics score was pretty low (I think a 1.9). I then did the same test running it directly on "BootCamp":http://www.apple.com/macosx/features/bootcamp.html" and got a 5.1. The lowest scored item was memory. It does haves  4 gigs of RAM, but on 32 bit only ~ 3 gigs are recognized. If 64 bit drivers are released, I might give it another shot. Still, 5.1 is not too bad, especially on a Mac. :)
+
+!http://scottwstatic.appspot.com/images/2007-12-18_vista_score.jpg(Vista Score)!

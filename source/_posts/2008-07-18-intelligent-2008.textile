@@ -1,0 +1,24 @@
+---
+layout: post
+title: "in.telligent 2008"
+date: 2008-07-18 01:41
+comments: false
+---
+
+!http://scottwstatic.appspot.com/images/wlw/in.telligent2008_13118/hero-dallas-skyline_1efe5925-58c0-406f-a2b7-afc7c9ffe607.png(in.telligent 2008)!:http://in.telligent.com
+
+Registration is now open for "in.telligent":http://in.telligent.com 2008 which will be take place October 20 to October 22 in Dallas, Texas. This is the evolution of the what we called the CSDC (Community Server Developers Conference) last year.
+
+So of the changes you will this year:
+
+# A lot more polish. There has been a team working hard on this for a couple of months now.
+# No weekends. We were feeling things out last year and scheduled the CSDC over the weekend. This year we are starting early on Monday morning.
+# A much nicer venue with "real" Internet access. The country club was nice last year, but they were not ready for us and about a 100 of our friends.
+# Many more people. Not only is the venue nicer, but it can accommodate more people.
+# Multiple tracks. Last year we were very developer focused. We are still going to have a lot of great developer content (CS, Evolution, Harvest, and Graffiti) but this year we will also have a strategy track that is dedicated to helping you get the most out of your community and our software.
+# Hands on workshops - there will be a set of extended and interactive sessions on the last day. The product team will be doing two of these sessions. One on "themeing":http://in.telligent.com/sessions-and-workshops/#workshop4 and another on "building cool things":http://in.telligent.com/sessions-and-workshops/#workshop3.
+# Surprises. We have quite a few things we are hoping to announce, demo, and share at this years event.
+
+One thing that hasn't changed is demand. While we do have a larger venue, so far the response has been great. If you are thinking of attending, I would recommend registering now and taking advantage of the early bird special ($200 off).
+
+See you there!

@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Clickjacking"
+date: 2009-02-12 17:37
+comments: false
+---
+
+A meme of sorts is making it's way through Twitter illustrating "Clickjacking".
+
+bq. The idea is simple: An iframe is positioned above what looks like a clickable button on a website. This iframe is invisible to the user (opacity:0) and so the user unknowingly clicks on the iframe which may contain anything! This can be achieved through CSS alone, no JavaScript is required. A variation of this technique involves the use of JavaScript to move the iframe around the screen inline with the user's cursor, therefore achieving the same thing but without having to convince the user to click on a button. "Clickjacking Twitter - James Padolsey":http://james.padolsey.com/general/clickjacking-twitter/
+
+This is pretty nasty stuff and very easy to fall for (I did of course). Right now, the only real fix seems to be disabling iframes. Ouch.

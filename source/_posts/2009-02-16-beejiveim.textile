@@ -1,0 +1,16 @@
+---
+layout: post
+title: "BeejiveIM"
+date: 2009-02-16 12:02
+comments: false
+---
+
+One communication protocol that is not supported out of the box on the iPhone is IM/chat. While the inability to run background applications on the iPhone limits the true effectiveness of IM, "BeejiveIM":http://www.beejive.com/iphone/ definitely does makes the most out of what is available.
+
+bq. BeejiveIM is the most reliable and user-friendly mobile IM application on the market for your iPhone or iPod Touch, featuring desktop-like instant messaging and always-on efficient networking.
+
+Works with AIM/iChat/MobileMe, MSN/Windows Live, Yahoo!, MySpace, GoogleTalk, ICQ, &; Jabber.
+
+By far the biggest nock against BeejiveIM is the price. At $15.99[1] it is the most expensive application on my iPhone, but in this area there really are not a lot of alternatives (I tried "Paringo":http://www.palringo.com/en/gb/iphone/, but it never worked for me.) So far it has been very solid for me, so if you are OK with the price, I definitely recommend checking it out.
+
+fn1. I did get it for a couple dollars less when it was on sale.

@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Dell Still Does Not Get It"
+date: 2011-03-30 14:14
+comments: false
+---
+
+"Apple iPad will fail in the enterprise: Dell":http://www.cio.com.au/article/381337/apple_ipad_will_fail_enterprise_dell/
+
+bq. Apple is great if you’ve got a lot of money and live on an island. It’s not so great if you have to exist in a diverse, open, connected enterprise; simple things become quite complex.
+
+Loosely translated, _"we are going to build crap and sell it to the people watching the books"_. 
+
+Dell still does not get it. No one wants to get a Dell (anything)[1]. You might tolerate Dell. You might begrudgingly work on one of their machines, but nobody actually wakes up and says, "I hope I get a new Dell product today". 
+
+Customers talk to each other online. Everyday they talk to each other more. Companies like Dell who ignore end users will continue to decline. 
+
+fn1. OK, their monitors are actually pretty good. 

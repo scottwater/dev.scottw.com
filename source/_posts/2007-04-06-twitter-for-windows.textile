@@ -1,0 +1,37 @@
+---
+layout: post
+title: "Twitter For Windows"
+date: 2007-04-06 03:21
+comments: false
+---
+
+It looks like I have managed to get a couple of people to jump on the "Twitter":http://twitter.com/ wagon (well, I guess the tons of press probably had something to do with it.)
+
+Even though Twitter is insanely simple, there are a variety of ways to interact with it. Out of the box you get:
+
+* Web
+* SMS
+* IM (GTalk/Jabber and AOL)
+
+Most of my twittering on Windows has been via the web. However with a nice and simple API available, there are a couple Windows clients available.
+
+Tonight I tried three of them:
+
+# "triQQr":http://triqqr.de/ - This is a very new tool. Simple to use, but still needs some polish.
+# "Twitteroo":http://www.freakitude.com/2007/03/19/twitteroo-twitter-client-for-windows/ - Installed easily and posted as expected. However, it seemed to get stuck fetching recent updates so I moved on.
+# "TwitBox":http://www.winextra.com/2007/04/02/twitbox-053-bug-squasher-release/ - Very simple to use tool, no install required, see details below.
+
+!http://scottwstatic.appspot.com/images/wlw/TwitterForWindows_14898/twitbox6.png!:http://www.winextra.com/2007/04/02/twitbox-053-bug-squasher-release/
+
+It looks like I am going to stick with TwitBox. It is super easy to use, seems to do a good job of keeping itself updated, and has some very helpful keyboard shortcuts. So far, the only thing that is missing is some kind of "TinyUrl":http://tinyurl.com integration.
+
+Does anyone have any other suggestions?
+
+BTW, for those of you using a BlackBerry, the GTalk integration is really nice. If you are like me and do not have an unlimited SMS plan, this can save you some cash.
+
+*Update:*
+
+I just gave another two applications a quick try.
+
+# "Twitterlicious":http://www.ejecutive.co.uk/projects/twitterlicious - This is very nice and lightweight. Not as feature rich as Twitbox, but very usable. If Twitbox is too much for you, Twitterlicious should do the trick.
+# "Twitter WPF":http://blogs.vertigo.com/personal/alanl/Blog/default.aspx - This one looks promising, but I could not get it run. It installed (via Onclick) nicely, asked for my credentials, and now dies whenever it starts. I will give this one another try in a couple of weeks.

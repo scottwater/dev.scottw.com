@@ -1,0 +1,16 @@
+---
+layout: post
+title: "ASP.Net MVC - A Step Towards A More Simple ASP.Net?"
+date: 2007-11-14 01:52
+comments: false
+---
+
+Although I have get my hands on ASP.Net MVC bits, I have a gut feeling I am going to like it, but I think my reasoning is different than most others.
+
+It looks like there are lots of good things coming; better testability, cleaner separation of UI and business logic, and finally a way to do nice clean urls. All of this is nice, but what excites me most about it is just looks simpler. There does not appear to be a bunch events to wire up, you can build a good clean UI without creating controls, overriding events, etc.
+
+IMO, the original page framework is not that bad. It just gives you too many options to do things that quite frankly do not need to happen in a web page. In most cases, Page_Load is all you really need. When I started coding "Graffiti":http://graffiticms.com, I had the goal of keeping things as absolutely simple as possible. No server controls for the sake of server controls. No complicated set of events. Taken a step further, the public themable UI doesn't even really use pages and instead using a simple text based template system which leverages NVelocity.
+
+Only time will tell, but I am really hopeful that this will help move ASP.Net a giant step forward.
+
+Note: Yes, I am aware there are projects like "Castle":http://www.castleproject.org/ (hat tip, we are using their updated version of "NVelocity":http://www.castleproject.org/others/nvelocity/improvements.html), but unfortunately until it is "in the box" it  makes it complicated to build shippable products so I have not really dug into more than just kicking the tires.

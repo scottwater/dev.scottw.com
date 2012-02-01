@@ -1,0 +1,36 @@
+---
+layout: post
+title: "Accessing a Restful Service with Ruby via NTLM"
+date: 2010-06-02 08:55
+comments: false
+---
+
+I have been looking for an easy to use library for accessing a restful service which sits behind NTLM via Ruby for sometime now and had been largely unsuccessful until now!
+
+Last night after a bit more googling, I went back to twitter for help. "Grant Carpenter":http://twitter.com/grantc/status/15222076534 put me on the right path with this: 
+
+bq. I had the ntlm part working by patching rubyntlm (and then modifying savon). next stop: wsdl impedance "http://bit.ly/982btc":http://bit.ly/982btc
+
+The bitly link above points to a defunct project "ruby-httpclient":http://code.google.com/p/ruby-httpclient/. However, it appears to have been reborn as "httpclient":http://dev.ctor.org/http-access2 with its source now hosted on "gitub":http://github.com/nahi/httpclient.
+
+Getting a sample up and running could not be easier. 
+
+<pre><code class="bash">
+gem install httpclient
+gem install rubyntlm
+</code></pre>
+
+Note: If you are still doing _sudo gem install_ and not using RVM you are really missing out.
+
+<pre><code class="ruby">
+require 'httpclient'
+
+domain = 'http://mydomain.com'
+user = 'username'
+password = 'password'
+client = HTTPClient.new
+client.set_auth(domain,user,password)
+puts client.get("#{domain}/my-path/service/something.json").content
+</code></pre>
+
+I have only been using the httpclient library for an hour or so, but so far the it appears to be very robust with built in support for just about everything Http.

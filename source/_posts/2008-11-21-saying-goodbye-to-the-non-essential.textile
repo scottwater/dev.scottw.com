@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Saying Goodbye to the Non-Essential"
+date: 2008-11-21 11:33
+comments: false
+---
+
+!http://scottwstatic.appspot.com/images/wlw/SayingGoodbyetotheNonEssential_3A41/corner_logo_3.gif!
+
+I expect we will be hearing many "announcements like this from Google":http://googleblog.blogspot.com/2008/11/lively-no-more.html and many others in the coming weeks and months.
+
+bq. In July we launched Lively in Google Labs because we wanted users to be able to interact with their friends and express themselves online in new ways. Google has always been supportive of this kind of experimentation because we believe it's the best way to create groundbreaking products that make a difference to people's lives. But we've also always accepted that when you take these kinds of risks not every bet is going to pay off.  That's why, despite all the virtual high fives and creative rooms everyone has enjoyed in the last four and a half months, we've decided to shut Lively down at the end of the year. It has been a tough decision, but we want to ensure that we prioritize our resources and focus more on our core search, ads and apps business. Lively.com will be discontinued at the end of December, and everyone who has worked on the project will then move on to other teams.
+
+I never used Lively, so I have no idea if it was any good, but I am guessing Google looked around and realized they were not going to make money here. I wonder what is next? I wonder if it will be one of the many companies they bought (Jaiku) and essentially did nothing with?

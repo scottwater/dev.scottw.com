@@ -1,0 +1,22 @@
+---
+layout: post
+title: "mock_model vs. stub_model"
+date: 2011-03-25 14:01
+comments: false
+---
+
+I am re-reading "The RSpec Book":http://pragprog.com/titles/achbd/the-rspec-book. There are so many subtle things that you simply cannot pick up the first (or 2,3,4) times through it, especially when you are relatively new to RSpec. 
+
+One of those is stub_model. I had already been using mock_model quite a bit when I came across stub_model. 
+
+First, mock_model:
+
+bq. sets up an RSpec mock with common ActiveRecord methods stubbed out. In its most basic form, mock_model can be called with a single argument, which is the class you want to represent as an ActiveRecord model. The class must exist, but it doesn’t have to be a subclass of ActiveRecord::Base.
+
+mock_model is extremely flexible and really operates just like an ordinary mock except for a couple of ActiveRecord defaults (new_record?, id, and to_param). 
+
+Now, mock_stub. Unlike mock_model, mock_stub actually creates an instance of your model. Thus, it actually needs to a "real" model. So why bother? 
+
+bq. stub_model prohibits the model instance from accessing the database. If it receives any database related messages, such as save or update_attributes, it will raise an error.
+
+Using this can help ensure database access is not happening in places did not intend (and likely shouldn't allow). It will also help ensure your specs run quickly (no db access).

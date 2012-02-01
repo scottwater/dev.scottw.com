@@ -1,0 +1,22 @@
+---
+layout: post
+title: "Best Way to Share Links on Twitter"
+date: 2009-04-07 10:59
+comments: false
+---
+
+I have tried a couple of solutions for sharing links on "Twitter":http://twitter.com/scottw and I think I have finally settled on a winner: "bit.ly":http://bit.ly.
+
+Bit.ly provides the five main things I was looking for in a link sharing/shortening tool:
+
+# Simplicity - visit any page and click a browser bookmarklet.
+# Shortening - very small urls which means you have plenty of characters left to describe the link.
+# Publishing - easily publish to twitter. As soon as you shorten the link you are presented an option to publish right to twitter.
+# Stats - nothing earth shattering, but it nice to see which links/descriptions get the most clicks.
+# Direct links - users who click a link I tweet go directly to the link. There is no framing or second click required. For a while I was using "Tumblr":http://tumblr.com (which I love), but this required an extra click which sucked.
+
+Another very interesting option is "ow.ly":http://ow.ly. It has one really nice feature that bit.ly is missing; scheduled tweets. This way instead of blasting your followers with a bunch of links in one batch you can schedule them out over a couple of hours. However, it has one huge issue, no direct links. Even worse they frame the link which is a very confusing experience.
+
+Bit.ly is also available via an API which means I can also use it from with in "TwitterFeed":http://twitterfeed.com/ as well.
+
+Any other recommendations?

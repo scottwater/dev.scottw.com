@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Starting to Dig AIR"
+date: 2007-10-04 16:58
+comments: false
+---
+
+I am really starting to dig some "AIR":http://labs.adobe.com/technologies/air/ based applications.
+
+!http://scottwstatic.appspot.com/images/wlw/StartingtoDigAIR_B659/adobe_air_225x50_3.jpg!
+
+In particular:
+
+# "Google Analytics Air":http://www.aboutnico.be/index.php/google-analytics-air-beta-sign-up/ - a very nice desktop tool for working with "Google Analytics":http://google.com/analytics.
+# "Snitter":http://snook.ca/snitter/ - Twitter via Air.
+# "Tweetr":http://www.tweet-r.com/ - Twitter via Air again.
+
+On a side note, I still have not decided if I like Snitter or Tweetr better (both are excellent). I am still leaning towards Tweetr, but I think that is mainly because it isn't puke green.
+
+I have never done any Flash/Flex programming, so I am still not sure what it takes to build something like this with them. However, for end users, the experience of installing (and updating) an AIR application is very nice. It is sort of like OneClick, except it seems to work much better.

@@ -1,0 +1,24 @@
+---
+layout: post
+title: "My OS X Ruby Dev Setup"
+date: 2011-03-03 17:35
+comments: false
+---
+
+I recently purchased a new MacBook Pro. While OS X has a couple of options to import your data and settings from one Mac to another, I chose to go the manual approach. This way, I would be much more certain that only the apps I really need to have installed and setup make their way to the new machine. 
+
+For (ruby) developer related tasks, here is my basic list: 
+
+# Install "Homebrew":https://github.com/mxcl/homebrew. HomeBrew just keeps saving me time (and XCode since it was requested by HomeBew).
+# Using Homebrew, I installed tree, git, git-flow, macvim, vcprompt, and postgresql. Of interest here, I symlinked the default vim install to the mvim script which was setup by homebrew (banged my head on the desk with this one for a while).
+# Copied over the vimrc and related plugins. (I need to clean this up and store it properly in git).
+# Set ZSH as my default shell. I am sure there are some other technical reasons for this, but for me, the improved tab completion seals the deal.
+# Grabbed "oh-my-zsh":https://github.com/robbyrussell/oh-my-zsh via git. I am on the fence with oh-my. I don't think I am using enough of it's features to warrant having a bunch of code I am blind to executing. 
+# Setup my dotfiles. I had been using a bunch of aliases/etc I picked up from PeepCode. But this time, I chose to go with an empty file and only entered the ones I know I use all the time. I then added a quick alais to load and reload the file. This way, I can add to it over the next couple of days as necessary.
+# Installed "RVM":http://rvm.beginrescueend.com/ and setup 1.9.2 as the default. I only have a couple small projects on 1.8.7 which I hope to upgrade to 1.9.2 shortly. Fresh starts should be fresh.
+# Added a gemrc file and disabled rdocs. 
+# Added bundler and awesome_print as global default gems. There are probably a couple of others which need to go in here in the near future.
+
+That should be it. Just about everything else I may need is a quick brew/gem install away.
+
+Of interest (at least to me) is that at this time, I have not installed Textmate (or anyother editor except vim). I am still getting up to speed in vim, but with the exception of copy and pasting I feel like I am just as fast as I was in Textmate. Hopefully not having the Textmate crutch will get me over the hump.

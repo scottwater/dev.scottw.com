@@ -1,0 +1,27 @@
+---
+layout: post
+title: "Balsamiq"
+date: 2008-12-10 03:17
+comments: false
+---
+
+"Ayende's post today":http://ayende.com/Blog/archive/2008/12/08/balsamiq-mockups-wow.aspx (or yesterday) about "Balsamiq":http://www.balsamiq.com/ reminded me that I needed to write up a quick review.
+
+*Disclaimer*: _As you see this is a great tool. However, in the current economic climate I could not pass up a free post/review for a tool that I already like. So yes, I did receive a free license in exchange for writing about this tool. And yes, that will make some people a little creepy and I am usually one of those people. However, I liked the tool so this post is technically saving me $79 for the 10 minutes it took to write, which is way more than I will make in advertising_.[1]
+
+I have been using the demo version of a couple of weeks and I have to say that while it is relatively simple it is a very handy tool.
+
+Since I do not have anything interesting to share, I grabbed a nice example off of the Basamiq site.
+
+!http://scottwstatic.appspot.com/images/wlw/Balsamiq_14788/mytube_aaeca152-55da-44fa-9793-b126868dfc93.gif(my tube picture)!
+
+Here are the basics:
+
+# Everything is drag/drop and resizable.
+# Most items allow you to edit the text by clicking on them.
+# Complex items such as tables, tabs, and breadcrumbs use a comma delimited format.
+# It is built with Adobe AIR and does not post to Twitter. Seriously, an AIR application that is also not a Twitter client. I was stunned as well. :)
+
+This is a great little tool for any developer, PM, or business type person who could use a little help expressing themselves visually. At $79 this tool is a steal. *However, see my disclaimer above*.
+
+fn1. Now realizing how great a gimmick this free license move is. Kudos Balsamiq on the great tool and clever marketing. :)

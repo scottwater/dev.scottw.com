@@ -1,0 +1,22 @@
+---
+layout: post
+title: "WWDC 2009 Predictions"
+date: 2009-06-03 15:10
+comments: false
+---
+
+This is probably more of a wish list than predictions of what will be announced at "WWDC 2009":http://developer.apple.com/WWDC/. I really have zero insight into the Apple world, but I know what I want and have a few guesses.
+
+Here goes.
+
+*iPhone 3.0* - In addition to the already announced OS updates, I am hoping for a better camera and video support (it kills me that I need to carry an iPhone and Flip) as well as an announcement about improved bandwidth from AT&T. Anything else is gravy.
+
+If they really wanted to make me (and many others) very happy they would announce the ability to pre-purchase online and save me the hassle of checking store availability and potential lines. Seriously, I would pay extra to just buy and get on with my day. _Odds: Very likely_ (minus the web store)
+
+*iPhone Nano* - Price is often sited as a something that holds the iPhone back. I think size does it for many as well. If they went smaller web browsing would suck, but most other items would still be quite useful. I think you will see a version that is about 70% the size of the current iPhone. _Odds: Likely_.
+
+*iTablet* - this has been circulating for years in some way/shape/form. I would love to see a device that is about 2.5x to 3x's the size of an iPhone, running the iPhone OS, and essentially provide the iPhone experience in a slightly bigger form factor. _Odds: Somewhat likely_.
+
+*MacBook/MacBook Pro upgrades* - I have been sitting on a the new purchase of a MacBook (not pro this time) until June 8th. I would love to see the MacBook updated to support for than 4gb of RAM. I am likely going to splurge on a really good SSD, if I can boost the RAM I would be very happy. _Odds: Not likely_.
+
+*Steve Jobs cameo* - He will be there. I guarantee it. _Odds: just guaranteed it didn't I?_

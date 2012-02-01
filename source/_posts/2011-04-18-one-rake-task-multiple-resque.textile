@@ -1,0 +1,16 @@
+---
+layout: post
+title: "One Rake Task For Multiple Resque Workers"
+date: 2011-04-18 17:00
+comments: false
+---
+
+First, here is a "nice blog post":http://blog.leshill.org/blog/2011/04/03/using-resque-and-resque-scheduler-on-heroku.html by "Les Hill":http://blog.leshill.org/ on running both "Resque Scheduler":https://github.com/bvandenbos/resque-scheduler and regular Resque workers on Heroku (on the cheap :).
+
+One frustrating thing about this setup was manually starting each instance of resque (I needed at least 2; 1 for the scheduler and 1 to do work) for _local development_. A little googling around led me to this very helpful gist, _"Rake task to launch multiple Resque workers":https://gist.github.com/486161_, by "Karel Minarik":https://github.com/karmi. 
+
+I changed line number 133 to use my "jobs:work" task which always starts the scheduler first, but everything else works as is.
+
+Now, all I need to do is execute rake workers:start and I get three instances of resque running (1 scheduler and 2 workers). 
+
+*UPDATE:* Looks like I edited out the part of this post which mentions this is for local development. The AutoScale code in Les's post takes care of this in production (on Heroku). 

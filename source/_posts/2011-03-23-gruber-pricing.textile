@@ -1,0 +1,13 @@
+---
+layout: post
+title: "Gruber on Pricing"
+date: 2011-03-23 12:36
+comments: false
+title_url: http://daringfireball.net/2011/03/pricing_should_be_simple
+---
+
+bq. If you make it easy for people to understand how much they’re paying, and what they’re paying for, it is more likely that they’ll buy it. Or perhaps this is driven more by the converse: if people are confused about how much they have to pay, they’re more likely not to.
+
+On decisions like this, I am always reminded of the excellent TED talk (and book) by Barry Schwartz, "The Paradox of Choice":http://www.ted.com/talks/barry_schwartz_on_the_paradox_of_choice.html. 
+
+When most people are faced with complex and confusing choices, the choice often made is to simply not make a choice. 

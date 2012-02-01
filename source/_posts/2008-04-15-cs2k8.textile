@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Community Server 2008 Is A Live!"
+date: 2008-04-15 16:13
+comments: false
+---
+
+At "Telligent":http://telligent.com today is much more than just tax day, it is "Community Server 2008":http://communityserver.com/ release day.
+
+However, releasing your flag ship product was not enough for us, so in addition, we decided to completely rebuild the core Community Server site with brand new look.
+
+!http://scottwstatic.appspot.com/images/2008-04-15_cs2k8.png(CS 2008)!
+
+We are very excited about this release and have already been planning v.Next for the last couple of months. Besides new features and other enhancements, the next version of Community Server is going to use a new and improved build process which we expect will enable us to be more transparent with our customers &amp; users and hopefully yield an even better product in the long run.
+
+In addition, there is even more coming in the coming months as we release the "Community Server SharePoint add-on":http://communityserver.com/news/news-and-announcements/bringing-the-value-of-social-networking-to-sharepoint/.

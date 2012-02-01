@@ -1,0 +1,18 @@
+---
+layout: post
+title: "How to fix Twitter"
+date: 2007-10-03 15:23
+comments: false
+---
+
+One of the things that helped speed the mass adoption of "Twitter":http://twitter.com has been its very open APIs. I do not remember another service/product hitting the market with an open set of IDs as fast as Twitter.
+
+Although this is just speculation, these API's are killing the service. Twitter has never been very stable and has become even more unstable in recent months, even after receiving VC funding. In addition, although it looks like it is only temporary, they have recently disabled paging through your timeline in an effort to stop bots.
+
+One of the reasons most applications do not launch with rich API's from the start is scalability. Early one, in most cases, you do not accurately know how your users will use the system, what they will do with it, etc.
+
+Twitter, as I understand it, has a relatively small team and supports a wide variety of ways to interact with it (Web, SMS, IM, API). I would recommend Twitter immediately starts to disable some of these external sources, starting with the API access and bring back some stability. Once things are stable, selectively enable a few services/tools and see how things go.
+
+I would gladly temporarily give up most of the tools/services I use that interact with Twitter if I could be assured the service would actually work more than 50% of time...or they could do the other obvious thing and just sell the service to Google (we all know this is coming anyway.)
+
+If the site is up, you can find me at "http://twitter.com/scottw":http://twitter.com/scottw

@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Graffiti Plugins: Twitter & RSS"
+date: 2008-04-25 00:53
+comments: false
+---
+
+The download link below contains the binary and source for two "Graffiti plugins":http://dev.graffiticms.com/developer/plug-ins/.
+
+# Twitter - This plugin will update your "Twitter":http://twitter.com status anytime you make a new post.
+# RSS - This plugin will include the information below at the end of posts in your RSS Feed. In addition, it also allows you to customize the layout using a template.
+# Related Posts - The three posts most related to this one (based on the post content). This can sometimes be a hit or miss depending on the amount of content
+# Category - The name of the category and a link to view the other posts made to the category
+# Tags - A list of the tags for the post and a link to each tag specific page
+
+If you want to see an example, please check out my "RSS Feed":http://feeds.simpable.com/simpable.com. :)
+
+*Download: "ScottWater.Graffiti.Plugins":http://scottw.com/files/downloads/ScottWater.Graffiti.Plugins.zip*

@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Url Rewriting via ISAPI Rewrite"
+date: 2007-02-23 01:53
+comments: false
+---
+
+"Jeff Atwood":http://www.codinghorror.com/blog/ highlights some of the "bigger reasons for using an ISAPI Filter":http://www.codinghorror.com/blog/archives/000797.html.
+
+I had been contemplating using "IIRF":http://cheeso.members.winisp.net/IIRF.aspx based on feedback to "_The Best ISAPI Filter_":http://scottw.com/blog/archive/the-best-isapi-filter/, but in the end decided to stick with "ISAPI_Rewrite":http://www.isapirewrite.com/. $99 is a very reasonable price for an entire server and in my experience it just seemed to work better. Some of the regular expression capabilities of IIRF seemed more powerful, but my needs are pretty simple and even though it was not free, I picked the tool which looks like it would give me the least number of headaches in the short run.
+
+I am about 45 days into using ISAPI_Rewrite and so far I have had zero issues and *highly recommend it*. I need to clean up my .ini file, but as we approach the release of "Community Server":http://communityserver.org 2007 I will try to get it published (and hopefully a similar file for the forums as well).

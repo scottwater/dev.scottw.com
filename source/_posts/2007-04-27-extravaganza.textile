@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Community Server 2007 Theming Extravaganza"
+date: 2007-04-27 20:50
+comments: false
+---
+
+I have been doing most of my CS "news" blogging over on the "DailyNews":http://communityserver.org/blogs/dailynews/ ("rss":http://communityserver.org/blogs/dailynews/rss.aspx). I am certainly no "Dave Burke":http://dbvt.com/, but I do hope to keep the CS news flowing.
+
+However, we just announced something really fun that I think a lot of you may be interested in:
+
+h3. "Community Server 2007 Theming Extravaganza":http://docs.communityserver.org/wiki/page.aspx/239/community-server-2007-theming-extravaganza/
+
+The new "Chameleon Theming Engine":http://docs.communityserver.org/wiki/page.aspx/120/introduction-to-chameleon/ makes creating a custom theme unbelievable easy. To help show and motivate you to give a shot we are holding our first ever theming contest with some great prizes: 2 MacBooks, 2 XBox 360 Elites, Amazon gift cards and free "Community Server Personal Edition":http://get.communityserver.org/Personal.aspx licenses for anyone who enters!
+
+You have until May 28th, but there is no time like the present to get started.

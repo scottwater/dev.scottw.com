@@ -1,0 +1,45 @@
+---
+layout: post
+title: "Sinatra Jekyll Server"
+date: 2010-09-20 00:46
+comments: false
+---
+
+My blog is currently hosted on the excellent "Heroku":http://heroku.com platform and I use "Jekyll":http://jekyllrb.com/ to generate my site's content. For a variety of reasons[1], I am planning on moving off of Jekyll and onto something I have been building on the side. 
+
+In preparation for this move, I needed to switch the "Heroku stack":http://docs.heroku.com/stack from 1.8.6 to at least 1.8.7. However, the rack component I had been previously using ("Rack-Jekyll":http://github.com/bry4n/rack-jekyll) had an inner dependency I did not need which was causing the stack change to fail[2]. My first reaction was to tweak to the Rack-Jekyll source. However, my own needs are actually much simpler than Rack-Jekyll's. In addition, everything I need to host this site on Heroku with Jekyll is currently handled extremely well by Sinatra:
+
+# Write static files to the browser
+# Set proper status codes
+
+What I ended up with I creatively named, "SinatraJekyll":http://gist.github.com/587274, is listed below:
+
+<pre><code class="ruby">
+require 'sinatra/base'
+
+class SinatraJekyll < Sinatra::Base  
+
+  get /.+/ do
+    send_sinatra_file(request.path) {404}
+  end
+
+  not_found do
+    send_sinatra_file('404.html') {"Sorry, I cannot find #{request.path}"}
+  end
+
+  def send_sinatra_file(path, &missing_file_block)
+    file_path = File.join(File.dirname(__FILE__), '_site',  path)
+    file_path = File.join(file_path, 'index.html') unless file_path =~ /\.[a-z]+$/i  
+    File.exist?(file_path) ? send_file(file_path) : missing_file_block.call
+  end
+
+end
+</code></pre>
+
+As you can see there is not much too it, but it seems to be working very well. I thought about creating a repository for it, but as it stands it is just a single file with less than 20 lines so a "gist":http://gist.github.com/587274 seems like the best home for now. 
+
+If you have a feedback and/or suggestions on the code, please let me know.
+
+fn1. Really it boils down to I have an insatiable need to re-do/re-write this blog every year.
+
+fn2. Rack-Jekyll will actually build the Jekyll site (if necessary). Because of this, it has a dependency on Jekyll, which has a dependency on Liquid. For whatever reason, the most recent version of Liquid has a dependency on a version of RubyGems (1.3.7) which is not available on Heroku at this time. It appears all the parties know about the issue(s) and fixes are on the way. I could have very likely used an older version of one or more of the gems and everything would have been OK....but what's the fun in doing that. :)

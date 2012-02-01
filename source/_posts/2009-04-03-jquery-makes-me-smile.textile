@@ -1,0 +1,62 @@
+---
+layout: post
+title: "jQuery Makes Me Smile"
+date: 2009-04-03 03:54
+comments: false
+---
+
+Quick disclaimer: I am not the kind of person you should be taking JavaScript advice from. However, I did want to share something started out messy and as I applied some jQuery goodness just kept getting simpler.
+
+h3. The setup:
+
+I have been hacking away on a small application/prototype. In the standard view, the first N characters of a piece of content are displayed. If I the user wants more content, I link/button is included which toggles to the full view. If the content is relatively small, the full content is displayed. Here is my spark partial view:
+
+<pre><code class="html">
+<var content ="note.FormatContentForWeb()" />
+<div class="post" id="Note-${note.Id}">
+  <div class="entry">
+    <test if="content.Length > 200">
+      <div id="Closed-${note.Id}">
+        ${note.TruncateSafely(content,200)}...
+        <br />
+        <a href="javascript:void();" onclick="javascript:ToggleNoteViewState('${note.Id}'); return false;">Show More</a>
+      </div>
+      <div style="display:none;" id="Open-${note.Id}">
+        ${content}
+        <a href="javascript:void();" onclick="javascript:ToggleNoteViewState('${note.Id}'); return false;">Show Less</a>
+      </div>
+    <else/>
+        ${content}
+    </test>
+  </div>
+  <p class="postmetadata2">
+    <a href="/notes/note/${note.Id}">#</a> <em>saved ${note.FormatCreatedDateForWeb()}</em>
+    [<a href="javascript:void();" onclick="javascript:ArchiveNote('${note.Id}'); return false;">Archive</a>] |
+    [<a href="javascript:void();" onclick="javascript:DeleteNote('${note.Id}'); return false;">Delete</a>]
+  </p>
+</div>
+</code></pre>
+
+
+h3. The problem:
+
+Clicking on the link is awkward and really doesn't flow with rest of the page. It is sometimes there and sometimes not.
+
+
+h3. Solution:
+
+Not sure if I will keep this long term, but I decided to delete the links and wire up a double click event. DoubleClick anywhere in the "Closed" div above and it toggles itself and the "Open" div.
+
+Here is where it starts to get interesting. What would have normally been 10, 20, maybe even 30 lines of (horrific) JavaScript to parse the DOM, wire up the events, etc, essentially gets truncated down to two lines:
+
+<pre><code class="javascript">
+$(document).ready(function(){  
+  $("div[id ^='Closed']").bind("dblclick", function(){ToggleNoteViewState(this.id.slice(7));});
+  $("div[id ^='Open']").bind("dblclick", function(){ToggleNoteViewState(this.id.slice(5));});  
+});
+</code></pre>
+
+
+This leverages the "starts with" selector and binds a double click event to everything it finds. Then for good measure does the opposite on the next line.
+
+Again, there are probably cleaner ways to do this, but for someone with hacker grade JavaScript skills this really brings a smile to my face (not to mention it took all of 10 minutes with "jQuery.com":http://jquery.com and Google).

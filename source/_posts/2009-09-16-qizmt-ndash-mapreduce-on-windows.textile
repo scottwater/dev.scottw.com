@@ -1,0 +1,42 @@
+---
+layout: post
+title: "Qizmt &ndash; MapReduce On Windows"
+date: 2009-09-16 01:30
+comments: false
+---
+
+A very interesting "announcement by the folks at MySpace":http://www.myspace.com/pressroom?url=/article_display.cfm?article_id=1075:
+
+bq.    _Today, we are open-sourcing Qizmt, an internally developed framework for distributed computation created by the Data Mining team here at MySpace. Qizmt can be used for many operations that require processing large amounts of data such as collaborative filtering for recommendations and analytics._
+
+Contrary to what many of the "tech pundits are reporting":http://www.techmeme.com/090915/p87#a090915p87, this is not a recommendation engine. It is an implementation of "MapReduce":http://en.wikipedia.org/wiki/MapReduce written for windows.
+
+This opens up a nice set of options which are generally not available to developers on Windows. Heck, even "bing":http://bing.com "appears to leverage":http://ostatic.com/blog/powerset-leveraging-open-source-hadoop-powers-microsofts-bing "Hadoop":http://hadoop.apache.org/.
+
+The release is listed as Alpha, but contains a nice set of features:
+
+* Rapidly develop mapreducer jobs in C#.Net
+* Easy Do-It-Yourself Installer
+* Built-in IDE/Debugger
+* Automatically colors heap allocations in red
+* Autocomplete for rapid mapreducer development
+* Step through and debug mapreducer jobs directly on target cluster
+* From any machine in a cluster:
+* Edit mapreducer jobs
+* Debug mapreducer jobs
+* Execute mapreducer jobs
+* Administer mapreducer jobs
+* Delta-only exchange option for Mapreduce jobs
+* Configurable data-redundancy/machine level failover
+* Easily add machines to a cluster to increase processing power and capacity
+* CAC (Cluster Assembly Cache) for exposing .Net DLLs to mapreduce jobs
+* Three kinds of jobs
+* Mapreduce - Set-based logic on large amounts of data
+* Remote - For problems that don't fit into the mapreducer mold
+* Local - For orchestrating a pipeline of Mapreducer and Remote jobs
+* Three ways to exhange data durring mapreduce
+* Sorted - key/value pairs are evenly sorted accross the cluster
+* Grouped - like key/value pairs make their way to same reducer but not sorted
+* Hashsorted - super fast way to sort random data
+
+You can "grab the code":http://code.google.com/p/qizmt/ from Google Code.

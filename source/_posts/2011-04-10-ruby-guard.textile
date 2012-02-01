@@ -1,0 +1,36 @@
+---
+layout: post
+title: "Ruby Guard"
+date: 2011-04-10 21:16
+comments: false
+---
+
+While building "KickoffLabs":http://kickofflabs.com first product, we had been using a combination of "Spork":https://github.com/timcharper/spork and "Watchr":https://github.com/mynyml/watchr to speed up our spec execution ("great setup guide":http://www.rubyinside.com/how-to-rails-3-and-rspec-2-4336.html) and to re-run specs as they are changed. This has worked great, but it is a little tedious: 
+
+# It requires two terminal commands to be executed in two windows (although even this can be automated with "terminitor":https://github.com/achiu/terminitor.)
+# Requires resetting Spork when changes to routes and other configurations are made
+
+...well, I guess it isn't that bad compared to what I did the previous 10 years or so. However, step number 2 did trip me up at least once a day. 
+
+In addition, with the recent release of the "Pow":http://pow.cx/ web server, I was executing "touch tmp/restart.txt" enough that I aliased it (alias pr="touch tmp/restart.txt").
+
+(silly pun warning)
+
+*Changing of the "Guard":https://github.com/guard/guard.*
+
+bq. Guard is a command line tool to easily handle events on files modifications (FSEvent / Inotify / Polling support)
+
+Or put another way, Guard is a command line tool that watches for interesting changes and then does something about it. 
+
+In our case: 
+
+* Guard watches for changes which put "spork":https://github.com/guard/guard-spork out of sync and then restarts spork.
+* Guard watches for changes in our "specs":https://github.com/guard/guard-rspec and executes them.
+* Guard watches for changes which require Pow to be restarted and then "restarts it":https://github.com/guard/guard-pow. 
+* And just because it was so easy to setup, Guard now watches for css/js/slim changes and reloads the browser via "LiveReload":https://github.com/guard/guard-livereload. 
+
+And most importantly, all this happens by executing a single command, _guard_.
+
+I am slightly concerned there are probably four development/test gems to each runtime gem, but so far things seem solid and my development flow seems cleaner. 
+
+I will update this post if anything changes. 

@@ -1,0 +1,65 @@
+---
+layout: post
+title: "Yahoo! Search BOSS C# Implementation"
+date: 2008-11-06 12:24
+comments: false
+---
+
+!http://scottwstatic.appspot.com/images/wlw/YahooSearchBOSSCImplementation_7620/image_3.png!:http://developer.yahoo.com/search/boss/
+
+I saw some mentions about "Yahoo's Boss":http://developer.yahoo.com/search/boss/ a couple weeks ago, but I didn't have time until recently to try it out for myself.
+
+bq. BOSS (Build your Own Search Service) is Yahoo!'s open search web services platform. The goal of BOSS is simple: to foster innovation in the search industry. Developers, start- ups, and large Internet companies can use BOSS to build and launch web-scale search products that utilize the entire Yahoo! Search index. BOSS gives you access to Yahoo!'s investments in crawling and indexing, ranking and relevancy algorithms, and powerful infrastructure. By combining your unique assets and ideas with our search technology assets, BOSS is a platform for the next generation of search innovation, serving hundreds of millions of users across the Web.
+
+I could not find a C# implementation, so a couple of nights ago, I decided to put one together.
+
+The Boss REST API is just a couple of "Get requests":http://developer.yahoo.com/search/boss/boss_guide/, so there was not a whole lot to implement, but this should make it pretty easy for anyone looking to add Boss search to their application.
+
+As far as I can tell, my implementation supports all of the Boss API except for spell checking. This includes Image, News, and Web searches. Search results are returned in three formats: Xml, JSON, and an object set.
+
+Here are a couple examples.
+
+Example 1: Search for "Telligent":
+
+<pre><code class="csharp">
+var result = new WebSearch("BOSS_ID").Query("Telligent").Get();
+</code></pre>
+
+Example 2: Search for "Telligent" and limit the results to 5 and get the second page of results.
+
+<pre><code class="csharp">
+XElement result = new WebSearch("BOSS_ID").Query("Telligent").Take(5).Skip(5).GetXML();
+</code></pre>
+
+Example 3: Search for "Telligent" but limit it to it to a couple of sites:
+
+<pre><code class="csharp">
+string json = new WebSearch("Boss_ID").Query("Telligent").Site("simpable.com").Site("telligent.com").GetJSON();
+</code></pre>
+
+Example 4: Search for "Telligent" mentions in the news for the last week.
+
+<pre><code class="csharp">
+var result = new NewsSearch("Boss_ID").Query("Telligent").Age(7).Get();
+</code></pre>
+
+Example 5: Search for "Telligent" images:
+
+<pre><code class="csharp">
+var result = new ImageSearch("Boss_ID").Query("Telligent").Filter(false).Get();
+</code></pre>
+
+There is built in support for language, region, content type, etc filters as well.
+
+I labeled the assembly version 0.9 since there are some API tweaks I still want to make. The biggest of these is the "Query" method. Having a query method makes the code a bit more readable, however, since it is required before you can execute a search, I am thinking it needs to either be in the constructor and as part of the "get".
+
+Examples (non-working):
+
+<pre><code class="csharp">
+var result = new WebSearch("Boss_ID", "My Query").Get();
+var result = new WebSearch("Boss_ID").Get("My Query");
+</code></pre>
+
+Anyone have a preference?
+
+"Download Assembly and Source":http://www.box.net/shared/eihe7a2ytu.

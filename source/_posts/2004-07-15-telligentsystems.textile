@@ -1,0 +1,10 @@
+---
+layout: post
+title: "New Job: Telligent Systems"
+date: 2004-07-15 21:34
+comments: false
+---
+
+Today was my "first official day":http://www.telligentsystems.com/About/ViewNews.aspx?NewsID=9 at my new position with "Telligent Systems":http://www.telligentsystems.com/. This has been in the works for a while now and ended up being a pretty good secret outside of Canada (sorry, inside joke). I feel privledged to work with a great team of individuals who have not only excelled at their day jobs, but have spent many hours contributing to various open source projects.
+
+In the past it has been pretty easy to move from one job to another. But as I start to learn more about what I am looking for in an employer, it gets harder to leave. IHS was a great place to work and I learned quite a bit during my couple years with them. But the more I talked to "Rob":http://rob-howard.net/ about his vision for "Telligent Systems":http://www.telligentsystems.com/, the more I was sure I wanted to be part of it.

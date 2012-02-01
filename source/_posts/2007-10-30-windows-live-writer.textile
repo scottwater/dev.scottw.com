@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Windows Live Writer"
+date: 2007-10-30 13:44
+comments: false
+---
+
+Blogging Bits has a nice list of "_"15+ Alternatives to Your Boring Blog Editor":http://bloggingbits.com/15-alternatives-to-your-boring-blog-editor/_".
+
+I do not think they are listed according to rank, but number two in his list is by far my personal favorite, "Windows Live Writer":http://get.live.com/betas/writer_betas.
+
+It is very easy to use, relatively quick, supports multiple sites, and has a nice variety of plugins. However, by far its best feature is media support, especially images. Drag an image onto the editing surface and from there you can resize it, link to the original, add a drop shadow, and much more. Once you are finished, just click publish and the images will be sent to your server.
+
+!http://scottwstatic.appspot.com/images/wlw/WindowsLiveWriter_891B/image_thumb.png!
+
+There are some other tools which do similar things, but none of them seem to do mix all these great image features with a pretty good WYWIWYG editor.
+
+In addition, Windows Live Writer also supports necessary (especially for me :) things like spell check.
+
+As good as it is, there are a couple of things I wish were better, in particular, I wish there were some addition plugin options which allowed you to add custom fields based on your configuration settings. Both "Graffiti":http://graffiticms.com and "Community Server":http://communityserver.org/ support optional per post settings which for now are only available to users from the web based post editor. Being able to optionally set things like a meta description would really make Windows Live Writer a much more useful (and robust) general publishing tool.

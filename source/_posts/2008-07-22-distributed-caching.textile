@@ -1,0 +1,28 @@
+---
+layout: post
+title: "Distributed Caching - Strategies and Tips"
+date: 2008-07-22 04:17
+comments: false
+---
+
+As I have "mentioned recently":http://scottw.com/code/velocity/, we ("Telligent":http://telligent.com) are starting to implement distributed caching in "Community Server":http://communityserver.com and will likely build it in early in some of the other product work we are doing. While we are not yet done with this work, there are some early patterns and tips I think you will find helpful.
+
+*Don't count on it*.
+Similar to ASP.Net's out of the box in-process cache (HttpCache), you must always assume data in the cache does not exist.
+
+*Do not update objects in the cache by reference*.
+Using HttpCache, you can update objects in the cache without pushing the updates back into the cache. Once you start distributing your cache and jumping in and out of process, you will need to explicity push updates back into the cache to ensure the other servers utilizing those objects will receive the change.
+
+*Do not over jump.*
+In most cases, using distributed caching requires you to jump out of process. However, you should (almost) never jump out of the process for the same object twice on the same request. To accomplish them, consider caching objects in the HttpCache for a very short period of time or utilize HttpContext.Items for per request storage.
+
+*Isolate the Cache.*
+For various reasons, you may not always need distributed caching and may find developing locally without it to be ideal. You should consider isolating your caching access behind an interface which would allow you an easy pattern/strategy for swapping out cache at runtime (provider/factory patterns).
+
+*Avoid duplicate object caching*.
+(This is also valid for HttpCache.) Applications will often cache lists of objects which can lead to duplicate copies of an object in the cache. As an application grows it can become more complicated to ensure object changes are replicated through out the cache when "copies" of the object are in various lists. In addition, each duplicate object in the cache takes up memory space that could be used by another object.
+
+*Consistent and predictable cache keys*.
+As you scale (add servers) with distributed caching it will become increasing important to clear cached items when the object's state has changed.
+
+If you have any other tips, suggestions, or strategies, please leave them in the comments.

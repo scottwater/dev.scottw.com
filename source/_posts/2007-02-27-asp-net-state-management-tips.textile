@@ -1,0 +1,102 @@
+---
+layout: post
+title: "ASP.Net Quick Tips - State Management"
+date: 2007-02-27 15:17
+comments: false
+---
+
+The web is inheritently stateless, however, ASP.Net provides you with a very comprehensive list of options to overcome this lack of statelessness. Using them effectively is a critical of a successful ASP.Net application.
+
+Tip: *(#application)Do not use the Application statebag.*
+
+Cache does everything you can do with Application. Application was created to smooth the transition of ASP.Old users to ASP.Net. There is no reason to use Application and it should be avoided.
+
+Tip: *(#statepattern)Use a safe pattern for accessing objects from a statebag*.
+
+All statebags take the form of a key/value dictionary. While they are very easy to work with, if you are not careful you can introduce subtle issues and potentially open yourself up to a hard to debug exceptions.
+
+The ideal pattern takes the form of:
+
+<pre><code class="csharp">
+MyObject obj = StateBag["key"] as MyObject;
+if(obj == null)
+{
+   //Do Something here
+}
+</code></pre>
+
+
+Using this pattern helps to avoid multiple lookups, race conditions, and invalid cast exceptions. The most common abuse of this rule looks like this:
+
+<pre><code class="csharp">
+MyObject obj = null;
+if(StateBag["key"] != null)
+{
+   obj = (MyObject)StateBag["key"];
+}
+</code></pre>
+
+
+In the bad example above, we look up the key twice, introduce a possible race condition (what if in-between the key look up and request it is removed), and have a possible invalid cast if the type of object stored by "key" is not of the type "MyObject" (or a derivative/etc).
+
+Tip: *(#contextitems)Understand the importance of HttpContext.Items.*
+
+The HttpContext provides a per request statebag you can use to store objects that are only needed on the current request.  As I have mentioned before it is advisable to avoid Session when possible. However, there are likely objects which are re-used through the course of a request and HttpContext.Items is an idea place for them. The first time I ever heard of the HttpContext.Items was in an article "_"A Matter of Context":http://msdn2.microsoft.com/en-us/library/ms972109.aspx_" by the great Susan Warren.
+
+Tip: *Do not overlook Cookies and Hidden fields.*
+
+As I have mentioned a couple times by now, I generally recommend avoiding Session. But there are quite a few times when you need to store values between requests and Cache/Database/etc just do not make sense. Cookies are an excellent candidate to temporary information which needs to exist across multiple pages and hidden fields can be used as a way of quickly tucking away values on a per page basis.
+
+Tip: *(#incookie)Know what is in your cookies and ViewState.*
+
+Both cookies and viewstate provide excellent ways to store data, but you must always keep in mind that this data will travel to and from the server on every request. Keep it small and simple.
+
+Tip: *(#nosecretdata)Do not store secure/secret data in Cookies, Hidden fields, or ViewState.*
+
+If you do not want users reading data, tampering with data, etc then do not push it down the client and store it on their machines. This is the equivalent of a putting something shiny and red in front of a baby and then saying do not touch.
+
+Tip: *(#ticket)Consider using a Ticket for more safely obscuring data in a cookie on the client.*
+
+As the tip above states, you should not put secure data on the client. However, there times you may want to store data on the client via a cookie and do not want them to be able to tamper with it. ASP.Net ships with an API/object called FormsAuthenticationTicket which is used to safely manage your Forms authentication cookie. You can leverage this API and store your own information in a cookie on the client.
+
+To do so, simply create a new "FormsAuthenticationTicket":http://msdn2.microsoft.com/en-us/library/system.web.security.formsauthenticationticket.aspx, pass it a few settings, and your "secret data". From there you call FormsAuthenticationTicket.Encrypt which returns a string you can store in a cookie. Here is quick example:
+
+<pre><code class="csharp">
+string secretData = "secret";
+DateTime dt = DateTime.Now;
+FormsAuthenticationTicket newTicket = 
+  new FormsAuthenticationTicket(1, "ticketName", dt, 
+    dt.AddDays(7), true, secretData);
+  
+HttpCookie newUserCookie = new HttpCookie("theCookie");
+newUserCookie.Value = FormsAuthentication.Encrypt(newTicket);
+newUserCookie.Expires.AddDays(7);
+
+Response.Cookies.Add(newUserCookie);
+</code></pre>
+
+
+To re-use the data, simply fetch the cookie and call the FormsAuthentication.Decrypt method:
+
+<pre><code class="csharp">
+HttpCookie userCookie = Request.Cookies["theCookie"];
+string secretData = null;
+if(userCookie != null)
+{
+    FormsAuthenticationTicket ticket = 
+        FormsAuthentication.Decrypt(userCookie.Value);
+    secretData = ticket.UserData;
+}
+</code></pre>
+
+Tip: *(#thecontrolstate)For custom ASP.Net server controls, if you need to make sure a value is persistent, use Control State and not ViewState.*
+
+As stated previously, I generally recommend disabling ViewState. As a control developer, this can cause problems since there maybe times when using something like ViewState is necessary for your control to function properly. Thankfully in ASP.Net 2.0, as a developer, you now have a new option, Control State. 
+
+"Fritz Onion":http://pluralsight.com/blogs/fritz/ has a great "detailed explanation of Control State":http://pluralsight.com/blogs/fritz/archive/2004/07/01/472.aspx:
+
+bq. Control state is essentially another state repository whose contents is propagated much like view state, but the purpose of the control state repository is to cache data necessary for a control to properly function. To put it another way, behavioral state for a control should be kept in control state, and UI state (its contents) should be kept in view state. Thus in the new GridView class, you can completely disable view state, and the pagination and editing events still fire as expected.
+
+As always, I am eager to hear your feedback, additions, and suggestions. I am working on a separate post with tips on the most important state management option, caching, which is why I avoided the topic here.
+
+FYI, this is part three of a continuing series of ASP.Net Tips. If you found this post helpful, you may want to check out the other posts in the series: "General ASP.Net Tips":http://scottw.com/blog/archive/quick-tips-for-asp-net-part-one/ and "Web.config Tips":http://scottw.com/blog/archive/asp-net-web-config-tips-part-two/.

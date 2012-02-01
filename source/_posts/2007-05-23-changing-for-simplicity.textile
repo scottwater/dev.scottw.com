@@ -1,0 +1,32 @@
+---
+layout: post
+title: "Changing for Simplicity"
+date: 2007-05-23 11:22
+comments: false
+---
+
+Change is hard, especially in software. This of course is not news.
+
+"Community Server":http://communityserver.org has built in support for emailing forums users notifications of new post (and replies). Prior to the 2007 release we did not email users notifications to their own posts. The logic was, "_I just made a post I do not need an email_". That logic made a lot of sense in developer minds, unfortunately, a large percentage of our users struggled with this behavior. They saw/heard Community Server supports email and when went to test this feature on their own site, wrote a post, and did not receive an email.
+
+With the Community Server 2007 release we decided it was time to simplify this area and removed this filter. For the most part, this has been successful. However, we are starting to hear from folks who are not happy with this decision since they liked things the way they were before. Why change this they ask? [1]
+
+We are left with a couple of choices:
+
+# Revert back - This is not really an option. It confused people. Why I certainly do not want anyone to dislike a feature, I would choose dislike over confusion any day. Nobody wants to use software that confuses them.
+# Keep it as is today - keep things simple, explain the change. The downside here, and the reason I believe folks care about this issue so much, is email overload. Your inbox is constantly under attack, so anything you can do to keep email out, the better.
+# Add an option - The answer to every developer dilemma. The dreaded option. This is a minor feature to a draw a line in the sand over, but at some point you have to say enough is enough. There are already way to many user options. While this one is minor, at a certain point you need to stop.
+
+No decision has been made yet on what to do. Options #2 and #3 are on the table for Community Server 2007.1. My gut tells me #2 is the way to go. This would be non-issue if it never existed (note: that does not necessarily mean I am right). On an internal alias I wrote, "_It is easy to ignore emails you don't care about...but there is no reverse."_ in response to a developer requesting we revert back to the 2007 behavior.
+
+This is not a right and wrong situation. That is the rub when it comes to features, especially in existing applications. It is about what is best for your users. What improves the experience for most without lessening the experience for others, while also keeping in mind that every addition, add complexity. No feature lives in a vacuum.
+
+I was finishing up "Laws of Simplicity":http://lawsofsimplicity.com/ last night and the law #8, jumped out to me, Trust. The author (John Maeda) writes about ordering _omakase_ at a sushi restaurant, which generally means, "_I leave it up to you_". Or in other words, let the chef choose for me. Software is very similar. A good developer does not present users with an endless list of choices. There are of course times when you need to make a make choice, but it should be avoided unless it is 100% necessary.
+
+I guess you could also say that law #9 Failure could also be at work here (some things cannot be simplified). :)
+
+So why the post? Am I looking for a vote?
+
+Not really. I am certainly interested in your thoughts on the situation above, but what I am most interested in is how you have tackled these situations in the past. There are a lot of little "features" like this which could probably be removed to make things easier on most users. In other areas of the product we hid choices which are clearly optional and that has worked very nicely. I do not think hiding works in this case since that would just make the user have to work to find the setting.
+
+fn1. One other reason for the change was consistency. Our Mail Gateway add-on (which enables bidirectional email support for forums) always emailed a copy of your own post. We initially had using the same logic to not email you a copy of your own post, but beta testers quickly pointed out a very strong need for confirmation the post was received.

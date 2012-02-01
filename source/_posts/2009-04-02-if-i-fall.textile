@@ -1,0 +1,17 @@
+---
+layout: post
+title: "If I Fall, I Fall"
+date: 2009-04-02 01:30
+comments: false
+---
+
+Really don't know what else to say, except make watch this video.
+
+<object width="440" height="361">
+<param name="movie" value="http://sports.espn.go.com/broadband/player.swf?mediaId=3696478" />
+<param name="wmode" value="transparent" />
+<param name="allowScriptAccess" value="always" />
+<embed src="http://sports.espn.go.com/broadband/player.swf?mediaId=3696478" type="application/x-shockwave-flash" wmode="transparent" allowScriptAccess="always" width="440" height="361"></embed>
+</object>
+
+"Walk On":http://vodpod.com/watch/1165857-walk-on-espn-video

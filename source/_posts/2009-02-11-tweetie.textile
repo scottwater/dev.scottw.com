@@ -1,0 +1,29 @@
+---
+layout: post
+title: "Tweetie &ndash; Best iPhone Twitter Application"
+date: 2009-02-11 13:53
+comments: false
+---
+
+The application I use most on my iPhone is easily "Tweetie":http://www.atebits.com/software/tweetie/, which IMO, is by far the best "Twitter":http://twitter.com/ application on the iPhone.
+
+Some will argue that TwitterFon is the same but free, but for me, the polish and simple features of Tweetie make it well worth the money ($2.99).
+
+Here are some of the things I like:
+
+* Speed. It is very fast at start up
+* Simple theme (although simple is not the default).
+* Integration with "Instapaper":http://instapaper.com/ - which I am using very frequently these days.
+* Saved searches
+* "Finger swipe" favorites and replies.
+
+Others I have tried:
+
+* "Twitterific":http://iconfactory.com/software/twitterrific/ - the original but didn't keep up with the other new comers. Not sure when it was last updated.
+* "Twitterville":http://www.tweetsville.com/ - launched like a rocket and did have my eye for a day or two until I met Tweetie.
+* "TwitterFon":http://twitterfon.net/ - not bad and has a strong following. But if I am going to waste many hours on Twitter, I am willing to pay $2.99 for some nice polish.
+* "Twinkle":http://tapulous.com/twinkle/ - another one with a big following, but I never got why people liked it. Too sparkly for me.
+
+The "AppleBlog":http://theappleblog.com also has a write up on "12 iPhone Twitter clients":http://theappleblog.com/2008/12/03/12-twitter-apps-for-the-iphone/.
+
+Unfortunately, there is still no way to "demo any of the iPhone applications before you purchase":http://scottw.com/software/appstore-demo-freemium/ them, so it will cost you $2.99 to give it a shot. But if you give it a try, I am willing to bet you will really like it.

@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Enhancing Desktop Computing with the Cloud"
+date: 2008-05-15 12:30
+comments: false
+---
+
+There is a lot of (rightfully so) hype around cloud computing and web based tools. One area, that I find very interesting which gets very little coverage is desktop computing with *support in the cloud*. There are three tools that I use all the time which marry a desktop experience which is enhanced in the cloud.
+
+h3. Three Great Tools
+
+*"Evernote":http://evernote.com/* - (Mac &amp; PC) "_Evernote allows you to easily capture information in any environment using whatever device or platform you find most convenient, and makes this information accessible and searchable at anytime, from anywhere_". I primarily enter notes on my "MBP":http://scottw.com/technology/greener-grass/, but since it will sync itself across multiple devices it is very to retrieve those notes when I am on a PC. In addition, there is a web based access and a new iPhone specific interface. What really sets Evernote apart from other software (OneNote) are the options for adding notes (dragging images, printing directly to it, copy and paste with images). In addition, if making your content accessible wasn't enough, images are processed with "OCR":http://en.wikipedia.org/wiki/Optical_character_recognition. What this means is that when you do a search you are not only searching text, but potentially text from your images. "Video Overview":http://www.youtube.com/watch?v=i_ncr1Ee9e8.
+
+*"Skitch":http://skitch.com/*. - (Mac only) "_Skitch.com is a webservice that works hand in hand with our application Skitch to give you 1-click
+uploading of images for fast and fun image sharing_". I have "mentioned Skitch":http://scottw.com/software/mac-five-months/ before. This tool just rocks and of the three tools I am writing about today, it is the one I would be totally lost without. It makes it so simple and easy to share an a screenshot/picture/image I am not sure what I would do without. And of course, it works flawlessly with Evernote. "Video Overview":http://www.viddler.com/explore/plasq/videos/2/.
+
+*"Jing":http://jingproject.com/.* - (Mac & PC) Jing allows you in an effortless way capture images and video of your desktop and share them with the world (or privately). Since I am a Skitch fan, I do not use the image sharing often, but the video feature has become an integral part of "our software development process":http://telligent.com. "Video Overview":http://video.techsmith.com/jing/latest/demo/introvideo/index.html?keepThis=true&TB_iframe=true&height=440&width=640

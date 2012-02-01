@@ -1,0 +1,33 @@
+---
+layout: post
+title: "Setting A Tab Title in Terminal"
+date: 2010-03-03 00:25
+comments: false
+---
+
+I have been spending a lot more time in terminal recently. I routinely find myself having more tabs open than I can keep track of.
+
+I then end up forgetting what's open and end up opening even more tabs which just make the problem worse.
+
+I finally got tired of this and "posted a quick question on Twitter":http://twitter.com/scottw/status/9900627749. While waiting for a twitter response, I figured I would finally checkout "SuperUser":http://superuser.com which of course "had the answer":http://superuser.com/questions/105499/change-terminal-title-in-osx.
+
+You just need to execute the following command:
+
+<pre><code class="bash">
+echo -n -e "\033]0;YOUR TAB TITLE HERE\007"
+</code></pre>
+
+
+Since there is no way I will remember that command (and who should) I wrapped it in a function that I can put in my .bash_profile.
+
+<pre><code class="bash">
+function title(){
+	echo -n -e "\033]0;$1\007"
+}
+</code></pre>
+
+Now, in any tab, I just need to execute:
+
+<pre><code class="bash">
+title 'My Tab Title'
+</code></pre>

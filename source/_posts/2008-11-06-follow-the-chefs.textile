@@ -1,0 +1,22 @@
+---
+layout: post
+title: "Follow the Chefs"
+date: 2008-11-06 17:56
+comments: false
+---
+
+!http://scottwstatic.appspot.com/images/wlw/FollowtheChefs_C21E/outinspire_3.jpg!:http://headrush.typepad.com/creating_passionate_users/2007/04/my_favorite_gra.html
+
+With all the news about a crappy economy, I found the "video below by Jason Fried":http://network.businessofsoftware.org/video/2352433:Video:2016 of "37Signals":http://37signals.com very interesting.
+
+In particular, at the 20:06 marker he "quoted Kathy Sierra":http://headrush.typepad.com/creating_passionate_users/2007/04/my_favorite_gra.html,
+
+bq. When it comes to marketing, you can either outspend or out teach your competitors.
+
+In the video, Jason Fried, was using an example of how some famous chefs had taken the approach of "_out teach, out share, and out contribute_" their competitors as a way of getting ahead. In hindsight this is obvious, but it is still a really smart observation. The chefs are very skilled, but it is not rocket science. The barrier to entry is very low in cooking and as it is (at least today) in most things. So how you do get ahead; *share*. Teach others what you know. Enable others with similar interests to get together and interact. Be part of the conversation, even if that means enabling it to happen more easily.
+
+I am certainly biased towards "Community Server":http://communityserver.com and "Graffiti":http://graffiticms.com, but by using a tools like these, you can really turn a large part of your marketing efforts into something that helps drive and sustain your business for a fraction of what you would typically spend on marketing.
+
+<embed src="http://blip.tv/play/AdOYJZCcZQ" type="application/x-shockwave-flash" width="480" height="383" allowscriptaccess="always" allowfullscreen="true"></embed>
+
+Even as I write this, it is really apparent that this is something you should be doing even when times are better in the financial world. Sometimes it takes a difficult situation/time to make it easier to see the light.

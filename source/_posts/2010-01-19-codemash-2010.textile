@@ -1,0 +1,34 @@
+---
+layout: post
+title: "CodeMash 2010"
+date: 2010-01-19 17:20
+comments: false
+---
+
+I had the opportunity this year to attend "CodeMash":http://codemash.org/ 2010.
+
+!http://scottwstatic.appspot.com/images/wlw/CodeMash2010_BADB/codemash_bc127d19-e19e-4067-a5ed-bbdc846e2ef6.png(codemash logo)!:http://codemash.org
+
+For those of you unfamiliar with CodeMash:
+
+bq.  "_CodeMash is all about jumping into new domains. Getting out of your comfort zone. Learning new things from new people._"
+
+*CodeMash 2010 was without a doubt the best developer event I have ever attended.*
+
+Here is my list about what made it great:
+
+1. People - there was an awesome mix of people. Those attending seemed to do a really good job of attending sessions there were outside of their comfort zones. I have seen this attempted at other places, but usually the cliques are usually too strong.
+
+2. "Mary Poppendieck":http://www.poppendieck.com/ - her keynote, "The Five Habits of Successful Lean Development" was easily worth the price of admission. You can see the "slides here":http://www.poppendieck.com/pdfs/Five%20Habits.pdf. I am considering attending an event or two later this year just to see her speak again.
+
+3. Focus on Craftsmanship - there were quite a few really good sessions which focused on refining your craft more than just getting to know technology ABC a little bit better. "Joe O' Brien's":http://objo.com/ "Refactoring the Programmer" and "Jeremy Miller's":http://codebetter.com/blogs/jeremy.miller/ "Software Design and Testability" really stood out to me. Both sessions were fabulous and I hope to see Joe and Jeremy present similar sessions at other events this year.
+
+4. Other Technologies - I have been a fan of "MongoDB":http://mongodb.org for a while. It was great to attend a really good overview session which helped connect a lot dots. I have also had an on again off again fascination with Ruby. It was rewarding to hear some as passionate about as "Leon Gersing":http://fallenrogue.com/ walk through some of its' benefits without the fud.
+
+5. Cost - I still cannot believe this event only cost $175. It takes a lot of time and effort to put on this kind of event. (Seriously, drop the not-for-profit, double the price, and take this show on the road. It sucks having to wait until next year to attend again :)
+
+6. Family - I made the newbie mistake of leaving the family home. This is the first developer event I have attended where family (wife & daughter) would have really enjoyed tagging along.
+
+Besides bringing the family, the only thing I would have done differently are the pre-compilers. I skipped them and regretted it. I was trying to minimize time away from home, but I definitely missed out on great sessions.
+
+I am already looking forward to CodeMash 2011 (and please, AT&T get these folks some 3g. Spotty service is one thing, none is just cruel).

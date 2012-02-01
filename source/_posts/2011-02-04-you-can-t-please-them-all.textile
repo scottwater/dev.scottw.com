@@ -1,0 +1,10 @@
+---
+layout: post
+title: "You Can't Please Them All"
+date: 2011-02-04 22:56
+comments: false
+---
+
+Perfectly said, "Seth Godin - Pleasing":http://sethgodin.typepad.com/seths_blog/2011/02/pleasing.html
+
+bq. "Pleasing everyone with our work is impossible. It wastes the time of our best customers and annoys our staff. Forgive us for focusing on those we're trying to delight."

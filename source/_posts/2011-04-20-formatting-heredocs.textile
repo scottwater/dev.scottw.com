@@ -1,0 +1,44 @@
+---
+layout: post
+title: "Formatting Heredocs"
+date: 2011-04-20 17:00
+comments: false
+---
+
+This is one part "I never would have thought of that" and another "gosh damn rails actually has that".
+
+First, heredocs:
+
+bq. A "here document" is a literal syntax for a multiline String
+
+See "Working with Multiline Strings":http://blog.grayproductions.net/articles/working_with_multiline_strings for more details. 
+
+The part that caught me off guard was being able to format the heredoc directly. 
+
+I had tried: 
+
+<pre><code>
+s = <<-eos
+some text here
+eos.upcase
+</code></pre>
+
+This failed because of a formatting error (makes sense when you actually think about the heredoc requirements) and I simply assumed you could not apply formatting directly. Not the end of the world, but still a bit of a bummer. 
+
+Why a bummer? I was trying to remove some of the indenting/tabbing introduced in my string because of the heredoc. It was easy enough to work around, but it was going to cause me either add a worthless method or just suck it up and have some ugly formatting in my code. Neither were appealing, but I have a "product to ship":http://kickofflabs.com. :) (I went with the worthless method if you are keeping at score at home. Not sure what that means.)
+
+Any who, a little later I was scanning the "Active Support guide":http://guides.rubyonrails.org/active_support_core_extensions.html and "found this gem":http://guides.rubyonrails.org/active_support_core_extensions.html#strip_heredoc: 
+
+bq. The method strip_heredoc strips indentation in heredocs.
+
+Viewing the source of the method shows you can apply formatting to heredocs by executing the code on the actual declaration of the heredoc.
+
+<pre><code>
+s = <<-eos.upcase
+some text here
+eos
+
+assert_equal "SOME TEXT HERE", s
+</code></pre>
+
+However, the joy in the whole event was realizing my initial problem (ugly formatting) was already a solved problem since I could just use the strip_heredoc method.

@@ -1,0 +1,159 @@
+---
+layout: post
+title: "Singing With Sinatra"
+date: 2010-02-17 13:39
+comments: false
+---
+
+I attended a couple Ruby sessions at "CodeMash":http://scottw.com/code/codemash-2010/ this year which really piqued my interest level in Ruby.
+
+For many people (especially web developers) when you hear about Ruby they think Ruby on Rails. While Rails is an impressive framework, there are some other interesting options available. One of them that recently caught my attention (and admiration) is called "Sinatra":http://www.sinatrarb.com/.
+
+bq. _Sinatra is a DSL for quickly creating web applications in Ruby with minimal effort._
+
+Sinatra is a drop dead simple way to create a small site, blog, service, or even a prototype. Here is all it takes to serve a web request with Sinatra:
+
+<pre><code class="ruby">
+require 'rubygems' 
+require 'sinatra' 
+get '/hi' do 
+  "Hello World!" 
+end
+</code></pre>
+
+
+While the code above returns the UI inline, there is full support for templates, layouts, and much more.
+
+If you are new to Ruby and want to see what you can do with the language with almost no effort, Sinatra is a great place to start.
+
+I have been hacking around on it for a couple of days and decided to write a simple plugin. While I am sure I will cringe at this code a couple of months from now, I figured I would post it see if it is useful to others.
+
+Goal:
+Ensure urls served by the application are consistent by requiring no trailing slash and requiring all urls to be lower cased. If either one of these conditions are not met, the plugin will do a 301 redirect to the proper url.
+
+Here is the actual plugin:
+
+<pre><code class="ruby">
+require 'sinatra/base'
+ 
+module Sinatra
+  module ConsistentUrls
+    
+    def validate_url_requests()
+      before {
+        path = request.path.downcase
+        path_to_redirect = nil
+ 
+        #if the path ends in '/' remove it
+        path_to_redirect =  path[0..-2] if /.+\/$/.match(path)
+ 
+        #if the original path was not lower case. NOTE: we lowercase this above to minimize steps
+        path_to_redirect = path if !path_to_redirect &&  path != request.path
+ 
+        #if we need to redirect, build a query_string
+        if(path_to_redirect)
+          query_string =  hash_to_querystring(request.params)
+          path_to_redirect << ("?" + query_string) if query_string
+        end
+ 
+        redirect path_to_redirect, 301 if path_to_redirect
+      }
+    end
+    
+    #borrowed from http://justanothercoder.wordpress.com/2009/04/24/converting-a-hash-to-a-query-string-in-ruby/
+    def hash_to_querystring(hash)
+      hash.keys.inject('') do |query_string, key|
+        query_string << '&' unless key == hash.keys.first
+        query_string << "#{URI.encode(key.to_s)}=#{URI.encode(hash[key])}"
+      end
+    
+    end
+  
+  end
+ 
+  register ConsistentUrls
+end
+</code></pre>
+
+
+A minimal application skeleton. The key line is the validate_url_requests which is what invokes the plugin.
+
+<pre><code class="ruby">
+require 'rubygems'
+require 'sinatra'
+require 'consistenturls'
+ 
+#plugin 
+validate_url_requests
+ 
+get '/' do
+   "Hello World"
+end
+ 
+get %r{(.+)} do |catch_all|
+    "I am the catch all #{catch_all}#{request.url}"
+end
+ 
+not_found do
+  "The path #{request.url} does not exist"
+end
+</code></pre>
+
+A set of tests.
+
+<pre><code class="ruby">
+require 'demo_app'
+require 'test/unit'
+require 'rack/test'
+ 
+set :environment, :test
+ 
+class ConsistentUrlsTests < Test::Unit::TestCase
+  include Rack::Test::Methods
+ 
+  def app
+    @app || Sinatra::Application
+  end
+  
+  def test_urls_with_trailing_slashes_will_be_redirected
+    execute_url_test('/some-random-url/', '/some-random-url')
+    execute_url_test('/some-random-url/second-path/', '/some-random-url/second-path')  
+  end
+  
+  def test_urls_with_trailing_slashes_and_querystrings_will_be_redirected
+    execute_url_test('/some-random-url/?abc=123', '/some-random-url?abc=123')
+    execute_url_test('/some-random-URL/?abc=123&z=abc', '/some-random-url?abc=123&z=abc')
+  end
+  
+  def test_case_sensitive_url_will_be_redirected
+    execute_url_test('/CAPS-LOCK-ROCKS', '/caps-lock-rocks')
+  end 
+  
+  def test_case_sensitive_url_with_trailing_slash_will_be_redirected
+    execute_url_test('/CAPS-LOCK-ROCKS/', '/caps-lock-rocks')
+  end 
+  
+  def test_case_sensitive_url_with_query_string_will_be_redirected
+    execute_url_test('/CAPS-LOCK-ROCKS?abc=123&def=HIJ', '/caps-lock-rocks?abc=123&def=HIJ')
+    execute_url_test('/CAPS-LOCK-ROCKS/ROCKS/It/ROCKs/?abc=123&def=HIJ', '/caps-lock-rocks/rocks/it/rocks?abc=123&def=HIJ')
+  end 
+  
+  def execute_url_test(url_to_test, expected_redirect)
+    get url_to_test
+    follow_redirect!
+    assert_equal last_request.url, 'http://example.org' + expected_redirect
+  end
+  
+end
+</code></pre>
+
+
+Getting started:
+
+Setup steps for Sinatra can be "found here":http://github.com/sinatra/sinatra.
+
+Two things to note.
+
+1. To run the tests, you will need to get "rack-test":http://github.com/brynary/rack-test. I mistakenly assumed this part of Rack which tripped me up a bit.
+
+2. You need to grab "Shotgun":http://rtomayko.github.com/shotgun/ if you want to have the site reloaded anytime you make a change. This requirement was apparently something that changed recently. It is documented nicely on the Sinatra site, but seems to catch people off guard.

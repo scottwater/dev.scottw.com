@@ -1,0 +1,37 @@
+---
+layout: post
+title: "Google Reader on an iPhone"
+date: 2009-09-25 13:25
+comments: false
+---
+
+I have tried a variety of tools for reading my Google Reader feeds on my iPhone.
+
+* Google's mobile browser - works well, but requires a constant connection and little third party tool integration
+* Feeds - likely the most disappointing app I have ever purchased
+* Byline - pretty good overall experience. A little rough around the edges.
+* Newsstand - relatively new. My first day with it was good, but it was downhill after that.
+
+However, with the recent update of the "NetNewsWire iPhone app":http://www.newsgator.com/individuals/netnewswireiphone/default.aspx, all the applications listed above are dead to me. NewNewsWire for the iPhone may be the best application I have used on my iPhone.
+
+Here is what it does really well:
+
+*Sync* - it is fast, allows you to opt out of certain feeds, and unlike other tools I have tried it just works.
+
+"*Instapaper*":http://instapaper.com- the Instapaper integration is flawless. Even better, if you do click a link from with in a post, you can add that specific page to Instapaper as well.
+
+!http://scottwstatic.appspot.com/images/wlw/GoogleReaderonaniPhone_847C/SendToInstapaper_101df7d4-e105-4d6a-967c-c322bdaee552.png(SendToInstapaper)!
+
+"*Twitter*":http://twitter.com/scottw - the twitter integration is almost flawless as well. However, I would love to use bit.ly instead of TinyUrl.
+
+!http://scottwstatic.appspot.com/images/wlw/GoogleReaderonaniPhone_847C/sendtotwitter_4dfa000b-5f83-4018-aaae-9e4428d569b0.jpg(sendtotwitter)!
+
+*Navigation* - very easy to move around, quick access to the next unread feed
+
+*Beautiful* - no weird wood grains/etc. Just good access to the content you want.
+
+*River of News* - easy access to new posts from the last 24 hours.
+
+*Cost* - Free with ads and $1.99 to remove the ads.
+
+Even if you prefer using Google Reader in a browser on your desktop, you really need to check this application out. I am 100% certain I will be reading a lot more RSS content in the coming weeks because of this application.

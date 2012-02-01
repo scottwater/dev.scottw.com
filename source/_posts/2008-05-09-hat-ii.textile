@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Telligent Hack-A-Thon II"
+date: 2008-05-09 14:53
+comments: false
+---
+
+We had our "second Telligent Hack-A-Thon":http://communityserver.com/news/team-blog/community-server-hack-a-thon/ last week when the product team was in town to celebrate the release of "Community Server 2008":http://communityserver.com.
+
+The objective was pretty simple: Create something useful using the new "Community Server 2008 web service layer":http://api.communityserver.org/ in about 20 hours. Sleep was optional.
+
+The team did some amazing work ("videos":http://communityserver.com/news/team-blog/community-server-hack-a-thon/). It will take us a couple of weeks, but we are working on a site to host the code/samples/videos from this hack-a-thon and other similar internal events. Maybe we should do a public event or two?

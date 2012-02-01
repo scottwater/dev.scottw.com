@@ -1,0 +1,25 @@
+---
+layout: post
+title: "Please Touch Me"
+date: 2007-05-20 00:58
+comments: false
+---
+
+I am still working through some more ideas for my simple new blog theme (more on the theme soon).
+
+One thing I wanted to add to it now that most things have been removed are the "social sites" I currently participate in or would like to participate more in. With the Web 2.0 explosion, there are 1000's of these sites, but so far there are only three that I use with any regularity.
+
+# "LinkedIn":http://www.linkedin.com/ ("my profile":http://www.linkedin.com/in/scottwater)
+# "Twitter":http://twitter.com ("my tweets":http://twitter.com/scottw)
+# "Del.ico.us":http://del.icio.us/ ("my links":http://del.icio.us/swatermasysk)
+
+--*Feel free to connect, friend, or network with me if you enjoy any of the above.*
+
+Speaking of which, any site you think I am missing out on? I am thinking it would be a pretty cool mashup to mix the three above with a blog.
+
+You could answer some really interesting questions:
+
+# Who do you know and what have you done?
+# What's on your mind?
+# What are you reading?
+# What are writing/passionate about?

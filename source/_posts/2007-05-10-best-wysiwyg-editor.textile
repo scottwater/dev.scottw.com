@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Your Favorite WYSIWYG Editor"
+date: 2007-05-10 05:33
+comments: false
+---
+
+I am on the market for a new WYSIWYG editor. By far the most important feature is something that is super light weight (and yes, it does need to be WYSIWYG).
+
+So far, my personal favorite is the "pages" editor found in Google Groups. It does the really important things and has a very small foot print. I really wish this is part of their web tool kit.
+
+!http://scottwstatic.appspot.com/images/wlw/YourFavoriteWYSIWYGEditor_15C4/google_editor_thumb.png!
+
+Do you have any suggestions? Has anyone seen something like the Google Group editor?

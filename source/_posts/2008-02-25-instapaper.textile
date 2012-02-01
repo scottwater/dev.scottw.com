@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Instapaper"
+date: 2008-02-25 11:42
+comments: false
+---
+
+Today's "Easy Things":http://scottw.com/tags#easy-things is a new personal bookmarking service called "Instapaper":http://www.instapaper.com/. There really is not much to the service, but it has become a very important tool for me.
+
+Instapaper has one very simple goal: _enable users to easily bookmark a list of articles they would like to read at a later date_. To use the service, you simply click a link on your bookmark toolbar and the article title and link are sent to Instapaper.
+
+!http://scottwstatic.appspot.com/images/2008-02-25_instapaper.png(Instapaper)!
+
+Later, when you have some free time, you simply navigate back to Instapaper and you are presented with your list of links.

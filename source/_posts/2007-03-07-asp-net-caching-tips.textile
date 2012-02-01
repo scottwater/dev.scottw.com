@@ -1,0 +1,93 @@
+---
+layout: post
+title: "ASP.Net Quick Tips - Caching"
+date: 2007-03-07 12:02
+comments: false
+---
+
+This is part four in the "ASP.Net tips series":http://scottw.com/tags#asp-net-tips. In particular, this is a follow-up to, ""ASP.Net Quick Tips - State Management":http://scottw.com/asp-net-state-management-tips/" which focuses exclusively on caching.
+
+Caching:
+
+# is the number one way you can improve the performance of an ASP.Net application.
+# is a very easy way to fix problems which do not exist.
+
+Tip: *Learn the Cache API:*
+
+Most conference talks and demos show how you can quickly and easily cache a page or page fragment using output caching. While this works, I think in many cases this limits your ability to really take advantage of the cache by using it to store data which is applicable to many pages and fragments. In addition, you can better control when items are expired, set dependencies, implement callbacks, and much more.
+
+Tip: *Avoid Output Caching*
+
+This one will likely get me in a little trouble. :) In my experience, unless you talking about kernel level page output caching, caching the rendered HTML is a marginal performance gain. Using the cache API and building re-usability into your object model will save you multiple trips to your database as well giving more you flexibility throughout your application. There are times where page fragment (user controls) may work since they can be used on multiple pages, but in just about application I have worked on, output caching's ease of use did not outweigh the inflexibility it introduced.
+
+Tip: *Do not over-cache:*
+
+Do not cache objects longer than they are needed. Do not be afraid to add code which causes some objects to use different cache times depending on their re-usability. As an example, in "Community Server":http://communityserver.org, blog posts which are older than 7 days are not cached. We looked at some usage patterns and found that after a week, most blog posts are very rarely referenced by multiple requests within a reasonable amount of time. In other words, the post was cached to save an extra trip to the database, but no one was using it.
+
+Caching an object for a couple of seconds is a very reasonable thing to do. On a high traffic site, you could potentially re-use the same object on hundreds or thousands of requests by simply caching it for 3 to 5 seconds.
+
+Keep in mind, the old saying, "_it is better to measure twice and cut once_"definitely applies here. In my experience most developers over-estimate the needed cache time frame which leads to problems in the future.
+
+Tip: *Do not cache page 2+:*
+
+Quiz: How often do you click on page 2 in pagable list of content? If yes, how many times do you click on page 3?
+
+The "Do not over-cache' tip, leads us to: not all content is equal. As content gets older, it is generally a lot less likely to be accessed. Thus, in most cases, it is a lot less likely to be a candidate for caching. In "Community Server":http://communityserver.org we noticed that in just about every pagable area almost no one except for Google was requesting page 2 and just everybody avoided page 3, yet these objects still took the same cache memory space. It varies a little between each application + control panel, but in most cases, we avoid caching older content. There are of course times when some older content becomes popular, but we should be able to handle them a la carte in those cases...and yes, there are still some places page 2 will be cached.
+
+Tip: *Add Roles to your cache key:*
+
+As has been mentioned, you should only cache objects which can be used by more than one user. Most data centric web sites show different data to different users which can make caching challenging. One of the nice things we implemented in "Community Server":http://communityserver.org early on was to include a list of the users roles in the cache key. In CS (and many other applications) users with the same roles usually have the same set of permissions. Using the roles as part of the of the cache key makes it much easier to cache/reuse private data which is applicable to more than one user.
+
+Tip: *User VaryByCustom to add flexibility to output caching:*
+
+Just because I recommend avoiding output caching doesn't mean you should not use it. There are certainly sites, projects, and tasks which make it a useful solution.
+
+Output caching generally relies on parameters such as querystrings and control values to generate cache keys. However, there is an extensibility hook built into output caching called "_VaryByCustom_".
+
+Using VaryByCustom is very simple:
+
+# Add the VaryByCustom attribute to output caching directive.
+# Override the GetVaryByCustomString method on your global.asax
+
+The following is a quick example which shows how you can apply the roles tip from above to output caching.
+
+First, we add the output directive, specify 20 seconds as the duration and tell it to use the "roles" key the VaryByCustom attribute.
+
+<pre><code class="xml">
+<%@ OutputCache Duration="20" VaryByParam="None" VaryByCustom="roles" %>
+</code></pre>
+
+Next, we override the GetVaryByCustomString method. If the custom string parameter equals "roles", we return our custom roles key. If not, we simply pass the request to the base implementation.
+
+<pre><code class="csharp">
+public override string GetVaryByCustomString(HttpContext context, string custom)
+{
+    if (string.Compare(custom, "roles", true) == 0)
+    {
+        if (context.Request.IsAuthenticated)
+        {
+            //assumes roles are always returned in the same order, probably not true
+            return string.Join(";", Roles.GetRolesForUser());
+        }
+        else
+            return "anonymous";
+    }
+
+    return base.GetVaryByCustomString(context, custom);
+}
+</code></pre>
+
+Tip: *Know what's in your cache - Low Tech:*
+
+"Steve Smith":http://aspadvice.com/blogs/ssmith/ has a very nice (and simple) "Cache Manager Plug-in":http://aspalliance.com/cachemanager/ utility you can use to quickly see what is your cache.
+
+Tip: *Know what's in your cache - High Tech:*
+
+While the low tech way is easy and effective, it does not get you nitty gritty details such as object size (which is an art in managed code) as well as hits/misses/etc.
+
+To get at information such as object size you will need to get your hands dirty with "Windbg":http://www.microsoft.com/whdc/devtools/debugging/default.mspx. I could explain some of it to you, but I would really be just copying an pasting from "Tess Ferrandez's blog":http://blogs.msdn.com/tess/. In particular the following posts are very helpful.
+
+* "How much are you caching?":http://blogs.msdn.com/tess/archive/2006/01/26/517819.aspx
+* "How do I get the memory dumps in the first place? And what is SOS.dll?":http://blogs.msdn.com/tess/archive/2006/01/11/511773.aspx
+
+You should also familiarize yourself with the "ASP.Net performance counters":http://msdn2.microsoft.com/en-us/library/fxk122b4.aspx (every once in a while, I even use "Rob's":http://weblogs.asp.net/rhoward/ "performance counters control":http://www.asp.net/ControlGallery/ControlDetail.aspx?Control=43&amp;tabindex=6...2002 was a long time ago :).

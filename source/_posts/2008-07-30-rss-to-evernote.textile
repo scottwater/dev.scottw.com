@@ -1,0 +1,34 @@
+---
+layout: post
+title: "RSS to Evernote"
+date: 2008-07-30 14:06
+comments: false
+---
+
+I am a "big fan":http://scottw.com/search/evernote/ of "Evernote":http://evernote.com and I have been trying to use it more often for centralizing and managing content that matters to me the most. In many cases, this is content to which I receive in my aggregator.
+
+Evernote makes it really easy to take content from your browser and send it to Evernote (clipper, web toolbar, and even a FireFox extension).
+
+Aggregators have also gotten much better at allowing users to flag content which is important to them. While this is certainly helpful, as mentioned above, I am trying to centralize all the information that is important to me in one place.
+
+Both Google Reader and Newsgator allow you syndicate your flagged content. My first thought was to simply share that RSS feed with Evernote, but unfortunately, Evernote does not yet have an RSS import tool (hopefully this changes in the future).
+
+Looking through the Evernote site, I found an option to email content to my Evernote account. So my next thought was to find a simple way to email enable my RSS feed. I considered a variety of sites which will do this for you, but in the end they all had some minor and annoying issues:
+
+* The sites added their own branding and unsubscribe lingo. This is actually fair and a good idea if you are looking to email enable a blog, but I did not want this showing up in my information store.
+* Little or no control over how/when items are emailed. For example, Feedburner will only send emails once a day. I can handle some delay, but I wanted to minimize it and I needed it to send out the emails more often than daily.
+
+As a developer, my next thought was, write something simple. But before I fired up Visual Studio, I googled a bit and found this handy tool, "Rss2Email":http://rss2email.infogami.com/.
+
+bq. _rss2email is a free tool for delivering news from RSS feeds to your email program that works under Windows and UNIX_.
+
+I followed the install steps, created my local account with my Evernote email address and now once an hour the content I find most useful from my list of blogs is pushed into Evernote.
+
+I chose to set mine up on OS X, but it will work just as easily on Windows. Here are my basic steps:
+
+# Follow the Unix steps mention on the "getting started page":http://rss2email.infogami.com/getstarted. (I used curl instead of wget)
+# Create your feed database
+# Add your "favorites" feed. (note, by default Google uses Atom, so you might need to pass your feed through FeedBurner which will create an RSS version of it for you).
+# Setup a chron job to execute the run command.
+
+Again, I hope this becomes a built in feature for Evernote, but in the meantime, this saves me from storing information in two places or the need to open an item in my browser to add it to Evernote.

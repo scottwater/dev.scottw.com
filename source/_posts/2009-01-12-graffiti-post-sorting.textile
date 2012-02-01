@@ -1,0 +1,25 @@
+---
+layout: post
+title: "How to Sort Posts in Graffiti by Category"
+date: 2009-01-12 09:34
+comments: false
+---
+
+"Scott Cate":http://scottcate.com/blog/ wrote a "quick post with a tip":http://scottcate.com/blog/graffiticms-tip-ndash-sorting-posts-in-a-category/ on how to sort posts in "Graffiti":http://graffiticms.com.
+
+bq. If you're posts aren't in the order you want them - look into modifying the published date.
+
+I left a comment on Scott's post about some of the built in options, but I figured I would share them here as well.
+
+The good news is Graffiti does make it easy to choose a couple of other sorting options that do not require you to modify your post date.
+
+If you click edit on a category, you will see the following options:
+
+!http://scottwstatic.appspot.com/images/wlw/HowtoSortPostsinGraffitibyCategory_4E3C/image_3.png(Graffiti Post Sort Options)!
+
+The options should be fairly straight forward. There is even an option for "Custom Sorting" which takes you to another screen and allows you to drag and drop the sort order to your hearts content.
+
+Unfortunately, there is some bad news here as well.
+
+# Since I had to write it about, it is likely not very obvious that this feature exists. We need to do some work to better expose this functionality. The fact you need to click edit to get to the sort options is a mistake. At a minimum this option should show up in the category view when it is enabled.
+# RSS feeds will always use the publish date for sorting. I think this one makes sense since RSS (at least in this use case) is used to new items and it is out of our control as to how aggregators will handle the content.

@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Telligent Roadmap Update"
+date: 2008-07-31 01:19
+comments: false
+---
+
+I have been working at "Telligent":http://telligent.com for a little over four years now. When I started, there were just four full time employees. We were very aggressive from the start with our goals and what type of software we thought we could deliver.
+
+If you take a look at our most "recently released roadmap":http://communityserver.com/news/team-blog/a-peek-into-future-development-plans-and-product-release-timeframes/ you will see things have not changed all that much in four years, except they are much bigger. There are now three major "lines" (Community Server, Evolution, and Harvest and this does not even include projects like Graffiti (and something else we have been baking on the side).
+
+Looks like it is going to be another crazy year.

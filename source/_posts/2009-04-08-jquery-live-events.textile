@@ -1,0 +1,34 @@
+---
+layout: post
+title: "jQuery Live Events"
+date: 2009-04-08 14:46
+comments: false
+---
+
+If you have been coding/using "jQuery":http://jquery.com/ for a long time, you can skip this post (and just about anything else I ever write on jQuery).
+
+Last week "I posted a little example":http://scottw.com/code/jquery-makes-me-smile/ about using jQuery's "starts-with selector":http://docs.jquery.com/Selectors/attributeStartsWith#attributevalue and then quickly (and easily) binding an event to all of the items found by the selector. However, shortly after posting it I ran into a little snag.
+
+The prototype I am building allows users to add new content directly inline. In addition, it enables quick paging via ajax. Unfortunately, any new content (direct or paged) was not wired up to my double click event.
+
+My first attempt to fix this was to simply recall my binding function, but this caused issues with items which had already been bound.
+
+The next attempt added an unbind before the bind. This worked perfectly well.
+
+<pre><code class="javascript">$("div[id ^='Closed']").unbind("dblclick").bind("dblclick", function() { ToggleNoteViewState(this.id.slice(7)); });
+$("div[id ^='Open']").unbind("dblclick").bind("dblclick", function() { ToggleNoteViewState(this.id.slice(5)); });
+</code></pre>
+
+However, this means I need to recall my bind function every time I add new content.
+
+My final attempt was to use the "jQuery Live Event":http://docs.jquery.com/Events/live feature, "_Binds a handler to an event (like click) for all current - and future - matched element. Can also bind custom events._"
+
+Now, I can simply add the following to my page and all future items will be properly wired up:
+
+<pre><code class="javascript">$(document).ready(function(){
+  $("div[id ^='Closed']").live("dblclick", function() { ToggleNoteViewState(this.id.slice(7)); });
+  $("div[id ^='Open']").live("dblclick", function() { ToggleNoteViewState(this.id.slice(5)); });
+});
+</code></pre>
+
+Nice!

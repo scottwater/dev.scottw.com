@@ -1,0 +1,26 @@
+---
+layout: post
+title: "More Tips For Working Remotely"
+date: 2008-10-02 12:24
+comments: false
+---
+
+"Josh":http://evolvingwe.com/ posted a list of tips for "working remotely":http://evolvingwe.com/social/x-tips-for-working-remotely/. Here are a couple of additions.
+
+"Evolution":http://telligent.com/products/community-server-evolution/
+OK, so I am biased towards our own internal social knowledge solution, but this really does improve the remote work place in a big way. Important information is stored and accessible in a central location, self organizing groups are readily at your disposal, and it easily plugs into your most typical communication tool, Email.
+
+*When in Rome...*
+*When looking for a long term remote assignment, I would recommend one with many others working remotely. The communication flow is very different when you are remote and can (obviously) be a challenge. When everyone is remote and understands the challenges the process can be much better. If you are the only person who is remote on the team, I would highly recommend grilling your future team about their means of communicating.
+
+"*SharedView*":http://www.connect.microsoft.com/site/sitehome.aspx?SiteID=94*, LiveMeeting, WebEx, etc *
+This is one I have not taken advantage of enough yet, but I plan on using more in the coming months. Meetings suck, but there are some things than can only be explained with a whiteboard. When there are no whiteboards, SharedView and friends help out quite a bit.
+
+*SharedView*
+A second listing, but I wanted to call it out again because of how fast it is to setup and use. Starting a session is a single click and joining one just requires entering a LiveID. It is not an ideal too for demoing an application to a potential customer, but for team communication it rocks.
+
+*Email*
+It is very easy to get out of the loop when working remotely. Your communication skills and responsiveness need to be way above average. You don't need to live your inbox, but if you are the type of person who routinely has 100's or 1000's of emails in your inbox you will struggle to keep up (at least at Telligent)
+
+*Home is where the...*
+Friends and family always say, "it is great you don't even have to leave the house to work", but what they don't get is _I don't have to leave work to go home_. I am still quite bad at this one on many days, but it is important to set boundaries for when and where you work at home.

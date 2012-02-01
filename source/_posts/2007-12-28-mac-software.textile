@@ -1,0 +1,37 @@
+---
+layout: post
+title: "What Software do I use on the Mac?"
+date: 2007-12-28 18:16
+comments: false
+---
+
+I am still a border line noob on the Mac, but with so many friends/co-workers jumping in, I figured I put together a list of what software I am currently using most often on my Mac.
+
+* "TextMate":http://macromates.com/ the text editor that can do everything, including blogging this post. Seriously, this thing does so much "I broke down and bought a book":http://www.amazon.com/exec/obidos/ASIN/097873923X/scottwater-20 ...a book about a text editor.
+* "Fusion":http://www.vmware.com/products/fusion/- virtualization software which enables me to easily do my dev on Windows and hang out in OS X the rest of the day. To be fair, I have not tried it's closest competitor, "Parallels":http://www.parallels.com/en/products/desktop/, but I have had no issues with Fusion and it supports dual processors.
+* "Transmit":http://www.panic.com/transmit/ - simply the best FTP program I have ever used. I have not pulled the trigger on buying it yet, but I am getting close. "Cyberduck":http://cyberduck.ch/ is a really good free FTP (and open source) client for OS X. It is what I am using now until I convince myself to spend $30 on a FTP application.
+* "Adium":http://www.adiumx.com/ - multiple protocol chat. Really nice tab UI. I am not a fan of the web cam support especially with all the goodness baked into iChat. I only use it sparingly to talk to family, so it is a non-issue for me.
+* "TextExpander":http://www.smileonmymac.com/textexpander/ - I just recently started to use this and love it. Add the HTML packet and blogging in TextMate gets much better. In addition, if you are like me and spell horribly, check out the auto spell check library. It will cost $30 after 30 days, but so far it seems worth it.
+* "1Password":http://1passwd.com/ - one thing I missed from my windows was the great FireFox extension "OnePassword":http://onepassword.com/. Sadly it does not work on the Mac. Thankfully, there is a better solution, 1Password. This little tool can handle just about any form and does a killer job of managing lots of different content. What's even better is that it works across multiple browsers (FireFox, Safari, Camino) and can be accessed without visiting the site. In addition, it also syncs with my iPhone and they are beta testing a site which which will give you access to your passwords when you are on the road. It cost about $30.
+* "OmniFocus":http://www.omnigroup.com/applications/omnifocus/ - OmniFocus - a great tool for organizing what needs to be done. It still in beta, but should be shipping soon. I am also playing with "Things":http://www.culturedcode.com/things/ - task management on the Mac which is very nice as well, but I think like the structure of OmniFocus a little better. In addition, for just simple tasks there is "Anxiety":http://anxietyapp.com/ - Lightweight To-do Management which can be "used with OmniFocus as well":http://www.20seven.org/blog/articles/2007/12/13/anxiety-and-omnifocus-work-in-unison/. It costs $40 during the beta and will go to $80 once released.
+* "Flip4Mac":http://www.flip4mac.com/ - Digital Media Tools for the Mac -  allows you to watch WMV via Quick Time
+* "Isolator":http://willmore.eu/isolator/ - simple tool which blacks out everything except for the window you are working on. A great way to remove distractions. I need one of these for real life. :)
+* "Plaxo":http://www.plaxo.com/ - not really software, but a vital tool for me. I use Plaxo to keep my Address Book and iCal synchronized with Exchange. Basically, I have Outlook running on another  machine at home. Whenever something changes, it syncs it to Plaxo. Plaxo is also running on the Mac and syncs any changes. Finally, since Outlook also syncs with Exchange any changes made on the Mac show up there as well. Way more complicated than it should be, but for now it enables me to use the native Address book, calendar, and email client.
+* "Quicksilver":http://www.blacktree.com/ - I am sure I am just scratching the surface here, but it is a great tool for switching between applications and tasks. It really should just be bundled in by default. I was using my brother's MacBook on Christmas Eve and kept ^ + Space.
+* "Transmission":http://transmission.m0k.org/ - I do not use Torrent very often, but when I do, this has been very solid and easy to use.
+* "Twitterific":http://iconfactory.com/software/twitterrific - Way better than the Twitter web site. You can use it for free but have to see an ad every hour or so. The ads do not bother me (actually some are very helpful believe it or not).
+* "ZigVersion":http://zigzig.com/ - really nice SVN client. Free for non-commercial usage. TextMate as a built in SVN client as well, but I have not had a chance to explore it yet.
+* "iWork":http://www.apple.com/iwork/ - While I can use Microsoft Office via Fusion (and BootCamp) I really like having the option to use something more in sync with the rest of the Mac. So far, I have liked the experience quite a bit. It does not come with all of the bells and whistles you get with Office, but I have yet to find a missing feature I really needed.
+* "Witch":http://www.petermaurer.de/witch/ - Witch lets you access all of your windows by pressing a shortcut and choosing from a clearly arranged list of window titles. The standard task switcher in OS X is way better than Windows, but Witch takes it up an other notch by letting select a specific window from any open application.
+* "FireFox":http://getfirefox.com - did I really need to list this one? :)
+* "Growl":http://growl.info/ - Growl is a notification system for Mac OS X: it allows applications that support Growl to send you notifications.
+* "Remote Desktop":http://www.microsoft.com/mac/otherproducts/otherproducts.aspx?pid=remotedesktopclient - With Remote Desktop Connection Client for Mac, you can connect from your Macintosh computer to a Windows-based computer and work with programs and files on that computer.
+
+A couple of quick tips:
+
+* Search around for discounts. There are lots of ways to get N% off of most of these tools. For example, a site called "MacSanta":http://www.macsantadeals.com/ had 20% TextMate and 1Password.
+* Also check out "Amazon.com":http://www.amazon.com/exec/obidos/redirect-home/scottwater-20. You can find things like iWork and Fusion for about $20 cheaper than on regular sites.
+
+See also "Jason Alexander's list":http://jasona.net/tools/must-have-apps-and-answers-for-windows-mac-converts/ which is what help me get started.
+
+*Anything I am missing?*

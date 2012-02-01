@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Firebug Lite"
+date: 2009-04-02 01:54
+comments: false
+---
+
+I almost dismissed this as an April Fools day joke. Glad I gave it a click through. "Firebug Lite":http://getfirebug.com/lite.html.
+
+bq. _...but what happens when you need to test your pages in Internet Explorer, Opera, and Safari?_
+
+bq. _The solution is Firebug Lite, a JavaScript file you can insert into your pages to simulate some Firebug features in browsers that are not named "Firefox". Firebug Lite creates the variable "firebug" and doesn't affect or interfere with HTML elements that aren't created by itself._
+
+To take it a step further, there is also a bookmarklet you can use to make it very easy to invoke. It is actually easier/quicker to enable in other browsers than FireFox. In addition, you don't get random sites warning you about a potential slow down. 
+
+Highly recommend you check it out.

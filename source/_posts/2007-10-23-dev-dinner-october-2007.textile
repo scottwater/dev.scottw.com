@@ -1,0 +1,12 @@
+---
+layout: post
+title: "NJ Developers Dinner - 10/25/2007"
+date: 2007-10-23 13:30
+comments: false
+---
+
+"We":http://donxml.com/allthingstechie/archive/2007/10/22/NJ-Developers-Dinner-_2D00_-10_2F00_25_2F00_2007.aspx are going to do another developer dinner at the "Harvest Moon":http://www.harvestmoonbrewery.com/ on Thursday October 25th. If you are in the area and can swing by, please do so.
+
+!http://scottwstatic.appspot.com/images/wlw/NJDevelopersDinner10252007_8594/moon-outside_3.jpg!
+
+It is always a good time to geek out on just about any topic, so even if you hate .NET, you are welcome to attend and tell us why. :)

@@ -1,0 +1,12 @@
+---
+layout: post
+title: "MobileMate SD+"
+date: 2007-12-22 04:21
+comments: false
+---
+
+The other day I noticed something missing from my new "MacBook Pro":http://scottw.com/technology/greener-grass/. There is no built in SD card reader. This is something that was included out of the box on my last two Dells and I has become part of my normal photo workflow.
+
+I went over to Amazon to see if I could find a simple external reader. As you could imagine, there was a wide variety of options available, but they are all looked bulky except for one. The "MobileMate SD+ by SanDisk":http://www.amazon.com/exec/obidos/ASIN/B000Q3IUV2/scottwater-20.
+
+It only reads a couple of formats, but since all of my cameras use the same type of cards that was a non-issue for me. In addition, it is about same size as a USB memory drive and requires no wires. Best of all Amazon has it for about $12 and "thanks to prime":http://scottw.com/life/amazon-prime/ it showed up in about a day.

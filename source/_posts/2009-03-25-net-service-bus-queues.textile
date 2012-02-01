@@ -1,0 +1,12 @@
+---
+layout: post
+title: ".Net Service Bus Queues"
+date: 2009-03-25 12:30
+comments: false
+---
+
+.Net Services is the hidden jewel of in the "Azure":http://www.microsoft.com/azure/default.mspx stack. It is often overlooked, neglected, and rarely talked about, but for anyone who needs to integrate existing or external applications with something hosted in Azure, I am sure you will become close before too long (among other uses).
+
+Knowing this, I of course missed "Clemons Vasters's":http://vasters.com/clemensv/ ""Connecting Applications across Networks with Microsoft .NET Services":http://videos.visitmix.com/MIX09/T03F" where he actually announced some new functionality (not release yet) in the .Net Service Bus - Queues.
+
+Since I cannot write code against it myself yet, I will simply recommend you check out the video (~ 39 minute mark). It looks like a very handy addition to the stack.

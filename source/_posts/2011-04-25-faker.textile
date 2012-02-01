@@ -1,0 +1,15 @@
+---
+layout: post
+title: "Faker"
+date: 2011-04-25 13:03
+comments: false
+---
+
+I finally got tired of manually generating test data and spent a couple of minutes with the "Faker":https://github.com/stympy/faker (actually I went with the "ffaker":https://github.com/EmmanuelOga/ffaker version) gem.
+
+This goes into the _I should have done that sooner_ bucket. 
+
+I set up a couple of rake tasks (fake:small, fake:medium, fake:large) and added a bit of randomness to the script. 
+
+It might just be me, but I find it refreshing to work with actual data and for a pre-release, you really can't beat Faker. 
+

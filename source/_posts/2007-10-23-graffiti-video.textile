@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Graffiti Overview Video"
+date: 2007-10-23 22:27
+comments: false
+---
+
+"Graffiti":http://graffiticms.com/ is coming along nicely and we are getting very close to a beta. Actually from a code/feature perspective we are beta ready. We just need to flush out some more of the documentation and all those little things that go along with releasing a product.
+
+Just to wet your pallet a little more, here is a quick video/demo "Rob":http://weblogs.asp.net/rhoward/ put together a little while ago.
+
+<script src="http://blip.tv/scripts/pokkariPlayer.js?ver=2007100301" type="text/javascript"></script>  <script src="http://blip.tv/syndication/write_player?skin=js&amp;posts_id=447491&amp;source=3&amp;autoplay=true&amp;file_type=flv&amp;player_width=&amp;player_height=" type="text/javascript"></script>  <script src="http://blip.tv/scripts/url.js" type="text/javascript"></script>  <script src="http://blip.tv/scripts/AC_OETags.js" type="text/javascript"></script>  <script src="http://blip.tv/scripts/url.js" type="text/javascript"></script>  <script src="http://blip.tv/scripts/AC_OETags.js" type="text/javascript"></script>  <div id="blip_movie_content_447491"><a onclick="play_blip_movie_447491(); return false;" href="http://blip.tv/file/get/Swatermasysk-GraffitiCMSOverview778.flv" rel="enclosure"><img title="Click to play" alt="Video thumbnail. Click to play" src="http://blip.tv/file/get/Swatermasysk-GraffitiCMSOverview778.flv.jpg" border="0"></a><br><a onclick="play_blip_movie_447491(); return false;" href="http://blip.tv/file/get/Swatermasysk-GraffitiCMSOverview778.flv" rel="enclosure">Click To Play</a></div>

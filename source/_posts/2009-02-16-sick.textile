@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Does Old Code Make You Sick?"
+date: 2009-02-16 13:58
+comments: false
+---
+
+There have been a lot of discussions on the blogs and twitter this week about whether developers should continue to improve their craft.
+
+Two good examples:
+
+"Justin Etheredge":http://www.codethinked.com/post/2009/02/11/Today-Ive-Realized-How-Far-We-Have-To-Go.aspx:
+
+bq. _I have never been so reminded of how immature our industry is than at this point. And I'm not talking about the individual people, I'm talking about the fact that we have sitting in front of us a really good chance at introducing a little bit of rigor into the way that we think about and implement software systems, but people just blow it off. People just want the easy way out, and they don't want to take the time to actually have to learn and apply some of this stuff._
+
+"Rob Conery":http://blog.wekeroad.com/blog/patterns-purists-and-sinkholes/:
+
+bq. _But to stop asking is to stop learning. Worse yet - to suggest that it's not even worthwhile is utterly absurd. It drives me nuts when people write posts that suggest that principles and standards of quality are cumbersome._
+
+If as a developer you can ever look at code you wrote 6 months ago and do not get a little nausea, it is time to pack it in and go do something else. Code is never perfect. The best it can be is good enough for today. Your knowledge of software development should be treated the same way.

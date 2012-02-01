@@ -1,0 +1,15 @@
+---
+layout: post
+title: "Smile and Wave via Google App Engine"
+date: 2009-06-03 13:31
+comments: false
+---
+
+Just incase you been living under a technology rock for the last week or so, please go check out the "Google Wave":http://wave.google.com/ "demo video":http://www.youtube.com/watch?v=v_UyVmITiYQ&amp;feature=player_embedded before continuing reading this post.
+
+Based on the Wave video and this "roadmap post":http://googleappengine.blogspot.com/2009/02/roadmap-update.html by the "Google App Engine":http://code.google.com/appengine/ (GAE) team (along with a little bit of bias/opinion) I think it is safe to assume the following:
+
+# GAE will be the preferred/default way to host your own instances of Google Wave (remember, it is largely going to be open source).
+# GAE will be the preferred way to build extensions to Wave (XMPP and bi-directional email support)
+
+Regardless of whether or not Wave is largely adopted and has long term success (the best technology does not always win...Twitter, I am looking right at you :) the power and beauty of HTML 5 is being put front and center. While I was starting to see "some potential":http://scottw.com/software/silverlight-mix09/ in Silverlight, I am now firmly back in the camp of primarily leveraging the browser.

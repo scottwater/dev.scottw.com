@@ -1,0 +1,24 @@
+---
+layout: post
+title: "ASP.Net Caching Is Too Easy"
+date: 2009-02-10 13:36
+comments: false
+---
+
+Over the years, I have given quite a few conference, code camp, and user group talks on the virtue of using ASP.Net cache.
+
+The general theme is it is ridiculously easy to use and can make even the crappiest code appear to be relatively scalable. However, my opinion on the subject has changed over the last year or so. I am now of the opinion that easiness of caching has actually done quite a bit of harm in the ASP.Net developer community.
+
+Harm you say? Yes harm. Here is the deal, the ease of using ASP.Net caching encourages developers to use it before they need it. Few developers I talk to can accurately explain the performance gains they have seen by adding caching. Most don't even know if they really need, it is just the thing to do.
+
+So why is this bad? Three reasons:
+
+# Scalability - while ASP.Net cache can make it very easy to scale a moderately size application, once you run out of memory in local ASP.Net process you need to take other steps to further scale your application. Unfortunately, since most have blindly added caching when it comes time to take that next step (moving cache out of process, adding background processing, servers, etc) they have no clue where to begin because they never truly understood the pain points they were fixing.
+# User Experience - the common fix to #1 is to simply add more servers. Unfortunately, this now gives you a degraded user experience because the cache can get out of sync across multiple servers. Microsoft has tried to fix this a bit with SQL Server cache invalidation, but I have not seen many be successful with this approach.
+# Out of Process Caching - #1 and #2 can be improved by moving Cache out of process with a component like "memcached":http://en.wikipedia.org/wiki/Memcached. Memcached is a awesome tool that works on just about every environment, unfortunately no body is using because using the in memory version of caching is so simple to use.
+
+The good news is Microsoft is making some strides here. They are working on an out of processing caching component called "Velocity":http://scottw.com/code/velocity/. I have spent quite a bit of time with Velocity and I really like what I see. In particular I love that Microsoft chose not to simply duplicate memcached and added an interesting alternative.
+
+So what can you do today? Easy, to start, simply don't cache anything. Build your application and understand where the pain points are. From there decide are you going to have more users/requests/data than can be handled with about 1.2 to 1.8 gigs of memory on a single server? If so, figure out your hot spots and push them into something like memcached. If not, still isolate your hot spots and cache them, but make sure you are not caching to simply avoid a trip to the database.
+
+I wrote a series of "tips on caching":http://scottw.com/code/asp-net-caching-tips/ in the past. Most of them are still relevant and I am going to make myself a note to put together a list which focuses on out of process caching.

@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Duplicate Context Keys"
+date: 2009-02-03 01:49
+comments: false
+---
+
+Overall, I am still digging "Azure":http://www.microsoft.com/azure/default.mspx, but as I am working through some new things, I keep bumping into little gotchas. Hopefully folks find them helpful. This one is not likely Azure's fault, I simply stumbled into it why working on my pet Azure project.
+
+*_The context is already tracking the entity._*
+
+One of the things I have been doing early on in my pet Azure project is working through a couple different data storage scenarios. Since creating/querying/managing tables is very simple, I have tried to take the approach of separating larger/heavier properties which are not frequently used into their own tables. To tie it all together, the entities stored in each table have the same "PartitionKey and RowKey":http://scottw.com/code/azure-table-storage-key-conventions/. This of course is not a requirement, but it makes managing them much easier since I can make some very simple assumptions.
+
+One of the things the Azure team shipped in their samples was a very helpful StorageClient library which makes working with Azure storage very easy. They even went as far as creating a base Entity object (TableEntity) which provides the necessary PartitionKey and RowKey columns as well as the DataServiceKey attribute.
+
+So with this, I am able to quickly create my entities, create a simple DataService context wrapper and attempt to insert my entities. To keep things simple, I add my two entities to my context and before I reach the Save line an exception stating "_The context is already tracking the entity_" is thrown.
+
+After a little unhelpful time in Google, my only guess is the context tracking is based on my PartitionKey + RowKey + the base type they are defined on. So in my case, since all my entities derive from TableEntity the DataService sees them as a duplicate. The fix is pretty simple, just don't use the TableEntity class or create a new context for each insert[1]. However, this still sounds like a bug to me.
+
+[1] Of course since transactions in Azure are only at the row level, there really isn't much benefit to batching up the requests, but it feels cleaner to me and gives me something else to write about. :)

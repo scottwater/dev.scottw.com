@@ -1,0 +1,24 @@
+---
+layout: post
+title: "Life on a Mac - the Grass is Greener"
+date: 2007-12-12 15:19
+comments: false
+---
+
+A couple of weeks ago, I acquired a new "MacBook Pro":http://www.apple.com/macbookpro/. The old saying goes, "The grass is always greener on the other side". However, I was unaware of just how green it could be.
+
+My primary motivation for getting the new Mac was hardware. There is simply nothing else equivalent on the market today. My "previous machine was a Dell XPS M1210":http://crinket.com/archive/new-laptop-dell-xps-m1210.aspx, which was a very nice machine and the new 13 inch version is even nicer, but still a big step behind.
+
+When it came to OS X and other Mac software I was not so sure how much I would really like it. I figured worse case, I could always boot directly to Windows and with a 5 month old daughter I saw some potential in using iLife. In a nutshell, my expectations have been so far exceeded, that with the exception of Visual Studio, I find my self using OS X and Mac applications for just about every other task.
+
+A couple of the real gems:
+
+* "Transmit":http://www.panic.com/transmit/ - The next-generation Mac OS X FTP client! - This is how FTP software should work.
+* "Fusion":http://www.vmware.com/fusion/ - I have never been a fan of desktop virtualization software. In the past, I have used a backup machine and Norton Ghost for testing new software, but not anymore. Wow! Although I can boot directly into Windows at anytime, I have yet done so (note: I am not an avid gamer). I have an XP image that I use everyone once in a while and have been using Windows 2003 for development work. This has been nothing but pure joy.
+* "ZigVersion":http://zigzig.com/ - I still use "Tortoise":http://tortoisesvn.tigris.org/ on Windows, but I wish I had this as an option.
+* "TextMate":http://macromates.com/ - Good God, is there anything TextMate cannot do. Case in point, I am writing and publishing this blog post with it.
+* "iLife":http://www.apple.com/ilife/ - there is nothing even remotely close to iLife available on the PC.
+
+Put all of this together with the killer hardware and you have an incredible user experience. It is still too early to tell for sure, but so far, it has been a joy using the new machine.
+
+My only regret has been waiting until November 2007 to take the plunge.

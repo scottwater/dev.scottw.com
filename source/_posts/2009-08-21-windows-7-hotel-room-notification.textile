@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Windows 7 Hotel Room Notification"
+date: 2009-08-21 19:44
+comments: false
+---
+
+I have been slumming it this week in Hawaii working with a "Telligent Community":http://telligent.com/products/telligent-community/ customer.
+
+This morning, a new (to me?) feature of Windows 7 caught my eye.
+
+!http://scottwstatic.appspot.com/images/wlw/Windows7HotelRoomNotification_BB2B/win7hotel_4.png(Windows 7 Hotel Notification)!
+
+Like most hotels, the one I am staying in requires you enable internet access daily. The message above is essentially telling me that while I appear to be connected to the internet, I probably need to take some kind of action if I want to actually do something.
+
+This is a subtle feature, but definitely a nice touch.

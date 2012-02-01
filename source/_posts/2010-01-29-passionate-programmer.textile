@@ -1,0 +1,24 @@
+---
+layout: post
+title: "Passionate Programmer - Review"
+date: 2010-01-29 13:35
+comments: false
+---
+
+Chad Fowler's, ""Passionate Programmer":http://bit.ly/8SVxc8"[1] is a definite must read for any developer who gives a damn about his or her career.
+
+I had heard about Passionate Programmer before but didn't it give it much thought until after hearing "Joe O'Brien":http://objo.com/ mention it at "CodeMash":http://codemash.org ("review":http://scottw.com/code/codemash-2010/).
+
+At it's core, Passionate Programmer is about taking responsibility for your own career. Employers should do all they can do to help (some do), but at the end of the day, the only one responsible for you is....well, you.
+
+Two quotes which really stuck out to me:
+
+bq.    _"If you think of your career as a business (which it is), your 'product' is made up of the services you have to offer"_
+
+Not much to add here. This really is the core of theme in the book. This is your *LIFE*. Own it.
+
+bq.    _"Be the worst guy in every band you are in"_
+
+Seek out opportunities, groups, events where you are no where close to being the best developer in the room. You will usually find these are the best opportunities to learn and advance your own knowledge.
+
+fn1. To get a DRM Free electronic version, check out the "Pragmatic Programmers site directly":http://pragprog.com/titles/cfcar2/the-passionate-programmer.

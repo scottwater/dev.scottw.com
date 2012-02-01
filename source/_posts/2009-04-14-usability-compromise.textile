@@ -1,0 +1,16 @@
+---
+layout: post
+title: "An Unnecessary Usability Compromise"
+date: 2009-04-14 02:38
+comments: false
+---
+
+It is hard to imagine why a major hotel chain would impose these kinds of limitations on their customers.
+
+!http://scottwstatic.appspot.com/images/Usability_Compromise.png(Usability Compromise)!
+
+1. Instead of encoding the content you want me to avoid using &, <, and >?
+
+2. All you can offer me is 100 characters? Even twitter can do 140 characters.
+
+I am sure if you talk to their web team they will have reasons for these requirements. However, you have to ask yourself if the benefits here even remotely outweigh the usability friction they created.

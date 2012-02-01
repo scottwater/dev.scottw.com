@@ -1,0 +1,49 @@
+---
+layout: post
+title: "Ruby 1.9.2 Load Path Changes"
+date: 2011-03-04 18:48
+comments: false
+---
+
+I plan on using Ruby 1.9.2 for my next project. After getting my new macine setup, I figured it would be a good idea to update my "blog":https://github.com/scottwater/ameba to 1.9.2. 
+
+I cloned the repsitory, started MongoDB and ran my specs and more than half them failed for the same reason, "could not load ameba" which was probably more helpful than I realized. However, since this is a new machine I figured something else was up. 
+
+Thanks to the RVM's awesome sauce, I quickly switched to 1.8.7 re-ran my specs expecting to see the same result. Not quite, they all passed. 
+
+A little trial and error led me to this code failing:
+
+<pre><code class="ruby">
+module AmebaRackUpHelper
+  def app
+    eval "Rack::Builder.new {( " + File.read(File.dirname(__FILE__) + '/../config.ru') + "\n )}"
+  end  
+end
+</code></pre>
+
+Now this code itself is fine. It simply loads the config.ru which allows me to have the same code path in my specs and in production. However, looking through the config.ru you will see: 
+
+<pre><code class="ruby">require 'ameba'</code></pre>
+
+A little googling around leads me to a couple of links which mention Ruby 1.9.2 no longer include the current directory "." in the load path. 
+
+* "http://stackoverflow.com/questions/2900370/why-does-ruby-1-9-2-remove-from-load-path-and-whats-the-alternative":http://stackoverflow.com/questions/2900370/why-does-ruby-1-9-2-remove-from-load-path-and-whats-the-alternative
+* "https://rails.lighthouseapp.com/projects/8994/tickets/2921":https://rails.lighthouseapp.com/projects/8994/tickets/2921
+
+This turned out to be my issue.
+
+There are a variety of ways to fix this:
+
+1. $: << '.'
+
+This will add the current directory to the load path. However, it sounds like this change in 1.9 was made for security reasons. This probably isn't the smartest thing to do. 
+
+2. Use "requre_relative":http://extensions.rubyforge.org/rdoc/classes/Kernel.html
+
+Simple enough, instead of require 'file' you use require_relative 'file'. 
+
+3. require './ameba'
+
+Explicitly set the required file to be relative. Since in my case it is single file, I went with this approach. 
+
+This unfortunately cost me about an hour of my day. Hopefully with the power of Google, this post will save you that same hour.

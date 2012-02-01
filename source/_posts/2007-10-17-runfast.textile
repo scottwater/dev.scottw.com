@@ -1,0 +1,14 @@
+---
+layout: post
+title: "RunFast"
+date: 2007-10-17 18:00
+comments: false
+---
+
+Today's ""easy things":http://scottw.com/tags#easy-things" is a killer little utility called "RunFast":http://www.idiogensoftware.com/runfast/index.htm.
+
+!http://scottwstatic.appspot.com/images/wlw/RunFast_8D0C/runfast_3.png(RunFAST)!
+
+bq.  RunFast is a free program launcher/command tool that allows you to quickly launch programs, files, folders, websites and more. It supports aliases, which allows you to create custom commands and it also supports execution of multiple commands at one time.
+
+I have used RunFast for a couple of years now and it is one of the first things I install on a new machine. Just about anything I want to do on my computers is a quick control+R away.

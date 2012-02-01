@@ -1,0 +1,12 @@
+---
+layout: post
+title: "jquery - Returning False"
+date: 2011-04-19 14:30
+comments: false
+---
+
+"jQuery Events: Stop (Mis)Using Return False":http://fuelyourcoding.com/jquery-events-stop-misusing-return-false/
+
+bq. The main reason return false is so widely misused is because it appears to be doing what we want. Link callbacks no longer redirect the browser, form submit callbacks no longer submit the form, etc
+
+This is a mistake I have been making for a while. The good news is the fix is very easy to implement. 

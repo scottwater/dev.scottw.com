@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Google Chrome Extensions &ndash; Coming Soon"
+date: 2009-02-06 00:22
+comments: false
+---
+
+I am a huge fan of Google Chrome. It is light weight, very fast, and has keyboard short cuts in just about all the right places. All it is missing are some simple extensions (such as BlogThis for Windows Live Writer). Looks like Chrome extensions are just a couple of months away.
+
+bq. "Chromium extensions will follow a multi-process architecture to share the same kind of stability and security that regular web pages have in Chromium. All of an extension's code runs in a single process, separate from the browser (with the exception of user scripts which run in whichever renderers they apply to). Extension code can communicate with user scripts, and vice versa, through a message passing API."
+
+"Google Chrome Will Have Extensions by May":http://googlesystem.blogspot.com/2009/02/google-chrome-will-have-extensions-by.html

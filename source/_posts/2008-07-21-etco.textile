@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Mac Blogging - 2"
+date: 2008-07-21 19:51
+comments: false
+---
+
+"Windows Live Writer":http://scottw.com/software/windows-live-writer/ is still best desktop blogging tool on the "market", but as the name implies it only works on Windows.
+
+I had been "using TextMate":http://scottw.com/software/mac-blogging-options/ for a while, but I have been wanting something a bit richer.
+
+After a bit of debugging and testing, I was finally able to get "Ecto":http://infinite-sushi.com/software/ecto/ to support slugs, extended entries, and tags by leveraging the Moveable Type and Wordpress versions of the MetaBlog API.
+
+!http://scottwstatic.appspot.com/images/ecto-shot-tm.jpg(Etco Screenshot)!
+
+I am still hoping to get MarsEdit to work properly but its requirement to use the mt.setCategories method after saving post content and before publishing might be a deal breaker.
+
+These changes will be available in v.Next of "Graffiti":http://graffiticms.com.

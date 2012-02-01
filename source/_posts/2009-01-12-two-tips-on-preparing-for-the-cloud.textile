@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Two Tips On Preparing For The Cloud"
+date: 2009-01-12 10:25
+comments: false
+---
+
+This weekend I gave my first talk on "cloud computing at the NYC Code Camp":http://scottw.com/code/nyc-code-camp-understanding-data-storage-options-in-the-cloud/. For most, this is the first time they have started to really think about these topics and so they are loaded with questions, especially ones related to their current processes.
+
+While I obviously do not have all the answers and most cloud platforms (even Amazon's) are in their infancy stages, I can break down how to prepare in two simple steps.
+
+1. *Assume they (the cloud providers) are right.* In today's challenge everything world (which is normally the right approach) if your first approach to working in the cloud is to figure out how to change the cloud to work in the way you are used to, you will fail. In most cases, writing your applications will leverage your existing skills (code/testing/etc), but most of the patterns and assumptions you have learned over the last N years need to be reset and likely relearned. This is especially true on the data side of things. Don't tell your DBA, but normalization is now likely an enemy of yours in the cloud. So my tip here, at least in the short run, is to assume the new API/patterns put forth by the service providers are correct for now and see how you can bend your current thoughts into their architecture. I am sure you will find places along the way which do not work, but if start trying to squeeze your square application through their round hole, you will be unsuccessful.
+
+2. *Decouple your current applications as much as possible.* Yes, this is a very obvious and good thing to do even without considering moving to the cloud in the future. However, you will find that in a cloud based world, this is even more important. As I mentioned in tip #1, you will likely find things you want and need to do are not supported or possible (yet) in the cloud. If you follow the tip and build your applications in a decoupled manor, you should find moving to the cloud much easier since you can pick and chose which pieces you run in the cloud, which pieces of the cloud (data/queues/storage) you move in house, and which pieces of your applications don't leverage by cloud directly.

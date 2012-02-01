@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Over Thinking The Competition"
+date: 2009-07-17 15:44
+comments: false
+---
+
+A really interesting post on the "Zoho":http://zoho.com "blog":http://blogs.zoho.com/, ""Companies Don't Get Killed by Competition, They Commit Suicide":http://blogs.zoho.com/general/companies-don-t-get-killed-by-competition-they-commit-suicide"
+
+My two favorite quotes.
+
+bq. _But if there's anything I've learned from my years in the tech world is that companies don't get killed by competition, they usually find creative ways to commit suicide._
+
+Then:
+
+bq. _...hating competitors is a good way to lose objectivity and lose focus on customers._
+
+Zoho has the right perspective. They cannot control what Microsoft and Google deliver. But they can control their own user experience and how they interact with their customer.

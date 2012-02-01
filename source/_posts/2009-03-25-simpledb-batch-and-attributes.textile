@@ -1,0 +1,17 @@
+---
+layout: post
+title: "SimpleDB Batch and Attributes"
+date: 2009-03-25 19:04
+comments: false
+---
+
+I am still not a huge fan of SimpleDB API (especially via Amazon's C# wrapper), but with Microsoft's decision to "change course on SDS":http://scottw.com/software/sds2/, if you need a cloud scale queryable schemaless entity store, it is likely your best option.
+
+Recently they announced to "two major changes":http://aws.typepad.com/aws/2009/03/amazon-simpledb-batch-put.html:
+
+# Batching - lets you insert 25 items in a single transaction (transaction being the key word).
+# An increase from 250 million items per domain to 1 billion.
+
+I am really looking forward to the next couple of months in this space. It is obvious that "Amazon":http://aws.amazon.com has stepped up its game since Microsoft has gone public with the "Azure":http://www.microsoft.com/azure/default.mspx initiative and you have to imagine things are just getting started.
+
+Big competition FTW.

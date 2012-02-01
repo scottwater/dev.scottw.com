@@ -1,0 +1,22 @@
+---
+layout: post
+title: "The Value of Being First"
+date: 2007-11-05 19:36
+comments: false
+---
+
+Almost a month ago, in reaction to "Google's purchase of Jaiku":http://scottw.com/technology/google-messages/, I said:
+
+bq. Personally, I think this is end of the road for Twitter.
+
+The logic was correct. Jaiku has a better overall feature set, seems more reliable, and has Google backing it now. However, as of today, users have not followed. I tried using both services ("Twitku":http://twitku.com is a big help), but in the end, it  just isn't worth the effort. There are way more people on Twitter and until Google does something that changes the micro-blogging game, Twitter will continue to be the dominant player for a single powerful reason, *they were first*.
+
+What really drove this home, was last week's hype fest over Google's "OpenSocial":http://code.google.com/apis/opensocial/.
+
+bq.  OpenSocial provides a common set of APIs for social applications across multiple websites. With standard JavaScript and HTML, developers can create apps that access a social network's friends and update feeds.
+
+The premise of OpenSocial is to enable application developers a way to build tools which run and operate across multiple social networking sites instead building site specific tools like you would have to do with Facebook. While this is great in theory, there is a major problem. You will need to convince users to ditch an existing system which has critical mass and more importantly, is full of their friends and family. Similar to Jaiku vs. Twitter, this is a huge hurdle to overcome.
+
+It is not impossible to over come a dominant player, but to do so, you need to change the game. Interestingly, Seth Godin, "thinks OpenSocial changes the game":http://sethgodin.typepad.com/seths_blog/2007/11/changing-the-ga.html. I think it opens up some new possibilities, but I until I can do something that I have never been able to do before like sign into one site and import/access my profile data and friends from another this is simply another way to do the same thing in a couple of places. What makes Facebook applications so interesting (besides the social aspect) is you can do different things at the same place.
+
+This doesn't mean OpenSocial is not important and will not gain traction. This is a huge space and there certainly is room for others. I expect you will see a lot of OpenSocial applications in the future (we are investigating what we could do with "Community Server":http://communityserver.org/), but I would not expect to see this slow down the Facebook juggernaut.

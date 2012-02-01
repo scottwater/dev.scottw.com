@@ -1,0 +1,22 @@
+---
+layout: post
+title: "Graffiti Diff"
+date: 2007-10-05 20:09
+comments: false
+---
+
+Have you ever started to make edits to a post, get side tracked and not remember what you just changed? Or have you ever tried to collaborate with a traditional web based WYSIWYG editor and wanted to easily see what is different? What's changed?
+
+We have added a very easy to use tool to Graffiti which will let you do just this. In my case, it just points out how bad my grammar really is, but it still works pretty well.
+
+!http://scottwstatic.appspot.com/images/wlw/GraffitiDiff_E31E/post_titlebar_thumb.png!:http://scottw.com/images/wlw/GraffitiDiff_E31E/post_titlebar_2.png
+
+In the image above, you will a dropdown which lets you toggle between versions and a link to the right lets you compare two versions. By default, it will compare what is currently in the editor and the most recent version, but you are free to choose any two versions.
+
+The image below shows:
+
+# What was removed (red)
+# What was added
+# How bad my grammar can be sometimes (image above also shows it took about 7 revisions to do my about page :).
+
+!http://scottwstatic.appspot.com/images/wlw/GraffitiDiff_E31E/revision_diff_thumb.png!:http://scottw.com/images/wlw/GraffitiDiff_E31E/revision_diff_2.png

@@ -1,0 +1,84 @@
+---
+layout: post
+title: "Simple Resque Mail Queue"
+date: 2011-04-26 16:00
+comments: false
+---
+
+Now that I have "resque":https://github.com/defunkt/resque setup for "KickoffLabs":http://kickofflabs.com, it was time to start pushing things to the queue. 
+
+One obvious place to start, is email. This is super simple to set up, but it adding the same boilerplate code to ever mailer was boring, so I went in search of a way to automate it. 
+
+<!--more-->
+
+Enter "Resque-Mailer":https://github.com/zapnap/resque_mailer.
+
+bq. Rails plugin for sending asynchronous email with ActionMailer and Resque
+
+Resque-mailer is a super simple way to send emails in the background with resque. All you need to do is import a module and you are ready to go. 
+
+While this did work nice at first, I did have a couple of minor issues with it:
+
+# Because of how Resque-Mailer proxies access to the standard ActionMailer, the callbacks I was relying on to use "auto-scaler":http://blog.leshill.org/blog/2011/04/03/using-resque-and-resque-scheduler-on-heroku.html were not firing properly.
+# For code readability, I was not a fan of still calling .deliver on the mailer. I wanted it to be more obvious that this mail was not going to be sent in the current process. 
+
+To fix these two issues, I put together a simple module, MailQueue which can be added to any ActionMailer::Base class or can just be monkey-patched into ActionMailer::Base if plan on using it on all your mailers (as I am doing)
+
+*MailQueue*
+
+{% codeblock lang:ruby %}
+module MailQueue
+  extend self
+  
+  def queue
+    :default
+  end
+
+  def perform(*args)
+    mailer = const_get args.shift
+    method = args.shift
+    mailer.send(method, *args).deliver
+  end
+
+  def enqueue()
+    EnqueueProxy.new(self)
+  end
+
+  class EnqueueProxy
+
+    def initialize(klass)
+      @klass = klass
+    end
+
+    def method_missing(m, *args, &block)
+      if @klass.respond_to? m
+        args = [@klass.to_s, m] + args
+        Resque.enqueue(MailQueue, *args)
+      else
+        super
+      end
+    end
+
+  end
+
+end
+{% endcodeblock %}
+  
+The code itself is rather simple:
+
+# The module extends its self
+# A method enqueue is added to the mailer.
+# When enqueue is called, it returns a proxy class which uses method missing to catch the actual mailer method call (I would love to know if there is a clean way to do this without method_missing). 
+# Both the name of the class and the method being invoked are added to the list of arguments passed to perform. 
+
+For example, if you had a mailer called SiteMailer with a method thankyou_email on it, you could push it to resque with:
+
+{% codeblock lang:ruby %}
+SiteMailer.enqueue.thankyou_email(*args)
+{% endcodeblock %}
+
+And if you need to send it in real time, you can still use SiteMailer.thankyou_email(*args).deliver.
+
+If you have any suggestions on how to make this better, please update the "gist":https://gist.github.com/942341 or ping me on "twitter":http://twitter.com/scottw.
+
+**UPDATE** I published a slightly "updated version":http://www.scottw.com/simple-resque-mail-queue-ii.

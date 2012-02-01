@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Live Search API - Silk Road"
+date: 2008-11-14 11:37
+comments: false
+---
+
+!http://scottwstatic.appspot.com/images/wlw/LiveSearchAPISilkRoad_6B4B/image_3.png!
+
+Yesterday, Microsoft announced the release of "Live Search services "Silk Road":http://search.live.com/developers.
+
+bq. Silk Road is Live Search's new set of search APIs (version 2.0 beta) and services for developers. With Silk Road, you can build applications without restrictions around presentation. Getting started is simple: decide what search content you want, choose from JSON, SOAP, or XML output, and then customize them according to your needs to build your own search application. All you need to get going is an AppID.
+
+The API is very thorough and will enable some very interesting scenarios as well as an opportunity to monetize your search results (as well as enhancing your site's 404 experience).
+
+Earlier this week I wrote about "Yahoo's BOSS":http://scottw.com/code/yahoo-search-boss-c-implementation/ which provides API access to Yahoo search. Google also has a "horse in the race":http://code.google.com/apis/ajaxsearch/, but as of today has not offered the same level of service as Microsoft or Yahoo. Then again, when you effectively own search, I guess you get to make your own rules.
+
+"Graffiti":http://graffiticms.com 2.0 is going to offer support for search providers. I am looking forward to leveraging one of these search API's and providing my visitors some more advanced search scenarios.

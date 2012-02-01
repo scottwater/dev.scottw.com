@@ -1,0 +1,14 @@
+---
+layout: post
+title: "CNaming an Amazon S3 Bucket"
+date: 2011-04-25 14:30
+comments: false
+---
+
+This is much simpler than most related articles make it (and good luck finding it in Amazon's own documentation). 
+
+# Name your bucket the url you want to use for the cname. 
+# Set up a cname to s3.amazonaws.com. 
+# Grant the "everyone" role "view permissions" for the bucket. 
+
+For example, I created a bucket called assets.scottw.com. I then entered a cname record for assets and pointed it to the url s3.amazonaws.com. Now any file I upload to the assets.scottw.com bucket is available at the same corresponding url. 

@@ -1,0 +1,24 @@
+---
+layout: post
+title: "Ditch Confirmations"
+date: 2007-10-09 03:15
+comments: false
+---
+
+James Avery wrote a post, ""Modals or No more popups":http://dotavery.com/blog/archive/2007/10/08/149425.aspx" inquiring about modal solutions. I really do not have an opinion on the different options :), but his post reminded me of a rule set for myself while working on "Graffiti":http://graffiticms.com/: *Never use Popups unless they are absolutely positively needed*.
+
+!http://scottwstatic.appspot.com/images/wlw/DitchAnythingModal_13BEB/areyousure_6.png(Sucky modal with an X through it)!
+
+This rule was influenced by "Robert Hoekman's":http://www.rhjr.net/ excellent, "_"designing the obvious":http://www.amazon.com/exec/obidos/redirect?path=ASIN/032145345X&amp;link_code=as2&amp;camp=1789&amp;tag=scottwater-20&amp;creative=9325_".
+
+bq. This behavior is just plain rude. It's not the user's job to jump through every little hoop an application comes up with. It's the job of the software to what the user wants.
+
+In the past, I have primarily used a popup to confirm the deletion of content. I started to think about how many times I accidentally clicked delete and did not actually want to delete anything. I am sure this has happened, but it is probably one in a very large number. Still, I know I would be not very happy if I accidentally deleted a post (like this one :).
+
+The solution (and one that Hoekman shows as well via "GMail":http://gmail.com) for Graffiti was to enable content to be undeleted. To support this, we added a simple bit field (IsDeleted) to some of our content tables (Posts and Comments). When something is deleted, instead of actually removing it from the table, we set IsDeleted to false. With this in place, we can enable users to delete without any kind of confirmation. When we query the data, we exclude the IsDeleted records (in most cases) then give users the option to undelete the record later if the need arises.
+
+Here are a quick video (if you view this via RSS you might need to click through):
+
+<object height="268" width="708" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"><param name="_cx" value="18733"><param name="_cy" value="7091"><param name="FlashVars" value=""><param name="Movie" value="http://content.screencast.com/bootstrap.swf"><param name="Src" value="http://content.screencast.com/bootstrap.swf"><param name="WMode" value="Window"><param name="Play" value="0"><param name="Loop" value="-1"><param name="Quality" value="High"><param name="SAlign" value="LT"><param name="Menu" value="-1"><param name="Base" value=""><param name="AllowScriptAccess" value=""><param name="Scale" value="NoScale"><param name="DeviceFont" value="0"><param name="EmbedMovie" value="0"><param name="BGColor" value="FFFFFF"><param name="SWRemote" value=""><param name="MovieData" value=""><param name="SeamlessTabbing" value="1"><param name="Profile" value="0"><param name="ProfileAddress" value=""><param name="ProfilePort" value="0"><param name="AllowNetworking" value="all"><param name="AllowFullScreen" value="true">       <embed src="http://content.screencast.com/bootstrap.swf" quality="high" bgcolor="#FFFFFF" width="708" height="268" type="application/x-shockwave-flash" flashvars="content=http://content.screencast.com/media/5f2b10b8-8b95-4b15-8a02-d13c208e2163_e40ce500-e7bd-44cf-8154-6db29118d0f7_static_0_0_video.swf&amp;width=708&amp;height=268" allowfullscreen="true"> </embed> </object>
+
+On a similar note, "SubSonic":http://subsonicproject.com/ has excellent support for IsDeleted.

@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Developer Choice"
+date: 2008-05-14 13:03
+comments: false
+---
+
+This post initially started as a set of notes related to my own research around NHibernate and Linq to SQL. However, it quickly turned into a very obvious "ah ha" moment.
+
+As I have previously mentioned, I have been doing a lot of "research lately on various tools":http://scottw.com/code/castle/. One area I have focused on recently is data access. This is an area of hot debate for many people and can easily turn into a pissing match, so I first want to share my key take away:
+
+*The tool in itself, does not matter. It is all about what you are comfortable with.*
+
+In hindsight, this is very obvious. It is generally the answer to most developer questions (C# vs. VB, SQL Server vs. MySQL, ASP.Net vs. Rails). There will always be trade offs. The result will never be perfect.
+
+This of course does not mean you shouldn't try anything new. The world of software is in constant flux. I routinely cringe at code I wrote a year ago. However, if you spend all your time looking for the perfect solution, you won't leave yourself the necessary time to build something great.
+
+FYI, if you are still interested in the NHibernate vs Linq to SQL, here is a "nice overview":http://www.callcontext.com/archive/2008/04/04/1163.aspx by "Geoff Bennet":http://www.callcontext.com/.

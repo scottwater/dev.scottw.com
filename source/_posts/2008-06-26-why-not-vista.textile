@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Why Not Vista?"
+date: 2008-06-26 13:42
+comments: false
+---
+
+I could not have said it better myself.
+
+bq. This isn't a matter of dissing Microsoft, but Intel information technology staff just found no compelling case for adopting Vista,&rdquo; the person said. ["Et Tu, Intel? Chip Giant Wont Embrace Microsoft's Windows Vista":http://bits.blogs.nytimes.com/2008/06/25/et-tu-intel/]
+
+I know there is a better security model/etc under the covers for Vista, but when it comes to end user features, there is nothing that makes me say "_I want that_".

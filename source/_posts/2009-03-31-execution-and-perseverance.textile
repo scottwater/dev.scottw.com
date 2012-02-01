@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Execution and Perseverance"
+date: 2009-03-31 15:00
+comments: false
+---
+
+A very good talk by David Heinemeier Hansson, "Doing a Start Up in the Real World":http://events.carsonified.com/fowa/2009/dublin/videos/david-heinemeir-hanson-2". My favorite part,
+
+bq. "_...a mediocre idea with fantastic execution and staying power is going to be an awesome success_".
+
+<object width="400" height="220"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=3899696&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=3899696&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="400" height="220"></embed></object>

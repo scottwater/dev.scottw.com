@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Everybody Codes"
+date: 2011-03-21 14:01
+comments: false
+---
+
+"Everybody codes":http://robots.thoughtbot.com/post/3688721732/everybody-codes ...or as "Antonio Rodriguez":http://an.ton.io/ gets to a little later in the video is _"everyone builds product"_. 
+
+I cannot agree with this more. There is no reason everyone working at a product company does not deeply understand what the product is about, especially from a typical customers perspective. 
+
+And as Antonio points out, the opposite of this is also true. Everyone in a company should also be able to sell and evangelize the product. 
+
+bq. ...there's only two things that add value [to a startup]. You either build a product, or you sell the product.

@@ -1,0 +1,24 @@
+---
+layout: post
+title: "New Computer and Old Git/Heroku"
+date: 2011-03-15 16:47
+comments: false
+---
+
+This goes into the, _I way overthought this pile_. 
+
+I recently setup a new development machine and for the first time needed to setup an existing "heroku":http://heroku.com site.
+
+The heroku docs have helpful tips for "cloning your site":http://devcenter.heroku.com/articles/collab and setting it up locally (under collaboration).
+
+However, since I store my source on other services ("github":http://github.com/scottwater and "trunks":http://trunksapp.com) I was sure there was something more complicated I needed to do.
+
+Well, it turns out there really isn't anything to do. Simply add your heroku repository as a remote and you are done: 
+
+<pre><code class="bash">
+git remote add heroku git@heroku.com:APPNAME.git
+</code></pre>
+
+_NOTE:_ technically if this is your first time using git on the box you will also need to install in the git gem and and login/authenticate. Otherwise you are good to go. 
+
+Long live git and tools which build on top of it. :)

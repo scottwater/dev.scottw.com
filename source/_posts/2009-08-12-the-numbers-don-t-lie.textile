@@ -1,0 +1,14 @@
+---
+layout: post
+title: "The Numbers Don't Lie"
+date: 2009-08-12 21:26
+comments: false
+---
+
+Sometimes, you just have to go with the numbers.
+
+I was recently booking a flight from Philadelphia to Dallas. On the main booking screen USAirways is nice enough to show you the On-Time estimate for each stage of the flight.
+
+!http://scottwstatic.appspot.com/images/OnTime.jpg(Ontime numbers)!
+
+If the flight is late more than 50% of the time, maybe it is time to change the flight time.

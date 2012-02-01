@@ -1,0 +1,11 @@
+---
+layout: post
+title: "htty"
+date: 2011-03-25 14:09
+comments: false
+title_url: https://github.com/htty/htty
+---
+
+My favorite way to interact with web services and see what a server (usually mine) is actually returning. 
+
+If you do web work, I highly recommend you check out htty.

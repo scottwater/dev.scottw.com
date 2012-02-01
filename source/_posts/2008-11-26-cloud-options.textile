@@ -1,0 +1,89 @@
+---
+layout: post
+title: "Cloud Options - Amazon, Google, &amp; Microsoft"
+date: 2008-11-26 03:53
+comments: false
+---
+
+I have been researching various cloud offerings on and off for the last couple of months. I have primarily focused on offerings from Amazon, Google, and Microsoft.
+
+Here is an overview and some quick opinions of what each service offers.
+
+h3. "Amazon (AWS)":http://aws.amazon.com/
+
+!http://scottwstatic.appspot.com/images/wlw/MicrosoftCloudvs.GoogleAmazon_9AC7/logo_aws_3.gif!
+
+While they did not invent the notion of cloud computing, they are certainly the thought leader here and have an impressive offering.
+
+h4. Core Services
+
+* "S3":http://aws.amazon.com/s3/ - Blob storage
+* "SimpleDB":http://aws.amazon.com/simpledb/ - structure data
+* "EC2":http://aws.amazon.com/ec2/ - OS in the cloud
+* "SQS":http://aws.amazon.com/sqs/ - Queue in the cloud
+
+h4. Overview &amp; Thoughts
+
+* Most mature offering of the three.
+* All services are available as a web service. This makes it very easy to integrate and use without a full commitment to Amazon.
+* EC2 is based on VM images. For those who are control freaks, this can be very ideal. For me personally, I would rather not have to worry about managing this level (deployments, patching, trouble shooting, etc).
+* The "EBS":http://aws.amazon.com/ebs/ (elastic block store) allows EC2 instances to essentially use a shared drive. This is a must for running something like SQ Server on the images since you would need a way to maintain state.
+* "Windows is now an option":http://scottw.com/software/aspnet-cloud/.
+* EC2 + EBS + Windows Support = ASP.Net + SQL Server options.
+* "Eventual Consistency":http://www.25hoursaday.com/weblog/2007/12/21/AmazonSimpleDBTheGoodTheBadAndTheUgly.aspx on the data side is not that appealing. I get why it helps scaling, but I would love for this to be optional. For the apps I generally build, this could be a real PITA.
+
+h3. "Google (AppEngine)":http://code.google.com/appengine/
+
+!http://scottwstatic.appspot.com/images/wlw/MicrosoftCloudvs.GoogleAmazon_9AC7/appengine_lowres_3.jpg!
+
+Like everything else Google, they took a very simple approach called AppEngine.
+
+h4. Core Services
+
+* Hosting
+* Data Access (BigTable)
+* Google Data Services
+
+h4. Overview &amp; Thoughts
+
+* Unlike Amazon you have no control at the OS level. This is similar to the Microsoft offering and something I am OK with.
+* No background processing. This is a big deal breaker for me. If you want to do any non-UI processing you need to do it off of the Google services. As you will see shortly, Microsoft makes this drop dead simple and since you control the servers via EC2 Amazon has this area covered as well (it just requires a bit more setup).
+* Integrating with Google services is a very nice benefit, especially on authentication. Any site/service which does not require me to create yet another login is a good thing.
+* Python - I actually really dig python, but I still think C#.
+* No REST/Web Service access - there are libraries being written by third parties to work around this, but after spending time with Amazon and Microsoft services I would find it hard to move forward without web service level access.
+* index.yaml - One issue with using a cloud based db is little (or no) control specifying indexes. As part of the AppEngine deployment process a file called index.yaml is generated which tells BigTable the types of queries your app runs and what should be indexed.
+* I get the sense that Google is trying to appeal to a small and focused audience (well, as small as Google can). There is nothing wrong with this approach, but I think long term I would feel handcuffed on their platform.
+
+h3. "Microsoft (Windows Azure)":http://www.microsoft.com/azure/default.mspx
+
+!http://scottwstatic.appspot.com/images/wlw/MicrosoftCloudvs.GoogleAmazon_9AC7/image_a0893aea-deb2-446b-a277-d6de97bc1aac.png!
+
+In typical Microsoft fashion, they are trying to cover all possible bases.
+
+h4. Core Services
+
+* "Application Hosting":http://www.microsoft.com/azure/windowsazure.mspx (Azure)
+* Data - "SDS":http://www.microsoft.com/azure/sql.mspx &amp; Azure Storage
+* Blobs (part of SDS and Azure storage)
+* Queues (part of Azure storage)
+* ."NET Services":http://www.microsoft.com/azure/netservices.mspx (Access Control, Service Bus, &amp; Workflow)
+* "Live Services":http://dev.live.com/ (Mesh &amp; everything else)
+
+h4. Overview &amp; Thoughts
+
+* Background processing - this is a huge part of big web applications. Although I kid about Microsoft trying to cover all their bases, this is one particular area that they not only covered, but made it extremely simple. My one gripe here is that the current CTP only supports a single worker role (back ground process).
+* Super simple deployment - just upload a package and a configuration file which specifies the number of instances you want to run on.
+* Staging - This is another part that just makes me smile. Built in support for staging your updates before they go live. Then one click to publish push it live.
+* Option Duplication - You can still tell there are various teams/pieces of the offering at different stages. I am sure it will get cleaned up in the coming months, but on the data side there is a lot of overlap around data storage, querying, and blobs.
+* .NET Service Bus - This service should make the process of slowly moving pieces of your various (Enterprise) solutions to the cloud much easier. In addition, it will make doing Slingbox like applications infinitely easier. Very cool stuff here.
+* Access control/Geneva - I plan on writing a lot more on this in the future, but there was clearly a lot of thought put into how to authenticate users from various providers/solutions. Enterprises and enterprise targeted apps will really find this appealing. 
+* Live Services - I did not think this would interest me until I saw how easy it was to build a Mesh enabled web application. It is almost 100% consumer (vs. Enterprise) focused, but still really interesting.
+* The REST/Web Service approach (along with .NET Service Bus) will make moving existing applications to the cloud much easier than I would have expected. It also makes it very easy to simple add "cloud" features to your existing internal/on premise applications as well.
+* I would love to see something like Amazon's EBS added as an offering
+* Microsoft still has a lot of "execution" to complete, but overall I am thoroughly impressed with the total breadth of their offering.
+
+h3. Summary
+
+I am going to be spending a lot of time on the Azure stack(s) in the coming weeks. The current offering is still the first CTP, but you can not ignore the total breadth of their offering (and there is still a lot more coming). There are still a couple of things in the Amazon offering (EBS) which I find appealing and do not appear to be on the short term Azure roadmap, so going to market with a solution which leverages both of them is also something I am also going to consider.
+
+*Update*: I have already gotten some emails and comments about other independent solutions. If I have left off your favorite solution, please leave a comment explaining your service and how it differs from the three I already listed. Feel free to go into full scale sales mode. :)

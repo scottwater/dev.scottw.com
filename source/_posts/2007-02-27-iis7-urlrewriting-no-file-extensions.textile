@@ -1,0 +1,23 @@
+---
+layout: post
+title: "IIS7, UrlRewriting, No File Extensions"
+date: 2007-02-27 12:20
+comments: false
+---
+
+"ScottGu":http://weblogs.asp.net/scottgu/ spills the beans on some "very nice improvements to UrlRewriting in the IIS7 time frame.":http://weblogs.asp.net/scottgu/archive/2007/02/26/tip-trick-url-rewriting-with-asp-net.aspx
+
+Talking about allowing an HttpModule to execute on all requests, without the having configure IIS to push all requests through the aspnet_isapi, Scott writes:
+
+# It will work on any IIS 7.0 machine. You don't need an administrator to enable anything on the remote host. It will also work in medium trust shared hosting scenarios.
+# We'll also be shipping a Microsoft supported URL-Rewriting module in the IIS7 RTM timeframe that will be available for free as well that you'll be able to use on IIS7, and which will provide nice support for advanced re-writing scenarios for all content on your web-server.
+
+As I have said quite a few times recently, I have been "enjoying using an isapi filter":http://scottw.com/tags#isapi-filters, but from as a product developer, it would be great to have this type of functionality available out of the box. I really hope they enable a lot of the same great functionally found in current filters and not the boring unusable urlrewriting tools which shipped with ASP.Net 2.0 (I am talking about the web.config option and not context.rewritepath).
+
+IIS7 is looking better each day.
+
+Scott also shares a great tip for overriding the forms action attribute via a control adapter, this is pretty killer and much cleaner than the base Page class and HtmlWriter override we use in "Community Server":http://communityserver.org:
+
+bq. The good news is that with ASP.NET 2.0, there is a cleaner trick that you can use to rewrite the "action" attribute on the &lt;form&gt; control. Specifically, you can take advantage of the new ASP.NET 2.0 Control Adapter extensibility architecture to customize the rendering of the &lt;form&gt; control, and override its "action" attribute value with a value you provide. This doesn't require you to change any code in your .aspx pages. Instead, just add a .browser file to your /app_browsers folder that registers a Control Adapter class to use to output the new "action" attribute.
+
+We added a couple control adapters to Community Server 2007, it looks like we need to add one more.

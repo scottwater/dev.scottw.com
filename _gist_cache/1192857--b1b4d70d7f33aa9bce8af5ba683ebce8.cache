@@ -1,0 +1,30 @@
+module Postmarker
+
+  def postmark_mail(*args)
+
+    mail_message = mail(*args)
+    
+   if can_use_postmark?(mail_message.From.to_s) 
+
+     mail_message.delivery_method.settings.merge!(
+        :address => 'smtp.postmarkapp.com', 
+        :user_name => ENV['POSTMARK_API_KEY'],
+        :password => ENV['POSTMARK_API_KEY'], 
+        :port => 2525, 
+        :authentication => 'plain', 
+        :enable_starttls_auto => true, 
+        :domain => 'kickofflabs.com')
+
+    end
+
+    mail_message
+  end
+
+  def can_use_postmark?(from_address)
+    ENV['POSTMARK_API_KEY'] && Rails.env.production? && valid_address?(from_address)
+  end
+
+  def valid_address?(from_address)
+    %w{scott@kickofflabs.com support@kickofflabs.com}.include?(from_address)
+  end
+end

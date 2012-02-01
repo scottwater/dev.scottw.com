@@ -1,0 +1,18 @@
+---
+layout: post
+title: "StartUp Delayer"
+date: 2009-02-24 12:45
+comments: false
+---
+
+"Improved Startup Delayer App is Still a Gem":http://webworkerdaily.com/2009/02/23/improved-startup-delayer-app-is-still-a-gem/ on WebWorkderDaily reminded me that I never wrote about a great addition to my "Easy Things":http://scottw.com/tags#easy-things list, "StartUp Delayer":http://www.r2.com.au/software.php?page=2&amp;show=startdelay.
+
+bq. _When Windows loads it's Startup file, it attempts to load every program in there at the same time. Therefore if you have quite a lot of programs starting when Windows starts, each program will try and grab CPU time so that it can load._
+
+_If each program tries to do this at the same time, you soon notice the slow down that occurs, due to your CPU trying to help all the programs to load, and your hard disk accessing multiple files._
+
+_Startup Delayer allows you to setup how many seconds after Windows has started, to load each program._
+
+!http://scottwstatic.appspot.com/images/wlw/StartUpDelayer_7B30/ss_startdelay_9f21f168-e71d-4aad-94e7-422e7514a62b.jpg(Startup Delayer)!
+
+Every time I reboot, I have wait for Tokbox, Skype, Live Messenger, and about 10 other things to get out of the way so I can get back to work. Using StartUp Delayer rebooting is now much less frustrating. I definitely recommend you check it out.

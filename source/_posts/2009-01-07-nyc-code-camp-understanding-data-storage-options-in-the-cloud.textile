@@ -1,0 +1,16 @@
+---
+layout: post
+title: "NYC Code Camp - Understanding Data Storage Options in the Cloud"
+date: 2009-01-07 15:24
+comments: false
+---
+
+I will be attending this weekend's ("register here":https://www.clicktoattend.com/invitation.aspx?code=134146) Code Camp in NYC and will be giving a a talk called "_Understanding Data Storage Options in the Cloud_".
+
+This talk is one I hope to refine as the "Azure":http://www.microsoft.com/azure/default.mspx platform continues evolve and should add some meat to my "blog post on the same topic":http://scottw.com/code/microsoft-cloud-data-options/.
+
+The Code Camp Details:
+
+bq. Get ready for another Code Camp NYC, to be held at Microsoft's offices in Midtown Manhattan (1290 Avenue of the Americas between 51st/52nd Streets) on Saturday, January 10th, 2009 from 8am - 6pm. This is an all-day event with refreshments served, including a developer's "power lunch" (pizza and soda).
+
+If you are in the area, I highly recommend stopping by. It looks like there is a "great list of topics":http://nyc.codecamp.us/blogs/announcements/archive/2008/12/31/code-camp-session-schedule.aspx.

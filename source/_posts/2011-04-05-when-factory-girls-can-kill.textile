@@ -1,0 +1,39 @@
+---
+layout: post
+title: "When Factory Girls Kill"
+date: 2011-04-05 13:30
+comments: false
+---
+
+Keeping with my goal of feeding Google the crazy things which cost me hours in my day...
+
+I had a simple association defined in my "factory_girl":https://github.com/thoughtbot/factory_girl factories file: 
+
+<pre><code class="ruby">
+Factory.define :site do |s|
+  # most removed 
+  s.user Factory.build(:user)
+end
+</code></pre>
+
+Did you catch the bug? Neither did I. 
+
+This setup had worked fine for a couple of weeks. This morning I ran rake db:drop and attempted to recreate my developer database from scratch and I was greeting with a long error message related to the users table not existing. 
+
+Thankfully the backtrace mentioned factory_girl, so I had a good idea where to start. 
+
+Turns out, I had a bit of a chicken and egg going on. 
+
+I had added the factory above after I had created both my site and a user tables to the database and did not think too much about it. When I ran my migrations and everything just worked.
+
+However, once I dropped the table and the code in this factory was loaded all hell broke loose since Factory.build(:user) was executed right away. The fix is subtle and makes a lot of sense:
+
+<pre><code class="ruby">
+Factory.define :site do |s|
+  # most removed 
+  s.user {Factory.build(:user)}
+end
+</code></pre>
+
+By wrapping Factory.build(:user) in a block it is no longer executed until it is needed, which in my case is well after the user table is created. 
+

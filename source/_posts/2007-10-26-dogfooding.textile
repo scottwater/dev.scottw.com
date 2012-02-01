@@ -1,0 +1,22 @@
+---
+layout: post
+title: "Where's the Dogfooding?"
+date: 2007-10-26 15:45
+comments: false
+---
+
+One of things we chatted about "last night":http://scottw.com/life/dev-dinner-october-2007/ was Microsoft's reluctance to use some of its own core technologies.
+
+"According to Wikipedia":http://en.wikipedia.org/wiki/Eat_one's_own_dog_food
+
+bq. To say that a company "eats its own dog food" means that it uses the products that it makes. For example, Microsoft emphasizes the use of its own software products inside the company. "Dogfooding" is a means of conveying the company's confidence in its own products.
+
+This morning on "TechCrunch":http://techcrunch.com, Mike Arrington asks, ""Check Out The New Windows Home Server Demo. But Why Is It In Flash?":http://www.techcrunch.com/2007/10/25/check-out-the-new-windows-home-server-demo-but-why-is-it-in-flash/"?
+
+A couple of weeks ago, "Drew Marsh":http://blog.hackedbrain.com/ wrote, ""New Zune Windows is client not WPF based":http://blog.hackedbrain.com/archive/2007/10/12/6127.aspx".
+
+Have you seen CardSpace on a Microsoft site? Is there anything big in the Microsoft pipeline that uses WPF? WCF? Workflow?
+
+Don't get me wrong, with the exception of Vista, I still happily use Microsoft tools everyday. The products listed above all do amazing things, but if a company with the size, muscle, and brain bower of Microsoft is not rolling new things out the door using them, why should I?
+
+The argument I have seen is reach. There are still a lot of users who do not have Silverlight installed/enabled or a browser that will support it. There are still a lot of pre-XP SP2 users. Personally, I would expect Microsoft to be the leader here. If they released their updates with requirements on the items above, it would certainly make it not only easier for me to do the same, but also much more appealing.

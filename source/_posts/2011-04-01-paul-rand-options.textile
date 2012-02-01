@@ -1,0 +1,8 @@
+---
+layout: post
+title: "Paul Rand On Options"
+date: 2011-04-01 19:00
+comments: false
+---
+
+bq. I asked him if he [Paul Rand] would come up with a few options, and he said, “No, I will solve your problem for you and you will pay me. You don’t have to use the solution. If you want options go talk to other people." -- Steve Jobs

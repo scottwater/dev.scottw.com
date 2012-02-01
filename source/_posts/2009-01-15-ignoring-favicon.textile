@@ -1,0 +1,42 @@
+---
+layout: post
+title: "Ignoring Favicon.ico in ASP.Net MVC"
+date: 2009-01-15 14:36
+comments: false
+---
+
+I was hacking around on a custom controller factory in ASP.Net MVC which leveraged Ninject and StructureMap under Azure. After working around a couple security issues, I kept running into a weird exception where the type passed into my ControllerFactory was null.
+
+Here was my original code:
+
+<pre><code class="csharp">
+public class ControllerFactory2 : DefaultControllerFactory
+{
+  protected override IController GetControllerInstance(Type controllerType)
+  {
+    return (IController) NinejctManager.GetIntance(controllerType);
+  }
+}
+</code></pre>
+
+
+As you can see, my first problem was I was not checking for null in the controllerType paramater. Looking at the MVC source, when this is null the DefaultControllerFactory in ASP.Net MVC will throw a 404 exception; so the "fix" is to add a check for null and then pass it to the base class.
+
+<pre><code class="csharp">
+public class ControllerFactory2 : DefaultControllerFactory
+{
+  protected override IController GetControllerInstance(Type controllerType)
+  {
+    if (controllerType == null)
+      return base.GetControllerInstance(controllerType);
+
+    return (IController) NinejctManager.GetIntance(controllerType);
+  }
+}
+</code></pre>
+
+While this would work, there was still something getting through which appeared to be throwing an exception on every other request or two. WIth a little more debugging, I found that the RawUrl on the Request object had the following value: "/favicon.ico". As annoying as this is, it is easily fixable by the following to my Routes:
+
+<pre><code class="csharp">
+_routes.IgnoreRoute("favicon.ico");._
+</code></pre>

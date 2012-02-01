@@ -1,0 +1,18 @@
+---
+layout: post
+title: "NetNewsWire"
+date: 2008-07-31 14:55
+comments: false
+---
+
+I have been trying to resist writing too much about the new iPhone. As has been previously reported it has "many warts":http://www.37signals.com/svn/posts/1148-iphone-20-the-glory-wore-off-in-wash which I hope will be cured soon. However, in the end, it really is a killer device.
+
+As many of you know, I am a big fan of Google Reader, which is why this is such a weird post to write. As of Monday of this week, I have made the switch to "NetNewsWire":http://www.newsgator.com/Individuals/NetNewsWire/Default.aspx.
+
+Google Reader is a killer web application and when comes to features that I use, it is 100% on pare with NetNewsWire. However, while the mobile and iPhone versions of Google Reader are impressive, NetNewsWire's "iPhone App":http://www.newsgator.com/Individuals/NetNewsWireiPhone/Default.aspx has a much better overall experience and one killer feature; you can (as of 1.07) control which feeds you want to sync[1] to your iPhone. This now makes it much easier to keep up with the feeds I want to read all the time and ignore the ones the others until I am sitting in front of my computer.
+
+For those of you using Windows all is not lost. NewsGator (the current owner/creator of NetNewsWire) also has a free windows client "FeedDemon":http://www.newsgator.com/Individuals/FeedDemon/Default.aspx which provides the same general overall experience[2].
+
+fn1. NewsGator provides synchronization across devices for free.
+
+fn2. I am personally not a fan of the FeedDemon NewsPaper approach so if you have to chose one, I highly recommend NetNewsWire.

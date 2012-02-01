@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Six Month Code Review"
+date: 2011-03-23 13:07
+comments: false
+---
+
+Roughly six months ago, "I published":http://scottw.com/review-my-blog-code-please this site's source to "github":http://github.com/scottwater as "Ameba":http://github.com/scottwater/ameba. 
+
+It was my first semi-real Ruby project. As I have previously written, "if code you wrote six months ago doesn't cause a little nausea":http://scottw.com/code/sick, you are not trying very hard. 
+
+True to form, this code is clearly subpar code. The core site code isn't too bad, but that is likely becuase there just isn't a lot of it. Going with "Sinatra":http://www.sinatrarb.com/ was a great way to keep things lean and focus on the Ruby language, but the lack of structure is very evident. 
+
+The area where things get really ugly are the specs. No other way to describe them except for disgusting. Too much duplication and uncessary code. In addition, there is too much focus on functional tests. The only saving grace is the project is so small, the specs execute in a second or two (no rails start up time with Sinatra).
+
+The good news is this is rather clear to me, so I feel like I am progressing rather well in Ruby. 
+
+Hopefully, I will get some time in the next couple of weeks to clean things up a bit. 

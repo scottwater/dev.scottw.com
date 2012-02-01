@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Cloud Storage Heating Up"
+date: 2008-12-02 03:44
+comments: false
+---
+
+What happens with three very successful companies all start competing in the same web space?
+
+Consumers get cheap prices. Today "Amazon announced":http://aws.typepad.com/aws/2008/11/amazon-simpledb-grows-up.html a more open beta, lots of free beta access, and much cheaper prices on their cloud db service, "SimpleDB":http://aws.amazon.com/simpledb/.
+
+bq.  We've made the business decision to go with SimpleDB even simpler than it was before. You can now get started for free. For at least the next six months, you can consume up to 1 GB of storage, and you can use up to 25 machine hours each month. You can transfer 1 GB of data in, and another 1 GB out. You can move as much data to and from Amazon EC2 as you would like, for free.  We've also reduced (dramatically, I must say) the charge for storage and for processing, effective immediately. SimpleDB storage is now priced at $0.25 per GB per month, down from the former price of $1.50 per GB per month. Of course, existing data stored in SimpleDB will be charged at the new rate.
+
+Microsoft has not announced any pricing related to Azure yet, but they have been adamant that pricing would be comparable to the current market prices. Assuming Amazon and Microsoft can still be profitable at this level, this is very good news for those looking to go big.

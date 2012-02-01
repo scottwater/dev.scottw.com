@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Developer Licensing"
+date: 2008-06-06 13:55
+comments: false
+---
+
+As mentioned previously, I have been spending quite a bit of time working "distributed caching":http://scottw.com/code/velocity/ for .NET ("Community Server":http://communityserver.com in particular). There are two main commercial players in the .NET space (prior to Microsoft announcing Velocity) "ScaleOut":http://www.scaleoutsoftware.com/index.html and "NCache":http://www.alachisoft.com/ncache/index.html.
+
+I am in the business of selling software, so I have zero problems paying for something that lets me get the job done and move on to the next thing. However, it drives me nuts when component/server tool companies require licenses simply develop against their product.
+
+!http://scottwstatic.appspot.com/images/2008-06-06_nache.jpg(NCache)!
+
+!http://scottwstatic.appspot.com/images/2008-06-06_scaleout.jpg(ScaleOut)!
+
+As you can see above, NCache wants $500 per developer just to build a solution. This does not include the cost of the software to actually move your solution to production. Since both products have different pricing structures it is hard to tell if one is actually more costly than the other. However, organizations who are most likely to be interested in this will likely have bigger teams and thus potentially incur an additional cost for every hire.
+
+It is a fine line between protecting your bottom line and annoying your users. Developers are much more finicky than your average consumer, so anything you can do to get your software in their hands is a good thing.

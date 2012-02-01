@@ -1,0 +1,34 @@
+---
+layout: post
+title: "On A PC"
+date: 2008-09-29 12:34
+comments: false
+---
+
+As I previously noted, I have been "increasingly frustrated with using my MBP":http://scottw.com/technology/mbp-luster/ for work. After hours it is still second to none, but as also previously noted, "things are quite busy":http://scottw.com/business/intel-capital-invests-20m-in-telligent/ around here now and I really just want to get some things done. Here are a couple of quick observations on the switch back to Vista/Windows for the last couple of weeks.
+
+*x64* - I heard some horror stories from folks who jumped on x64 Vista on day one, however I have had zero issues with my everyday applications. There are some edge case utilities, but nothing I would miss. I am still pre-winrot, but both laptops fly on x64.
+
+*Sexy* - I am writing this post on a Dell Latitude D630. It is a solid machine, but even if you hate Apple, you have to admit the MBP is a beautiful piece of hardware. However, I did see a new Latitude E series last week and Dell has made a major jump forward. If you are looking to buy a new Windows laptop, at least on appearance I would highly recommend you check out the E series.
+
+"*Evernote*":http://evernote.com - "Evernote is an extremely useful tool":http://scottw.com/tags#evernote which I have written about quite a bit. Although I do prefer the GUI for the OS X version, the integration story is way better on Windows. You can send clippings directly from the browser and Outlook directly to the Evernote.
+
+"*Live Writer*":http://writer.live.com/ - By far the best blogging client at any price point Windows or OS X. The Wave 3 beta version is a bit flaky, but it is still very useful.
+
+*Battery* - I popped a secondary battery into the modular bay and Vista is now saying I have about 6 hours. Vista on my MBP was horrible (~1 hour). Not sure if this is an Apple or Microsoft issue, but the new Dell is much better.
+
+"*Vista Battery*":http://codeplex.com/vistabattery - speaking of batteries, this is a very helpful addition for those looking to eek out a little extra battery. (hat tip to "Josh":http://evolvingwe.com/).
+
+*Chat* - Live Messenger still does not have tabs. This makes no sense to me.
+
+*Outlook* - I still hate email and Outlook is still a mess, but it is years ahead of Entourage in just about every way.
+
+"*Launchy*":http://launchy.net/ - Launchy is nice, but it is no "QuickSilver":http://www.blacktree.com/.
+
+"*1Password*":http://agilewebsolutions.com/products/1Password - This is a killer OS X app which integrates directly into every browser and manages all of your username/passwords and much more. I can still access my account via the browser, but it is not the same.
+
+"*SharedView*":http://www.connect.microsoft.com/site/sitehome.aspx?SiteID=94 - this application for sharing your screen (and desktop control) for Windows has come along way "since it was first released":http://scottw.com/software/sharedview/. More on this in a future post.
+
+*Stable* - I skipped Vista pre-SP1. Except for an occasional Wifi hicup on Boot Camp, Vista has been really stable for me (~7 weeks usage).
+
+*Weight* - My new 14 inch Dell weights more than the 15 inch MBP (even with out the second battery). I am starting to seriously consider picking up a NetBook (Dell Mini, HP, or Lenovo S10) for travel. My power needs are much less when on the road, so this is starting to sound like a no brainer. Just need to wait a bit and see which machine comes out on top.

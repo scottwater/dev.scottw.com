@@ -1,0 +1,32 @@
+---
+layout: post
+title: "FriendFeed"
+date: 2008-05-27 11:48
+comments: false
+---
+
+I have had a love/hate "Twitter":http://twitter.com for a while now. I love how easy Twitter is to use, the connections it builds, and information which can shared. However, I hate that as I become more reliant on it, it seems to never be available. The latest round of downtime has given me the opportunity to explore a couple of other services, in particular, "FriendFeed":http://friendfeed.com.
+
+bq. FriendFeed enables you to keep up-to-date on the web pages, photos, videos and music that your friends and family are sharing. It offers a unique way to discover and discuss information among friends
+
+I had "created an account on FriendFeed":http://friendfeed.com/scottwater a couple of weeks ago, but similar to Twitter I really did not give it much time at first since without other users, it is really just an opportunity to talk to myself in public. However, over the last couple of days I have found myself using FriendFeed a lot more.
+
+Here is a quick list of some of the things I am liking about the service:
+
+* It is online. OK, this is a cheap shot, but I have yet to have any issues connecting to the site, paging, etc. We will have to see how well they scale overtime.
+*"Rooms":http://blog.friendfeed.com/2008/05/get-room.html - FriendFeed rooms are a simple way/place for people to get together and discuss a particular topic/idea/etc. I created a couple of Rooms for "Graffiti":http://graffiticms.com and "Community Server":http://communityserver.com
+* "Graffiti CMS FriendFeed Room":http://friendfeed.com/rooms/graffiticms
+* "Community Server FriendFeed Room":http://friendfeed.com/rooms/community-server
+* Conversations - It is much easier to have a conversation with a group of people than compared to Twitter. FriendFeed supports true comments.
+* Ignoring Conversations - it is much easier to ignore a conversation I am not interested in. On Twitter if two are three of the people you following start posting like crazy on a particular topic it is not really possible to opt out of the conversation.
+* Other Services - FriendFeed makes is very easy to share additional content from your blog (really any RSS feed), Tumblr, YouTube, Flickr, etc
+* Twitter - I do not have to give up on Twitter cold turkey. All of the messages from the people I am following show up up on FriendFeed.
+* Twitter Replies - The overall twitter integration could be a little tighter, but with the comment feature above they make it very easy to send your replies back to twitter.
+* Likes - FriendFeed makes it very easy to flag items you like (similar to Twitter), but they take it up a notch by sharing that information with your friends/followers.
+
+So what's not to love?
+
+* Delays - The site itself is very responsive. However, since it is pulling content from a variety of sources there is noticeable delay between when it is published and when it displayed on FriendFeed. This is not always a problem, but I still find myself making regular posts on Twitter since it shows up immediately to a wider audience.
+* Numbers - Since it is relatively new, FriendFeed simply does not have as many users a Twitter. I think this will change shortly, but it is still much easier to broadcast your message to a wider audience on Twitter.
+
+If you decide to create an account, you can subscribe to my feed at "http://friendfeed.com/scottwater":http://friendfeed.com/scottwater.

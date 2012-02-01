@@ -1,0 +1,14 @@
+---
+layout: post
+title: "BizSpark"
+date: 2008-11-05 20:27
+comments: false
+---
+
+!http://farm1.static.flickr.com/53/145096305_41b55b773b.jpg?v=0!
+
+Photo By: "scholewiak":http://www.flickr.com/photos/scholewiak/145096305/
+
+bq. Microsoft's new "BizSpark":http://www.microsoft.com/bizspark project is an effort to spur startups and entrepreneurs to use Microsoft technology when launching new companies. Microsoft is giving away software, services and support to startups earning less than $1 million to help them get off the ground and to the next level. The technology Microsoft is making available includes Visual Studio, Windows Server, SQL Server and Windows Azure. ["eWeek":http://www.eweek.com/c/a/Application-Development/Microsoft-Launches-Effort-to-Spark-Startups/]
+
+I still wouldn't expect someone who is comfortable on LAMP to change their mind and move to the Windows, but this is definitely a great way to make make it easier to get up and running, especially with the option of using Azure (assuming pricing is reasonable long term for Azure).

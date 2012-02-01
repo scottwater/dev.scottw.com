@@ -1,0 +1,13 @@
+---
+layout: post
+title: "O'Reilly EBooks DRM Free"
+date: 2008-07-15 19:47
+comments: false
+---
+
+O'Reilly has made the move to expand their EBook select to a couple of additional formats including Amazon's Kindle format. What is also very interesting is they have chose to ship the books DRM free.
+
+bq. _O'Reilly has released 30 titles as DRM-free downloadable ebook bundles. The bundles include three ebook formats (EPUB, PDF, and Kindle-compatible Mobipocket) for a single price -- at or below the book's cover price. And for a bit more than the cover price, you can get the print version too along with the ebook bundles.
+Since we began selling PDFs directly some time ago, we've given those customers free updates to the PDFs to reflect published changes in the books; the same will apply to the ebook bundle, which will replace the PDF option on those titles. These files (like all our PDFs currently for sale) do not include any DRM, though we continue to experiment with custom watermarking options_. ["30 O'Reilly Titles":http://toc.oreilly.com/2008/07/30-oreilly-titles-now-available-as-ebook-bundles.html]
+
+This is a good sign of things to come and kudos to O'Reilly for being so open.

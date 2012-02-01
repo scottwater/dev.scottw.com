@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Good Bye Doug"
+date: 2006-12-28 13:13
+comments: false
+---
+
+I went and said good bye to a really great guy last night, Doug Reilly. "Doug fought":http://blog.programmingasp.net/ a long and hard battle with Cancer. Unfortunately in this case, Cancer won.
+
+I met up with Terri Morton at the viewing and we chatted a bit about him and the ways he helped us.  He answered 1000's of questions on various ASP.NET/SQL mailing lists/forums, wrote a couple books, and published three separate blogs. But I think the thing I will remember most is that he was just a good guy. He never had anything negative to say, always had a smile on his face, and always tried to help.
+
+Most of my interactions with Doug were virtual and yet he will be very much missed.
+
+If you have asked more than a couple questions on ASPAdvice, ASP.NET forums, or ASPFriends (in the past) chances are Doug answered a couple questions for you. If you have a couple dollars to spare, why not "make a donation to the LiveStrong foundation":https://www.kintera.org/faf/donorReg/donorPledge.asp?ievent=153531&amp;supid=90472032 so in the future we don't have to loose another of the good guys to this disease.

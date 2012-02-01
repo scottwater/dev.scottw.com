@@ -1,0 +1,29 @@
+---
+layout: post
+title: "IofC on Azure"
+date: 2009-02-09 10:46
+comments: false
+---
+
+One of the first things everyone must learn about hosting an application on "Azure":http://www.microsoft.com/azure/default.mspx is the restricted context in which it runs. Microsoft has been a bit vague on what exactly this means, but roughly it is a more locked down version of Medium Trust. For obvious reasons, there is no access to registry, limited file system access, in the case of this post, more strict policy on code access.
+
+There are quite a few components for .NET developers choose from when it comes to implementing Inversion of Control (IofC). They all vary in a variety of ways and no one is the true answer. I am not an expert on IofC components, but for most of the common tasks, anyone of the available components should work for you. It is just a matter of finding one you (and your team) are comfortable with. However, in the case of using IofC while hosting an application on Azure, you may need to do a bit more home work.
+
+While I have not tested all the components available, I did manage to get two of them to work and as far as I can tell, the core areas I am using in my pet Azure project seem to function perfectly.
+
+1. "Ninject":http://ninject.org/ - to use Ninject on Azure, you need to set one option when creating your container: UseReflectionBasedInjection = true. So my Initialize method looks something like this:
+
+<pre><code class="csharp">
+public static void Initialize(params StandardModule[] modules)
+{
+    var options = new KernelOptions() {UseReflectionBasedInjection = true};
+    kernal = new StandardKernel(options, modules);
+}
+</code></pre>
+
+
+Note: For Ninject I am using the latest bits from the trunk, but "Nate":http://kohari.org/ let me that the 1.0 release should work just fine as well.
+
+2. "StructureMap":http://structuremap.sourceforge.net/Default.htm - through a bit of trial and error, I was able to get StructureMap to work on Azure with no configuration changes after I "removed a couple attributes":http://groups.google.com/group/structuremap-users/browse_thread/thread/96688545ea0e9e04/1ef8de40360f3720?hl=en which appeared to no longer be in use. I sent email to the "StructureMap Google Group":http://groups.google.com/group/structuremap-users?hl=en with the changes I made and a couple days ago "Jeremy Miller":http://codebetter.com/blogs/jeremy.miller/ released "version 2.5.3":http://sourceforge.net/project/showfiles.php?group_id=104740 which contains the changes.
+
+If you have managed to get any other containers to work on Azure, please leave a comment below and I will update this post.

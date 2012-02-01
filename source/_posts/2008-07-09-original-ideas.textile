@@ -1,0 +1,13 @@
+---
+layout: post
+title: "You Could Be Right!"
+date: 2008-07-09 02:26
+comments: false
+---
+
+I watched the excellent TED talk, ""Do schools kill creativity?":http://www.ted.com/index.php/talks/ken_robinson_says_schools_kill_creativity.html" by "Sir Ken Robinson":http://www.ted.com/index.php/speakers/sir_ken_robinson.html and the following quote really stuck out to me:
+
+bq. If you are not prepared to be wrong, you will never come up with anything original.
+Mr. Robinson was talking about creativity and education, but this can easily be applied just about everywhere, including the world of software.
+
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="320" height="285" id="VE_Player" align="middle"><param name="movie" value="http://static.videoegg.com/ted/flash/loader.swf"><PARAM NAME="FlashVars" VALUE="bgColor=FFFFFF&file=http://static.videoegg.com/ted/movies/SIRKENROBINSON_high.flv&autoPlay=false&fullscreenURL=http://static.videoegg.com/ted/flash/fullscreen.html&forcePlay=false&logo=&allowFullscreen=true"><param name="quality" value="high"><param name="allowScriptAccess" value="always"><param name="bgcolor" value="#FFFFFF"><param name="scale" value="noscale"><param name="wmode" value="window"><embed src="http://static.videoegg.com/ted/flash/loader.swf" FlashVars="bgColor=FFFFFF&file=http://static.videoegg.com/ted/movies/SIRKENROBINSON_high.flv&autoPlay=false&fullscreenURL=http://static.videoegg.com/ted/flash/fullscreen.html&forcePlay=false&logo=&allowFullscreen=true" quality="high" allowScriptAccess="always" bgcolor="#FFFFFF" scale="noscale" wmode="window" width="320" height="285" name="VE_Player" align="middle" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"></object>

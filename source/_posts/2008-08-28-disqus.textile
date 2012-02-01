@@ -1,0 +1,46 @@
+---
+layout: post
+title: "Disqus and Graffiti"
+date: 2008-08-28 14:02
+comments: false
+---
+
+I set up "Disqus":http://disqus.com on my blog about two weeks ago. So far I have been very happy with the service and pleasantly surprised with some features I did not know exists.
+
+bq. Disqus, pronounced "discuss", is a service and tool for web comments and discussions. The Disqus comment system can be plugged into any website, blog, or application. Disqus makes commenting easier and more interactive, while connecting websites and commenters across a thriving discussion community.
+
+Disqus is a free service to the general public with absolutely no inline advertisements.
+
+There are some nice features like threading, bi-directional email, and spam blocking. These are great, but the real clincher is an effortless instant community. For the average blogger, getting users to sign up for comments and create profiles is not an option. Users simply do not have the time to register on every blog. This is where Disqus really shines. Users can create their own accounts on Diqus and use that account on the 30,000 or so (and growing) blogs using the service. (note: Users can still make anonymous comments as well.)
+
+I have had a couple people ask me how to do this in Graffiti, so I figured I would do a quick write up.
+
+There are just a couple steps:
+
+# Sign up for a new account on Disqus and create a new website. Click the link for "generic code".
+# In your Graffiti control panel, navigate to your "Personalize" page (Graffiti-Admin > Presentation > Themes > YOUR_THEME).
+# In your post.view file, remove the existing comment rendering code and replace it with the JavaScript from step one from the generic code page above.
+# In your index.view file, find the $macros function for building a comment link and change the fragment from "#comment" to "#disqus_thread".
+# In your layout.view file add the JavaScript from step three in the generic code page.
+
+That should be it assuming you are using one of the standard Graffiti themes.
+
+If you are like me and have been happily using Graffiti for while now, you will already have comments that you don't want to hide. To get around this, I went to the posts page in my graffiti admin and looked up the PosId ofmy most recently written post (in my case it was 143).
+
+With this information, in step three from above instead of removing the comment list and form from my post.view, I wrapped it in an if statement like this:
+
+<pre><code class="csharp">
+#if($post.Id > 143) 
+
+[Your Existing Comment Code] 
+
+#else 
+
+[Your Diqus Code] 
+
+#end
+</code></pre>
+
+That should be it. As part of Graffiti 2.0 I am hoping we can make this kind of update more easy to package up (it could be done today, but it would be theme specific which isn't quite generic enough).
+
+*Update*: I have removed disqus from my site. It is still a good service, but for now I have decided to run this blog without comments.

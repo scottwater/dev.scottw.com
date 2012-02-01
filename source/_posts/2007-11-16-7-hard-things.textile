@@ -1,0 +1,20 @@
+---
+layout: post
+title: "7 of the Hardest Things I Learned About Writing Software"
+date: 2007-11-16 01:23
+comments: false
+---
+
+Learning to write code is not that hard. With a book, Google, and a little free time just about anyone can hack something together. However, to become a good software developer you need a passion to constantly and continually learn.
+
+Listed below is a list of 7 of the harder things I have learned over the last couple of years:
+
+# *Make choices* - Not everything needs to be adjustable or needs an option. Many times, it just needs to work.
+# *Delete code* - Sometimes even the best ideas will not work (or are not worth keeping). Admit that at this time, based on what you know, the tools at your disposal, and the requirements for success you just need to move on.
+# *NIH* ("not invented here":http://en.wikipedia.org/wiki/Not_Invented_Here) - Realize that even though you would have written something better, more scalable, and usable...if it meets your goals as is, you should focus your attention elsewhere.
+# *UI is more important than code* - You can write the absolute best code the world has ever seen and if you present it like a turd, your code, to the world is a turd.
+# *Solve Problems* - Realize that to more than 99.9% of the worlds population, code/technology are simply a means to an end. Software solves problems. The world really doesn't care how or why it works. **
+# *You Are Different* - When you write software, in most cases, you are not the typical end user. Your users are not looking for a challenge. For most, there are a million other things they would rather be doing than using your application.
+# *Documentation* - Yes, documentation is necessary, but users do NOT want to read it. If your users are asking you for more documentation, the lack of documentation is not really the problem. Your application is too complicated. See "The Paradox of the Active User":http://www.useit.com/alertbox/activeuserparadox.html.
+
+Is there anything you would add to the list?

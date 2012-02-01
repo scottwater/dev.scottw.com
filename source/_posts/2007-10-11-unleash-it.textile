@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Unleash It"
+date: 2007-10-11 15:21
+comments: false
+---
+
+I am going to try to make ""easy things":http://scottw.com/tags#easy-things" a recurring theme here.
+
+Today's "easy thing", is "Unleash It":http://www.eworldui.net/UnleashIt/.
+
+bq.  ...is a utility built with web developers in mind. It started as a simple application that would allow you to transfer files from one directory to another based on their file extension. Due to the growing nature of successful applications, and the need for more options, Unleash It grew to being able to transfer files based on a source directory or a Visual Studio Project to a destination directory, FTP site, or zip file.
+
+!http://scottwstatic.appspot.com/images/wlw/UnleashIt_9FC1/image_3.png(Unleash It screen shot)!
+
+Although it does not look like there has been an update to it since December of 2004, it works and works very well. If you have ever gone through a web project and had to delete tons of .cs files (or subversion files) this is the tool for you. You can choose the file types to include (and exclude), whether to use a project file or not, and what to do with the deployment (folder, FTP, or zip).  Highly recommended!

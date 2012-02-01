@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Failure Is Necessary"
+date: 2011-03-16 12:37
+comments: false
+---
+
+Absolutely fantastic video by "Derik Sivers":http://sivers.org, _"Why you need to fail":http://www.youtube.com/watch?v=HhxcFGuKOys_.
+
+# Learning 
+# Growth mindset
+# Experiments 
+
+Watching the video is way better than an summary I could provide, so please check it out when you have a moment. 
+
+<iframe title="YouTube video player" width="480" height="390" src="http://www.youtube.com/embed/HhxcFGuKOys" frameborder="0" allowfullscreen></iframe>

@@ -1,0 +1,9 @@
+<div class="highlight"><pre><span class="k">class</span> <span class="nc">Subscription</span> <span class="o">&lt;&lt;</span> <span class="no">ActiveRecord</span><span class="o">::</span><span class="no">Base</span>
+  <span class="n">has_one</span> <span class="ss">:demographic</span><span class="p">,</span> <span class="ss">:primary_key</span> <span class="o">=&gt;</span> <span class="ss">:email</span><span class="p">,</span> <span class="ss">:foreign_key</span> <span class="o">=&gt;</span> <span class="ss">:email</span>
+<span class="k">end</span>
+
+<span class="k">class</span> <span class="nc">Demographic</span> <span class="o">&lt;&lt;</span> <span class="no">AcitveRecord</span><span class="o">::</span><span class="no">Base</span>
+  <span class="n">has_many</span> <span class="ss">:subscriptions</span><span class="p">,</span> <span class="ss">:primary_key</span> <span class="o">=&gt;</span> <span class="ss">:email</span><span class="p">,</span> <span class="ss">:foreign_key</span> <span class="o">=&gt;</span> <span class="ss">:email</span>
+<span class="k">end</span>
+</pre>
+</div>

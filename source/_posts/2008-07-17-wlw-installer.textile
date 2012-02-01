@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Installing Windows Live &ndash; Welcome Back to the 90's"
+date: 2008-07-17 17:56
+comments: false
+---
+
+I was trying to install Windows Live Writer on a new windows box and was greeted with something I thought had been put to rest many years ago.
+
+!http://scottwstatic.appspot.com/images/wlw/InstallingWindowsLiveWelcomeBacktothe90s_C410/windows_live_writer_installer_3.png(windows live writer installer)!
+
+What's wrong here?
+
+All three options are checked by default. I am OK with the option to help improve the application, but do you really need to change my default search provider and even worse change my home page?
+
+I understand that it costs money to develop Windows Live Writer, but this is crappy way to go about it.

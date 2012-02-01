@@ -1,0 +1,28 @@
+---
+layout: post
+title: "Living with Vim"
+date: 2011-03-10 14:37
+comments: false
+---
+
+For the last month or so, I have made a focused effort on migrating from Textmate to Vim. 
+
+There is likely no piece of software you will use more as a developer than your editor. So whether it is Vim, Textmate, or even Visual Studio as a developer you owe it to yourself to own it inside and out. 
+
+Here is a quick summary of the process and what I have learned: 
+
+* Peepcode's Smash Into Vim I and Smash Into Vim II are worth their weight in gold. I watched them in full speed once and then went back through them pausing every couple of seconds. The text transcript is an invaluable tool after the fact. 
+* I started my .vimrc and plugins using the Peepcode samples. This was a good idea for the first week or two of learning, but I don't recommend it long term. Just like learning to master the shell, you really need to understand what is executing in vim and which plugins and configuration changes are responsible for it. 
+* Quickest way to get Macvim setup on OS X is via Homebrew (brew install macvim). If you go this route, don't forget to symlink vim to your new mvim script.
+* Speaking of plugins, keep them to the absolute minimum at first. There are enough new keystrokes and work flows to keep in your head. After you get the basics, try adding a new plugin every couple of days and see if you really use it. 
+* Uninstall your other text editors. The more you use vim, the faster you will be comfortable in it. 
+* I still prefer OmmWriter for writing. 
+* Understanding how to manage windows is under rated. I still struggle with this, but I am getting better. I am going to try switching from control+w to a single key stroke and see if that helps things. 
+* Copying and pasting text while I am in insert mode is still a mess. I must be going about it the wrong way because it should be a smoother. 
+* I prefer command-t over fuzzyfinder-textmate. It just feels faster the option to open in a split window rocks.
+* NERDTree - not sure why I waited so long to set this up, but I regret not having it on day one. I saw an example which recommend wiring up :NERTTreeToggle to F2. This just rocks. 
+* Visual mode is way more fun than I thought it would be. 
+* I set up a shortcut to edit my vimrc file. This is super useful when you are just getting setup. 
+* I could earn a nice living if I got paid everytime I typed a vim command in something other than vim.
+
+I will follow up in a couple of weeks with my status and see what changes.

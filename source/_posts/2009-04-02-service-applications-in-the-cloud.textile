@@ -1,0 +1,26 @@
+---
+layout: post
+title: "Service Applications in the Cloud"
+date: 2009-04-02 12:04
+comments: false
+---
+
+Amazon announced the beta availability of "Elastic MapReduce":http://aws.amazon.com/elasticmapreduce/, which is essentially an automated "Hadoop":http://hadoop.apache.org/ deployment.
+
+bq. _Amazon Elastic MapReduce is a web service that enables businesses, researchers, data analysts, and developers to easily and cost-effectively process vast amounts of data. It utilizes a hosted Hadoop framework running on the web-scale infrastructure of Amazon Elastic Compute Cloud (Amazon EC2) and Amazon Simple Storage Service (Amazon S3)._  While I am sure there are folks who will find this very useful, I am hoping"</a><a href="http://lucene.apache.org/solr/">":http://couchdb.apache.org/ it is just the start.
+
+There are some really good applications/frameworks available today that have been written to be scalable services such as "CouchDb":http://couchdb.apache.org/ and "Solr":http://lucene.apache.org/solr/. While it is possible for individuals and businesses to host these kinds of applications on the EC2 (and other places) on their own, there is a significant opportunity for others to automate the process.
+
+While there is more to it, in a nutshell, what I would be looking for:
+
+* Click button deployment (maybe with an optional IP address/domain name)
+
+* Reporting (how much data and resources am I consuming)
+
+* Very easy growth (more click buttons and maybe even automation)
+
+* All backups (if necessary/) and other related maintenance to just work.
+
+An early example of this is "FathomDB":http://fathomdb.com. FathomDB is essentially an automated/managed MySQL in the cloud. Just tell it (via a slider) your data needs and it does the rest.
+
+We really are getting closer to building applications by simply composing a set of (already hosted) third party services.

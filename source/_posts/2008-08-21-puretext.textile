@@ -1,0 +1,12 @@
+---
+layout: post
+title: "PureText"
+date: 2008-08-21 16:34
+comments: false
+---
+
+"PureText":http://www.stevemiller.net/puretext/ is one of the first tools I always find myself missing as soon as I set up a new Windows box.
+
+bq. Have you ever copied some text from a web page or a document and then wanted to paste it as simple text into another application without getting all the formatting from the original source? PureText makes this simple by adding a new Windows hot-key (default is WINDOWS+V) that allows you to paste text to any application without formatting.
+
+Loosely translated, it makes it possible to copy and paste from Office into tools like Windows Live Writer and web based WYSIWGY editors. Why you still need something like this in 2008 is beyond me, but I am glad that it exists.

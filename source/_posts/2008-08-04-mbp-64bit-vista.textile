@@ -1,0 +1,56 @@
+---
+layout: post
+title: "Installing Vista 64bit on a MacBook Pro"
+date: 2008-08-04 11:39
+comments: false
+---
+
+This week, I found myself needing a Windows computer with an x64 OS. The only hardware I have at home which is x64 (64bit) capable is my MacBook Pro, so I decided to rebuild my "Boot Camp":http://www.apple.com/macosx/features/bootcamp.html partition with Vista x64 w/SP1.
+
+While MacBook Pro's are x64 capable, the process for setting it up is not as simple as running an installer. I had to do quite a bit of Googling and forum/blog reading to get it working.
+
+Hopefully the notes below will make it much easier for others to setup and install.
+
+h3. 1. Create big(ger) your Boot Camp partition.
+
+This sounds like a no brainer, but I know quite a few people who opted for 30 GB partitions only to find themselves almost out of disk space very quickly. I am not sure why, but Vista is a huge install.
+
+I have a 200 GB drive and wanted to dedicate 60 to 70 GB's to my Vista partition. The Boot Camp utility kept failing to create the partition because it said it could not move enough file even with nearly 130 GB's of free space (I moved things like iTunes to a USB drive). In a bit of desperation, I gave the machine a quick reboot and ran the utility one last time and it worked. I am not sure if/what the reboot did or if it will work on your computer, but it seemed to help me.
+
+h3. 2. Make a usable install disk.
+
+I will spare you most of the tech details, but in a nutshell if you are using a DVD/ISO you downloaded from MSDN with Vista x64 you will likely need to follow the "steps outlined here":http://jowie.com/post/2008/02/24/Select-CD-ROM-Boot-Type-prompt-while-trying-to-boot-from-Vista-x64-DVD-burnt-from-iso-file.aspx otherwise you will not be able to choose the version of Vista to install.
+
+h3. 3. BootCamp Drivers.
+
+This was by far the most frustrating part. While x64 Vista will install on MBP's, Apple has only officially released drivers for Mac Pro's. As you will see in the next step, there seems to be a validity to this, but they could make life easier for a lot of folks if they just posted them.
+
+To make things worse, "Apple did recently (April) release":http://www.apple.com/support/downloads/bootcampupdate21forwindowsvista64.html a set of drivers to the public which specifically work with x64 Vista. However, they were only released as an update to the Mac Pro drivers.
+
+Thankfully (although I doubt legally) the Boot Camp drivers were posted to "RapidShare":http://rapidshare.com as a four part download ("1":http://rapidshare.com/files/85542703/Drivers.part1.rar, "2":http://rapidshare.com/files/85544166/Drivers.part2.rar, "3":http://rapidshare.com/files/85544787/Drivers.part3.rar, "4":http://rapidshare.com/files/85545293/Drivers.part4.rar). RapidShare is insanely slow (on purpose) and annoying as hell to use, but it works. It will take about an hour to download the drivers, but unfortunately without them you cannot proceed.
+
+After you download the drivers put them on a USB drive or burn them to a CD and install them on your MBP. Once you have them installed, you can download the updated set from Apple and install them as well.
+
+You should now see Vista recognizes things like iSight.
+
+h3. 4. Wifi Drivers.
+
+I did not find others online with this issue, but for me, even with the updated Boot Camp drivers, my wifi card was not working. After not having much success finding a fix I decided to plug the MBP directly into my router and let Vista attempt to fix the driver which it somehow did (seriously, I was shocked, but it worked!).
+
+h3. 5. Video Drivers.
+
+My MBP has an NVIDIA 256 MB video card. Vista was able to supply its own video driver which seemed to work OK, but did not support Areo. I could live without Areo, but the exerpiece just did not feel right; besides I was now getting a crappy "Windows Experience Index":http://scottw.com/software/mac-vista/ score.
+
+I tried to download official x64 drivers from NVIDIA, but for whatever reason they would not install. So a bit more Googling around led me to "LaptopVideo2Go":http://www.laptopvideo2go.com/about.
+
+*WARNING*: I hate installing/modifying things where I do not know why. It is dangerous and something you should avoid. For me, my BootCamp partition is a throw away, so it OK if it goes poof.
+
+I downloaded the latest "x64 NVIDIA drivers":http://www.laptopvideo2go.com/forum/index.php?showtopic=16311, installed them, and again got an error message. It turns out, I was not following the full instructions. Also listed on the download page is an updated ini file which convinces the drivers to install. A quick reboot later and everything was great.
+
+So far things have been going really well. Using x64 I have full access to all 4 GB's of memory and the machine/Vista seem really fast.
+
+h3. Other notes:
+
+* While Vista was installing it found and let me use my Apple Bluetooth keyboard. This was not expect and very cool. Unfortunately, once I installed the actual Bluetooth drivers the keyboard stopped working until I did a discovery. I wonder if this is a security issue?
+* I deactivated system restore and found it cleared up a ton of space.
+* I did use "ImgBurn":http://www.imgburn.com/ as the article suggests and I was quite happy with it. It does a great job burning DVD's.

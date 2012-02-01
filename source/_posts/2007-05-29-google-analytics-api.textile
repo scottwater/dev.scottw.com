@@ -1,0 +1,10 @@
+---
+layout: post
+title: "Google Analytics API"
+date: 2007-05-29 18:47
+comments: false
+---
+
+I have been spending a lot of time thinking and prototyping REST services lately. As "Dare":http://www.25hoursaday.com/weblog/PermaLink.aspx?guid=2a46fd53-67bf-4363-9c65-370984aaa79b points out, Google has a "very impressive stack":http://code.google.com/apis/gdata/client-cs.html already available.
+
+I was sending "Jason":http://jasona.net/ an email about the Tattletale work "his army":http://telliterns.com is working on this summer and I mentioned something about Google Analytics when a thought hit me...Where is the "Google Analytics":http://google.com/analytics/ API? Is it going to happen? Soon? They have API'ed everything else, I have to imagine we will see this soon (would be even cooler if we could re-use some of those nifty charts). Anyone with an inside scoop on this?

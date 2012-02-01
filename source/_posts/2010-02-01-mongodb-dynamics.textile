@@ -1,0 +1,86 @@
+---
+layout: post
+title: "MongoDB and C# Dynamics"
+date: 2010-02-01 14:31
+comments: false
+---
+
+*Update:* Please see my follow up post, "Dynamics and MongoDB Revisited":http://scottw.com/dynamics-mongodb-revisited.
+
+I am a big fan of "MongoDB":http://www.mongodb.org.
+
+There is a good C# driver called, "MongoDB-CSharp":http://github.com/samus/mongodb-csharp. Unfortunately, because of the strongly typed nature of C#, the default implementation requires you to work with your data as a dictionary. This has an unfortunate side effect of some ugly code and a quite a bit of casting.
+
+Given a choice of working with a dictionary vs SQL I would choice a dictionary everyday. However, with C# 4.0's dynamics, we can make this much easier to work with.
+
+The change in usage is minor, but I find it to be much more readable and productive.
+
+Before:
+
+<pre><code class="csharp">
+Mongo mongo = new Mongo();
+mongo.Connect(); 
+
+var db = mongo["blog"];
+
+var posts = db["posts"];
+
+Document post = new Document();
+post["Title"] = "Hello Mongo World";
+post["Body"] = "This is my first MongoDB post!";
+post["Published"] = DateTime.UtcNow;
+post["Tags"] = new[] { "NoSQL", "MongoDB", "greatness" };
+post["Slug"] = "mongo-post";
+
+posts.Insert(post);
+
+Document query = new Document();
+query["Slug"] = "mongo-post";
+
+
+Document mongo_post = posts.FindOne(query);
+
+string title = mongo_post["Title"] as string;
+DateTime published = ((DateTime)mongo_post["Published"]).ToLocalTime();
+
+Console.WriteLine("Title: {0} local published time {1} ", title, published);
+</code></pre>
+
+
+After:
+
+<pre><code class="csharp">
+Mongo mongo = new Mongo();
+mongo.Connect(); 
+
+var db = mongo["blog"];
+
+var posts = db["posts"];
+
+dynamic post = new Document();
+post.Title = "Hello Mongo World";
+post.Body = "This is my first MongoDB post!";
+post.Published = DateTime.UtcNow;
+post.Tags = new[] { "NoSQL", "MongoDB", "greatness" };
+post.Slug = "mongo-post";
+
+posts.Insert(post);
+
+dynamic query = new Document();
+query.Slug = "mongo-post";
+
+
+var mongo_post = posts.FindOne(query);
+
+string title = mongo_post.Title;
+DateTime published = mongo_post.Published.ToLocalTime();
+
+Console.WriteLine("Title: {0} local published time {1} ", title, published);
+</code></pre>
+
+
+While the example is trivial, I think it is a good step forward.
+
+I want to play around with a bit more before I try to figure out how to submit a patch or fork it.
+
+In the mean time, if you want play with the code, download the source from "github":http://github.com, and then swap out the "Document.cs class with this file":http://www.box.net/shared/knqqd9jn9k.

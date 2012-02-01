@@ -1,0 +1,20 @@
+---
+layout: post
+title: "FeedBurner &ndash; Not Dead Yet?"
+date: 2008-11-11 12:15
+comments: false
+---
+
+!http://scottwstatic.appspot.com/images/wlw/FeedBurnerNotDeadYet_743D/feedburner_logo_55h_3.gif!:http://feedburner.com
+
+Maybe "FeedBurner":http://feedburner.com isn't dead after all. I received the following email this morning:
+
+bq. We're contacting you to let you know that we'll be migrating your FeedBurner account [removed] to your Google Account [removed] on 11/13/2008 .
+
+Please rest assured, this change won't disrupt your current feeds service. As part of this migration, all of your existing FeedBurner feeds will automatically redirect to Google feeds. You won't lose any of your current subscribers in the process nor will this affect any email subscriptions.
+
+All of your feeds will be moved to your new account and an initial batch of your most recent 30 days' traffic stats will also be added. Your entire history, should it go beyond 30 days, will be added at a future date.
+
+Once a part of the new Google FeedBurner systems, you'll immediately be able to take advantage of our AdSense for feeds product. AdSense for feeds helps you monetize your feeds by delivering ads that are relevant to your content and your readers.
+
+The email was sent by the AdSense team, which I guess makes sense. The only way for Google to justify the expense of this kind of service to make it really easy to serve ads from it. Regardless, it is nice to see some kind of movement here. FeedBurner is an awesome service and I was starting to get very concerned.

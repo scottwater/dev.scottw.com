@@ -1,0 +1,18 @@
+---
+layout: post
+title: "SLOOB vs. AIR"
+date: 2009-03-26 12:53
+comments: false
+---
+
+I love to see competitors who can comfortably and politely write about each other. "Ryan Stewart":http://blog.digitalbackcountry.com/, who is an evangelist for Adobe wrote a very nice over on the differences between "Silverlight Out of Browser and Adobe AIR":http://blog.digitalbackcountry.com/2009/03/differences-between-silverlight-out-of-browser-experience-and-air/.
+
+Ryan comes to the conclusion that they really aren't direct competitors since they solve different problems, but goes on to say he prefers the AIR model because of the additional flexibility.
+
+bq. _AIR and Silverlight OOB don't really compete in the same space. AIR is about letting you take your web application skills to build desktop applications and Silverlight OOB is more about letting you take your Silverlight applications to the desktop. The different models will be different for everyone, but right now AIR gives you a lot more flexibility and more API hooks into the operating system._
+
+However, as brought up in the comments, this really isn't the complete story.
+
+bq. _...With silverlight, developers create a silverlight app not a desktop app, it just has the possibility to be installed to the desktop. With Air, developers create a desktop app (TitledWindow), not a Flex app(Application). Silverlight developers already have a technology which has more hooks and capabilities than AIR and which allows them to leverage their existing silverlight skills, this technology is WPF and it is way more powerful than Air. so if you want to compare, compare Flex with silverlight (which can now be installed with one click and Flex can't), and compare Air with WPF._ ["Alex van Beek":http://blog.digitalbackcountry.com/2009/03/differences-between-silverlight-out-of-browser-experience-and-air/#comment-71771]
+
+Of course, you now need WPF to be installed, limit yourself to Windows, etc...but by now you probably get the point. The choice simply isn't that simple. You need to take a step back figure out what you want to deliver, how you want to deliver it, and finally what constraints (OS, install, etc) you are willing to deal with.

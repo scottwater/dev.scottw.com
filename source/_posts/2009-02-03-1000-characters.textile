@@ -1,0 +1,27 @@
+---
+layout: post
+title: "Azure Local Storage &ndash; 1000 Characters"
+date: 2009-02-03 01:13
+comments: false
+---
+
+There a couple of differences between development and live storage on "Azure":http://www.microsoft.com/azure/default.mspx.
+
+The "list of differences":http://msdn.microsoft.com/en-us/library/dd179405.aspx:
+
+# The local Table service requires configuration of fixed schema tables prior to use. The cloud storage Table service does not require table configuration.
+# The local Table service supports only Shared Key Lite authentication. It does not support Shared Key authentication.
+# The local Table service does not support dynamic creation or deletion of tables.
+# The local Table service does not support creating entities with varying numbers and types of properties within the same table. The local service requires that you use the ADO.NET client library to work with tables that have a fixed schema dictated by the classes you use.
+# _String properties in the local Table service are limited to 1,000 characters._
+# Date properties support only the range supported by SQL Server (that is, they are required to be later than January 1, 1753).
+
+I read the list above a numerous times when I was trying to track down my "table keys issue":http://scottw.com/code/azure-table-storage-key-conventions/ and thankfully #5 "String properties in the local Table services are limited to 1,000 characters" sunk in because the exception thrown when this happens is very unhelpful.
+
+!http://scottwstatic.appspot.com/images/wlw/AzureLocalStorage1000Characters_12A84/image_thumb.png(Azure Local Storage 1000 Characters)!:http://scottw.com/images/wlw/AzureLocalStorage1000Characters_12A84/image_2.png
+
+Granted it is still pre-beta, so I am sure the error message will improve.
+
+One other thing I am hopeful will improve is this limitation. I understand that with loads of text in a field like this, I would not be able to query against it and I could easily be sending tons of content across the wire. However, if you consider the type of applications which are good candidates for this type of system, limiting storage to this level will hamper development. Or course, since it is a free preview, I could probably switch to the live service[1], but one of the things I like most Azure compared to other options is the zero cost local development.
+
+fn1. Actually, since I am more or less storing a single block of text I am using local blob storage but something about this just feels dirty.

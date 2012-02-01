@@ -1,0 +1,18 @@
+---
+layout: post
+title: "SEO in Blogs is Overrated"
+date: 2008-11-07 01:42
+comments: false
+---
+
+I have spent way too much time in my life discussing SEO in blogs. For blogs like "Engadget":http://www.engadget.com/, SEO is a big deal. However, for the other 99.99% of people you are way "better served creating great content":http://scottw.com/technology/best-seo-advice/ and interacting with the visitors you already (yes, I can see there is a bit of chicken and egg) have visiting your site.
+
+What got me thinking about this was a post ""Advanced comment systems are bad for SEO: IntenseDebate, Sezwho and Disqus":http://www.malcolmcoles.co.uk/blog/seo-intensedebate-sezwho-and-disqus/". The author is correct that rendering comments via JavaScript lessens the chance they will show up in a search result.
+
+But consider the following:
+
+* Using one of these systems enhances the visitors' experience and makes it far easier for them to come back in future.
+* In many cases, you do not want comments by people you do not know affecting your Google rank.
+* If there is good content, Google will find it. If more and more folks continue using these comment systems, it is very likely Google (and others) will figure out how to include the content.
+
+And to be clear, I am not saying you should purposely ignore SEO, I just don't think it is where you should focus your attention.

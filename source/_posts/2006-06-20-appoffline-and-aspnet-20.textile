@@ -1,0 +1,20 @@
+---
+layout: post
+title: "App_Offline and ASP.NET 2.0"
+date: 2006-06-20 02:51
+comments: false
+---
+
+We encountered a data corruption error on the CS.org database (not a CS bug). To run some quick fixes this morning I tried to use the new ASP.NET App_Offline.htm feature.
+
+bq. The way app_offline.htm works is that you place this file in the root of the application.  When ASP.NET sees it, it will shut-down the app-domain for the application (and not restart it for requests) and instead send back the contents of the app_offline.htm file in response to all new dynamic requests for the application.  When you are done updating the site, just delete the file and it will come back online.
+
+Unfortunately, I had yet to be pointed to "ScottGu's":http://weblogs.asp.net/scottgu work around for a minor IE 6 issue.
+
+bq. One thing I pointed out in the talk that you want to keep an eye on is a feature of IE6 called "Show Friendly Http Errors". This can be configured in the Tools-&gt;Internet Options-&gt;Advanced tab within IE, and is on by default with IE6. When this is on, and a server returns a non HTTP-200 status code with less than 512 bytes of content, IE will not show the returned HTML and instead substitutes its own generic status code message.
+
+However, tonight when we need to put the database in single user mode and run the fix script, we were able to quickly copy over an updated App_Offline.htm file with a little more content.
+
+It is a very simple thing, but can be very helpful and is a very nice touch to your ASP.NET toolset.
+
+See Scott's "full post for more details":http://weblogs.asp.net/scottgu/archive/2006/04/09/442332.aspx.

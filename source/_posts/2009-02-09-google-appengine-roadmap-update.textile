@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Google AppEngine RoadMap Update"
+date: 2009-02-09 16:20
+comments: false
+---
+
+I came across this updated "Google AppEngine roadmap":http://googleappengine.blogspot.com/2009/02/roadmap-update.html via "Dare's":http://www.25hoursaday.com/weblog/ post, "Google App Engine on the road to becoming useful for building real web applications":http://www.25hoursaday.com/weblog/2009/02/09/GoogleAppEngineOnTheRoadToBecomingUsefulForBuildingRealWebApplications.aspx.
+
+* _Support for running scheduled tasks_
+* _Task queues for performing background processing_
+* _Ability to receive and process incoming email_
+* _Support for sending and receiving XMPP (Jabber) message_
+
+This could end up being very competitive with "Azure":http://www.microsoft.com/azure/default.mspx and has definitely re-peaked my interest in "AppEngine":http://code.google.com/appengine/docs/python/gettingstarted/. Those are four very instrumental features for building great applications in today's web world. I might need to start spending more time with python again.
+
+Of course, some real dates from both Google and Microsoft would be very helpful. The blog post on AppEngine mentions a conference and May and 6 months. Meanwhile, Amazon just keeps bringing more functionality to market.

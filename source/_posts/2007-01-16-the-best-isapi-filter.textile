@@ -1,0 +1,23 @@
+---
+layout: post
+title: "The Best ISAPI Filter"
+date: 2007-01-16 19:07
+comments: false
+---
+
+I mentioned earlier today how happy I was with "ISAPI_rewrite":http://www.isapirewrite.com/. "Kevin Harder":http://kevinharder.com/ pointed out an open source alternative that I had not heard of before called "Ionic's ISAPI Rewrite Filter":http://cheeso.members.winisp.net/IIRF.aspx (IIRF).
+
+IIRF looks pretty robust and doesn't seem to be missing any of the features I am currently using of ISAPI_rewrite (except ReWriteHead which I would not need using IIRF).
+
+The IIRF readme is nice enough to include competitive products:
+
+* "IISRewrite":http://www.qwerksoft.com/products/iisrewrite/ ($199)
+* "ISAPI_Rewrite":http://www.isapirewrite.com/ ($99, product I am currently testing)
+* Mod_Rewrite 2 (not sure on the link)
+* UrlRemap (part of IIS 6 Resource kit)
+
+At $99 (for a server), price is not a huge factor here, but since I just started using it, I am curious if any of you faithful readers out there have used any of these products (IISRewrite, ISAPI_Rewrite, or IIRF)?
+
+Any feedback, suggestions?
+
+*Update:* A couple of people contacted me about "UrlRewriter.net":http://UrlRewriter.net which looks to be a very nice open source project which does some of the same things as an ISAPI filter. Definitely something to keep in mind in the future. The downside with this approach is that all requests go through the aspnet_isapi which is something I was trying to avoid.

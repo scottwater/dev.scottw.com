@@ -1,0 +1,45 @@
+---
+layout: post
+title: "Multiple Work Roles on Azure"
+date: 2008-12-11 12:51
+comments: false
+---
+
+One of the early "Windows Azure":http://www.microsoft.com/azure/windowsazure.mspx features that really excited my was the worker role functionality.
+
+If you are not familiar with work roles they are basically a very simple way to do back ground processing when hosting an application on Azure.
+
+Here is a worker role skeleton:
+
+<pre><code class="csharp">
+public class WorkerRole : RoleEntryPoint
+{
+    public override void Start()
+    {
+        while(true)    
+        {
+            //Do work here
+        }
+    }
+    
+    public override RoleStatus GetHealthStatus()
+    {
+        return RoleStatus.Healthy;
+    }
+}
+</code></pre>
+
+In most case, your work role is going to simply process messages added to a queue. This has a couple great benefits:
+
+# It is drop dead simple.
+# Provides a structured path to move heavy processing out of your web application and does not require managing your own back ground threads.
+# Since queues (and all of Azure storage as well SDS) are REST enabled, you can easily push tasks to a worker role from just about anywhere (Azure web application and existing applications)
+
+However, as of today, you can only have a "single worker role":http://blogs.msdn.com/jnak/archive/2008/12/10/multiple-service-configurations-for-a-windows-azure-cloud-service.aspx (although you can have multiple instances) associated with an Azure project. I am really hoping this is changed before RTM since working around it is pretty ugly.
+
+# Multiple threads - you could create multiple threads within a single worker role. This is very easy to do, but will be very hard to scale since all of your threads will be treated as equals. There are some other things you could do to control this, but it just gets more complicated and uglier with each attempt.
+# Additional Role Projects - you can today add multiple roles to a single solution file. You can then configure multiple start up projects which gets you the necessary functionality but has two major issues.
+  ## Deployment - You will now have to do multiple deployments. There maybe times when your additional work roles are out of sync with your web application and vice versa (in addition, the current CPT limits you to one hosted project, so there is no way to build an application today using this model).
+  ## Duplicate configuration - you will now be forced to manage multiple configuration settings. This is not rocket science, but something that will likely catch you off guard at some point.
+
+Overall, I love this functionality and it will simplify (and promote) building more loosely coupled message driven applications...which is a really good thing. However, without support for multiple roles it is going to be severely crippled. I know the Azure team is definitely listening, so hopefully this is something we will see supported very soon.

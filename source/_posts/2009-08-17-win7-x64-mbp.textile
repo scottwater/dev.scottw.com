@@ -1,0 +1,22 @@
+---
+layout: post
+title: "Installing Windows 7 64bit on a Unibody MacBook Pro"
+date: 2009-08-17 02:16
+comments: false
+---
+
+"Installing Vista 64bit on my original MacBook Pro":http://scottw.com/mbp-64bit-vista/ took quite a bit of work and a bit of hacking.
+
+Thankfully, on my new "Unibody 13inch MacBook Pro's":http://www.apple.com/macbookpro/specs-13inch.html it is drop dead simple.
+
+Here is what I did:
+
+1. *Setup a BootCamp partition and install Windows 7 64bit.* Unlike Windows Vista, there is no need to hack the ISO's you can download from MSDN. Just burn it to a DVD with "ImgBurn":http://www.imgburn.com/ and you are good to go.
+
+2. *Install the BootCamp Drivers.* Unlike my experience on my original MBP, there was no need to search the web for the 64bit drivers. They were included on my OS X install DVD.
+
+3. *Update the Video Driver.* Not sure why, but the proper video driver did not install with the BootCamp drivers. Thankfully, this was an easy fix. Just navigate to your BootCamp (OS X) DVD drivers' folder and install the proper nVidia.
+
+That is it. The only thing that does not seem quite right is the sound level. There appears to be an issue with one of the speakers using the included audio drivers. I played around with this for about an hour and could not get the proper 64bit driver to install (see this "forum thread":http://forums.macrumors.com/showthread.php?s=c740ced7eccb8945db51e4e2b6f90bf9&amp;t=720941&amp;page=2). For now, the sound is usable and I don't expect to use it much anyway, so I am going to leave it be. Hopefully Apple will release a better set of drivers with Snow Leopard and this will resolve itself.
+
+I am not sure if it is Apple or Microsoft who is responsible for making it this easy to get this up and running, but I am certainly thankful.

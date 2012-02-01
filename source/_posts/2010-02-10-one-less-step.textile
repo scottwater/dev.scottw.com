@@ -1,0 +1,28 @@
+---
+layout: post
+title: "One Less Step"
+date: 2010-02-10 13:59
+comments: false
+---
+
+Every step a user must take provides a chance for failure and frustration.
+
+Compare these two shipping confirmation emails from 1-800-Flowers and Zappos.
+
+*1-800-Flowers*
+
+!http://scottwstatic.appspot.com/images/wlw/OneLessStep_8C64/1800Flowers_a404a639-a632-4bcb-b2e7-734bc152e196.jpg(1800 Flowers)!
+
+*Zappos*
+
+!http://scottwstatic.appspot.com/images/wlw/OneLessStep_8C64/zappos_bda0db96-1cdb-405c-9876-2c29610543ad.jpg(Zappos)!
+
+1-800-Flowers actually says, "2 easy steps".
+
+However, what they are not counting on:
+
+# The tracking code is 18 characters. While more savvy computer users will simply copy and paste, many will try to manually enter the 18 characters. Those that do copy and paste will usually need to highlight the text, go to the edit menu select copy... in short, they are usually not going to use control+C and then control+V.
+# The UPS website is stuck in the mid-90's and requires you to first pick your country. Don't every make the wrong choice here (and of course this adds another step).
+# Users will need to switch back and forth between their email app/screen/tab and the USP screen.
+
+The funny thing about this is 1-800-Flowers actually has other links in the confirmation email, including one to UPS. They just don't link to the one that really matters.

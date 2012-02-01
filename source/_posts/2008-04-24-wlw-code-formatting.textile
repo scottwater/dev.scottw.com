@@ -1,0 +1,14 @@
+---
+layout: post
+title: "WLW Code Formatting"
+date: 2008-04-24 01:48
+comments: false
+---
+
+As I have previously mentioned, I am a very big fan of "Windows Live Writer":http://scottw.com/software/windows-live-writer/. I had not yet setup a code formatting plugin on my Fusion VM, so I hit Google and found the this "great little plugin":http://gallery.live.com/liveItemDetail.aspx?li=d4409446-af7f-42ec-aa20-78aa5bac4748&amp;bt=9&amp;pl=8.
+
+!http://scottwstatic.appspot.com/images/wlw/WLWCodeFormatting_13297/CodePlugin_2.png(CodePlugin)!
+
+It generates quite a bit of embedded css &amp; markup, but if used sparingly it should make reading code in a blog post much more rewarding.  Of course one other option would be move the style to the CSS file, but then that makes RSS a second class citizen and hurts your most loyal readers.
+
+Anyone else using another solution? Or plugin?

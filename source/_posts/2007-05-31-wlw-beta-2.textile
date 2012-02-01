@@ -1,0 +1,24 @@
+---
+layout: post
+title: "WLW Good For Community Server, Great for LAMP"
+date: 2007-05-31 21:13
+comments: false
+---
+
+Kevin Briody  "mentioned":http://seattleduck.com/?p=1053 there is a new version of "Windows Live Writer":http://writer.live.com/.  The following line really struck a cord with me:
+
+bq.  ...and excellent support for Wordpress, Typepad, and other engines.
+
+I learned of the new version a couple of months ago. Since that time, I have been trying to track down someone who would be able to share a pre-release drop with us so that we could be sure "Community Server":http://communityserver.org was ready for it the day it was released. The answer was always no. Working for a company with many RDs, MVPs, and ASPInsiders I have never had any trouble getting my hands on early builds, especially where our involvement not only benefited us, but also benefited Microsoft.
+
+After walking through a couple Community Server test posts, I fired up my test Wordpress.com account and see they have built in links to areas of their control panel, nice WYSIWYG support for excerpts/read more and some other things and cannot help wondering if we could not have offered similar functionality if we were involved.
+
+I really hate ranting on this blog, but this kind of behavior makes no sense to me. I can understand why Microsoft would choose to better promote LiveSpaces and SharePoint, but I do not understand why you would keep out another tool that not only runs on .NET, but also powers just about every important blog site running on .NET; "even":http://blogs.msdn.com "your":http://windowsvistablog.com/ "own":http://blogs.technet.com/ "sites":http://msexchangeteam.com/.
+
+Maybe to some this seems like not that big of a deal. I am assuming we can add some API updates at a later date. But is a very poor showing on their part. The Live side of the business is struggling to become relevant in the face of the Google onslaught. With this being my first real experience with the team I am not that impressed.
+
+Note: I fully get that Wordpress has a significant market share and I commend Microsoft for their great support of a non-windows tool. I just do not get why you would not take care of those around you as well.
+
+Note 2: We do support the full MetaBlog API. I am guessing this new functionality is based on support for custom extensions to API.
+
+Note 3: BTW, the update is super nice and I still highly recommend it.

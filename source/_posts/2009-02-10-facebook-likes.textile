@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Facebook Likes"
+date: 2009-02-10 13:56
+comments: false
+---
+
+Looks like Facebook just added one of FriendFeed's best features, "Like".
+
+bq. We've just introduced an easy way to tell friends that you like what they're sharing on Facebook with one easy click. Wherever you can add a comment on your friends' content, you'll also have the option to click "Like" to tell your friends exactly that: "I like this.":http://blog.facebook.com/blog.php?post=53024537130
+
+I personally prefer the concept of "liking" over ratings. I think it is a much easier decision for users to participate when the choice is yes/no (or this case just yes) vs. on a scale of 1 to 5, what would you rate this item. I would love to see us eventually take this approach in Community Server as well.

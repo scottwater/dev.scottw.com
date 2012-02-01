@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Gmail Offline"
+date: 2009-02-10 12:05
+comments: false
+---
+
+I saw a couple of posts earlier in the week about "Gmail's new offline availability":http://gmailblog.blogspot.com/2009/01/new-in-labs-offline-gmail.html, so I decided to enable it on my account before I hoped on a plane back to NJ from Austin.
+
+I primarily use Chrome, so setup is drop dead simple, just turn it on enable Google Gears for Gmail. I have only done a couple quick tests, but it seems to be working great. Even better, unlike Google Reader, it seems to support modes which always sync email when connected so there is no explicit need to sync before heading offline (assuming you were online before disconnecting).
+
+There is more to Microsoft Exchange than email, but for me this is one more nail in that coffin. If I were starting a new business in this economy, Google Applications just got a whole lot more interesting.
+
+Interesting, by the time I got around to actually publishing this post, Google has announced another killer feature, "Multiple Inboxes":http://gmailblog.blogspot.com/2009/02/new-in-labs-multiple-inboxes.html.

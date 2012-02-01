@@ -1,0 +1,30 @@
+---
+layout: post
+title: "Microsoft SharedView"
+date: 2007-10-26 12:18
+comments: false
+---
+
+!http://scottwstatic.appspot.com/images/wlw/MicrosoftSharedView_74DC/image_17.png! Last night "at dinner":http://scottw.com/life/dev-dinner-october-2007/, we were talking about Live (all good I promise :) and I mentioned to "Peter":http://blogs.msdn.com/peterlau/default.aspx, that I did come across an interesting offering that I had not heard about before (hat tip to "Dave Donaldson":http://arcware.net/ for the link): "Microsoft SharedView":http://get.live.com/betas/sharedview_betas.
+
+_In a nutshell, SharedView basically lets you share your desktop with up 15 different people. It integrates pretty nicely with Live Messenger and there is an option of invite non-IM users via email._
+
+Here are the basics.
+
+When you start it up, it places a toolbar across the top of your screen.
+
+!http://scottwstatic.appspot.com/images/wlw/MicrosoftSharedView_74DC/image_3.png!
+
+Clicking the "squiggle" opens a really simple to use menu page (although it takes up about 70% more space than it needs)
+
+!http://scottwstatic.appspot.com/images/wlw/MicrosoftSharedView_74DC/image_6.png!
+
+From here you can start a new session or join a session. Join is particularly interesting since this is how Dave and I got around his firewall issue, Dave was able to send a request to join my session.
+
+"!http://scottwstatic.appspot.com/images/wlw/MicrosoftSharedView_74DC/image_thumb_3.png!
+
+Finally, a quick view of an active session. You can pick and choose which application to share or you can scroll to the bottom of the list and select entire desktop. You can also send a quick message to the group and see who is connected.
+
+"!http://scottwstatic.appspot.com/images/wlw/MicrosoftSharedView_74DC/image_thumb_5.png!
+
+When Dave and I were giving it a quick demo we had problems connecting through Dave's firewall, so there still looks to be some work to make this really consumer friendly, but for now, it is a quick way to share a screen (actually, share an application) without the need to fire up WebEx...and yes, I am aware Leopard has this built in, soon, so soon. :)

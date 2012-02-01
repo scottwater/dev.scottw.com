@@ -1,0 +1,26 @@
+---
+layout: post
+title: "Git Flow"
+date: 2011-06-06 15:12
+comments: false
+---
+
+This post should serve as my own quick start guide for [Git Flow](https://github.com/nvie/gitflow).
+
+> Git extensions to provide high-level repository operations for Vincent Driessen's branching model. 
+
+Here is all you need to know: 
+
+First, start here: [Why aren't you using git-flow?](http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/)
+
+Then install via: brew install git-flow (read the docs on [git-flow github](https://github.com/nvie/gitflow) for how to install on other platforms)
+
+Finally, some helpful git short cuts: 
+
+	fs = flow feature start
+	ff = flow feature finish
+	
+With these short cuts in place, you can use git-flow for new features like this:
+
+	git fs login
+	git ff login

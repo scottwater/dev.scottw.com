@@ -1,0 +1,14 @@
+---
+layout: post
+title: "How To Properly Clean Your Hard Drive"
+date: 2011-03-01 14:01
+comments: false
+---
+
+If you need an easy way to properly clean your hard drives across multple platforms, you should check out "Darik's Boot and Nuke":http://www.dban.org/.
+
+bq. Darik's Boot and Nuke ("DBAN") is a self-contained boot disk that securely wipes the hard disks of most computers. DBAN will automatically and completely delete the contents of any hard disk that it can detect, which makes it an appropriate utility for bulk or emergency data destruction.
+
+You download and ISO, burn it disk, and then boot to it. From there a single command will clean every drive connected to the machine (even via USB). 
+
+The only gotcha I ran into were some warnings about using on a RAID drive. To keep things simple I disabled the RAID and let Boot and Nuke do its job.

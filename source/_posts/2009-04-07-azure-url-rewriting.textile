@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Azure Url Rewriting"
+date: 2009-04-07 01:04
+comments: false
+---
+
+Just noticed the this on a "Steve Marx":http://blog.smarx.com/ blog post about "PHP and Azure":http://blog.smarx.com/posts/php-asp-net-in-windows-azure
+
+bq.    _One thing we've enabled in the new CTP that's somewhat buried in the rest of the announcements is support for the IIS URL Rewrite module. Using that, I got nice URLs like "http://tweval.com/mix09-smarx.php":http://tweval.com/mix09-smarx.php to map to the uglier "http://tweval.com/index.php?tag=mix09-smarx":http://tweval.com/index.php?tag=mix09-smarx.
+
+!http://scottwstatic.appspot.com/images/wlw/AzureUrlRewriting_1282A/image_ce3860a0-a748-4ec1-8a8a-d3d639ac039e.png!
+
+It is nice to see them reuse the "IIS URL Rewrite":http://learn.iis.net/page.aspx/460/using-url-rewrite-module/ (although I would rather have the mod rewrite file format instead of XML) module although with MVC + Routes this is probably a bit moot, but still nice to have for some more complicated scenarios.

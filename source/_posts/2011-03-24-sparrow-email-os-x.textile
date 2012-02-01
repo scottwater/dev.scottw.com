@@ -1,0 +1,23 @@
+---
+layout: post
+title: "Sparrow for Email on OS X"
+date: 2011-03-24 12:04
+comments: false
+---
+
+After swearing off Outlook a couple of years and finally freeing myself from the tyranny of Exchange[1], I really did not expect to be using a native email client anytime soon.
+
+However, that quickly changed after using "Sparrow":http://www.sparrowmailapp.com/.
+
+Things I really like about Sparrow (and the recent 1.1 update):
+
+* It is small and minimal
+* Labels are easily accessible, but out of the way by default
+* Supports priority inbox (which has worked really well for me)
+* Easy access to multiple inboxes
+
+If you use Gmail[2] from a Mac, I highly recommend checking it out. There are free (lite) and commercial editions available in the Mac AppStore. 
+
+fn1. Telligent used Exchange for email.
+
+fn2. Sparrow 1.1 added generic IMAP support, but I have not used it.

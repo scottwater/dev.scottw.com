@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Six Principles for Making New Things"
+date: 2008-02-28 16:10
+comments: false
+---
+
+I read a great quote the other day from "Paul Graham":http://www.paulgraham.com/ which I just cannot get out of my head.
+
+bq. I like to find (a) simple solutions (b) to overlooked problems (c) that actually need to be solved, and (d) deliver them as informally as possible, (e) starting with a very crude version 1, then (f) iterating rapidly. ["Six Principles for Making New Things":http://www.paulgraham.com/newthings.html] via ["Derek Powazek":http://powazek.com/posts/900]
+
+For me, this goes back to my "1000 lines of code":http://scottw.com/software/1000-loc/, _"if you cannot build an interesting working version of an application in less than 1000 lines of code, you are likely over complicating things"_. Keep it simple and get it out in front of people. There is always a fear (especially in product development) that you are leaving out the killer feature or an obvious use case. But sometimes the best thing you can do is release it, see how customers use it, and improve it.

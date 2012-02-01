@@ -1,0 +1,22 @@
+---
+layout: post
+title: "Castle Project"
+date: 2008-05-09 03:04
+comments: false
+---
+
+For the last couple of weeks I have been digging through a bunch of new projects/concepts with the hope of using some new (to me) things in a couple application samples/prototypes I am itching to build. One of the projects I have been spending a lot of time with recently is the "Castle Project":http://castleproject.org.
+
+From the site:
+
+bq. Castle is an open source project for .net that aspires to simplify the development of enterprise and web applications. Offering a set of tools (working together or independently) and integration with others open source projects, Castle helps you get more done with less code and in less time.
+
+For the longest time, I mistakenly assumed Castle was just "Monorail":http://www.castleproject.org/monorail/index.html. I was very wrong. There is a lot of great things in this project that you can easily leverage when building your own solutions...even if you could care less about MVC/Monrail.
+
+My Favorites:
+
+* *"ActiveRecord":http://castleproject.org/activerecord/index.html* "_The enterprise data mapping pattern implemented using NHibernate_". In a nutshell it makes the power of NHibernate extremly accessible with almost zero effort.
+* *"Windsor Container":http://castleproject.org/container/index.html* Entperise grade inversion of control container. I have written a lot of plugin/extensibility code in the last couple of years which could have dramatically simplified and reduced with Windsor.
+* *"Validators":http://castleproject.org/components/validator/index.html* A light weight validation framework. There is a nice "example of integrating":http://blog.codeville.net/2008/04/ it with "LiveValidation":http://www.livevalidation.com/.
+
+There is actually quite a bit more there as well. The funny thing is I have been using Castle's updated version of "NVelocity":http://www.castleproject.org/others/nvelocity/index.html for quite a while and never really bothered to look around much until recently. If you are unfamiliar with the project, I definitely recommend taking a peak. I am sure you will find something which will help you on a future project.

@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Great Redis Overview"
+date: 2010-11-24 15:09
+comments: false
+---
+
+This is the most concise overview of "Redis":http://redis.io/ I have seen. 
+
+"Redis, from the Ground Up":http://blog.mjrusso.com/2010/10/17/redis-from-the-ground-up.html
+
+bq. A deep dive into Redis' origins, design decisions, feature set, and a look at a few potential applications.

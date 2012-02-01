@@ -1,0 +1,25 @@
+---
+layout: post
+title: "Why Twitter?"
+date: 2008-02-28 18:28
+comments: false
+---
+
+At last week's "Online Community Unconference: East" there was a very interesting discussion on "Twitter in the enterprise":http://www.socialtext.net/ocue08/index.cgi?twitter_strategies_for_the_enterprise lead by "Aaron Strout":http://wearesmarter.org/aaron. Although I have been critical of "Twitter's stability":http://scottw.com/technology/twitters-inability-to-scale/, it is a service that I really do enjoy but had never really put much thought behind "why"
+
+I did some digging around and came up with a set of really good links which I think tell the Twitter story way better than I would.
+
+"Jeremiah Owyang":http://www.web-strategist.com/blog/ - "Some Conversations have shifted to Twitter":http://www.web-strategist.com/blog/2007/12/11/some-conversations-have-shifted-to-twitter/ 
+bq. Twitter is becoming a major communication tool for me lately. There are more intimate conversations being held on this next-generation chat room, and it's filled with early adopters and those who are trying to reach them.
+
+"Sonny Gill":http://www.sonnygill.com/ - "Twitter has changed me":http://www.sonnygill.com/twitter-has-changed-me-2 
+
+bq. As I became more involved in the Twitter community, my "˜inbox' began to flow with messages, blog posts and links that I would have never seen if it weren't for Twitter. My knowledge base began to expand with all this new information, as did ideas that I could personally implement into my company's strategy.
+
+Civic Actions - "Why Twitter Matters":http://www.civicactions.com/blog/why_twitter_matters
+
+bq. I think one of the most significant contributions Twitter is bringing to the evolution of Connected Consciousness. For the first time in the history of our species, it is possible to massively communicate with massive numbers of human beings about pretty much anything.
+
+Twitter is not for everyone. My wife still gives me _that look_ when I tell her about a great quote or antidote from someone I have never met (and will likely never meet). There will likely be a point in the near future where introducing new users will lead to a diminishing rate of return. But for now, I am very happy with the interactions and knowledge I get from Twitter and I look forward to seeing what else can be done using this medium.
+
+If you are a Twitter user, you can follow me at "@scottw":http://twitter.com/scottw

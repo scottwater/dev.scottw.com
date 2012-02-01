@@ -1,0 +1,68 @@
+---
+layout: post
+title: "SimpleTemplate"
+date: 2008-06-05 12:14
+comments: false
+---
+
+By now it should be obvious that I am "big fan":http://scottw.com/search/nvelocity/ of the open source component "NVelocity":http://castleproject.org/others/nvelocity/index.html. Most of the examples of its usage are UI related such as view engines for "MonoRail":http://castleproject.org/monorail/index.html and "ASP.Net MVC":http://www.asp.net/mvc. We ("Telligent":http://telligent.com) also use it to power the theme engine for "Graffiti":http://graffiticms.com/. While it is great to be able to use it in this way, the are a lot more non-web UI uses for it.
+
+The other day, I received a "comment":http://scottw.com/code/nvelocity/#comment-348 asking for an example of how to use NVelocity, so I decided to put together a quick sample component, SimpleTemplate.
+
+SimpleTemplate has one goal, take a string that represents an NVelocity template along with the data you want to insert/replace in that template and return the results. If you find yourself using constantly using string.Format or StringBuilder.AppendFormat to build complicated strings, SimpleTemplate should be able to make things much easier for you.
+
+Here are a couple of quick examples of what you can expect it to do:
+
+<pre><code class="csharp">
+[Test]
+public void SingleItemTest()
+{
+    const string result = "Hello World";
+    const string template = "Hello $test";
+    var iContext = TemplateEngine.CreateContext();
+    iContext.Put("test", "World");
+    Assert.IsTrue(result == TemplateEngine.Parse(template,iContext));
+}
+</code></pre>
+
+
+With a custom object:
+
+<pre><code class="csharp">
+[Test]
+public void ObjectWithPropertyTest()
+{
+    const string result = "Hello World";
+    const string template = "Hello $to.Test";
+    TestObject to = new TestObject() {Test = "World"};
+    var iContext = TemplateEngine.CreateContext();
+    iContext.Put("to", to);
+    Assert.IsTrue(result == TemplateEngine.Parse(template, iContext));
+}
+</code></pre>
+
+
+Finally, just to show off, anonymous types:
+
+<pre><code class="csharp">
+[Test]
+public void TestAnonymousTypes()
+{
+    var anonymousType = new {Test = "Hello", Child = new {ChildTest = "World"}};
+    const string result = "Hello World";
+    const string template = "$at.Test $at.Child.ChildTest";
+    
+    var iContext = TemplateEngine.CreateContext();
+    iContext.Put("at", anonymousType);
+    Assert.IsTrue(result == TemplateEngine.Parse(template, iContext));
+    
+}
+</code></pre>
+
+If you remove null argument handling code, the TemplateEngine class is probably about 15 lines of code. I have included the full source in the download.
+
+*NOTE:*
+
+I was browsing my local "_CastleProject_":http://castleproject.org source folder to see if there was a license I should be including with the NVelocity assembly when I noticed a project called _"TemplateEngine":http://castleproject.org/components/templateengine/index.html_ There is not much information on the site about it and I only briefly browsed the included test suite, but it does look very nice. SimpleTemplate will certainly get you started, but I would recommend checking out TemplateEngine as well. I will do a follow later after I have had some time to play with it.
+
+"Download SimpleTemplate":http://www.box.net/shared/ojpvxe52cw.

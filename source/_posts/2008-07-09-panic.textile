@@ -1,0 +1,13 @@
+---
+layout: post
+title: "When to Panic"
+date: 2008-07-09 12:09
+comments: false
+---
+
+Microsoft announced yesterday that they are going to offer very low cost hosted versions of "Exchange and SharePoint":http://blogs.zdnet.com/microsoft/?p=1474. 
+
+bq. For Microsoft resellers that had been fearing Microsoft would drop the bottom out of the hosted-services business with its Microsoft Online services offerings, their nightmares were realized on July 8. Microsoft is planning to sell Microsoft-hosted Exchange and SharePoint for $3 per user per month. The quote above (with a little help from "Rob":http://weblogs.asp.net/rhoward) reminded me of an essay in my favorite book, ""The Big Moo":http://www.sethgodin.com/bigmoo/".
+
+bq. Every organization that gets into trouble falters because it waited too long to do the stuff that should have been done a long  time ago. Panic early, not late, and your ï¬re drills will actually pay off.
+You can also download and read the full essay, "Panic at Inappropriate Times":http://www.sethgodin.com/bigmoo/free/Panic.pdf.

@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Papercut &ndash; Easy Email Testing"
+date: 2008-11-07 11:50
+comments: false
+---
+
+!http://scottwstatic.appspot.com/images/wlw/PapercutEasyEmailTesting_6E4D/image_3.png!:http://invalidlogic.com/papercut/
+
+Email is an incredibly important aspect of many applications. While most programming languages make it trivially easy to send email, debugging/testing is often a tedious and boring task...until now. "Ken Robertson":http://invalidlogic.com/software/introducing-papercut/ (of the "Telligent":http://telligent.com product team) has released a tool called "Papercut":http://invalidlogic.com/papercut/ which should make this process a lot more tolerable.
+
+bq.    Papercut is a simplified SMTP server designed to only receive messages (not to send them on) with a GUI on top of it allowing you to see the messages it receives. It doesn't enforce any restrictions on addresses, it just takes the message and allows you see it. It is only active while it is running, and if you want it in the background, just minimize it to the system tray. When it receives a new message, a balloon message will show up to let you know.
+
+!http://scottwstatic.appspot.com/images/wlw/PapercutEasyEmailTesting_6E4D/paperclipscreenshot1_3.jpg!
+
+Papercut is completely free and should a very helpful tool for your utility belt.

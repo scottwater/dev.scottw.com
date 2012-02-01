@@ -1,0 +1,16 @@
+---
+layout: post
+title: "X-Copy Database Options"
+date: 2007-12-10 04:37
+comments: false
+---
+
+"Rob covered the reasons":http://weblogs.asp.net/rhoward/archive/2007/12/07/microsoft-access-or-sql-server-express.aspx we chose Microsoft Access as one of our two supported databases for the first beta release of "Graffiti":http://graffiticms.com/.
+
+So far, despite a little bit of query quirkiness (top, lack of sub-queries, and no support for named parameters) Access has been working really well. I have used Access on this site since the beginning and I have yet to see anything that would concern me. I think many people remember back to the ASP.Old days where Access to could really slow down under heavy usage. However, with ASP.Net caching, you really do not have to hit the database nearly as often.
+
+Before choosing Access, we looked at "Sqlite":http://sqlite.org/ which probably would have worked, but I do not think we would have been any better off than using Access. The other obvious choice would be SQL Express, but do to security reasons, it is still DOA when it comes to shared hosting; which is really pathetic. And then there is also SQL Compact edition, which throws a NotSupportedException if you try to use it under IIS (again, Nice!). Even as I type this, I cannot fathom why SQL Express did not have shared hosting as it's number feature requirement. What a huge missed opportunity to make the power of SQL Server accessible to the masses.
+
+There are many other database platforms out there, but the key factor we are looking for is *100% x-copy deployment*. Database configuration and setup is really hard for non-geeks to grasp and can easily get in the way of a great user experience. We are still exploring some other options and I am trying to find some time to play with "VistaDB":http://www.vistadb.net/ which could be a viable alternative as well. *Does anyone else have any other suggestions?*
+
+We are also going to document our database provider API. It is very simple, relies on code generation, and has no clue what is going on in the layer above. Hopefully with a little help from the community we can have providers for databases like MySQL and Sqlite. Speaking of Sqlite, if you are familiar with it and want to help flush out a provider for it, please contact me (scottw@telligent.com). I did start a provider for it, but never got around to finishing it.

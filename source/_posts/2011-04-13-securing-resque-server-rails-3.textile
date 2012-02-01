@@ -1,0 +1,58 @@
+---
+layout: post
+title: "Securing Resque::Server in Rails 3"
+date: 2011-04-13 17:05
+comments: false
+---
+
+I recently started to use "Resque":https://github.com/defunkt/resque to queue up some background work (emails, stats, etc) for "KickoffLabs":http://kickofflabs.com. 
+
+bq. Resque (pronounced like "rescue") is a Redis-backed library for creating background jobs, placing those jobs on multiple queues, and processing them later.
+
+Resque ships with a built in "Sinatra"http://www.sinatrarb.com/ app which displays all sorts of interesting details about what is in your queues. 
+
+In Rails 3, adding a rack app like Resque::Server to your project is drop dead simple: 
+
+mount Resque::Server.new, :at => '/resque'
+
+Unfortunately, as far as I can tell, there is no built in way to restrict who can access the /resque path. Googling led to some great "options for devise users":http://blog.kiskolabs.com/post/776939029/rails3-resque-devise as well as options for wrapping it in a custom rack app. I am not using devise and the rack examples felt messy.
+
+Since Resque::Server is just a Sinatra app, I decided to take the simple path and subclassed Resque::Server ("gist":https://gist.github.com/917607).
+
+Here are two ways to add authentication/authorization: 
+
+In the first, I added a before block and redirect if the user does not meet some predefined condition (empty session, invalid roles, etc).
+
+<pre><code class="ruby">
+require 'resque/server'
+
+class SecureResqueServer < Resque::Server
+
+  before do
+    redirect '/login' unless some_condition_is_met! 
+  end
+
+end
+</code></pre>
+
+The only thing I don't like about this path is the hardcoded login path. I have an open question on StackOverflow on "how to get access to the routes from Sinatra":http://stackoverflow.com/questions/5643522/how-to-get-a-named-route-from-a-rack-app-hosted-in-rails-3.
+
+The second option would be to simply use HttpAuthentication: 
+
+<pre><code class="ruby">
+require 'resque/server'
+
+class SecureResqueServer < Resque::Server
+
+  use Rack::Auth::Basic, "Restricted Area" do |username, password|
+    [username, password] == ['admin', 'admin']
+  end
+
+end
+</code></pre>
+
+Once you choose your desired path, you simply need to wire it up in your routes file:
+
+<pre><code class="ruby">
+mount SecureResqueServer.new, :at => '/resque'
+</code></pre>

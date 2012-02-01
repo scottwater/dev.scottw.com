@@ -1,0 +1,16 @@
+---
+layout: post
+title: "PhillyNJ.NET &ndash; What is Azure?"
+date: 2009-01-07 15:34
+comments: false
+---
+
+I am going to be giving a talk at the "PhillyNJ.NET":http://PhillyNJ.NET user group on Thursday January 15th on the topic of ""What is Azure":http://www.phillynj.net/home/meetings/2009-01-15.aspx".
+
+As I have been writing about recently, "Azure":http://www.microsoft.com/azure/default.mspx is a massive undertaking by Microsoft. What I am hoping to do in this talk is paint a clear picture of:
+
+* What is available
+* Why you should care
+* What you can do to start leveraging this platform.
+
+You can find "driving direction here":http://www.gcls.org/Libraries/Greenwich_Township_Branch/default.php.

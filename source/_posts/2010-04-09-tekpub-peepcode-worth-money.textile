@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Is Tekpub (or PeepCode) Worth the Money?"
+date: 2010-04-09 14:01
+comments: false
+---
+
+My answer to this question has consistently been, "_Only if you value your time_". 
+
+As an example, I just started watching "Tekpub's":http://tekpub.com "iPhone Development":http://tekpub.com/preview/iphone series. There is currently about 2 hours worth of content (and I believe more is on the way). The cost for the series is listed as $25 on the site. 
+
+My guess is the videos will save me about 10 to 20 hours of reading, tinkering, and just generally getting things going. Now assuming I put a value of more than $2.50/hr for my time (and i do :), the purchase[1] would be a no brainer. 
+
+I also have a subscription to "Peepcode":http://peepcode.com which I have been loving as well. 
+
+fn1. Disclosure: Rob Conery did comp me a full season pass. However, this came when I was about to personally buy a license so I have no qualms writing this review.

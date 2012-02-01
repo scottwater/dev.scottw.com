@@ -1,0 +1,10 @@
+---
+layout: post
+title: "One Too Many"
+date: 2011-04-12 13:03
+comments: false
+---
+
+This might be the single greatest "tweet ever written":https://twitter.com/#!/stop/status/54985330771759104: 
+
+bq. Don't fear removing a feature. Fear ending up with one too many. -- "Doug Bowman":https://twitter.com/stop

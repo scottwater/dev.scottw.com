@@ -1,0 +1,11 @@
+---
+layout: post
+title: "Derek Sivers on If Only 1%"
+date: 2011-04-02 13:30
+comments: false
+title_url: http://sivers.org/1pct
+---
+
+Great write up on the fallacy of the “If only 1% of people purchase my ….”
+
+bq. He forgot there was a number lower than one percent

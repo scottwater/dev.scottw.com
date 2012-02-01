@@ -1,0 +1,24 @@
+---
+layout: post
+title: "What's On My Phone?"
+date: 2007-10-12 20:23
+comments: false
+---
+
+Jason asked, ""_What's on your phone?_":http://jasona.net/business/what-s-on-your-phone/"
+
+As I mentioned a little while ago, I recently "joined the iPhone club":http://scottw.com/technology/iphone-vs-blackberry/ (the handshake is very complicated), so some of things I used to check all the time are now part of my dashboard.
+
+In the spirit of sharing, here is what I have used most:
+
+# "Google Reader":http://google.com/reader/m/ - I am not looking forward to getting stranded in an airport, but this will certainly keep me occupied for a while.
+# "Google":http://google.com - Search gets special love on the iPhone, so I use it all the time.
+# "Hahlo":http://hahlo.com/ - Hahlo is a much better mobile experience than m.twitter.com. However, since paging for remote clients still seems busted, I have been forced to use m.twitter.com more often.
+# "Facebook":http://iphone.facebook.com - I still don't do much on FaceBook, but the iPhone experience is fantastic.
+# "Leaflets":http://getleaflets.com/ - Leaflets is a small set of handy iPhone web sites.
+
+However, like Jason, I have been a lot of mobile browsing. There are still some kinks in it, but running a real browser (if you consider Safari real :) has been awesome. I have done everything from check on Community Server daily sales to looking up someone who bought a Graffiti domain on "WhoIs.org":http://whois.org/.
+
+One other thing I have used a lot in the past 6 months or so, is "Google SMS":http://www.google.com/sms/. Google SMS is a great way to ask a question, get a response, and back to whatever it is you are out doing.
+
+Now I need to tag some people. How about "Kevin Fricovsky":http://scribesonic.com/Blog/, "Jose Lema":http://www.tankete.com/core/blogs/jose_lema/, "James Avery":http://dotavery.com/blog/, "Dave Donaldson":http://arcware.net, and "Dave Laribee":http://codebetter.com/blogs/david_laribee/.

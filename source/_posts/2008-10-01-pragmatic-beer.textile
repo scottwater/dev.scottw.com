@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Pragmatic Beer"
+date: 2008-10-01 19:16
+comments: false
+---
+
+"Don":http://donxml.com and I have been having "Dev Dinners" every couple of months over the last couple of years. We usually draw small crowd of bright .NET people and talk shop. However, this time we want to shake things up a bit and get more realistic. So we are going to borrow a bit from "James Avery":http://infozerk.com/averyblog/raleigh-alt-net-beer-users-group/ and just call it a *Pragmatic Beer* event.
+
+To keep things agile (and because I have not been to Harvest Moon in quite a while) we are going to meet tomorrow (Thursday, October 2nd) night at 6:30 PM at the "Harvest Moon":http://www.harvestmoonbrewery.com/.
+
+!http://scottwstatic.appspot.com/images/wlw/PragmaticBeer_D674/moon-outside_3_3.jpg(Harvest Moon)!:http://www.harvestmoonbrewery.com/
+
+Please leave a comment if you can make it so we know to look out for you.
+
+See you there.

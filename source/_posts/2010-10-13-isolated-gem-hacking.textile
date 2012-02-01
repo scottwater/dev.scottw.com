@@ -1,0 +1,33 @@
+---
+layout: post
+title: "Isolated Gem Hacking"
+date: 2010-10-13 13:55
+comments: false
+---
+
+I noticed a recurring pattern this week. At least once a day, I complete the following tasks: 
+
+# Create a new directory
+# Copy a recent .rvmrc file to that directory
+# Edit the name of the gemset in the .rvmrc file
+# Start textmate
+
+I have also been adding both a Rakefile and Gemfile within this directory. 
+
+To automate this, I created the following function[1] you can drop in your favorite shell's startup file (.zhsrc, .bashrc, etc.).
+
+<pre><code class="bash">
+function mkgemset() {
+  mkdir $1
+  echo 'source :gemcutter' > $1/Gemfile
+  touch $1/Rakefile
+  echo 'rvm_gemset_create_on_use_flag=1\nrvm gemset use' $1 > $1/.rvmrc
+  cd $1
+  git init
+  mate .
+}
+</code></pre>
+
+If you have suggestions to make this better, please "fork the gist":http://gist.github.com/624070
+
+fn1. Hat tip to "Peepcode":http://peepcode.com. This function started with the gmate function in the Peepcode command line episode.

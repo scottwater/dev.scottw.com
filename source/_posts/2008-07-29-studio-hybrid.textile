@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Studio Hybrid"
+date: 2008-07-29 11:41
+comments: false
+---
+
+I came across this link on the bottom of "TechMeme":http://techmeme.com earlier today, ""Dell takes on Mac Mini with Studio Hybrid":http://www.electronista.com/articles/08/07/28/dell.studio.hybrid/".
+
+bq. The system is described as the company's "first step" in eco-friendly PCs and uses notebook components to dramatically reduce both its size and power draw;
+
+!http://scottwstatic.appspot.com/images/studiohybrid.jpg!
+
+Personally, the design isn't doing anything for me, but I love basic concept of a small consumer friendly machine which takes the best from a laptop and puts it in a desktop. This typically happens the other way around. Throw in the eco-benefits and this could be a winner.
+
+Disclaimer: "Dell":http://dell.com is a client of "Telligent":http://telligent.com.

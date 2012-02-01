@@ -1,0 +1,36 @@
+// This File is imported last, and will override other styles in the cascade
+// Add styles here to make changes without digging in too much
+
+
+
+
+a:hover, a:active { outline: none; }
+a, a:active, a:visited { color: #607890; }
+a:hover { color: #036; }
+
+html {
+	background-image: url(/images/random_grey_variations.png); 
+	background-attachment: initial; 
+	background-origin: initial; 
+	background-clip: initial; 
+	background-color: initial; 
+	background-position: initial initial; 
+	background-repeat: initial initial; 
+}
+
+body > header {
+	background: #3B424E;
+} 
+
+#blog-archives.missing article {
+	margin-left: 0;
+}
+
+ul, ol {
+	margin-left: 2em;
+}
+
+$link-color: lighten(#165b94, 3) !default;
+$link-color-hover: adjust-color($link-color, $lightness: 10, $saturation: 25) !default;
+$link-color-visited: lighten(#165b94, 3) !default;
+$link-color-active: adjust-color($link-color-hover, $lightness: -15) !default;

@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Complexity"
+date: 2011-04-25 17:00
+comments: false
+---
+
+"Complexity is the enemy":http://neugierig.org/software/blog/2011/04/complexity.html
+
+bq. Complexity is the death of software. 
+
+And
+
+bq. Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it

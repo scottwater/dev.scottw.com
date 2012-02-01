@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Scaling Twitter"
+date: 2008-01-15 18:22
+comments: false
+---
+
+I don't quite remember when "Twitter":http://twitter.com first launched, but their inability to consistently scale the service is inexcusable.
+
+!http://scottwstatic.appspot.com/images/2008-01-15_twitter.png(Twitter Down Message)!
+
+While it is a free service, I still think they owe their users a much better experience. The constant downtime is an insult to all its' users.

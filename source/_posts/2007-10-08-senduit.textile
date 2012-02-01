@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Senduit"
+date: 2007-10-08 02:39
+comments: false
+---
+
+I love easy things. "Senduit":http://www.senduit.com does one thing; it enables you to create a private link to download a file. You control how long the link/file exists.
+
+!http://scottwstatic.appspot.com/images/wlw/Senduit_13E9C/senduit_3.png(Senduit Image)!
+
+This is a great way to quickly share files with friends, move a file to a remote computer, etc.

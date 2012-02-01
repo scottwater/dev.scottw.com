@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Sometimes Even the Coolest Code Gets the Ax"
+date: 2006-11-03 12:27
+comments: false
+---
+
+"James":http://britishinside.com/ "recounts":http://britishinside.com/archive/2006/11/02/Falling-foul-of-my-phobias.aspx trading in some cool code for a better user experience:
+
+bq.  Developers do this all the time - they create something that is "beautiful on the inside", but doesn't actually do the task required. Everyone admires the class and how generics, hash tables and private virtual abstract objects were used to create the ultimately flexible utility......I'm still too in love with it to be able to dismantle it's inner beauty, simplify it and make it actually useable, but I know I'm going to.
+
+James is leading the development of our new CMS application. We are at a very dangerous and exciting point in the development process. We can see the writing on the wall (inside pun). We know we have something that is powerful and unique. The trick now is making it really useful and not over complicating things. To get there we need we weed out all the "wouldn't it be cool if" from the "it just isn't worth doing without...".
+
+If you have an open mind and passion for the product this is a great process; I think you can tell from James' post he has these qualities.

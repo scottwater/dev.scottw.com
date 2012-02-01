@@ -1,0 +1,26 @@
+---
+layout: post
+title: "Setting Up Git-Flow on a Remote Repository"
+date: 2011-03-24 15:31
+comments: false
+---
+
+I am using the great "git-flow":https://github.com/nvie/gitflow plugin which forces you through an ideal work flow with git (see this "post":http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/ if this makes no sense). 
+
+One of the things I wanted to make sure is that my develop branch is properly available for multiple machines and users. 
+
+Before you start, you will need to grab git-flow. OS X users can cheat and use the homebrew (brew install git-flow)
+
+Quick steps (assumes a remote exists with both master and develop branches). 
+
+<pre><code class="bash">git clone remote_reporistory_path
+git checkout -b develop origin/develop
+git flow init</code></pre>
+
+Now if you have already cloned the repository and setup gitflow, you can enable remote tracking with:
+
+<pre><code class="bash">git checkout develop
+git branch --set-upstream origin/develop</code></pre>
+
+
+That's it. Now you (and others) can properly access and share the develop branch. You can follow the same steps to setup a release/hotfix/etc branches.

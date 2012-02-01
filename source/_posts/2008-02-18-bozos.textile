@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Don't Let the Bozos Grind You Down"
+date: 2008-02-18 14:33
+comments: false
+---
+
+"Graffiti 1.0":http://graffiticms.com is due to be released today (February 18th, 2008). While doing some early morning web surfing I came across a great line by "Guy Kawasaki":http://blog.guykawasaki.com/2006/01/the_art_of_inno.html, _"Don't Let the Bozos Grind You Down"_.
+
+When we first started telling people about Graffiti there was a lot of excitement, but there was also quite a bit of skepticism around the idea of a single category, no ASPX pages, is it a CMS or a blog, no source code, and OMG you have the audacity to charge for commercial usage.
+
+It is very easy to buy into what the skeptics are saying. Most are not trying to purposely complicate things for you and lead you down the wrong path. Instead, they are just trying to pull you towards the middle where it is safe and comfortable. Unfortunately, safe and comfortable are not a great way to build a new product (service/etc). As you move towards the center what differentiates you starts to diminish, passionate users are harder to come by, and IMO your odds of being successful start to rapidly decline.
+
+While we did listen and consider as much of the feedback as possible, on most of the items we stuck with our original ideas and tried to bring something different (and better) to the market. Being different will not guarantee success, but doing things the safe way would almost certainly guarantee failure.
+
+For now, the jury is still out on Graffiti. So far it looking like it will be a big hit and I promise you this is just the start!

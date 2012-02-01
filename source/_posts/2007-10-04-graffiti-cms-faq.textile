@@ -1,0 +1,39 @@
+---
+layout: post
+title: "Graffiti CMS FAQ"
+date: 2007-10-04 14:28
+comments: false
+---
+
+!http://scottwstatic.appspot.com/images/wlw/GraffitiCMS_9346/graffiti-logo-270907_3.png!
+
+Simpable is the second site to go live on Graffiti CMS. We will soon be publishing the official Graffiti site, but until then, I am going to publish a couple of posts here about what's going on with this new project. My goal in the future is to talk more about things like the lessons learned in developing "Community Server":http://communityserver.org/ which have been applied to Graffiti, but for now, it will be mostly product related.
+
+*How about a quick FAQ.*
+
+*Q*: _What is Graffiti CMS?
+_*A*: Graffiti CMS is a light weight publishing system. It allows you to create, organize, and manage content.
+
+*Q*: _Is it a blogging engine?_
+*A*: hmm...Yes and No. Yes, it does provide you with just about everything you need to build a blog, but it can do much more than just create a blog.
+
+*Q*: _Why build a CMS? Aren't there a million of them out there._
+*A*: We believe we can improve on what other CMS tools have done. Graffiti can give publisher a great deal of power and at the same time be very easy to use.
+
+*Q*: _Is the UI easy to customize?_
+*A*: Oh boy is it! Graffiti uses a very simple template/view based system which allows you to easily change its look. You can even make changes in the browser.
+
+*Q*: _How hard is it to setup?_
+*A*: It is super simple. Just copy the files to your web server and enjoy. The default version actually has zero required configuration changes. We really did our best to stick with convention over configuration (yes, I know this is a rails thing :)
+
+*Q*: _What about developers?_
+*A*: While our core goal was to enable simple beautiful sites, we have not forgotten about the developers. Graffiti has a couple of very easy to use extensibility points (which again require zero configuration) as well as a REST based API and MetaBlog support.
+
+*Q*: _What will it cost?_
+A: Graffiti is a commercial application and will come in a couple of flavors, but we will have a very functional FREE license available as well.
+
+*Q*: _When can I get my hands on it?_
+*A*: Hopefully very soon. We are shooting for a beta in the late October to early November timeframe.
+
+*Q*: _Where can I get more information?_
+*A*: We will have the official site released shortly, in the mean time, I will try to make keep publishing new information here.

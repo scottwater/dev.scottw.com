@@ -1,0 +1,42 @@
+---
+layout: post
+title: "Loose Associations in ActiveRecord"
+date: 2011-05-27 12:40
+comments: false
+---
+
+First the scenario: 
+
+I have two tables/models which are loosely related. What I mean by loosely is they share column (email), but they can exist without each other. What I wanted to do is bring back the data for each without causing an N+1 set of queries. 
+
+Here is the basic design: 
+
+<!--more-->
+
+{% codeblock lang:ruby %}
+class Subscription << ActiveRecord::Base
+  has_one :demographic
+end
+
+class Demographic << AcitveRecord::Base
+  has_many :subscriptions 
+end
+{% endcodeblock %}
+
+Normally, it would now be possible to get easily query in either direction (demographic.subscriptions or subscription.demographic). However, in this case, using the model ids will not return any records (and subscription has no foreign key on demographic). One option to fix it would be to simply add the foreign key, but IMO this is unnecessary and muddies things up since they should be able to exist without each other. 
+
+Instead, the fix in this case is to simply tell the association declarations what to use as the primary and foreign keys. 
+
+{% codeblock lang:ruby %}
+class Subscription << ActiveRecord::Base
+  has_one :demographic, :primary_key => :email, :foreign_key => :email
+end
+
+class Demographic << AcitveRecord::Base
+  has_many :subscriptions, :primary_key => :email, :foreign_key => :email
+end
+{% endcodeblock %}
+
+And now, all is good again (in my little rails world).
+
+Finally, a big hat tip to "Brain Hogan":http://twitter.com/bphogan who pointed out :primary_key could be set on an association. 

@@ -1,0 +1,46 @@
+---
+layout: post
+title: "Paging Data In ActiveRecord"
+date: 2008-05-19 15:55
+comments: false
+---
+
+"I am still digging":http://scottw.com/code/castle/ Castle's "ActiveRecord":http://castleproject.org/activerecord/index.html implementation. While the code is "tight" and there is substantial documentation, there are still a couple of things that took me longer to figure out than I had hoped. This is not a knock against Castle, more a testament to the size and scope of the project. Anyway, here are a couple of notes on paging data.
+
+h3. Three things I learned about paging data in ActiveRecord (via NHibernate)
+
+1. Writing a query that pages is very easy. There is a set of queries in the Castle.ActiveRecord.Queries namespace which all have an overloaded method SetQueryRange. The first overload takes a single integer which sets the max results. The second sets both the number of results you need and an offset.
+
+<pre><code class="csharp">
+var userQuery = new SimpleQuery<User>
+    ("from User where IsEnabled = :IsEnabled Order By Username");
+userQuery.SetParameter("IsEnabled", true);
+userQuery.SetQueryRange(pageIndex * pageSize, pageSize);
+</code></pre>
+
+
+2. Paging can be done without the use of the Queries namespace via the SliceFindAll static method on ActiveRecordBase. In hindsight this is pretty obvious, but I completely missed this method initially and went with the queries above.
+
+<pre><code class="csharp">
+public static T[] SlicedFindAll(int firstResult, int maxResults, 
+    params ICriterion[] criteria)
+ 
+public static T[] SlicedFindAll(int firstResult, int maxResults, 
+    Order[] orders, params ICriterion[] criteria)
+ 
+ 
+public static T[] SlicedFindAll(int firstResult, int maxResults, 
+    DetachedCriteria criteria, params Order[] orders)
+</code></pre>
+
+
+For example, in my project, if I wanted to get the fourth page (10 per page) of users ordered by Username and filtered by IsEnabled = true:
+
+<pre><code class="csharp">
+var userList = User.SlicedFindAll(30, 10, 
+    new Order[] {new Order("Username", true)}, 
+    Expression.Eq("IsEnabled", true));
+</code></pre>
+
+
+3. If you need to page large sets of data and you need to use SQL Server 2000, ActiveRecord (and NHibernate) are not the correct tool. The NHiberate SQL 2000 dialect does not (completely) filter the number of records in the database. It does attempt to limit the results, but ultimately if you request page 4 at 10 records per page, 50 records will be returned from the database. Since an entity does not have to equal a table, I kind of understand why this is the way it is, but it still sucks. Of course the good news is most people are now using SQL Server 2005 and although SQL Server 2005 does not support limit/offset like MySQL, a CTE is used in the 2005 dialect and a limited number of records is returned.

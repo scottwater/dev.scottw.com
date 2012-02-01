@@ -1,0 +1,14 @@
+---
+layout: post
+title: "The Paradox of the Active User"
+date: 2009-03-10 13:01
+comments: false
+---
+
+"I linked to":http://scottw.com/software/7-hard-things/ the "The Paradox of the Active User":http://www.useit.com/alertbox/activeuserparadox.html a couple of months ago, but I wanted to call it out in its own post since I frequently refer to it.
+
+bq.    _Users never read manuals but start using the software immediately. They are motivated to get started and to get their immediate task done: they don't care about the system as such and don't want to spend time up front on getting established, set up, or going through learning packages._
+
+In a nutshell, users want to use software...not learn about it. It is OK to add features which require some understanding, but whenever possible you need to make sure things just work out of the box.
+
+This really drives my feature decisions more than just about anything else these days.

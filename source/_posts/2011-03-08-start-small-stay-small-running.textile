@@ -1,0 +1,27 @@
+---
+layout: post
+title: "Start Small - Stay Small & Running Lean"
+date: 2011-03-08 15:07
+comments: false
+---
+
+I recently read both _Start Small - Stay Small_ and _Running Lean_. They both help to tell the story that starting a new company does not have to be a big swing for the fences and I highly recommend them to anyone who thinking of building the next big thing. 
+
+*"Start Small - Stay Small":http://www.startupbook.net/* by "Rob Walling":http://www.softwarebyrob.com/.   
+
+This book fundementally changed how I approach new business ideas. 
+
+Way too often products are built with no evidence of an existing market. Now there are certainly cases where this is necessary (Twitter, Facebook, etc), but for most this a big guess. 
+
+Walling recommends you start a new venture with the following steps: 
+
+# Define a market - is there enough customers to support your product?
+# Market - can you reach those customers?
+# Build - If the answer is yes to #1 and #2 - build your product
+# Refine - continue to make your product better
+
+*"Running Lean":http://www.runningleanhq.com/* by "Ash Mauryas":http://www.ashmaurya.com/.
+
+While not all aspects of "lean startup" resonate  with me, Ash Mauryas's step by step walk through of acquiring validation, building, and repeating really makes a lot of sense and can help you avoid doing things which don't add value. 
+
+I plan on practicing many of the aspects of these books in my next venture. In fact, you could certainly make an argument that my next venture will help others do the same. :)
