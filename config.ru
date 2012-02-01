@@ -28,7 +28,7 @@ class SinatraStaticServer < Sinatra::Base
   end
 
   not_found do
-    send_sinatra_file('404.html') {"Sorry, I cannot find #{request.path}"}
+    send_sinatra_file('404.html') {"Sorry, I cannot find your file (#{request.path})"}
   end
 
   def send_sinatra_file(path, &missing_file_block)
