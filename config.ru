@@ -8,17 +8,17 @@ $root = ::File.dirname(__FILE__)
 
 use Rack::Protection,  :except => :session_hijacking
 
-# use Rack::Rewrite do
-#   r301 %r{.*}, 'http://www.scottw.com$&', :if => Proc.new {|rack_env|
-#     rack_env['SERVER_NAME'] != 'www.scottw.com' && ENV['RACK_ENV'] == 'production'
-#   }
-#   
-#   r301 %r{^/life|code|business|software(/.+)}, '$1'
-#   r301 %r{^/archive$}, '/archives'
-#   r301 %r{^(.+)/$}, '$1'
-#   r301 %r{^/tags}, '/'
-#   r301 %r{^/atom$}, '/atom.xml'  
-# end
+use rack::rewrite do
+  r301 %r{.*}, 'http://www.scottw.com$&', :if => proc.new {|rack_env|
+    rack_env['server_name'] != 'www.scottw.com' && env['rack_env'] == 'production'
+  }
+  
+  r301 %r{^/life|code|business|software(/.+)}, '$1'
+  r301 %r{^/archive$}, '/archives'
+  r301 %r{^(.+)/$}, '$1'
+  r301 %r{^/tags}, '/'
+  r301 %r{^/atom$}, '/atom.xml'  
+end
 
 class SinatraStaticServer < Sinatra::Base  
 	set :public, 'public'
