@@ -21,7 +21,7 @@ use Rack::Rewrite do
 end
 
 class SinatraStaticServer < Sinatra::Base  
-	set :public, 'public'
+	set :public_folder, 'public'
 
   get(/.+/) do
     send_sinatra_file(request.path) {404}
