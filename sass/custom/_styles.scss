@@ -34,3 +34,7 @@ $link-color: lighten(#165b94, 3) !default;
 $link-color-hover: adjust-color($link-color, $lightness: 10, $saturation: 25) !default;
 $link-color-visited: lighten(#165b94, 3) !default;
 $link-color-active: adjust-color($link-color-hover, $lightness: -15) !default;
+
+a.external-link:after {
+  content: " \27A6";
+}
