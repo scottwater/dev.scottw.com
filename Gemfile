@@ -14,11 +14,10 @@ gem 'rack-protection', '1.2.0'
 gem 'liquid', '2.2.2'
 gem 'thin'
 gem 'daemons', '1.1.4'
-
+gem 'stringex'
 
 group :development do
   gem 'rb-fsevent', :git => 'git://github.com/ttilley/rb-fsevent.git', :branch => 'pre-compiled-gem-one-off'
-  gem 'stringex'
 	gem 'shotgun'
 	gem 'heroku'
 end
