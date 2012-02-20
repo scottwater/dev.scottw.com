@@ -1,0 +1,22 @@
+---
+layout: post
+title: "Announcing: Unwind Gem"
+date: 2012-02-20 09:22
+comments: true
+categories: 
+---
+
+[Unwind](https://github.com/scottwater/unwind) has a single goal. Take a url and figure out what it actually points to.
+
+It is able to walk various redirect status codes, handles relative and absolute locations, and a couple of other gotchas. 
+
+Once completed you have the destination url and a list of the hops along the way. 
+
+``` ruby
+require 'unwind'
+
+follower = Unwind::RedirectFollower.resolve('http://j.mp/unwind')
+assert_equal 'http://www.scottw.com/unwind', follower.final_url 
+```
+
+**Hat Tip:** This gem started with code from [John Nunemaker's](http://twitter.comjnunemaker) [Following Redirects with Net/HTTP](http://railstips.org/blog/archives/2009/03/04/following-redirects-with-nethttp/) which provided the basic code to get this done. 
