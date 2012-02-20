@@ -15,7 +15,7 @@ Once completed you have the destination url and a list of the hops along the way
 ``` ruby
 require 'unwind'
 
-follower = Unwind::RedirectFollower.resolve('http://j.mp/unwind')
+follower = Unwind::RedirectFollower.resolve('http://j.mp/Ai8S1s')
 assert_equal 'http://www.scottw.com/unwind', follower.final_url 
 ```
 
