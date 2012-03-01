@@ -1,0 +1,29 @@
+---
+layout: post
+title: "Reviewing Osfoora for Mac"
+date: 2012-03-01 09:08
+comments: true
+categories: 
+---
+
+[Osfoora](http://osfoora.com/mac/) is a new'ish Twitter client for the Mac. 
+
+Overall, it is a very polished app that works extremely well. It has all the features you would expect in a great Mac Twitter client: 
+
+1. Multiple account support
+1. Lots of keyboard short cuts
+1. Growl notifications (if you are into that)
+1. Instapaper integration (it's about the links)
+1. Good inline image previews
+
+However, there are some things which drive me nuts and I hope get fixed/updated/implemented:
+
+1. No easy way to scroll to the top. I really don't need to read or scroll through all tweets. The lack of support for Command+ArrowUp catches me off guard all the time. 
+1. No keyboard short cut for reporting spam and/or blocking someone. Direct missile support would be nice as well.
+1. You can mute users (nice) but muting keywords would be better. I am really hoping to avoid seeing even a single SXSW tweet. Help!
+1. No drag drop on images. Similar to scrolling I try this daily because it is just supposed to work in every Mac app. 
+1. If you are going to support Url shorteners, skipping bit.ly is a big oversight. 
+
+Despite the list above, I still highly recommend it. $5 is a small price to pay for something as nicely put together as Osfoora.
+
+And of course, don't forget you can find me way too often on Twitter at [@scottw](http://twitter.com/scottw). 
