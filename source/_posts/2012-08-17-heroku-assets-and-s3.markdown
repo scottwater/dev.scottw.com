@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Heorku, Assets, and S3"
+title: "Heroku, Assets, and S3"
 date: 2012-08-17 09:36
 comments: true
 categories: 
