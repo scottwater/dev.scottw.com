@@ -28,3 +28,4 @@ Anyway, not much you can do to fix it except for denying IE7/IE8 or appending ht
 
 Hopefully this post saves someone else out there many hours of head shaking and fist pumping. 
 
+**UPDATE:** Just to clarify, everything appears to work perfectly fine on non-ssl requests. It is via SSL where everything goes in the toilet. 
