@@ -31,14 +31,14 @@ git remote rename [previous__usually__heroku] production
 
 Now, to run a rake command it is as simple as: 
 
-``` shell
+```
 hp run rake db:migrate
 hp run console
 ```
 
 And as a side benefit, deploying now looks like this: 
 
-``` shell
+```
 git push production
 git push staging
 ```
