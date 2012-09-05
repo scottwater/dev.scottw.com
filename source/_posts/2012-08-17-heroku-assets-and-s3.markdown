@@ -29,3 +29,5 @@ The only big issue we are still seeing is in serving fonts. We use a custom icon
 The fix (I use that term loosely) is to move our font out of the asset pipeline and server it directly ourselves. This isn't ideal, but at least that limits us to a single asset per request. 
 
 One more bonus tip, if you are serving fonts, check out the [rack-access-control-headers gem](https://github.com/mintdigital/rack-access-control-headers). This will set the proper headers on any fonts you server directly via Rack. 
+
+**UPDATE:** Amazon recently announced [Cross-Origin Resource Sharing (CORS) support](http://aws.amazon.com/about-aws/whats-new/2012/08/31/amazon-s3-announces-cross-origin-resource-sharing-CORS-support/). Enabling CORS on your bucket is a breeze and once completed you can easily server font files to both IE and FireFox. Even better, these options carry through perfectly well to CloudFront.
