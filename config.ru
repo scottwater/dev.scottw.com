@@ -18,6 +18,7 @@ use Rack::Rewrite do
   r301 %r{^(.+)/$}, '$1'
   r301 %r{^/tags}, '/'
   r301 %r{^/atom$}, '/atom.xml'  
+  r301 %r{^/fitbit}, 'http://www.fitbit.com/user/22DMM5'
 end
 
 class SinatraStaticServer < Sinatra::Base  
